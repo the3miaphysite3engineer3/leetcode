@@ -1,0 +1,488 @@
+{
+  "problem_id": "2390",
+  "title": "Removing Stars From a String",
+  "function_name": "removeStars",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        "leet**cod*e"
+      ],
+      "expected": "lecoe"
+    },
+    {
+      "inputs": [
+        "erase*****"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "a"
+      ],
+      "expected": "a"
+    },
+    {
+      "inputs": [
+        "abc"
+      ],
+      "expected": "abc"
+    },
+    {
+      "inputs": [
+        "ab*c"
+      ],
+      "expected": "ac"
+    },
+    {
+      "inputs": [
+        "dp**"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "unuh**wfmzcuul***q*swzmujdwzmarqq"
+      ],
+      "expected": "unwfmzcswzmujdwzmarqq"
+    },
+    {
+      "inputs": [
+        "rzyvfw*zb***y*q*fv*qjo*klq**h**gtsen**"
+      ],
+      "expected": "rzyvfqjgts"
+    },
+    {
+      "inputs": [
+        "umiw**iwwvqnknt**vcckeh**"
+      ],
+      "expected": "umiwwvqnkvcck"
+    },
+    {
+      "inputs": [
+        "mzfjzqsr***ylvr"
+      ],
+      "expected": "mzfjzylvr"
+    },
+    {
+      "inputs": [
+        "tme*w**x*uwvwozj*whcnccc**rznx*vrm**"
+      ],
+      "expected": "tuwvwozwhcncrznv"
+    },
+    {
+      "inputs": [
+        "awl*qbfyh*ebm*khyj***sjubtbtjax*dg*ep*i*jfi*o*n*"
+      ],
+      "expected": "awqbfyebksjubtbtjadejf"
+    },
+    {
+      "inputs": [
+        "g*j*mkfpi*pw*yqxm*z**ybktnjyt*h***vgzwt*se***e"
+      ],
+      "expected": "mkfppyqybktnvgze"
+    },
+    {
+      "inputs": [
+        "acmjh*bu**lhb**k*t**ld**exxq"
+      ],
+      "expected": "acmjexxq"
+    },
+    {
+      "inputs": [
+        "l*i*m*d*xbugd*kpge**iyrlw*pqfwj*zgmrc*m"
+      ],
+      "expected": "xbugkpiyrlpqfwzgmrm"
+    },
+    {
+      "inputs": [
+        "yt**fszqq*jr**j**e*ugaulwinjbahi*rys"
+      ],
+      "expected": "fszugaulwinjbahrys"
+    },
+    {
+      "inputs": [
+        "xmiughg"
+      ],
+      "expected": "xmiughg"
+    },
+    {
+      "inputs": [
+        "uyo*l*p**gx**fvc*om*xamdyb*i*aadkc*sfp"
+      ],
+      "expected": "ufvoxamdyaadksfp"
+    },
+    {
+      "inputs": [
+        "h*w*r*b*j*"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "e*h*nlhvwdd*jtlct*kvvtliviw"
+      ],
+      "expected": "nlhvwdjtlckvvtliviw"
+    },
+    {
+      "inputs": [
+        "z*eem"
+      ],
+      "expected": "eem"
+    },
+    {
+      "inputs": [
+        "xpdx**flnnuzhrrrm*qwhhgapd*yj"
+      ],
+      "expected": "xpflnnuzhrrrqwhhgapyj"
+    },
+    {
+      "inputs": [
+        "ern*bdw*wl**pf*c**n**xjxza**bf"
+      ],
+      "expected": "erbxjxbf"
+    },
+    {
+      "inputs": [
+        "f*noiqhf**emhxtwkmf*n***k**c**guh"
+      ],
+      "expected": "noiqemhxguh"
+    },
+    {
+      "inputs": [
+        "cs*p*j*jq*xedxqe*p"
+      ],
+      "expected": "cjxedxqp"
+    },
+    {
+      "inputs": [
+        "b*ecchzefqxqkeln*vgt**p**jzcoj**c*o*io"
+      ],
+      "expected": "ecchzefqxqkeljzcio"
+    },
+    {
+      "inputs": [
+        "eslmteqkvo*v*bhr*jsc*v*uo***mgctwd***u*tbl"
+      ],
+      "expected": "eslmteqkvbhjmgctbl"
+    },
+    {
+      "inputs": [
+        "p*gyi***ijoq*fcny**pwwwat*sk"
+      ],
+      "expected": "ijofcpwwwask"
+    },
+    {
+      "inputs": [
+        "xxa*ek*n*oeud*grtl**al*qdunlnyfl*rjwu*dzctd"
+      ],
+      "expected": "xxeoeugraqdunlnyfrjwdzctd"
+    },
+    {
+      "inputs": [
+        "xr*sv*hrgdznuxlq*izv*n**qtfn*gmz"
+      ],
+      "expected": "xshrgdznuxliqtfgmz"
+    },
+    {
+      "inputs": [
+        "n*ux*q**wq*mur*c*ue*caeul*h*hzy*****d"
+      ],
+      "expected": "wmuucad"
+    },
+    {
+      "inputs": [
+        "od**f*pg"
+      ],
+      "expected": "pg"
+    },
+    {
+      "inputs": [
+        "dapc*kof*vtdlta*d***e*g***"
+      ],
+      "expected": "dapkov"
+    },
+    {
+      "inputs": [
+        "e*p*cropmi*w*ssz*nnit*glcbijuqa*nl**ed*wokr**"
+      ],
+      "expected": "cropmssnniglcbijuqewo"
+    },
+    {
+      "inputs": [
+        "q*r*tzcuyk**bn"
+      ],
+      "expected": "tzcubn"
+    },
+    {
+      "inputs": [
+        "dtm***za"
+      ],
+      "expected": "za"
+    },
+    {
+      "inputs": [
+        "j*m*rba**xkm*pm*pdt**e*wh**lrw"
+      ],
+      "expected": "rxkpplrw"
+    },
+    {
+      "inputs": [
+        "ib*c"
+      ],
+      "expected": "ic"
+    },
+    {
+      "inputs": [
+        "kzied*ynv*spkp***"
+      ],
+      "expected": "kzieyns"
+    },
+    {
+      "inputs": [
+        "lhxw*b"
+      ],
+      "expected": "lhxb"
+    },
+    {
+      "inputs": [
+        "aogk*qkju*e*oq"
+      ],
+      "expected": "aogqkjoq"
+    },
+    {
+      "inputs": [
+        "yc**jsedh*i*o"
+      ],
+      "expected": "jsedo"
+    },
+    {
+      "inputs": [
+        "i*r*n*mqo**xg*t*qv****b"
+      ],
+      "expected": "b"
+    },
+    {
+      "inputs": [
+        "i*r*hwmhw**lwx**tjw*c*o**k*c*appp*sjq"
+      ],
+      "expected": "hwmltappsjq"
+    },
+    {
+      "inputs": [
+        "fy*xpr*llkytixehea*nx*mivoq*lmibw"
+      ],
+      "expected": "fxpllkytixehenmivolmibw"
+    },
+    {
+      "inputs": [
+        "t*zzj**eejv*cag*bavb*j"
+      ],
+      "expected": "zeejcabavj"
+    },
+    {
+      "inputs": [
+        "vr**i*x*sj*l*mdjfvzvi*jjufn*wvoon"
+      ],
+      "expected": "smdjfvzvjjufwvoon"
+    },
+    {
+      "inputs": [
+        "aan**z*esbm*oqb**ddskdvw***p*u"
+      ],
+      "expected": "aesboddsku"
+    },
+    {
+      "inputs": [
+        "jxatd**q**"
+      ],
+      "expected": "jx"
+    },
+    {
+      "inputs": [
+        "aod*fr*ot****h*r*jsv*z*n***suvb"
+      ],
+      "expected": "asuvb"
+    },
+    {
+      "inputs": [
+        "exalq*qc**swe*jcupfqq*s"
+      ],
+      "expected": "exalswjcupfqs"
+    },
+    {
+      "inputs": [
+        "lm**x*dpphzz*fmnbd*otak*esg*j*nzcud*an"
+      ],
+      "expected": "dpphzfmnbotaesnzcuan"
+    },
+    {
+      "inputs": [
+        "rk*xp**qteoms*j*bk*jil*j*qqt*dibi*b*x"
+      ],
+      "expected": "rqteombjiqqdibx"
+    },
+    {
+      "inputs": [
+        "yb**swz*ntre***uph**z*"
+      ],
+      "expected": "swnu"
+    },
+    {
+      "inputs": [
+        "mx*mw*r*tlkb***yzbahc*j*uj*v***plhjyu*k"
+      ],
+      "expected": "mmtyzbaplhjyk"
+    },
+    {
+      "inputs": [
+        "rbntc**hr*z*wyd*i*c*mmb*vbbltkis**tnxz*xjrsyf"
+      ],
+      "expected": "rbnhwymmvbbltktnxxjrsyf"
+    },
+    {
+      "inputs": [
+        "oh**zi**r*st**iza*kfao*ug"
+      ],
+      "expected": "izkfaug"
+    },
+    {
+      "inputs": [
+        "bc*ko*i*heu***obh*ialbl*dh*"
+      ],
+      "expected": "bkobialbd"
+    },
+    {
+      "inputs": [
+        "lvuj*znljfjs*zwqwgs*mu**hsxx*z*qk*jk*"
+      ],
+      "expected": "lvuznljfjzwqwghsxqj"
+    },
+    {
+      "inputs": [
+        "l*kdonlcuhn*ehnv***cqsy**f**pen***qnmhdkt*clnxjw**"
+      ],
+      "expected": "kdonlcuhecqnmhdkclnx"
+    },
+    {
+      "inputs": [
+        "sq*svmfs*h*sqn*y**xx*sk****f*the*qabrg*ajsoo**dnci"
+      ],
+      "expected": "ssvmfthqabrajsdnci"
+    },
+    {
+      "inputs": [
+        "v*lxx**oqckbwk*u*a*hipxe*qx*pgbiuuqfhvztp**ynk*"
+      ],
+      "expected": "loqckbwhipxqpgbiuuqfhvzyn"
+    },
+    {
+      "inputs": [
+        "d*klw*zth***n*inoiihbn*r*tea"
+      ],
+      "expected": "klinoiihbtea"
+    },
+    {
+      "inputs": [
+        "ackycq*fmh**n*a**dzf**w***uxc*wn*re*m*jnao**pn*"
+      ],
+      "expected": "ackyuxwrjnp"
+    },
+    {
+      "inputs": [
+        "r*jrm*mydsmos*ec**pc*psbixe"
+      ],
+      "expected": "jrmydsmoppsbixe"
+    },
+    {
+      "inputs": [
+        "kta"
+      ],
+      "expected": "kta"
+    },
+    {
+      "inputs": [
+        "w*rru*pxcnm**d*d*f"
+      ],
+      "expected": "rrpxcf"
+    },
+    {
+      "inputs": [
+        "zera*jv*lf*gwt*kxe*p*eag**d*f*hai*njyiucd"
+      ],
+      "expected": "zerjlgwkxehanjyiucd"
+    },
+    {
+      "inputs": [
+        "g*iesmyt*tp****t**k*eopqhmwjktfinpiruaolggfa*g*"
+      ],
+      "expected": "ieeopqhmwjktfinpiruaolggf"
+    },
+    {
+      "inputs": [
+        "k*lqt*ubw*swtp*uz*te"
+      ],
+      "expected": "lqubswtute"
+    },
+    {
+      "inputs": [
+        "x*e*d*uk*gx*kfslvvc*ec**wfarkw*c**fuy**o*hvgx*"
+      ],
+      "expected": "ugkfslvvwfarfhvg"
+    },
+    {
+      "inputs": [
+        "mf*n"
+      ],
+      "expected": "mn"
+    },
+    {
+      "inputs": [
+        "g*g*j*o*pluuf*m"
+      ],
+      "expected": "pluum"
+    },
+    {
+      "inputs": [
+        "rwuz*qxcg*"
+      ],
+      "expected": "rwuqxc"
+    },
+    {
+      "inputs": [
+        "i*du**ssskua*kd*ffoowmh*kmhq*i"
+      ],
+      "expected": "ssskukffoowmkmhi"
+    },
+    {
+      "inputs": [
+        "mfjwgsezcy*m***jf****yp**mpoym*ekvnr*"
+      ],
+      "expected": "mfjwgmpoyekvn"
+    },
+    {
+      "inputs": [
+        "vs*flqtmu*b*kfjvb*f*dcx*zfsvpvy*"
+      ],
+      "expected": "vflqtmkfjvdczfsvpv"
+    },
+    {
+      "inputs": [
+        "idzqprdnmc*wgtoo**l*l*jaf*ou"
+      ],
+      "expected": "idzqprdnmwgtjaou"
+    },
+    {
+      "inputs": [
+        "t*x"
+      ],
+      "expected": "x"
+    },
+    {
+      "inputs": [
+        "rh*"
+      ],
+      "expected": "r"
+    }
+  ]
+}

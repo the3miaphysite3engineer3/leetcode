@@ -1,0 +1,488 @@
+{
+  "problem_id": "2483",
+  "title": "Minimum Penalty for a Shop",
+  "function_name": "bestClosingTime",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        "YYNY"
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        "NNNNN"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "YYYY"
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        "Y"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "N"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "YN"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "NY"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "YNYN"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "NYNY"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "YYYYYY"
+      ],
+      "expected": 6
+    },
+    {
+      "inputs": [
+        "YYNYYNYNNYYYYYNYYN"
+      ],
+      "expected": 17
+    },
+    {
+      "inputs": [
+        "YYYNNYNYYNNYNYYYYYYNYNY"
+      ],
+      "expected": 19
+    },
+    {
+      "inputs": [
+        "NYNYYYYYN"
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        "NNYNN"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "YYNNNYNYYNNNYYYNYYNYY"
+      ],
+      "expected": 21
+    },
+    {
+      "inputs": [
+        "YNYYNNYYNNYNYYYNNYYYNNNYNNNNNYNY"
+      ],
+      "expected": 20
+    },
+    {
+      "inputs": [
+        "NYYNYNNYYNY"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "YYYNNYNYNYYYNYYNNNNYYYNNY"
+      ],
+      "expected": 15
+    },
+    {
+      "inputs": [
+        "NYNY"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "NYYYYYNYNYNNNNNYNYN"
+      ],
+      "expected": 6
+    },
+    {
+      "inputs": [
+        "NYNYNNNNYNYYYYNNYYNNNYNNY"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "YYYNYYYYYYNYNYYNNYYNNNNNYN"
+      ],
+      "expected": 15
+    },
+    {
+      "inputs": [
+        "NYYYYYNN"
+      ],
+      "expected": 6
+    },
+    {
+      "inputs": [
+        "NNNNYYNNYNYNNYYNNNYNNNNNYYY"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "NNNNYYNYNNNYYYNNYYYY"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "YYYNYNYNNNNYY"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "NNNYNNNYNYNYNYYY"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "YYNNYYNYYYYNNNN"
+      ],
+      "expected": 11
+    },
+    {
+      "inputs": [
+        "NNNYNNNYYNNNYNYNNNNNNYYYY"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "NNYYNNNNNNYYNYNNNYYNYNYNYNYYNYNNNNNNNYN"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "YNYY"
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        "NNNYYYYNNNYNYYNNYNYYNNYYYNYYNNNNNNYYYNYNYYYY"
+      ],
+      "expected": 28
+    },
+    {
+      "inputs": [
+        "NNYYNNYYYNNNNNY"
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        "NNYYNYYYYYYYYNYNNYYYYY"
+      ],
+      "expected": 22
+    },
+    {
+      "inputs": [
+        "YNNNYNNYYYNNYNYNYYNYYNYYNYNNNYYNYNNYYYYYNYYYY"
+      ],
+      "expected": 45
+    },
+    {
+      "inputs": [
+        "YNNNNYYYYNNNNYYYY"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "YNNNNYNNY"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "NNNNNNNY"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "YYYYNNNY"
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        "NNYYNNYNNYYNNYYNYNYNNNYYYYNNYYNNYNNYYNNY"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "NNNYNN"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "YNYYNNYYYNYNNNYYNNNNN"
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        "YYYNNNNY"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "YNY"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "NYNYYYNYNYNYNYYNNYNYYNNYYYYNNNNYNNNNNYYNNNYYYN"
+      ],
+      "expected": 27
+    },
+    {
+      "inputs": [
+        "NYYNYNNNNNYYYNYYYYNYNNYYNYYNNYYNYNYNNNNYYNYN"
+      ],
+      "expected": 27
+    },
+    {
+      "inputs": [
+        "NYYNNYYYYYNYNNN"
+      ],
+      "expected": 10
+    },
+    {
+      "inputs": [
+        "YNYNNYYYN"
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        "YNNNYNYYYYNNYNYYNNNNYNYYNNYYYNNYNNNYNNN"
+      ],
+      "expected": 10
+    },
+    {
+      "inputs": [
+        "NYN"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "YYYYYYYNYYNYYYNNYYYYYNYYNNNNNNNYN"
+      ],
+      "expected": 24
+    },
+    {
+      "inputs": [
+        "YYYYYNYNNYNNNNYNYYYNNYNNYYYYYNYNYNYNYYYYNYYY"
+      ],
+      "expected": 44
+    },
+    {
+      "inputs": [
+        "YNYNYNYYNNNYYYNYYNNNNNYNNNYYNYYNNNYNNNNNNNY"
+      ],
+      "expected": 17
+    },
+    {
+      "inputs": [
+        "YNYYNYYYYNYY"
+      ],
+      "expected": 12
+    },
+    {
+      "inputs": [
+        "NNYNNYNYNYNNYYYYNYYYNNYYNYYNNYYYNNNN"
+      ],
+      "expected": 32
+    },
+    {
+      "inputs": [
+        "YNY"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "NNYNNNYNNYNNNNNYYNYYYNYYYYNYYNNYNNNYYNYYYYYYYY"
+      ],
+      "expected": 46
+    },
+    {
+      "inputs": [
+        "YNYN"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "YNYYNNNYYNYYNYNNYYNNYYYYNYYYNYYYNYYNNNY"
+      ],
+      "expected": 35
+    },
+    {
+      "inputs": [
+        "NYNNNYNYNNYYNNNYYYYYNYNNNYYNNNNNNNYNNYNNNNNNY"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "YYNYYYNNYYNYYYNNYYNYNYYNNNYYNNYYNYYYYYNYYYY"
+      ],
+      "expected": 43
+    },
+    {
+      "inputs": [
+        "NNNNYYYYNNNNYYNNYN"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "NYYNNYNNNNNY"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "NNNYNYNYNYYNNNYNYNYNNYYNNNYNYYNYYYNYYYYNYYYYNYYNN"
+      ],
+      "expected": 47
+    },
+    {
+      "inputs": [
+        "NNNNYNNYYYNNYNNYNYNNYYYNYNNNYNYNNNNYNNYN"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "NNNNNYYYYNYNNYYYNYYNNYNNNNYNYYYYNNYNNNNNNNYNY"
+      ],
+      "expected": 19
+    },
+    {
+      "inputs": [
+        "YYNNNNNYNNNYYNNNYYYNYNN"
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        "NNNNNNNNYYYYYNYYYNYYYNYYNYYNYYNNYYNNYYYYYN"
+      ],
+      "expected": 41
+    },
+    {
+      "inputs": [
+        "NNNNYYNNNNNYYNNNNNYNY"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "Y"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "NNYNNNYNNYYNYNNNYYNNYNY"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "YNNNNYYYYNYNNNNYNYYYYYYNNYNY"
+      ],
+      "expected": 23
+    },
+    {
+      "inputs": [
+        "YYYNYNNNNNNYNYY"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "NNYN"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "YNNYYYNNYYYN"
+      ],
+      "expected": 11
+    },
+    {
+      "inputs": [
+        "YYNNNNYYYNNNYNYYYYNNYYNYNYYYNYNYYYNYNYYNYYYNYNNN"
+      ],
+      "expected": 43
+    },
+    {
+      "inputs": [
+        "YYNNYNYNNNNYYNNNNYYYNNNNNYNYYNYNYNYNYNNNNYYYYYY"
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        "YYN"
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        "YYNNNYNYYYYNY"
+      ],
+      "expected": 11
+    },
+    {
+      "inputs": [
+        "YNNNYNYYNYYYYYNYYYYNYNNNYYYNNY"
+      ],
+      "expected": 19
+    }
+  ]
+}

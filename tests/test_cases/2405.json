@@ -1,0 +1,488 @@
+{
+  "problem_id": "2405",
+  "title": "Optimal Partition of String",
+  "function_name": "partitionString",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        "abacaba"
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        "ssssss"
+      ],
+      "expected": 6
+    },
+    {
+      "inputs": [
+        "a"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "ab"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "abc"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "abcabc"
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        "abcdefghijklmnopqrstuvwxyz"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "aaaa"
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        "zgndrhueiecbfzjtxsjodowjwmiqrpoctbnxktiachvssayvisbyyfpquoifsnupcplnkkvdfknwpjvmyrboc"
+      ],
+      "expected": 13
+    },
+    {
+      "inputs": [
+        "ikdymqavronbgqltypuoybgirejowpdautzhwfjra"
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        "nchdoduepwjqwinpphoremgtqxeciyznkzqiajxjssvpeorplkryrmokgwhsmhynbkxpwzm"
+      ],
+      "expected": 12
+    },
+    {
+      "inputs": [
+        "vzuepbeqskdodqoaxenuecpziktwmuckvrmkuwyprbtchuvjhx"
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        "ndyuwdofwjab"
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        "zbjllnehqnsvzfffctmtvhpsehouioivazojvrfcol"
+      ],
+      "expected": 10
+    },
+    {
+      "inputs": [
+        "junwiojgmpdhmslsjwjavmiasvyxbtxpjyzhtzlhugtivyxyvveuduubjzobslxecjkxnfgezrlq"
+      ],
+      "expected": 14
+    },
+    {
+      "inputs": [
+        "ifipzjxkzdoceyhvxvmzrlczmairdolvxvismuldvhpatrkthucuowjundebbjpdd"
+      ],
+      "expected": 12
+    },
+    {
+      "inputs": [
+        "remolvxwrnsxxenudptnibwlgoohldv"
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        "rulbmigdocvguutabzkhezsgcyrgsghkyeztaieerizfdvae"
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        "lz"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "skafibexnqdxcpoylqsdoqhtbxzvqjo"
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        "abpmnvdpwocckteceitusrwkmtqjoqtndzwduuyrxgnohnkomnxdknkvilevpccccndxxlzerbsrrkvdnlv"
+      ],
+      "expected": 19
+    },
+    {
+      "inputs": [
+        "nxbjtjldsqgevphdlrldyishznryttvuratvwiafiwyjklafesvmcexuacxqgmnokfljxkystcbefytbvciovnptonigyqdln"
+      ],
+      "expected": 15
+    },
+    {
+      "inputs": [
+        "jvvspqvjbhmtbag"
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        "gyeyijkdapxnfemrwhqrvzlcmxbnaocksnsmwun"
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        "dmakfztowlcndhnsmqcmjxkhkyfcqudqqgyllx"
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        "ehdeigfteyyucfyupoysysovsuutkukeocpoujzisblqcjoobbljcucttqmosrzxbozsugktpqebodzkwcq"
+      ],
+      "expected": 18
+    },
+    {
+      "inputs": [
+        "fbhwooqqtflljmnykvtbzuukckdrvmjixvtekcsveljuwvmetwcjrmuzkevwxvqcuvnqlaljfgkypgheecj"
+      ],
+      "expected": 15
+    },
+    {
+      "inputs": [
+        "qyrxqbvkytetm"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "ffwytzfxobnlvxhotjyx"
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        "hrhjzzpglvsooyjymqqnfgzteibuplrdwqdjcyfioqencholanbmqlhmcl"
+      ],
+      "expected": 10
+    },
+    {
+      "inputs": [
+        "akdwukzeebjpweywpotacaigerxtq"
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        "dyjhjdbhnuztocdptrauqshwejnatlhsnfvvcqlcqrqzqrampbumlix"
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        "lzc"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "hxvudysxykeblrkufyvowpufzecwyobjgbzgbkjqmrpib"
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        "ugjlybukidzlnmxomkfpwplzqizcxncntfrjkdckvjjotwnfwolobxltniuzbcvumlqzxvfaetvzobechyullmsbtevolloyc"
+      ],
+      "expected": 16
+    },
+    {
+      "inputs": [
+        "eqlmkuihdaxfpqmrdiyiwogtjwpgdecofwoczvkvlwcrrjjfwwwufzlqhdgzehzpalrslozret"
+      ],
+      "expected": 13
+    },
+    {
+      "inputs": [
+        "cjmwxpqnynsc"
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        "kucoovqleyrusfyen"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "bdqejffkwhlqjcigurieujtrcqufssefvtxtksbacbuysiugysntuapurjujphzzv"
+      ],
+      "expected": 12
+    },
+    {
+      "inputs": [
+        "jocwbfonpogktekwkxlmeylqrdkhodiohedbjmtnhfksxkgyfpqo"
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        "jpacmqohgslbbjptuvpjradneixlymlbmbsrglrjcmqoyritvtdedmlzkrlyegtq"
+      ],
+      "expected": 10
+    },
+    {
+      "inputs": [
+        "qbbbewkzpqoetqektkfmtxjskqqrpwsjpalkvdnsjzxwuatpiuzy"
+      ],
+      "expected": 10
+    },
+    {
+      "inputs": [
+        "shxbspfquxtymevhbswdgaoknenwgnqytpxxbweqgrkvpqmkforkrlvyxvuzwitpghirjhjyjwg"
+      ],
+      "expected": 12
+    },
+    {
+      "inputs": [
+        "wpkplrzxijdsvrmmlyzejbjwclouixpggrirwiedtxshhbvqhuhbdnkwpdvyearfnuppugyjkjubycushrxxbfnfb"
+      ],
+      "expected": 16
+    },
+    {
+      "inputs": [
+        "zpfxjbajstdkjourqpeqoigzdkfxouiwfaxkzjsvygftumnqkcm"
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        "dfepkhaimhoyikjsxsaiulwhbvdojfmvqwyjwdujlthhepeoxtlnwrpyrzvgyhvytzcqoqwlcsdbrqgsrefkqo"
+      ],
+      "expected": 12
+    },
+    {
+      "inputs": [
+        "vgwspcqozboeqno"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "brovzjxamiaxgscbnlwcrbcpbjnfyeyuxunlmommcvvreuldfrmqexhayajovxrnrmhholeig"
+      ],
+      "expected": 13
+    },
+    {
+      "inputs": [
+        "ydbzvntyahgcdtbotvwbhxbmohrgyybeqjhxskstyvkhjevqhnjibrsxfuvnrpbluvmzqkwnnejmfyrphhjwezobrnnrq"
+      ],
+      "expected": 12
+    },
+    {
+      "inputs": [
+        "mhigkucolcrxgbimvt"
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        "bcgzysxvrgpgkjaggxdxyphwtwgmhrkyjmoruljilqpodzxpykglknbshxeairssxnjegkhmshpruv"
+      ],
+      "expected": 14
+    },
+    {
+      "inputs": [
+        "iypxuxpofxzlfexrpfrubqbcvbyaneuhcweagqolbtuv"
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        "pvpaarrnaaqxirjaqwvnzfddqehgtqilizmclmoshwhjvcuuybcmmmrpbuawfcpnuzksdqbhgwspibc"
+      ],
+      "expected": 16
+    },
+    {
+      "inputs": [
+        "irsvbfkagseywmcjfshsmvrkmyxezwxcqxlbdnhcktyttmykauizophlrmnfvsvmcytjzhwcciemwzuexmkldcaj"
+      ],
+      "expected": 14
+    },
+    {
+      "inputs": [
+        "lyidecfnorrqndaclrcttzkmajnmycxrhsqfvmfeijipecfninjpzclih"
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        "upttgodejamktmzkoknutejktwgpkfmkjxwupszhkmizmldsgsrfvyraxowgozjwczznvpeujhivewnzmcotpsmrqwnrb"
+      ],
+      "expected": 17
+    },
+    {
+      "inputs": [
+        "wzrtucdyhvvlfutbsuvumykzndadihqxqrswsholmoyvswq"
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        "lapdjncdxeljkozgqplp"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "oxwokcjbzwdak"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "dvzfxhqfrfkrnohzmuffuvnmaxtgosnmawggiywzzcsdzrflkgodivpquktmtmsdllotfvwzjtscvekdhjd"
+      ],
+      "expected": 14
+    },
+    {
+      "inputs": [
+        "lweqmntesmnfpurwufrfpjef"
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        "otblapegmrqupnvpnwopfcsazyhjbihrjfyosxyyp"
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        "qdsdiyrlrybyxorgndxuyhjboilcodyzhgzxswlwtunftezggzbslritrfkwjjsiqvdeyzn"
+      ],
+      "expected": 12
+    },
+    {
+      "inputs": [
+        "iuewehew"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "hyvmpesuiunmocuzycmqxiwlopksayxcxouvwlczrm"
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        "ngpikjkrsespzkvybbduzoadfooa"
+      ],
+      "expected": 6
+    },
+    {
+      "inputs": [
+        "gweujficuliclvufbmujxwyhnucwdagpceshqvoaawkdnwepchmcxzd"
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        "kljemyyeuvecqs"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "tu"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "olxguxentvogcdeydsxmln"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "zehiuchrttxtjywavjgqtqgxmjubzzhpmdhputcqa"
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        "kemsnlrvfypycascaigbbzmqjuwqynnwmcurrteicjcqgze"
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        "kmsuyuvucjwnxhbhcndottbjvxvxfdawewafplqqzxiflexyixdyakzniqciwsucpoqlb"
+      ],
+      "expected": 11
+    },
+    {
+      "inputs": [
+        "sflfiydsvxdhxqabahbplmefbrzwxunhkhnxkicsldqvbfhzqbmcojyjkcroalgj"
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        "zjxtholspyygxryzheanahrluwakayvmxxjdgqhnpbewicbhqnwloxcsdqeumcssbnvehjikz"
+      ],
+      "expected": 10
+    },
+    {
+      "inputs": [
+        "wxkkoihcgeyysdedfookndrlygojoidcfzvjwwtbgkecwhlmqbv"
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        "ifamorxrhdodzzedabyhegmlvuucssicacguoze"
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        "zkdbobfsnxmp"
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        "mvnf"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "gfiioebttthujpnrpbcimenguzqhuzrzamzwlprzplsqkm"
+      ],
+      "expected": 9
+    }
+  ]
+}
