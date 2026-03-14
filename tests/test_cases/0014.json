@@ -1,0 +1,817 @@
+{
+    "problem_id": "0014",
+    "title": "Longest Common Prefix",
+    "function_name": "longestCommonPrefix",
+    "comparison": "exact",
+    "test_cases": [
+        {
+            "inputs": [
+                [
+                    "flower",
+                    "flow",
+                    "flight"
+                ]
+            ],
+            "expected": "fl"
+        },
+        {
+            "inputs": [
+                [
+                    "dog",
+                    "racecar",
+                    "car"
+                ]
+            ],
+            "expected": ""
+        },
+        {
+            "inputs": [
+                [
+                    "a"
+                ]
+            ],
+            "expected": "a"
+        },
+        {
+            "inputs": [
+                [
+                    "",
+                    "b"
+                ]
+            ],
+            "expected": ""
+        },
+        {
+            "inputs": [
+                [
+                    "abc",
+                    "abc",
+                    "abc"
+                ]
+            ],
+            "expected": "abc"
+        },
+        {
+            "inputs": [
+                [
+                    "ab",
+                    "a"
+                ]
+            ],
+            "expected": "a"
+        },
+        {
+            "inputs": [
+                [
+                    "cir",
+                    "car"
+                ]
+            ],
+            "expected": "c"
+        },
+        {
+            "inputs": [
+                [
+                    "aaa",
+                    "aa",
+                    "aaa"
+                ]
+            ],
+            "expected": "aa"
+        },
+        {
+            "inputs": [
+                [
+                    "reflower",
+                    "flow",
+                    "flight"
+                ]
+            ],
+            "expected": ""
+        },
+        {
+            "inputs": [
+                [
+                    "interspecies",
+                    "interstellar",
+                    "interstate"
+                ]
+            ],
+            "expected": "inters"
+        },
+        {
+            "inputs": [
+                [
+                    "aag",
+                    "aagc",
+                    "aagfhdfc",
+                    "aaggahi"
+                ]
+            ],
+            "expected": "aag"
+        },
+        {
+            "inputs": [
+                [
+                    "ee",
+                    "edhd",
+                    "egd",
+                    "eg",
+                    "eaia"
+                ]
+            ],
+            "expected": "e"
+        },
+        {
+            "inputs": [
+                [
+                    "ifjfge"
+                ]
+            ],
+            "expected": "ifjfge"
+        },
+        {
+            "inputs": [
+                [
+                    "gd",
+                    "fbei",
+                    "id",
+                    "fi"
+                ]
+            ],
+            "expected": ""
+        },
+        {
+            "inputs": [
+                [
+                    "ggajcbhdd",
+                    "ggaj",
+                    "ggaji",
+                    "ggajgahj",
+                    "ggaj"
+                ]
+            ],
+            "expected": "ggaj"
+        },
+        {
+            "inputs": [
+                [
+                    "dddh",
+                    "dfibh",
+                    "d",
+                    "daeege",
+                    "dh"
+                ]
+            ],
+            "expected": "d"
+        },
+        {
+            "inputs": [
+                [
+                    "ecffdcj"
+                ]
+            ],
+            "expected": "ecffdcj"
+        },
+        {
+            "inputs": [
+                [
+                    "d"
+                ]
+            ],
+            "expected": "d"
+        },
+        {
+            "inputs": [
+                [
+                    "hda",
+                    "hebfcf"
+                ]
+            ],
+            "expected": "h"
+        },
+        {
+            "inputs": [
+                [
+                    "iaa",
+                    "",
+                    "ff"
+                ]
+            ],
+            "expected": ""
+        },
+        {
+            "inputs": [
+                [
+                    "babj",
+                    "baija",
+                    "ba",
+                    "bae"
+                ]
+            ],
+            "expected": "ba"
+        },
+        {
+            "inputs": [
+                [
+                    "aihca",
+                    "aihcbfjdh",
+                    "aihcicbbg",
+                    "aihcajgef"
+                ]
+            ],
+            "expected": "aihc"
+        },
+        {
+            "inputs": [
+                [
+                    "gigdjde",
+                    "gigedc",
+                    "gig",
+                    "gigfd",
+                    "gigadc"
+                ]
+            ],
+            "expected": "gig"
+        },
+        {
+            "inputs": [
+                [
+                    "fdfjieigd"
+                ]
+            ],
+            "expected": "fdfjieigd"
+        },
+        {
+            "inputs": [
+                [
+                    "babija",
+                    "babibceef",
+                    "babid",
+                    "babidh"
+                ]
+            ],
+            "expected": "babi"
+        },
+        {
+            "inputs": [
+                [
+                    "gaagc",
+                    "ijgba",
+                    "bdjgd",
+                    "hafg",
+                    "ig"
+                ]
+            ],
+            "expected": ""
+        },
+        {
+            "inputs": [
+                [
+                    "gfadj",
+                    "je",
+                    "j",
+                    "a",
+                    ""
+                ]
+            ],
+            "expected": ""
+        },
+        {
+            "inputs": [
+                [
+                    "iiadbdbi",
+                    "iiadibee",
+                    "iiadhjghh",
+                    "iiadf",
+                    "iiadjh"
+                ]
+            ],
+            "expected": "iiad"
+        },
+        {
+            "inputs": [
+                [
+                    "gfecd",
+                    "gfebbg"
+                ]
+            ],
+            "expected": "gfe"
+        },
+        {
+            "inputs": [
+                [
+                    "edjhf",
+                    "",
+                    "ab"
+                ]
+            ],
+            "expected": ""
+        },
+        {
+            "inputs": [
+                [
+                    "bejcije",
+                    "bejcfcj",
+                    "bejccd",
+                    "bejc"
+                ]
+            ],
+            "expected": "bejc"
+        },
+        {
+            "inputs": [
+                [
+                    "bje",
+                    "bh",
+                    "beaa"
+                ]
+            ],
+            "expected": "b"
+        },
+        {
+            "inputs": [
+                [
+                    "ijgeh",
+                    "id",
+                    "i"
+                ]
+            ],
+            "expected": "i"
+        },
+        {
+            "inputs": [
+                [
+                    "ggafaf",
+                    "ggah"
+                ]
+            ],
+            "expected": "gga"
+        },
+        {
+            "inputs": [
+                [
+                    "adfg",
+                    "adf",
+                    "adfjaff"
+                ]
+            ],
+            "expected": "adf"
+        },
+        {
+            "inputs": [
+                [
+                    "aiadca",
+                    "aiad",
+                    "aiadcg",
+                    "aiad",
+                    "aiadhdaf"
+                ]
+            ],
+            "expected": "aiad"
+        },
+        {
+            "inputs": [
+                [
+                    "jeba",
+                    "jebach"
+                ]
+            ],
+            "expected": "jeba"
+        },
+        {
+            "inputs": [
+                [
+                    "jfeagc"
+                ]
+            ],
+            "expected": "jfeagc"
+        },
+        {
+            "inputs": [
+                [
+                    "chihi"
+                ]
+            ],
+            "expected": "chihi"
+        },
+        {
+            "inputs": [
+                [
+                    "jedhc",
+                    "je",
+                    "jeeejbc",
+                    "je"
+                ]
+            ],
+            "expected": "je"
+        },
+        {
+            "inputs": [
+                [
+                    "gdhbee"
+                ]
+            ],
+            "expected": "gdhbee"
+        },
+        {
+            "inputs": [
+                [
+                    "jcjj",
+                    "jcjjgdigj",
+                    "jcjji"
+                ]
+            ],
+            "expected": "jcjj"
+        },
+        {
+            "inputs": [
+                [
+                    "a",
+                    "ddfgg",
+                    "dh",
+                    "bddc"
+                ]
+            ],
+            "expected": ""
+        },
+        {
+            "inputs": [
+                [
+                    "bfjbh"
+                ]
+            ],
+            "expected": "bfjbh"
+        },
+        {
+            "inputs": [
+                [
+                    "jgj",
+                    "jb",
+                    "j",
+                    "jbhj"
+                ]
+            ],
+            "expected": "j"
+        },
+        {
+            "inputs": [
+                [
+                    "hfii",
+                    "hfhhbdc",
+                    "hfh"
+                ]
+            ],
+            "expected": "hf"
+        },
+        {
+            "inputs": [
+                [
+                    "afdbiad",
+                    "afdhfhia"
+                ]
+            ],
+            "expected": "afd"
+        },
+        {
+            "inputs": [
+                [
+                    "efb",
+                    "gbje",
+                    ""
+                ]
+            ],
+            "expected": ""
+        },
+        {
+            "inputs": [
+                [
+                    "bbdhjf"
+                ]
+            ],
+            "expected": "bbdhjf"
+        },
+        {
+            "inputs": [
+                [
+                    "bj",
+                    "bd",
+                    "agff"
+                ]
+            ],
+            "expected": ""
+        },
+        {
+            "inputs": [
+                [
+                    "hgif",
+                    "hgif"
+                ]
+            ],
+            "expected": "hgif"
+        },
+        {
+            "inputs": [
+                [
+                    "ccfg"
+                ]
+            ],
+            "expected": "ccfg"
+        },
+        {
+            "inputs": [
+                [
+                    "cjeieegbe",
+                    "cjeicgd",
+                    "cjeidjddh",
+                    "cjeifdec"
+                ]
+            ],
+            "expected": "cjei"
+        },
+        {
+            "inputs": [
+                [
+                    "aji",
+                    "acib"
+                ]
+            ],
+            "expected": "a"
+        },
+        {
+            "inputs": [
+                [
+                    "hbbjeda",
+                    "hbbjfjc",
+                    "hbbjac"
+                ]
+            ],
+            "expected": "hbbj"
+        },
+        {
+            "inputs": [
+                [
+                    "cabi",
+                    "cabdeaaf",
+                    "cabfa",
+                    "cabefig",
+                    "cabbjdh"
+                ]
+            ],
+            "expected": "cab"
+        },
+        {
+            "inputs": [
+                [
+                    "jhbfaahi",
+                    "jhbfegfd",
+                    "jhbfddgi"
+                ]
+            ],
+            "expected": "jhbf"
+        },
+        {
+            "inputs": [
+                [
+                    "ffhci",
+                    "ffdb",
+                    "fffhh",
+                    "ffgfcgj",
+                    "fffhfb"
+                ]
+            ],
+            "expected": "ff"
+        },
+        {
+            "inputs": [
+                [
+                    "bgabadbg",
+                    "bgafge",
+                    "bgahhffj",
+                    "bgafdb",
+                    "bgaddhh"
+                ]
+            ],
+            "expected": "bga"
+        },
+        {
+            "inputs": [
+                [
+                    "ejcchh",
+                    "ejcchddjh",
+                    "ejcccf"
+                ]
+            ],
+            "expected": "ejcc"
+        },
+        {
+            "inputs": [
+                [
+                    "iddc",
+                    "iddja",
+                    "iddghc",
+                    "iddcfcb",
+                    "iddfcgfg"
+                ]
+            ],
+            "expected": "idd"
+        },
+        {
+            "inputs": [
+                [
+                    "deg"
+                ]
+            ],
+            "expected": "deg"
+        },
+        {
+            "inputs": [
+                [
+                    "jbgi",
+                    "ebj"
+                ]
+            ],
+            "expected": ""
+        },
+        {
+            "inputs": [
+                [
+                    "gj",
+                    "gjffhjj",
+                    "gje"
+                ]
+            ],
+            "expected": "gj"
+        },
+        {
+            "inputs": [
+                [
+                    "hbh",
+                    "ia"
+                ]
+            ],
+            "expected": ""
+        },
+        {
+            "inputs": [
+                [
+                    "bjcjfibf",
+                    "bjcjbb",
+                    "bjcjh",
+                    "bjcjcbhhf",
+                    "bjcjb"
+                ]
+            ],
+            "expected": "bjcj"
+        },
+        {
+            "inputs": [
+                [
+                    "fagj",
+                    "fagdcc",
+                    "fage",
+                    "fagjd"
+                ]
+            ],
+            "expected": "fag"
+        },
+        {
+            "inputs": [
+                [
+                    "gg",
+                    "",
+                    "bdefi",
+                    "hggjd",
+                    "c"
+                ]
+            ],
+            "expected": ""
+        },
+        {
+            "inputs": [
+                [
+                    "bhghjh",
+                    "bhgihgfh"
+                ]
+            ],
+            "expected": "bhg"
+        },
+        {
+            "inputs": [
+                [
+                    "fdj",
+                    "fdj",
+                    "fdjjcfb",
+                    "fdjeghe",
+                    "fdjeabe"
+                ]
+            ],
+            "expected": "fdj"
+        },
+        {
+            "inputs": [
+                [
+                    "eihd",
+                    "",
+                    "caehf",
+                    "",
+                    ""
+                ]
+            ],
+            "expected": ""
+        },
+        {
+            "inputs": [
+                [
+                    "eh",
+                    "jgejd",
+                    "dgg",
+                    "bibj"
+                ]
+            ],
+            "expected": ""
+        },
+        {
+            "inputs": [
+                [
+                    "bjiheh",
+                    "bjihfic",
+                    "bjihbb",
+                    "bjihhaggj"
+                ]
+            ],
+            "expected": "bjih"
+        },
+        {
+            "inputs": [
+                [
+                    "c"
+                ]
+            ],
+            "expected": "c"
+        },
+        {
+            "inputs": [
+                [
+                    "fha",
+                    "aefhh",
+                    "f",
+                    "cj",
+                    "dfgd"
+                ]
+            ],
+            "expected": ""
+        },
+        {
+            "inputs": [
+                [
+                    "jcdaj",
+                    "jjgeej",
+                    "jghdeb"
+                ]
+            ],
+            "expected": "j"
+        },
+        {
+            "inputs": [
+                [
+                    "hcci",
+                    "hi",
+                    "h",
+                    "heefd"
+                ]
+            ],
+            "expected": "h"
+        },
+        {
+            "inputs": [
+                [
+                    "d",
+                    "diah",
+                    "da"
+                ]
+            ],
+            "expected": "d"
+        },
+        {
+            "inputs": [
+                [
+                    "gibhgccjd",
+                    "gibh",
+                    "gibhj",
+                    "gibhbjecg"
+                ]
+            ],
+            "expected": "gibh"
+        },
+        {
+            "inputs": [
+                [
+                    "jfhegd",
+                    "jfhfe"
+                ]
+            ],
+            "expected": "jfh"
+        }
+    ]
+}
