@@ -1,0 +1,488 @@
+{
+  "problem_id": "1323",
+  "title": "Maximum 69 Number",
+  "function_name": "maximum69Number",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        9669
+      ],
+      "expected": 9969
+    },
+    {
+      "inputs": [
+        9996
+      ],
+      "expected": 9999
+    },
+    {
+      "inputs": [
+        9999
+      ],
+      "expected": 9999
+    },
+    {
+      "inputs": [
+        6
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        9
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        66
+      ],
+      "expected": 96
+    },
+    {
+      "inputs": [
+        69
+      ],
+      "expected": 99
+    },
+    {
+      "inputs": [
+        96
+      ],
+      "expected": 99
+    },
+    {
+      "inputs": [
+        99
+      ],
+      "expected": 99
+    },
+    {
+      "inputs": [
+        666
+      ],
+      "expected": 966
+    },
+    {
+      "inputs": [
+        669
+      ],
+      "expected": 969
+    },
+    {
+      "inputs": [
+        696
+      ],
+      "expected": 996
+    },
+    {
+      "inputs": [
+        699
+      ],
+      "expected": 999
+    },
+    {
+      "inputs": [
+        966
+      ],
+      "expected": 996
+    },
+    {
+      "inputs": [
+        969
+      ],
+      "expected": 999
+    },
+    {
+      "inputs": [
+        996
+      ],
+      "expected": 999
+    },
+    {
+      "inputs": [
+        999
+      ],
+      "expected": 999
+    },
+    {
+      "inputs": [
+        6666
+      ],
+      "expected": 9666
+    },
+    {
+      "inputs": [
+        6669
+      ],
+      "expected": 9669
+    },
+    {
+      "inputs": [
+        6696
+      ],
+      "expected": 9696
+    },
+    {
+      "inputs": [
+        6699
+      ],
+      "expected": 9699
+    },
+    {
+      "inputs": [
+        6966
+      ],
+      "expected": 9966
+    },
+    {
+      "inputs": [
+        6969
+      ],
+      "expected": 9969
+    },
+    {
+      "inputs": [
+        6996
+      ],
+      "expected": 9996
+    },
+    {
+      "inputs": [
+        6999
+      ],
+      "expected": 9999
+    },
+    {
+      "inputs": [
+        9666
+      ],
+      "expected": 9966
+    },
+    {
+      "inputs": [
+        9669
+      ],
+      "expected": 9969
+    },
+    {
+      "inputs": [
+        9696
+      ],
+      "expected": 9996
+    },
+    {
+      "inputs": [
+        9699
+      ],
+      "expected": 9999
+    },
+    {
+      "inputs": [
+        9966
+      ],
+      "expected": 9996
+    },
+    {
+      "inputs": [
+        9969
+      ],
+      "expected": 9999
+    },
+    {
+      "inputs": [
+        9996
+      ],
+      "expected": 9999
+    },
+    {
+      "inputs": [
+        9999
+      ],
+      "expected": 9999
+    },
+    {
+      "inputs": [
+        9
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        66
+      ],
+      "expected": 96
+    },
+    {
+      "inputs": [
+        699
+      ],
+      "expected": 999
+    },
+    {
+      "inputs": [
+        666
+      ],
+      "expected": 966
+    },
+    {
+      "inputs": [
+        666
+      ],
+      "expected": 966
+    },
+    {
+      "inputs": [
+        6
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        999
+      ],
+      "expected": 999
+    },
+    {
+      "inputs": [
+        996
+      ],
+      "expected": 999
+    },
+    {
+      "inputs": [
+        999
+      ],
+      "expected": 999
+    },
+    {
+      "inputs": [
+        966
+      ],
+      "expected": 996
+    },
+    {
+      "inputs": [
+        966
+      ],
+      "expected": 996
+    },
+    {
+      "inputs": [
+        996
+      ],
+      "expected": 999
+    },
+    {
+      "inputs": [
+        6
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        6
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        6
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        69
+      ],
+      "expected": 99
+    },
+    {
+      "inputs": [
+        69
+      ],
+      "expected": 99
+    },
+    {
+      "inputs": [
+        9696
+      ],
+      "expected": 9996
+    },
+    {
+      "inputs": [
+        6669
+      ],
+      "expected": 9669
+    },
+    {
+      "inputs": [
+        6666
+      ],
+      "expected": 9666
+    },
+    {
+      "inputs": [
+        696
+      ],
+      "expected": 996
+    },
+    {
+      "inputs": [
+        69
+      ],
+      "expected": 99
+    },
+    {
+      "inputs": [
+        6669
+      ],
+      "expected": 9669
+    },
+    {
+      "inputs": [
+        96
+      ],
+      "expected": 99
+    },
+    {
+      "inputs": [
+        9
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        999
+      ],
+      "expected": 999
+    },
+    {
+      "inputs": [
+        96
+      ],
+      "expected": 99
+    },
+    {
+      "inputs": [
+        6
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        6
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        6999
+      ],
+      "expected": 9999
+    },
+    {
+      "inputs": [
+        9996
+      ],
+      "expected": 9999
+    },
+    {
+      "inputs": [
+        66
+      ],
+      "expected": 96
+    },
+    {
+      "inputs": [
+        669
+      ],
+      "expected": 969
+    },
+    {
+      "inputs": [
+        99
+      ],
+      "expected": 99
+    },
+    {
+      "inputs": [
+        9966
+      ],
+      "expected": 9996
+    },
+    {
+      "inputs": [
+        666
+      ],
+      "expected": 966
+    },
+    {
+      "inputs": [
+        6669
+      ],
+      "expected": 9669
+    },
+    {
+      "inputs": [
+        9969
+      ],
+      "expected": 9999
+    },
+    {
+      "inputs": [
+        666
+      ],
+      "expected": 966
+    },
+    {
+      "inputs": [
+        9
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        9696
+      ],
+      "expected": 9996
+    },
+    {
+      "inputs": [
+        9
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        69
+      ],
+      "expected": 99
+    },
+    {
+      "inputs": [
+        9
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        69
+      ],
+      "expected": 99
+    },
+    {
+      "inputs": [
+        69
+      ],
+      "expected": 99
+    },
+    {
+      "inputs": [
+        9
+      ],
+      "expected": 9
+    }
+  ]
+}

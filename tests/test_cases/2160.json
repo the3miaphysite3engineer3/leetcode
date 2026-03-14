@@ -1,0 +1,488 @@
+{
+  "problem_id": "2160",
+  "title": "Minimum Sum of Four Digit Number After Splitting Digits",
+  "function_name": "minimumSum",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        2932
+      ],
+      "expected": 52
+    },
+    {
+      "inputs": [
+        4009
+      ],
+      "expected": 13
+    },
+    {
+      "inputs": [
+        1000
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        1111
+      ],
+      "expected": 22
+    },
+    {
+      "inputs": [
+        9999
+      ],
+      "expected": 198
+    },
+    {
+      "inputs": [
+        1234
+      ],
+      "expected": 37
+    },
+    {
+      "inputs": [
+        5678
+      ],
+      "expected": 125
+    },
+    {
+      "inputs": [
+        1001
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        2413
+      ],
+      "expected": 37
+    },
+    {
+      "inputs": [
+        5454
+      ],
+      "expected": 90
+    },
+    {
+      "inputs": [
+        1935
+      ],
+      "expected": 54
+    },
+    {
+      "inputs": [
+        5876
+      ],
+      "expected": 125
+    },
+    {
+      "inputs": [
+        2056
+      ],
+      "expected": 31
+    },
+    {
+      "inputs": [
+        8022
+      ],
+      "expected": 30
+    },
+    {
+      "inputs": [
+        8667
+      ],
+      "expected": 135
+    },
+    {
+      "inputs": [
+        6369
+      ],
+      "expected": 105
+    },
+    {
+      "inputs": [
+        3569
+      ],
+      "expected": 95
+    },
+    {
+      "inputs": [
+        1690
+      ],
+      "expected": 25
+    },
+    {
+      "inputs": [
+        4065
+      ],
+      "expected": 51
+    },
+    {
+      "inputs": [
+        8605
+      ],
+      "expected": 64
+    },
+    {
+      "inputs": [
+        9323
+      ],
+      "expected": 62
+    },
+    {
+      "inputs": [
+        2570
+      ],
+      "expected": 32
+    },
+    {
+      "inputs": [
+        5502
+      ],
+      "expected": 30
+    },
+    {
+      "inputs": [
+        6378
+      ],
+      "expected": 105
+    },
+    {
+      "inputs": [
+        5313
+      ],
+      "expected": 48
+    },
+    {
+      "inputs": [
+        9870
+      ],
+      "expected": 87
+    },
+    {
+      "inputs": [
+        2325
+      ],
+      "expected": 48
+    },
+    {
+      "inputs": [
+        2163
+      ],
+      "expected": 39
+    },
+    {
+      "inputs": [
+        2982
+      ],
+      "expected": 57
+    },
+    {
+      "inputs": [
+        8753
+      ],
+      "expected": 95
+    },
+    {
+      "inputs": [
+        3649
+      ],
+      "expected": 85
+    },
+    {
+      "inputs": [
+        9410
+      ],
+      "expected": 23
+    },
+    {
+      "inputs": [
+        5580
+      ],
+      "expected": 63
+    },
+    {
+      "inputs": [
+        6524
+      ],
+      "expected": 71
+    },
+    {
+      "inputs": [
+        9455
+      ],
+      "expected": 104
+    },
+    {
+      "inputs": [
+        5929
+      ],
+      "expected": 88
+    },
+    {
+      "inputs": [
+        9782
+      ],
+      "expected": 107
+    },
+    {
+      "inputs": [
+        8924
+      ],
+      "expected": 77
+    },
+    {
+      "inputs": [
+        5431
+      ],
+      "expected": 49
+    },
+    {
+      "inputs": [
+        5218
+      ],
+      "expected": 43
+    },
+    {
+      "inputs": [
+        1703
+      ],
+      "expected": 20
+    },
+    {
+      "inputs": [
+        1722
+      ],
+      "expected": 39
+    },
+    {
+      "inputs": [
+        3855
+      ],
+      "expected": 93
+    },
+    {
+      "inputs": [
+        7895
+      ],
+      "expected": 137
+    },
+    {
+      "inputs": [
+        4012
+      ],
+      "expected": 16
+    },
+    {
+      "inputs": [
+        9466
+      ],
+      "expected": 115
+    },
+    {
+      "inputs": [
+        7518
+      ],
+      "expected": 75
+    },
+    {
+      "inputs": [
+        6678
+      ],
+      "expected": 135
+    },
+    {
+      "inputs": [
+        9848
+      ],
+      "expected": 137
+    },
+    {
+      "inputs": [
+        1362
+      ],
+      "expected": 39
+    },
+    {
+      "inputs": [
+        9081
+      ],
+      "expected": 27
+    },
+    {
+      "inputs": [
+        4037
+      ],
+      "expected": 41
+    },
+    {
+      "inputs": [
+        1350
+      ],
+      "expected": 18
+    },
+    {
+      "inputs": [
+        1914
+      ],
+      "expected": 33
+    },
+    {
+      "inputs": [
+        1368
+      ],
+      "expected": 54
+    },
+    {
+      "inputs": [
+        6824
+      ],
+      "expected": 74
+    },
+    {
+      "inputs": [
+        8484
+      ],
+      "expected": 96
+    },
+    {
+      "inputs": [
+        1338
+      ],
+      "expected": 51
+    },
+    {
+      "inputs": [
+        2316
+      ],
+      "expected": 39
+    },
+    {
+      "inputs": [
+        9154
+      ],
+      "expected": 64
+    },
+    {
+      "inputs": [
+        5673
+      ],
+      "expected": 93
+    },
+    {
+      "inputs": [
+        4445
+      ],
+      "expected": 89
+    },
+    {
+      "inputs": [
+        6272
+      ],
+      "expected": 53
+    },
+    {
+      "inputs": [
+        8313
+      ],
+      "expected": 51
+    },
+    {
+      "inputs": [
+        6267
+      ],
+      "expected": 93
+    },
+    {
+      "inputs": [
+        3406
+      ],
+      "expected": 40
+    },
+    {
+      "inputs": [
+        3111
+      ],
+      "expected": 24
+    },
+    {
+      "inputs": [
+        6409
+      ],
+      "expected": 55
+    },
+    {
+      "inputs": [
+        6633
+      ],
+      "expected": 72
+    },
+    {
+      "inputs": [
+        7121
+      ],
+      "expected": 29
+    },
+    {
+      "inputs": [
+        7908
+      ],
+      "expected": 87
+    },
+    {
+      "inputs": [
+        9195
+      ],
+      "expected": 78
+    },
+    {
+      "inputs": [
+        1401
+      ],
+      "expected": 15
+    },
+    {
+      "inputs": [
+        9965
+      ],
+      "expected": 128
+    },
+    {
+      "inputs": [
+        5399
+      ],
+      "expected": 98
+    },
+    {
+      "inputs": [
+        7952
+      ],
+      "expected": 86
+    },
+    {
+      "inputs": [
+        1217
+      ],
+      "expected": 29
+    },
+    {
+      "inputs": [
+        1023
+      ],
+      "expected": 15
+    },
+    {
+      "inputs": [
+        2702
+      ],
+      "expected": 29
+    },
+    {
+      "inputs": [
+        6561
+      ],
+      "expected": 72
+    }
+  ]
+}
