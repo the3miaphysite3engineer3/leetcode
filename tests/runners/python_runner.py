@@ -223,6 +223,32 @@ def main():
         else:
             print(json.dumps(result))
 
+    elif mode == "tree_lca":
+        # First arg is tree (list), remaining int args are node values to look up
+        tree_arr = inputs[0]
+        root = list_to_tree(tree_arr)
+
+        def find_node(node, val):
+            if not node:
+                return None
+            if node.val == val:
+                return node
+            return find_node(node.left, val) or find_node(node.right, val)
+
+        converted = [root]
+        for arg in inputs[1:]:
+            if isinstance(arg, int):
+                converted.append(find_node(root, arg))
+            else:
+                converted.append(arg)
+        result = method(*converted)
+        if isinstance(result, TreeNode):
+            print(json.dumps(result.val))
+        elif result is None:
+            print(json.dumps(None))
+        else:
+            print(json.dumps(result))
+
     elif mode == "inplace":
         # For in-place functions: call the method, then return the first input (mutated)
         method(*inputs)
