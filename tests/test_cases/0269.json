@@ -1,0 +1,826 @@
+{
+    "problem_id": "269",
+    "title": "Alien Dictionary",
+    "function_name": "alienOrder",
+    "comparison": "exact",
+    "mode": "default",
+    "test_cases": [
+        {
+            "inputs": [
+                [
+                    "wrt",
+                    "wrf",
+                    "er",
+                    "ett",
+                    "rftt"
+                ]
+            ],
+            "expected": "wertf"
+        },
+        {
+            "inputs": [
+                [
+                    "z",
+                    "x"
+                ]
+            ],
+            "expected": "zx"
+        },
+        {
+            "inputs": [
+                [
+                    "z",
+                    "x",
+                    "z"
+                ]
+            ],
+            "expected": ""
+        },
+        {
+            "inputs": [
+                [
+                    "dbd",
+                    "cd"
+                ]
+            ],
+            "expected": "bdc"
+        },
+        {
+            "inputs": [
+                [
+                    "d",
+                    "b",
+                    "bdc"
+                ]
+            ],
+            "expected": "cdb"
+        },
+        {
+            "inputs": [
+                [
+                    "ca",
+                    "eae",
+                    "ec"
+                ]
+            ],
+            "expected": "ace"
+        },
+        {
+            "inputs": [
+                [
+                    "d",
+                    "dcb",
+                    "bdbb",
+                    "bdbc",
+                    "c",
+                    "cdb"
+                ]
+            ],
+            "expected": "dbc"
+        },
+        {
+            "inputs": [
+                [
+                    "ee",
+                    "ebe",
+                    "ebe",
+                    "b"
+                ]
+            ],
+            "expected": "eb"
+        },
+        {
+            "inputs": [
+                [
+                    "d",
+                    "dbd",
+                    "cdbb",
+                    "cb"
+                ]
+            ],
+            "expected": "dcb"
+        },
+        {
+            "inputs": [
+                [
+                    "aa",
+                    "aaa",
+                    "acae",
+                    "e",
+                    "cca",
+                    "e"
+                ]
+            ],
+            "expected": ""
+        },
+        {
+            "inputs": [
+                [
+                    "eee"
+                ]
+            ],
+            "expected": "e"
+        },
+        {
+            "inputs": [
+                [
+                    "a",
+                    "aacc",
+                    "abc"
+                ]
+            ],
+            "expected": "cab"
+        },
+        {
+            "inputs": [
+                [
+                    "da",
+                    "dde",
+                    "edae"
+                ]
+            ],
+            "expected": "ade"
+        },
+        {
+            "inputs": [
+                [
+                    "ea"
+                ]
+            ],
+            "expected": "ae"
+        },
+        {
+            "inputs": [
+                [
+                    "c",
+                    "ccec"
+                ]
+            ],
+            "expected": "ec"
+        },
+        {
+            "inputs": [
+                [
+                    "bbca",
+                    "bca"
+                ]
+            ],
+            "expected": "abc"
+        },
+        {
+            "inputs": [
+                [
+                    "da",
+                    "aa",
+                    "acc",
+                    "cdcc",
+                    "cad",
+                    "cac"
+                ]
+            ],
+            "expected": "dac"
+        },
+        {
+            "inputs": [
+                [
+                    "dd",
+                    "e",
+                    "b"
+                ]
+            ],
+            "expected": "deb"
+        },
+        {
+            "inputs": [
+                [
+                    "da",
+                    "aaa",
+                    "e"
+                ]
+            ],
+            "expected": "dae"
+        },
+        {
+            "inputs": [
+                [
+                    "e",
+                    "eca",
+                    "caca",
+                    "acee",
+                    "aa"
+                ]
+            ],
+            "expected": "eca"
+        },
+        {
+            "inputs": [
+                [
+                    "eac",
+                    "c",
+                    "caae",
+                    "aac"
+                ]
+            ],
+            "expected": "eca"
+        },
+        {
+            "inputs": [
+                [
+                    "a",
+                    "ae",
+                    "be"
+                ]
+            ],
+            "expected": "eab"
+        },
+        {
+            "inputs": [
+                [
+                    "dbad",
+                    "d",
+                    "bbdd",
+                    "ab"
+                ]
+            ],
+            "expected": ""
+        },
+        {
+            "inputs": [
+                [
+                    "bc",
+                    "bcbd",
+                    "bdb",
+                    "db",
+                    "ccdb"
+                ]
+            ],
+            "expected": ""
+        },
+        {
+            "inputs": [
+                [
+                    "baa",
+                    "bd"
+                ]
+            ],
+            "expected": "adb"
+        },
+        {
+            "inputs": [
+                [
+                    "deb",
+                    "b",
+                    "ed"
+                ]
+            ],
+            "expected": "dbe"
+        },
+        {
+            "inputs": [
+                [
+                    "bdc",
+                    "dbd",
+                    "bcdd"
+                ]
+            ],
+            "expected": ""
+        },
+        {
+            "inputs": [
+                [
+                    "d",
+                    "dc",
+                    "caa",
+                    "a"
+                ]
+            ],
+            "expected": "dca"
+        },
+        {
+            "inputs": [
+                [
+                    "a",
+                    "bb",
+                    "add",
+                    "dd",
+                    "dd"
+                ]
+            ],
+            "expected": ""
+        },
+        {
+            "inputs": [
+                [
+                    "dc"
+                ]
+            ],
+            "expected": "cd"
+        },
+        {
+            "inputs": [
+                [
+                    "eddc",
+                    "ddce",
+                    "dc"
+                ]
+            ],
+            "expected": "edc"
+        },
+        {
+            "inputs": [
+                [
+                    "db",
+                    "ba",
+                    "bb",
+                    "aa"
+                ]
+            ],
+            "expected": ""
+        },
+        {
+            "inputs": [
+                [
+                    "daac"
+                ]
+            ],
+            "expected": "cad"
+        },
+        {
+            "inputs": [
+                [
+                    "abe",
+                    "e",
+                    "b",
+                    "ba"
+                ]
+            ],
+            "expected": "aeb"
+        },
+        {
+            "inputs": [
+                [
+                    "ebe",
+                    "ebe",
+                    "ddd"
+                ]
+            ],
+            "expected": "bed"
+        },
+        {
+            "inputs": [
+                [
+                    "aaa",
+                    "eee"
+                ]
+            ],
+            "expected": "ae"
+        },
+        {
+            "inputs": [
+                [
+                    "eed"
+                ]
+            ],
+            "expected": "de"
+        },
+        {
+            "inputs": [
+                [
+                    "cc",
+                    "dcdc"
+                ]
+            ],
+            "expected": "cd"
+        },
+        {
+            "inputs": [
+                [
+                    "b",
+                    "bdd",
+                    "b",
+                    "db",
+                    "cb",
+                    "ccbc"
+                ]
+            ],
+            "expected": ""
+        },
+        {
+            "inputs": [
+                [
+                    "dca",
+                    "ac"
+                ]
+            ],
+            "expected": "cda"
+        },
+        {
+            "inputs": [
+                [
+                    "e",
+                    "caae",
+                    "aee",
+                    "aa"
+                ]
+            ],
+            "expected": "eca"
+        },
+        {
+            "inputs": [
+                [
+                    "cab",
+                    "bbc",
+                    "acb",
+                    "aca",
+                    "aacb",
+                    "aacb"
+                ]
+            ],
+            "expected": "cba"
+        },
+        {
+            "inputs": [
+                [
+                    "bbd"
+                ]
+            ],
+            "expected": "db"
+        },
+        {
+            "inputs": [
+                [
+                    "d",
+                    "dee",
+                    "ec"
+                ]
+            ],
+            "expected": "cde"
+        },
+        {
+            "inputs": [
+                [
+                    "dd",
+                    "b",
+                    "bbd",
+                    "ee"
+                ]
+            ],
+            "expected": "dbe"
+        },
+        {
+            "inputs": [
+                [
+                    "ed",
+                    "bdd",
+                    "bdde"
+                ]
+            ],
+            "expected": "deb"
+        },
+        {
+            "inputs": [
+                [
+                    "ec"
+                ]
+            ],
+            "expected": "ce"
+        },
+        {
+            "inputs": [
+                [
+                    "ebaa",
+                    "ea",
+                    "be"
+                ]
+            ],
+            "expected": "eba"
+        },
+        {
+            "inputs": [
+                [
+                    "bb",
+                    "bbcc",
+                    "bec",
+                    "e",
+                    "cb"
+                ]
+            ],
+            "expected": "bec"
+        },
+        {
+            "inputs": [
+                [
+                    "d",
+                    "d",
+                    "ddbd"
+                ]
+            ],
+            "expected": "bd"
+        },
+        {
+            "inputs": [
+                [
+                    "caab",
+                    "aab",
+                    "babc"
+                ]
+            ],
+            "expected": "cab"
+        },
+        {
+            "inputs": [
+                [
+                    "eec"
+                ]
+            ],
+            "expected": "ce"
+        },
+        {
+            "inputs": [
+                [
+                    "cdcd",
+                    "ca",
+                    "ddd",
+                    "da",
+                    "a"
+                ]
+            ],
+            "expected": "cda"
+        },
+        {
+            "inputs": [
+                [
+                    "edc",
+                    "ced",
+                    "cee",
+                    "ced",
+                    "dc"
+                ]
+            ],
+            "expected": ""
+        },
+        {
+            "inputs": [
+                [
+                    "bcdd",
+                    "d",
+                    "db"
+                ]
+            ],
+            "expected": "cbd"
+        },
+        {
+            "inputs": [
+                [
+                    "bbaa",
+                    "caa",
+                    "cc"
+                ]
+            ],
+            "expected": "abc"
+        },
+        {
+            "inputs": [
+                [
+                    "dd",
+                    "a",
+                    "aa",
+                    "ac",
+                    "ac"
+                ]
+            ],
+            "expected": "dac"
+        },
+        {
+            "inputs": [
+                [
+                    "b",
+                    "a",
+                    "abb",
+                    "abbb"
+                ]
+            ],
+            "expected": "ba"
+        },
+        {
+            "inputs": [
+                [
+                    "bbc",
+                    "ba",
+                    "bac",
+                    "aaa",
+                    "aa"
+                ]
+            ],
+            "expected": ""
+        },
+        {
+            "inputs": [
+                [
+                    "d",
+                    "ddce",
+                    "dec",
+                    "c",
+                    "ecce",
+                    "ecce"
+                ]
+            ],
+            "expected": "dce"
+        },
+        {
+            "inputs": [
+                [
+                    "eae",
+                    "aee"
+                ]
+            ],
+            "expected": "ea"
+        },
+        {
+            "inputs": [
+                [
+                    "cea",
+                    "ec"
+                ]
+            ],
+            "expected": "ace"
+        },
+        {
+            "inputs": [
+                [
+                    "aae",
+                    "ab",
+                    "ba",
+                    "bab",
+                    "bbe",
+                    "beb"
+                ]
+            ],
+            "expected": "abe"
+        },
+        {
+            "inputs": [
+                [
+                    "bb"
+                ]
+            ],
+            "expected": "b"
+        },
+        {
+            "inputs": [
+                [
+                    "a"
+                ]
+            ],
+            "expected": "a"
+        },
+        {
+            "inputs": [
+                [
+                    "b"
+                ]
+            ],
+            "expected": "b"
+        },
+        {
+            "inputs": [
+                [
+                    "ed"
+                ]
+            ],
+            "expected": "de"
+        },
+        {
+            "inputs": [
+                [
+                    "dd",
+                    "c",
+                    "ece",
+                    "ecee"
+                ]
+            ],
+            "expected": "dce"
+        },
+        {
+            "inputs": [
+                [
+                    "bd",
+                    "bddd",
+                    "aa"
+                ]
+            ],
+            "expected": "dba"
+        },
+        {
+            "inputs": [
+                [
+                    "e",
+                    "e",
+                    "eae",
+                    "eeac",
+                    "ca",
+                    "ce"
+                ]
+            ],
+            "expected": "aec"
+        },
+        {
+            "inputs": [
+                [
+                    "cbec"
+                ]
+            ],
+            "expected": "ebc"
+        },
+        {
+            "inputs": [
+                [
+                    "b",
+                    "da"
+                ]
+            ],
+            "expected": "abd"
+        },
+        {
+            "inputs": [
+                [
+                    "bcce",
+                    "cb"
+                ]
+            ],
+            "expected": "ebc"
+        },
+        {
+            "inputs": [
+                [
+                    "ddc",
+                    "cdd",
+                    "eec"
+                ]
+            ],
+            "expected": "dce"
+        },
+        {
+            "inputs": [
+                [
+                    "a",
+                    "a",
+                    "be",
+                    "be"
+                ]
+            ],
+            "expected": "eab"
+        },
+        {
+            "inputs": [
+                [
+                    "bab",
+                    "c"
+                ]
+            ],
+            "expected": "abc"
+        },
+        {
+            "inputs": [
+                [
+                    "bbd",
+                    "dbb",
+                    "beeb"
+                ]
+            ],
+            "expected": ""
+        },
+        {
+            "inputs": [
+                [
+                    "ddaa",
+                    "aa",
+                    "aac",
+                    "aca",
+                    "ccd",
+                    "cccd"
+                ]
+            ],
+            "expected": "dac"
+        },
+        {
+            "inputs": [
+                [
+                    "bdeb",
+                    "ed",
+                    "ede"
+                ]
+            ],
+            "expected": "dbe"
+        },
+        {
+            "inputs": [
+                [
+                    "aae",
+                    "adda"
+                ]
+            ],
+            "expected": "ead"
+        }
+    ]
+}

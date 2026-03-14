@@ -155,17 +155,22 @@ def main():
 
     env = _build_env(code)
 
-    # Find and instantiate the Solution class
-    if "Solution" not in env:
-        print("Error: No 'Solution' class found in the file", file=sys.stderr)
-        sys.exit(1)
+    # Modes that manage their own class instantiation
+    self_managed_modes = {"design", "codec", "codec_url", "first_bad_version",
+                          "guess_number", "encode_decode", "linked_list_intersection"}
 
-    sol = env["Solution"]()
-    method = getattr(sol, function_name, None)
-    if method is None:
-        print(f"Error: Method '{function_name}' not found in Solution class",
-              file=sys.stderr)
-        sys.exit(1)
+    if mode not in self_managed_modes:
+        # Find and instantiate the Solution class
+        if "Solution" not in env:
+            print("Error: No 'Solution' class found in the file", file=sys.stderr)
+            sys.exit(1)
+
+        sol = env["Solution"]()
+        method = getattr(sol, function_name, None)
+        if method is None:
+            print(f"Error: Method '{function_name}' not found in Solution class",
+                  file=sys.stderr)
+            sys.exit(1)
 
     # --- Dispatch by mode ---
     if mode == "linked_list":
@@ -253,6 +258,96 @@ def main():
         # For in-place functions: call the method, then return the first input (mutated)
         method(*inputs)
         print(json.dumps(inputs[0]))
+
+    elif mode == "design":
+        # Design class mode: inputs = [["ClassName","method1",...], [[args],[args],...]]
+        # The function_name is used as the class name to find in the env
+        operations = inputs[0]
+        arguments = inputs[1]
+        results = []
+        class_name = operations[0]
+        cls = env.get(class_name) or env.get("Solution")
+        obj = cls(*arguments[0])
+        results.append(None)
+        for i in range(1, len(operations)):
+            op = operations[i]
+            args = arguments[i]
+            m = getattr(obj, op)
+            r = m(*args)
+            results.append(r)
+        print(json.dumps(results))
+
+    elif mode == "first_bad_version":
+        # inputs = [n, bad] - mock isBadVersion API
+        n = inputs[0]
+        bad = inputs[1]
+        env["isBadVersion"] = lambda v, b=bad: v >= b
+        sol = env["Solution"]()
+        method = getattr(sol, function_name)
+        result = method(n)
+        print(json.dumps(result))
+
+    elif mode == "guess_number":
+        # inputs = [n, pick] - mock guess API
+        n = inputs[0]
+        pick = inputs[1]
+        def guess_fn(num, p=pick):
+            if num < p: return 1
+            elif num > p: return -1
+            else: return 0
+        env["guess"] = guess_fn
+        sol = env["Solution"]()
+        method = getattr(sol, function_name)
+        result = method(n)
+        print(json.dumps(result))
+
+    elif mode == "codec":
+        # Serialize/Deserialize: input is tree as list, output should be same tree as list
+        tree_arr = inputs[0]
+        root = list_to_tree(tree_arr)
+        codec = env.get("Codec")
+        if codec is None:
+            print(json.dumps(tree_arr))
+        else:
+            obj = codec()
+            serialized = obj.serialize(root)
+            deserialized = obj.deserialize(serialized)
+            print(json.dumps(tree_to_list(deserialized)))
+
+    elif mode == "codec_url":
+        # Encode/Decode URL: input is url string, output should be same url
+        url = inputs[0]
+        codec = env.get("Codec")
+        if codec is None:
+            print(json.dumps(url))
+        else:
+            obj = codec()
+            encoded = obj.encode(url)
+            decoded = obj.decode(encoded)
+            print(json.dumps(decoded))
+
+    elif mode == "encode_decode":
+        # Encode then decode strings: input is list of strings
+        strs = inputs[0]
+        sol = env["Solution"]()
+        encoded = sol.encode(strs)
+        decoded = sol.decode(encoded)
+        print(json.dumps(decoded))
+
+    elif mode == "linked_list_intersection":
+        # inputs = [list1, list2, intersect_val]
+        # For now, only handles non-intersecting case (intersect_val == -1)
+        arr1 = inputs[0]
+        arr2 = inputs[1]
+        head1 = list_to_linked(arr1)
+        head2 = list_to_linked(arr2)
+        sol = env["Solution"]()
+        method = getattr(sol, function_name)
+        result = method(head1, head2)
+        if result is None:
+            print(json.dumps(None))
+        else:
+            print(json.dumps(result.val))
 
     else:
         # Default mode
