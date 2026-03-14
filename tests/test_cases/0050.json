@@ -1,0 +1,568 @@
+{
+    "problem_id": "0050",
+    "title": "Pow(x, n)",
+    "function_name": "myPow",
+    "comparison": "close",
+    "test_cases": [
+        {
+            "inputs": [
+                2.0,
+                10
+            ],
+            "expected": 1024.0
+        },
+        {
+            "inputs": [
+                2.1,
+                3
+            ],
+            "expected": 9.261
+        },
+        {
+            "inputs": [
+                2.0,
+                -2
+            ],
+            "expected": 0.25
+        },
+        {
+            "inputs": [
+                1.0,
+                0
+            ],
+            "expected": 1.0
+        },
+        {
+            "inputs": [
+                0.0,
+                1
+            ],
+            "expected": 0.0
+        },
+        {
+            "inputs": [
+                1.0,
+                2147483647
+            ],
+            "expected": 1.0
+        },
+        {
+            "inputs": [
+                -1.0,
+                2
+            ],
+            "expected": 1.0
+        },
+        {
+            "inputs": [
+                -1.0,
+                3
+            ],
+            "expected": -1.0
+        },
+        {
+            "inputs": [
+                2.0,
+                0
+            ],
+            "expected": 1.0
+        },
+        {
+            "inputs": [
+                0.5,
+                2
+            ],
+            "expected": 0.25
+        },
+        {
+            "inputs": [
+                2.15,
+                7
+            ],
+            "expected": 212.35829
+        },
+        {
+            "inputs": [
+                1.45,
+                10
+            ],
+            "expected": 41.08469
+        },
+        {
+            "inputs": [
+                -1.88,
+                11
+            ],
+            "expected": -1036.89873
+        },
+        {
+            "inputs": [
+                1.34,
+                -7
+            ],
+            "expected": 0.1289
+        },
+        {
+            "inputs": [
+                -4.1,
+                6
+            ],
+            "expected": 4750.10424
+        },
+        {
+            "inputs": [
+                2.95,
+                -4
+            ],
+            "expected": 0.0132
+        },
+        {
+            "inputs": [
+                0.66,
+                -8
+            ],
+            "expected": 27.77464
+        },
+        {
+            "inputs": [
+                4.93,
+                3
+            ],
+            "expected": 119.82316
+        },
+        {
+            "inputs": [
+                -2.49,
+                13
+            ],
+            "expected": -141446.27418
+        },
+        {
+            "inputs": [
+                -4.6,
+                8
+            ],
+            "expected": 200476.12232
+        },
+        {
+            "inputs": [
+                -3.05,
+                12
+            ],
+            "expected": 648034.41755
+        },
+        {
+            "inputs": [
+                3.91,
+                5
+            ],
+            "expected": 913.86867
+        },
+        {
+            "inputs": [
+                4.17,
+                3
+            ],
+            "expected": 72.51171
+        },
+        {
+            "inputs": [
+                -1.13,
+                8
+            ],
+            "expected": 2.65844
+        },
+        {
+            "inputs": [
+                -0.75,
+                6
+            ],
+            "expected": 0.17798
+        },
+        {
+            "inputs": [
+                1.68,
+                1
+            ],
+            "expected": 1.68
+        },
+        {
+            "inputs": [
+                1.74,
+                15
+            ],
+            "expected": 4057.31498
+        },
+        {
+            "inputs": [
+                -0.02,
+                12
+            ],
+            "expected": 0.0
+        },
+        {
+            "inputs": [
+                -4.21,
+                -15
+            ],
+            "expected": -0.0
+        },
+        {
+            "inputs": [
+                -3.99,
+                -11
+            ],
+            "expected": -0.0
+        },
+        {
+            "inputs": [
+                4.85,
+                2
+            ],
+            "expected": 23.5225
+        },
+        {
+            "inputs": [
+                0.08,
+                -14
+            ],
+            "expected": 2273736754432320.0
+        },
+        {
+            "inputs": [
+                -4.56,
+                13
+            ],
+            "expected": -368589496.02345
+        },
+        {
+            "inputs": [
+                4.31,
+                -4
+            ],
+            "expected": 0.0029
+        },
+        {
+            "inputs": [
+                -4.72,
+                -2
+            ],
+            "expected": 0.04489
+        },
+        {
+            "inputs": [
+                1.36,
+                -12
+            ],
+            "expected": 0.02498
+        },
+        {
+            "inputs": [
+                -0.67,
+                2
+            ],
+            "expected": 0.4489
+        },
+        {
+            "inputs": [
+                2.15,
+                -1
+            ],
+            "expected": 0.46512
+        },
+        {
+            "inputs": [
+                1.74,
+                -2
+            ],
+            "expected": 0.33029
+        },
+        {
+            "inputs": [
+                -1.22,
+                2
+            ],
+            "expected": 1.4884
+        },
+        {
+            "inputs": [
+                4.86,
+                -7
+            ],
+            "expected": 2e-05
+        },
+        {
+            "inputs": [
+                2.48,
+                7
+            ],
+            "expected": 576.98134
+        },
+        {
+            "inputs": [
+                4.64,
+                -9
+            ],
+            "expected": 0.0
+        },
+        {
+            "inputs": [
+                -2.4,
+                -1
+            ],
+            "expected": -0.41667
+        },
+        {
+            "inputs": [
+                -2.45,
+                2
+            ],
+            "expected": 6.0025
+        },
+        {
+            "inputs": [
+                2.08,
+                -2
+            ],
+            "expected": 0.23114
+        },
+        {
+            "inputs": [
+                0.9,
+                -5
+            ],
+            "expected": 1.69351
+        },
+        {
+            "inputs": [
+                -3.01,
+                -5
+            ],
+            "expected": -0.00405
+        },
+        {
+            "inputs": [
+                -1.62,
+                14
+            ],
+            "expected": 857.45276
+        },
+        {
+            "inputs": [
+                -3.65,
+                15
+            ],
+            "expected": -271889832.3029
+        },
+        {
+            "inputs": [
+                -2.03,
+                -14
+            ],
+            "expected": 5e-05
+        },
+        {
+            "inputs": [
+                4.03,
+                15
+            ],
+            "expected": 1201090389.86217
+        },
+        {
+            "inputs": [
+                -2.83,
+                -10
+            ],
+            "expected": 3e-05
+        },
+        {
+            "inputs": [
+                0.0,
+                14
+            ],
+            "expected": 0.0
+        },
+        {
+            "inputs": [
+                4.46,
+                9
+            ],
+            "expected": 698254.47613
+        },
+        {
+            "inputs": [
+                0.44,
+                -3
+            ],
+            "expected": 11.73929
+        },
+        {
+            "inputs": [
+                3.8,
+                -1
+            ],
+            "expected": 0.26316
+        },
+        {
+            "inputs": [
+                -1.86,
+                6
+            ],
+            "expected": 41.40737
+        },
+        {
+            "inputs": [
+                -3.04,
+                9
+            ],
+            "expected": -22174.92974
+        },
+        {
+            "inputs": [
+                -1.54,
+                -2
+            ],
+            "expected": 0.42166
+        },
+        {
+            "inputs": [
+                -2.35,
+                7
+            ],
+            "expected": -395.79931
+        },
+        {
+            "inputs": [
+                -0.96,
+                -14
+            ],
+            "expected": 1.77094
+        },
+        {
+            "inputs": [
+                -3.63,
+                12
+            ],
+            "expected": 5234551.78296
+        },
+        {
+            "inputs": [
+                -1.46,
+                1
+            ],
+            "expected": -1.46
+        },
+        {
+            "inputs": [
+                -4.23,
+                -10
+            ],
+            "expected": 0.0
+        },
+        {
+            "inputs": [
+                -3.25,
+                13
+            ],
+            "expected": -4513190.78493
+        },
+        {
+            "inputs": [
+                1.95,
+                3
+            ],
+            "expected": 7.41487
+        },
+        {
+            "inputs": [
+                -1.05,
+                -7
+            ],
+            "expected": -0.71068
+        },
+        {
+            "inputs": [
+                2.95,
+                -6
+            ],
+            "expected": 0.00152
+        },
+        {
+            "inputs": [
+                -2.76,
+                0
+            ],
+            "expected": 1.0
+        },
+        {
+            "inputs": [
+                -2.44,
+                4
+            ],
+            "expected": 35.44535
+        },
+        {
+            "inputs": [
+                1.26,
+                5
+            ],
+            "expected": 3.1758
+        },
+        {
+            "inputs": [
+                -2.59,
+                9
+            ],
+            "expected": -5244.42497
+        },
+        {
+            "inputs": [
+                0.21,
+                7
+            ],
+            "expected": 2e-05
+        },
+        {
+            "inputs": [
+                -0.59,
+                -3
+            ],
+            "expected": -4.86905
+        },
+        {
+            "inputs": [
+                -1.42,
+                13
+            ],
+            "expected": -95.44397
+        },
+        {
+            "inputs": [
+                2.9,
+                -13
+            ],
+            "expected": 0.0
+        },
+        {
+            "inputs": [
+                -2.56,
+                7
+            ],
+            "expected": -720.57594
+        },
+        {
+            "inputs": [
+                -1.57,
+                13
+            ],
+            "expected": -352.12388
+        },
+        {
+            "inputs": [
+                -4.24,
+                -12
+            ],
+            "expected": 0.0
+        }
+    ]
+}

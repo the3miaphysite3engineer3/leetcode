@@ -1,0 +1,568 @@
+{
+    "problem_id": "0010",
+    "title": "Regular Expression Matching",
+    "function_name": "isMatch",
+    "comparison": "exact",
+    "test_cases": [
+        {
+            "inputs": [
+                "aa",
+                "a"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aa",
+                "a*"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "ab",
+                ".*"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "aab",
+                "c*a*b"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "mississippi",
+                "mis*is*p*."
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "",
+                ""
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "",
+                "a*"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "",
+                "a*b*c*"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "a",
+                "."
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "a",
+                ".."
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "ab",
+                ".*c"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aaa",
+                "a*a"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "aaa",
+                "ab*a*c*a"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "a",
+                "ab*"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "bbbba",
+                ".*a*a"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "b",
+                ".*cbb*..*"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "a",
+                "bb*a*.ab"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "bb",
+                "aabb.*."
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "a",
+                ".*ac*ca."
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "baacaaab",
+                "c*c*.a"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "bcbbc",
+                ".*c*.c*."
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "ab",
+                "ba*a."
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "c",
+                "caab*"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "",
+                "bbab.*b"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "baabaca",
+                "cc*"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aba",
+                "bbbb.a"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "ac",
+                "bab*a*"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "ccb",
+                "c*.b*bbb"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "ba",
+                "c*a*.b"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "cccccca",
+                "c*c.ca"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "caacca",
+                "a*.*.*a*ba*"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "cbaabbbc",
+                "c.*a.*"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "a",
+                ".*caa"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "acbc",
+                "b*"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "a",
+                ".....b"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "cabbbaa",
+                "a*b.a*"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "",
+                "c*a.*"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "ababa",
+                "a.a"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "ba",
+                "a*c*a*."
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "bab",
+                ".c"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "",
+                "c.*b*"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "abaccac",
+                ".a*.bb*"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "bbc",
+                ".*cbc*."
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "ac",
+                "ca*.*"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "abcac",
+                "bc.."
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "",
+                "cbab"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "bcc",
+                ""
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "bacba",
+                ".*c.aaa"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "",
+                ""
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "aacba",
+                "a.*.bbb"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "caccacc",
+                ".*bc."
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "ababbb",
+                ".a.ba."
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "caab",
+                "bc."
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "accbb",
+                ""
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "bcbcabaa",
+                ".*b*"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "",
+                ".c"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "baa",
+                "cc"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "acc",
+                "a*b*a.*ba"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "bc",
+                ".*b"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "bcabcacb",
+                "c"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "caac",
+                "c"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "bbaa",
+                "b*"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "",
+                ""
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "abca",
+                ""
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aabaccca",
+                "bcbab*"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "b",
+                "b.c"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "bcbb",
+                "caa*"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "bbacaccc",
+                ".*bab.a"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "b",
+                "c*."
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "",
+                "b.bab*"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "bb",
+                ""
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "bcccbccc",
+                ""
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "cbccccba",
+                ""
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "",
+                ".bab.c"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "ab",
+                ".ba*."
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "a",
+                ".c*"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "cb",
+                "ba*.*"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "cbabacb",
+                "b*cbb"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "ab",
+                "bc.ac*"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aabbc",
+                "c.bcca"
+            ],
+            "expected": false
+        }
+    ]
+}
