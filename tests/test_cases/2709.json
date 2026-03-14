@@ -1,0 +1,1008 @@
+{
+    "problem_id": "2709",
+    "title": "Greatest Common Divisor Traversal",
+    "function_name": "canTraverseAllPairs",
+    "comparison": "exact",
+    "test_cases": [
+        {
+            "inputs": [
+                [
+                    2,
+                    3,
+                    6
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    3,
+                    9,
+                    5
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    20,
+                    12,
+                    23
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    23,
+                    3
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    6,
+                    12,
+                    23,
+                    7,
+                    2
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    18,
+                    4,
+                    2,
+                    25,
+                    21,
+                    12,
+                    22,
+                    2
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    15,
+                    2,
+                    10,
+                    28,
+                    10,
+                    18,
+                    3,
+                    3,
+                    9,
+                    9
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    6,
+                    26,
+                    24,
+                    17,
+                    21,
+                    20
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    12,
+                    14,
+                    27,
+                    8,
+                    8,
+                    12,
+                    17,
+                    3
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    4,
+                    18,
+                    4,
+                    13,
+                    16,
+                    20,
+                    9,
+                    13,
+                    6
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    22,
+                    14,
+                    13,
+                    6,
+                    13
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    27,
+                    17,
+                    27,
+                    25,
+                    9,
+                    25,
+                    12,
+                    11
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    17,
+                    15,
+                    21,
+                    2,
+                    24,
+                    30
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    6,
+                    5,
+                    9,
+                    2,
+                    7,
+                    15,
+                    15
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    16,
+                    19,
+                    11,
+                    29,
+                    30,
+                    8,
+                    10,
+                    13
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    1,
+                    24,
+                    1,
+                    23,
+                    3,
+                    12
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    2,
+                    6,
+                    11,
+                    14,
+                    17,
+                    30,
+                    14,
+                    14,
+                    20
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    7,
+                    20
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    3
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    2,
+                    24,
+                    19
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    11
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    30,
+                    12,
+                    3,
+                    16,
+                    20,
+                    22,
+                    25,
+                    26,
+                    5,
+                    24
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    11,
+                    19,
+                    5,
+                    14,
+                    20
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    2,
+                    16,
+                    7,
+                    16,
+                    3,
+                    6,
+                    20,
+                    25
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    18,
+                    15,
+                    3,
+                    27,
+                    29,
+                    3
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    12,
+                    12,
+                    16,
+                    22,
+                    26
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    18,
+                    14,
+                    26,
+                    11,
+                    22,
+                    4
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    11,
+                    8,
+                    1,
+                    15,
+                    20,
+                    3
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    30,
+                    20,
+                    1,
+                    7,
+                    21
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    6,
+                    27,
+                    28,
+                    30,
+                    2,
+                    28,
+                    12,
+                    4,
+                    4
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    24,
+                    8,
+                    5,
+                    29,
+                    8,
+                    12,
+                    20
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    10,
+                    3,
+                    12,
+                    21,
+                    15,
+                    15
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    7
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    9,
+                    25,
+                    27,
+                    26,
+                    7,
+                    14,
+                    24,
+                    8,
+                    13
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    3
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    12,
+                    11,
+                    8,
+                    24,
+                    19,
+                    4,
+                    9
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    19,
+                    22,
+                    28,
+                    29
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    16,
+                    20
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    30,
+                    21,
+                    27,
+                    25,
+                    26,
+                    24,
+                    30,
+                    25,
+                    2
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    3,
+                    6,
+                    5,
+                    21,
+                    8,
+                    12
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    9,
+                    19,
+                    26,
+                    6,
+                    4,
+                    5
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    7
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    12,
+                    8,
+                    30,
+                    13,
+                    23,
+                    13,
+                    8
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    28
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    16,
+                    11,
+                    1,
+                    9,
+                    18
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    7,
+                    2,
+                    17,
+                    18,
+                    28,
+                    9,
+                    4,
+                    24,
+                    23
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    1,
+                    25,
+                    30,
+                    13,
+                    16,
+                    21,
+                    17
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    21,
+                    29,
+                    4,
+                    19,
+                    12,
+                    19,
+                    21,
+                    8,
+                    19
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    27,
+                    19,
+                    5,
+                    16,
+                    25,
+                    17,
+                    16,
+                    4,
+                    11
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    28,
+                    27,
+                    8,
+                    12,
+                    18,
+                    4,
+                    30,
+                    3,
+                    8
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    28,
+                    22,
+                    20,
+                    8,
+                    15,
+                    13,
+                    1
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    26,
+                    28,
+                    21,
+                    26,
+                    17
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    12,
+                    20,
+                    11,
+                    9,
+                    2,
+                    26,
+                    16,
+                    6,
+                    22,
+                    6
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    5,
+                    16,
+                    14,
+                    5
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    26,
+                    13,
+                    16,
+                    4
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    8,
+                    7,
+                    24,
+                    10,
+                    25
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    17,
+                    12,
+                    5,
+                    11,
+                    7,
+                    19,
+                    28,
+                    15,
+                    2
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    9,
+                    10,
+                    27,
+                    12,
+                    8,
+                    24,
+                    29,
+                    7,
+                    19,
+                    19
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    6,
+                    23,
+                    18,
+                    22,
+                    16,
+                    5,
+                    15,
+                    19,
+                    29,
+                    10
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    15,
+                    12,
+                    25,
+                    29,
+                    11,
+                    5,
+                    22,
+                    3,
+                    19
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    23,
+                    9
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    5,
+                    29,
+                    14,
+                    27,
+                    9
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    25,
+                    17,
+                    4,
+                    22
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    12
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    9,
+                    11,
+                    16
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    28,
+                    29,
+                    12,
+                    12
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    8,
+                    18,
+                    10,
+                    13,
+                    12,
+                    1,
+                    27,
+                    24
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    1,
+                    5
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    13,
+                    3,
+                    17
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    30,
+                    13,
+                    30,
+                    24
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    23,
+                    22,
+                    2
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    22,
+                    21,
+                    5,
+                    21
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    13,
+                    14,
+                    14,
+                    9,
+                    26,
+                    16
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    19,
+                    22,
+                    27,
+                    10,
+                    2,
+                    2,
+                    29
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    18,
+                    19,
+                    5,
+                    30,
+                    24,
+                    15
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    21,
+                    29
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    24,
+                    29,
+                    12,
+                    3,
+                    25,
+                    5,
+                    27,
+                    28
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    22,
+                    16,
+                    25,
+                    5,
+                    12
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    10
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    28
+                ]
+            ],
+            "expected": true
+        }
+    ]
+}

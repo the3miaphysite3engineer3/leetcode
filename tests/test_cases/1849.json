@@ -1,0 +1,488 @@
+{
+    "problem_id": "1849",
+    "title": "Splitting a String Into Descending Consecutive Values",
+    "function_name": "splitString",
+    "comparison": "exact",
+    "test_cases": [
+        {
+            "inputs": [
+                "1234"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "050043"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "9080701"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "16061"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "80"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "0267"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "32"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "45019362"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "523932"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "21221"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "15"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "4962402"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "5"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "2666272"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "8180671820"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "63987144"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "781881254"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "2"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "89039"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "3180678"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "249"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "328582"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "3426"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "88320031"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "1"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "17360329"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "3402241442"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "44452"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "87"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "0600"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "64499898"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "0"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "93"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "5111797808"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "0"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "634701"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "57719138"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "79"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "8203"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "5781"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "71268"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "76947"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "7772287"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "313635235"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "7981"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "3763097"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "33108210"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "720944"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "6482224933"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "5350"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "50"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "0"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "27255154"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "294727319"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "12"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "087107"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "8747908"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "41577"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "98"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "97800"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "3"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "3194525"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "774090776"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "6853465518"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "621"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "31266200"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "1225463170"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "18"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "4"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "5833"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "5"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "5421543352"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "100296791"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "2613"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "547964"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "9"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "383922"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "7173734746"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "6679891302"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "378841128"
+            ],
+            "expected": false
+        }
+    ]
+}
