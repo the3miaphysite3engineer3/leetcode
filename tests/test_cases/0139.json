@@ -1,0 +1,972 @@
+{
+    "problem_id": "0139",
+    "title": "Word Break",
+    "function_name": "wordBreak",
+    "comparison": "exact",
+    "test_cases": [
+        {
+            "inputs": [
+                "leetcode",
+                [
+                    "leet",
+                    "code"
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "applepenapple",
+                [
+                    "apple",
+                    "pen"
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "catsandog",
+                [
+                    "cats",
+                    "dog",
+                    "sand",
+                    "and",
+                    "cat"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "a",
+                [
+                    "a"
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "ab",
+                [
+                    "a",
+                    "b"
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "ab",
+                [
+                    "a"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "",
+                []
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "aaaaaaa",
+                [
+                    "aaa",
+                    "aaaa"
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "goalspecial",
+                [
+                    "go",
+                    "goal",
+                    "goals",
+                    "special"
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "weyrinto",
+                [
+                    "we",
+                    "to",
+                    "if",
+                    "or",
+                    "in"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "f",
+                [
+                    "and",
+                    "is"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "depckhckmmn",
+                [
+                    "it",
+                    "be",
+                    "a",
+                    "the",
+                    "no",
+                    "he"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "and",
+                [
+                    "the",
+                    "a",
+                    "and",
+                    "an"
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "gonoge",
+                [
+                    "no",
+                    "and",
+                    "me",
+                    "go"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "hdmaokejhp",
+                [
+                    "is",
+                    "do",
+                    "be",
+                    "go",
+                    "to",
+                    "cats",
+                    "at"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "mynowebrwe",
+                [
+                    "cats",
+                    "my",
+                    "an",
+                    "or",
+                    "no",
+                    "to",
+                    "dog",
+                    "we"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "f",
+                [
+                    "cats",
+                    "we",
+                    "so",
+                    "rat",
+                    "no",
+                    "the"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "catififit",
+                [
+                    "no",
+                    "it",
+                    "an",
+                    "to",
+                    "bat",
+                    "cat",
+                    "if",
+                    "we"
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "ratif",
+                [
+                    "an",
+                    "so",
+                    "rat",
+                    "or",
+                    "if"
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "ofeop",
+                [
+                    "or"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "catsratnonorat",
+                [
+                    "cats",
+                    "rat",
+                    "he",
+                    "no",
+                    "up"
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "go",
+                [
+                    "go",
+                    "on"
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "is",
+                [
+                    "me",
+                    "is",
+                    "cats",
+                    "up",
+                    "no",
+                    "it"
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "up",
+                [
+                    "so",
+                    "my",
+                    "bat",
+                    "up",
+                    "no"
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "in",
+                [
+                    "a",
+                    "up",
+                    "we",
+                    "in",
+                    "go",
+                    "cat",
+                    "and"
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "fm",
+                [
+                    "cat",
+                    "me",
+                    "on",
+                    "a"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "isandupanrdo",
+                [
+                    "up",
+                    "so",
+                    "is",
+                    "an",
+                    "me",
+                    "cats",
+                    "and",
+                    "do"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "ff",
+                [
+                    "be",
+                    "rat"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "ififif",
+                [
+                    "if"
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "c",
+                [
+                    "sand",
+                    "if",
+                    "a"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "atanatatzn",
+                [
+                    "at",
+                    "an"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "meinme",
+                [
+                    "to",
+                    "if",
+                    "in",
+                    "cats",
+                    "me"
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "end",
+                [
+                    "so",
+                    "and",
+                    "to",
+                    "we"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "ciimfmo",
+                [
+                    "me",
+                    "go",
+                    "a",
+                    "cats"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aa",
+                [
+                    "a",
+                    "to"
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "fneknmahc",
+                [
+                    "up",
+                    "so",
+                    "rat",
+                    "go",
+                    "me"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "to",
+                [
+                    "and",
+                    "if",
+                    "to",
+                    "is",
+                    "sand"
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "orthecatscajs",
+                [
+                    "cats",
+                    "or",
+                    "he",
+                    "the",
+                    "a"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "f",
+                [
+                    "and",
+                    "at",
+                    "go",
+                    "so",
+                    "me",
+                    "an",
+                    "if",
+                    "a"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "mpeiaeeem",
+                [
+                    "be",
+                    "it",
+                    "bat",
+                    "go",
+                    "no",
+                    "to"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "nofolojinhj",
+                [
+                    "dog",
+                    "no",
+                    "up",
+                    "go",
+                    "so"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "cc",
+                [
+                    "an",
+                    "is"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "dogsanddog",
+                [
+                    "sand",
+                    "bat",
+                    "me",
+                    "dog"
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "dmaganlhb",
+                [
+                    "on",
+                    "at",
+                    "to"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "lbnpmfldk",
+                [
+                    "bat",
+                    "to",
+                    "be",
+                    "at",
+                    "the",
+                    "or",
+                    "sand",
+                    "go"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "jpjig",
+                [
+                    "we",
+                    "if",
+                    "or",
+                    "be"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "gjbopbl",
+                [
+                    "no"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "mymymy",
+                [
+                    "my"
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "ititcatcat",
+                [
+                    "it",
+                    "go",
+                    "cat"
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "catcatcats",
+                [
+                    "and",
+                    "on",
+                    "cat",
+                    "cats",
+                    "to",
+                    "a",
+                    "the"
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "endtoinand",
+                [
+                    "and",
+                    "in",
+                    "to",
+                    "we",
+                    "bat"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "idnppekmmed",
+                [
+                    "is",
+                    "no",
+                    "do",
+                    "dog",
+                    "bat",
+                    "to",
+                    "rat"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "hehehe",
+                [
+                    "he",
+                    "cat"
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "iscatmyof",
+                [
+                    "is",
+                    "my",
+                    "no",
+                    "cat",
+                    "or",
+                    "on"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "orbe",
+                [
+                    "a",
+                    "be",
+                    "and",
+                    "or"
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "smso",
+                [
+                    "so",
+                    "no"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "nag",
+                [
+                    "a"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "dogorordogdog",
+                [
+                    "or",
+                    "dog"
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "nhkbfbabkgjp",
+                [
+                    "up",
+                    "dog",
+                    "an",
+                    "and",
+                    "a",
+                    "go",
+                    "no"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "kjddae",
+                [
+                    "my",
+                    "and",
+                    "is",
+                    "bat",
+                    "a"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "nomche",
+                [
+                    "go",
+                    "no",
+                    "he",
+                    "or",
+                    "we",
+                    "me"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "bg",
+                [
+                    "cats",
+                    "up"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "kjpgebegni",
+                [
+                    "so",
+                    "in",
+                    "and",
+                    "sand"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "andandgoin",
+                [
+                    "go",
+                    "in",
+                    "up",
+                    "so",
+                    "and",
+                    "is"
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "medog",
+                [
+                    "an",
+                    "dog",
+                    "me"
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "mmigfaf",
+                [
+                    "bat",
+                    "in"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "catcatsocatcat",
+                [
+                    "me",
+                    "so",
+                    "cat",
+                    "he"
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "ie",
+                [
+                    "the",
+                    "dog",
+                    "if"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "dall",
+                [
+                    "or",
+                    "he",
+                    "dog",
+                    "up",
+                    "the"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "ififsandcatssand",
+                [
+                    "sand",
+                    "so",
+                    "if",
+                    "a",
+                    "no",
+                    "cats"
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "nocagbatacat",
+                [
+                    "no",
+                    "a",
+                    "bat",
+                    "cat"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "cagsnoinno",
+                [
+                    "cats",
+                    "in",
+                    "the",
+                    "no",
+                    "be",
+                    "is",
+                    "go"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "gcecnhomdea",
+                [
+                    "no",
+                    "bat",
+                    "up",
+                    "an",
+                    "cat",
+                    "be",
+                    "we",
+                    "to"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "it",
+                [
+                    "it",
+                    "cat"
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "d",
+                [
+                    "up",
+                    "my",
+                    "cat"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "fjkpehbi",
+                [
+                    "or",
+                    "so",
+                    "sand",
+                    "rat",
+                    "cats",
+                    "on"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "wecatwecatcat",
+                [
+                    "cat",
+                    "we"
+                ]
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "thethm",
+                [
+                    "the"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "djlc",
+                [
+                    "on",
+                    "bat"
+                ]
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "sandmygocavsdog",
+                [
+                    "and",
+                    "go",
+                    "sand",
+                    "dog",
+                    "my",
+                    "cats"
+                ]
+            ],
+            "expected": false
+        }
+    ]
+}
