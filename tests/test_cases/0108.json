@@ -3,7 +3,7 @@
     "title": "Convert Sorted Array to Binary Search Tree",
     "function_name": "sortedArrayToBST",
     "comparison": "exact",
-    "mode": "default",
+    "mode": "tree",
     "test_cases": [
         {
             "inputs": [

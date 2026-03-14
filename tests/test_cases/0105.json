@@ -3,7 +3,7 @@
     "title": "Construct Binary Tree from Preorder and Inorder Traversal",
     "function_name": "buildTree",
     "comparison": "exact",
-    "mode": "default",
+    "mode": "tree",
     "test_cases": [
         {
             "inputs": [

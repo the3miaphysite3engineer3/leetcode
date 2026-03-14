@@ -131,6 +131,13 @@ def _build_env(code):
         "cache": functools.cache,
         "reduce": functools.reduce,
         "random": __import__("random"),
+        "math": __import__("math"),
+        "ceil": math.ceil,
+        "floor": math.floor,
+        "sqrt": math.sqrt,
+        "log": math.log,
+        "log2": math.log2,
+        "gcd": math.gcd,
         "ListNode": ListNode,
         "TreeNode": TreeNode,
     }
@@ -192,18 +199,33 @@ def main():
         if isinstance(result, ListNode):
             print(json.dumps(linked_to_list(result)))
         elif result is None:
-            # In-place linked list mutation: return first converted arg
-            first_ll = converted[0] if converted else None
-            if isinstance(first_ll, ListNode):
-                print(json.dumps(linked_to_list(first_ll)))
-            else:
-                print(json.dumps([]))
+            print(json.dumps([]))
         elif isinstance(result, bool):
             print(json.dumps(result))
         elif isinstance(result, (int, float)):
             print(json.dumps(result))
         else:
             print(json.dumps(result))
+
+    elif mode == "linked_list_inplace":
+        # In-place linked list mutation (e.g., reorderList)
+        converted = []
+        for arg in inputs:
+            if isinstance(arg, list):
+                if not arg:
+                    converted.append(list_to_linked(arg))
+                elif isinstance(arg[0], (int, float)):
+                    converted.append(list_to_linked(arg))
+                else:
+                    converted.append(arg)
+            else:
+                converted.append(arg)
+        method(*converted)
+        first_ll = converted[0] if converted else None
+        if isinstance(first_ll, ListNode):
+            print(json.dumps(linked_to_list(first_ll)))
+        else:
+            print(json.dumps([]))
 
     elif mode == "tree":
         converted = []

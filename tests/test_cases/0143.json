@@ -3,7 +3,7 @@
     "title": "Reorder List",
     "function_name": "reorderList",
     "comparison": "exact",
-    "mode": "linked_list",
+    "mode": "linked_list_inplace",
     "test_cases": [
         {
             "inputs": [
