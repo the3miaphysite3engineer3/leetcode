@@ -1,0 +1,488 @@
+{
+  "problem_id": "0557",
+  "title": "Reverse Words in a String III",
+  "function_name": "reverseWords",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        "Let's take LeetCode contest"
+      ],
+      "expected": "s'teL ekat edoCteeL tsetnoc"
+    },
+    {
+      "inputs": [
+        "Mr Ding"
+      ],
+      "expected": "rM gniD"
+    },
+    {
+      "inputs": [
+        "hello"
+      ],
+      "expected": "olleh"
+    },
+    {
+      "inputs": [
+        "a b c"
+      ],
+      "expected": "a b c"
+    },
+    {
+      "inputs": [
+        "y uhowwoooi zdem swynia ax xxa goncebsfsk"
+      ],
+      "expected": "y iooowwohu medz ainyws xa axx ksfsbecnog"
+    },
+    {
+      "inputs": [
+        "oyjepzjdp lkdeigz rz"
+      ],
+      "expected": "pdjzpejyo zgiedkl zr"
+    },
+    {
+      "inputs": [
+        "cvrpx kcf mlvsvmmm hqdktcc fyvkjluz nxzd clkbgixmp d"
+      ],
+      "expected": "xprvc fck mmmvsvlm cctkdqh zuljkvyf dzxn pmxigbklc d"
+    },
+    {
+      "inputs": [
+        "eocb hwevsvkyu tq wt aotnfyku pqniwi pbpjku"
+      ],
+      "expected": "bcoe uykvsvewh qt tw ukyfntoa iwinqp ukjpbp"
+    },
+    {
+      "inputs": [
+        "lgy peguagsc"
+      ],
+      "expected": "ygl csgaugep"
+    },
+    {
+      "inputs": [
+        "u utfnm ovwgkvv ozixwjvoas vrpqbdsl siwbzmnnpt"
+      ],
+      "expected": "u mnftu vvkgwvo saovjwxizo lsdbqprv tpnnmzbwis"
+    },
+    {
+      "inputs": [
+        "sougcon cukly glcklbqn uxkxtr z beorpptcg"
+      ],
+      "expected": "nocguos ylkuc nqblkclg rtxkxu z gctpproeb"
+    },
+    {
+      "inputs": [
+        "wboqssu mttxdcl vvojmbg wueusaht vxw"
+      ],
+      "expected": "ussqobw lcdxttm gbmjovv thasueuw wxv"
+    },
+    {
+      "inputs": [
+        "opdkapkh z rkkkr eqnnacuydj abuzdk qvgmmudre"
+      ],
+      "expected": "hkpakdpo z rkkkr jdyucannqe kdzuba erdummgvq"
+    },
+    {
+      "inputs": [
+        "r"
+      ],
+      "expected": "r"
+    },
+    {
+      "inputs": [
+        "ffrwv qpxwi rdrpzsky wkwmnabd ovtjb vfco dqgvgqoau"
+      ],
+      "expected": "vwrff iwxpq ykszprdr dbanmwkw bjtvo ocfv uaoqgvgqd"
+    },
+    {
+      "inputs": [
+        "fazexzbk gllmjjwwb kcjfg vuhxjaphx jhoupsvgq affef gjarlplzya vv"
+      ],
+      "expected": "kbzxezaf bwwjjmllg gfjck xhpajxhuv qgvspuohj feffa ayzlplrajg vv"
+    },
+    {
+      "inputs": [
+        "btdyd olvucskumc q w h"
+      ],
+      "expected": "dydtb cmukscuvlo q w h"
+    },
+    {
+      "inputs": [
+        "dnwv jokzxx vtjplgunhq hh jwn"
+      ],
+      "expected": "vwnd xxzkoj qhnuglpjtv hh nwj"
+    },
+    {
+      "inputs": [
+        "twndxizn klzlhp tgv if x"
+      ],
+      "expected": "nzixdnwt phlzlk vgt fi x"
+    },
+    {
+      "inputs": [
+        "wx"
+      ],
+      "expected": "xw"
+    },
+    {
+      "inputs": [
+        "y bgnubtxhro jeueozfls ekghln tyyywbyl x ijvafkcyyg"
+      ],
+      "expected": "y orhxtbungb slfzoeuej nlhgke lybwyyyt x gyyckfavji"
+    },
+    {
+      "inputs": [
+        "a qntedx"
+      ],
+      "expected": "a xdetnq"
+    },
+    {
+      "inputs": [
+        "x hzqkh f dfblhzox hrpwtay b"
+      ],
+      "expected": "x hkqzh f xozhlbfd yatwprh b"
+    },
+    {
+      "inputs": [
+        "nfy vo wepj gmsohixo fmlzxpmql jzusxajz bmd jviavtvs"
+      ],
+      "expected": "yfn ov jpew oxihosmg lqmpxzlmf zjaxsuzj dmb svtvaivj"
+    },
+    {
+      "inputs": [
+        "ayqimrwvy"
+      ],
+      "expected": "yvwrmiqya"
+    },
+    {
+      "inputs": [
+        "wcr ajdzkx tcvqfkwjn skbxy vf edypwx lsqurq dwewsbufsu"
+      ],
+      "expected": "rcw xkzdja njwkfqvct yxbks fv xwpyde qruqsl usfubswewd"
+    },
+    {
+      "inputs": [
+        "owfgubqd pezzoz ldvpxk vmxov hitlwgkqzq ahffynjyvi ghohg"
+      ],
+      "expected": "dqbugfwo zozzep kxpvdl voxmv qzqkgwltih ivyjnyffha ghohg"
+    },
+    {
+      "inputs": [
+        "jcdbyrfh coirxzbr pabk yybcvly"
+      ],
+      "expected": "hfrybdcj rbzxrioc kbap ylvcbyy"
+    },
+    {
+      "inputs": [
+        "paxlh tid"
+      ],
+      "expected": "hlxap dit"
+    },
+    {
+      "inputs": [
+        "ihddaual jibeol vvtixn b hdzkpczjyg ylp mbxsjzgdvb ua"
+      ],
+      "expected": "lauaddhi loebij nxitvv b gyjzcpkzdh ply bvdgzjsxbm au"
+    },
+    {
+      "inputs": [
+        "amr zfxfh"
+      ],
+      "expected": "rma hfxfz"
+    },
+    {
+      "inputs": [
+        "wipzjiqo qbxllepi oipxcjf jfyfwehn q jmc yzccr"
+      ],
+      "expected": "oqijzpiw ipellxbq fjcxpio nhewfyfj q cmj rcczy"
+    },
+    {
+      "inputs": [
+        "twpdi"
+      ],
+      "expected": "idpwt"
+    },
+    {
+      "inputs": [
+        "gtjfnjm wtcqaty gvmee hsp khacy ylbenoq utff jvynugtob"
+      ],
+      "expected": "mjnfjtg ytaqctw eemvg psh ycahk qonebly fftu botgunyvj"
+    },
+    {
+      "inputs": [
+        "kvfkqkkltu l fio yrrrjh b poge fexec"
+      ],
+      "expected": "utlkkqkfvk l oif hjrrry b egop cexef"
+    },
+    {
+      "inputs": [
+        "jhotbfclml n fze iojw ekv hwttrowv"
+      ],
+      "expected": "lmlcfbtohj n ezf wjoi vke vworttwh"
+    },
+    {
+      "inputs": [
+        "ztwguaeb kuxnxvuq ahitlczdg dsdvrocco"
+      ],
+      "expected": "beaugwtz quvxnxuk gdzcltiha occorvdsd"
+    },
+    {
+      "inputs": [
+        "rhai d puxa u on x iuxz"
+      ],
+      "expected": "iahr d axup u no x zxui"
+    },
+    {
+      "inputs": [
+        "hnn ymvdgrnrlh thg uhjs wmpjpu j"
+      ],
+      "expected": "nnh hlrnrgdvmy ght sjhu upjpmw j"
+    },
+    {
+      "inputs": [
+        "khix debxkubpz ws"
+      ],
+      "expected": "xihk zpbukxbed sw"
+    },
+    {
+      "inputs": [
+        "o"
+      ],
+      "expected": "o"
+    },
+    {
+      "inputs": [
+        "inprjbe vgxjrtkd"
+      ],
+      "expected": "ebjrpni dktrjxgv"
+    },
+    {
+      "inputs": [
+        "zqpxlooyj cnfkgr tfezt mspherllze blnicwgf biozgtfcwt zt"
+      ],
+      "expected": "jyoolxpqz rgkfnc tzeft ezllrehpsm fgwcinlb twcftgzoib tz"
+    },
+    {
+      "inputs": [
+        "lzp j buwfhkwua"
+      ],
+      "expected": "pzl j auwkhfwub"
+    },
+    {
+      "inputs": [
+        "id hnsjzk ozcfk"
+      ],
+      "expected": "di kzjsnh kfczo"
+    },
+    {
+      "inputs": [
+        "ghwnrbbfdl olzlpkd"
+      ],
+      "expected": "ldfbbrnwhg dkplzlo"
+    },
+    {
+      "inputs": [
+        "zcflfs hmo twcrqocj gq jerriu u efmyy"
+      ],
+      "expected": "sflfcz omh jcoqrcwt qg uirrej u yymfe"
+    },
+    {
+      "inputs": [
+        "aeknkjv sutjiskan"
+      ],
+      "expected": "vjknkea naksijtus"
+    },
+    {
+      "inputs": [
+        "vhw bojlw kji djrsajgr vkojdhjiz xmb efierrzy mkybujo"
+      ],
+      "expected": "whv wljob ijk rgjasrjd zijhdjokv bmx yzrreife ojubykm"
+    },
+    {
+      "inputs": [
+        "pzjc nzzyqzio kyot kh ksz injtoubw f"
+      ],
+      "expected": "cjzp oizqyzzn toyk hk zsk wbuotjni f"
+    },
+    {
+      "inputs": [
+        "qswaoos"
+      ],
+      "expected": "sooawsq"
+    },
+    {
+      "inputs": [
+        "a"
+      ],
+      "expected": "a"
+    },
+    {
+      "inputs": [
+        "ss tneld xtxhcy avicnnerl a"
+      ],
+      "expected": "ss dlent ychxtx lrennciva a"
+    },
+    {
+      "inputs": [
+        "nzhieme vmvnbgleu"
+      ],
+      "expected": "emeihzn uelgbnvmv"
+    },
+    {
+      "inputs": [
+        "c v"
+      ],
+      "expected": "c v"
+    },
+    {
+      "inputs": [
+        "og uhzzfeurmp szdfhil u m xwbunkbhgb fcndvp"
+      ],
+      "expected": "go pmruefzzhu lihfdzs u m bghbknubwx pvdncf"
+    },
+    {
+      "inputs": [
+        "xyp opwrexjv ltimqj todt n ekczae ccfqtniy"
+      ],
+      "expected": "pyx vjxerwpo jqmitl tdot n eazcke yintqfcc"
+    },
+    {
+      "inputs": [
+        "bejjo auxpjlj fw tkanybdvvp h tnzhes qkjkio gohjrx"
+      ],
+      "expected": "ojjeb jljpxua wf pvvdbynakt h sehznt oikjkq xrjhog"
+    },
+    {
+      "inputs": [
+        "oo bdqjnqhug"
+      ],
+      "expected": "oo guhqnjqdb"
+    },
+    {
+      "inputs": [
+        "es qf afkwmu oluq eydnw rnzdhkmppb mcsfavq du"
+      ],
+      "expected": "se fq umwkfa qulo wndye bppmkhdznr qvafscm ud"
+    },
+    {
+      "inputs": [
+        "ylx ggpkam yorm lzgfbxlvhs aycgt"
+      ],
+      "expected": "xly makpgg mroy shvlxbfgzl tgcya"
+    },
+    {
+      "inputs": [
+        "rzh hrbuuicetz clahhcee banosrfmq dzcsbfl vrxpg kfynrcg zlnlcycl"
+      ],
+      "expected": "hzr zteciuubrh eechhalc qmfrsonab lfbsczd gpxrv gcrnyfk lcyclnlz"
+    },
+    {
+      "inputs": [
+        "imncltwb ifwilqzqxr eildl rga nwnoeao ldj"
+      ],
+      "expected": "bwtlcnmi rxqzqliwfi ldlie agr oaeonwn jdl"
+    },
+    {
+      "inputs": [
+        "rh ykvy xhgnberu h"
+      ],
+      "expected": "hr yvky urebnghx h"
+    },
+    {
+      "inputs": [
+        "zljxge rslxi oxzuvtcy sqh s fbpktu"
+      ],
+      "expected": "egxjlz ixlsr yctvuzxo hqs s utkpbf"
+    },
+    {
+      "inputs": [
+        "bxxuetv qsfgncp ddgxvlrnb mz ta"
+      ],
+      "expected": "vteuxxb pcngfsq bnrlvxgdd zm at"
+    },
+    {
+      "inputs": [
+        "l npqvpwgu"
+      ],
+      "expected": "l ugwpvqpn"
+    },
+    {
+      "inputs": [
+        "uyewssbsrj ywu yniuxvyuxd xmhahxb q k"
+      ],
+      "expected": "jrsbssweyu uwy dxuyvxuiny bxhahmx q k"
+    },
+    {
+      "inputs": [
+        "vimvaujndx wrkfdn"
+      ],
+      "expected": "xdnjuavmiv ndfkrw"
+    },
+    {
+      "inputs": [
+        "a dlsxj pfo wregj dpgppl vcs losrdnssai"
+      ],
+      "expected": "a jxsld ofp jgerw lppgpd scv iassndrsol"
+    },
+    {
+      "inputs": [
+        "osaznexzjh wrep cv hwha loctobs"
+      ],
+      "expected": "hjzxenzaso perw vc ahwh sbotcol"
+    },
+    {
+      "inputs": [
+        "eqvwzojmg vlixezaau tozkrrdbu tpvyysaewn pxrpixdedf xc pyhnplumnn vds"
+      ],
+      "expected": "gmjozwvqe uaazexilv ubdrrkzot nweasyyvpt fdedxiprxp cx nnmulpnhyp sdv"
+    },
+    {
+      "inputs": [
+        "eeml yzmraa it bzvlhcgakd ptw s"
+      ],
+      "expected": "lmee aarmzy ti dkagchlvzb wtp s"
+    },
+    {
+      "inputs": [
+        "xgwgwczdd xqjxwyysy uvovzczzbw bwgpnnt dcxjzaoqfr yfvnca urxfvkio pgmlybryto"
+      ],
+      "expected": "ddzcwgwgx ysyywxjqx wbzzczvovu tnnpgwb rfqoazjxcd acnvfy oikvfxru otyrbylmgp"
+    },
+    {
+      "inputs": [
+        "delqvnue d"
+      ],
+      "expected": "eunvqled d"
+    },
+    {
+      "inputs": [
+        "nqa nvsdxwett p ptfiibb jm vphindinx zuvqjtpic"
+      ],
+      "expected": "aqn ttewxdsvn p bbiiftp mj xnidnihpv ciptjqvuz"
+    },
+    {
+      "inputs": [
+        "gxwurwwssl kpqngn glkgr tmfhnrz xyxt"
+      ],
+      "expected": "lsswwruwxg ngnqpk rgklg zrnhfmt txyx"
+    },
+    {
+      "inputs": [
+        "w"
+      ],
+      "expected": "w"
+    },
+    {
+      "inputs": [
+        "yotbzijfa dbn ponc nzabpnaygv qh xgqboiylmd bulknk"
+      ],
+      "expected": "afjizbtoy nbd cnop vgyanpbazn hq dmlyiobqgx knklub"
+    },
+    {
+      "inputs": [
+        "bihjpcwm epk jlptfbp"
+      ],
+      "expected": "mwcpjhib kpe pbftplj"
+    }
+  ]
+}

@@ -1,0 +1,488 @@
+{
+  "problem_id": "0670",
+  "title": "Maximum Swap",
+  "function_name": "maximumSwap",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        2736
+      ],
+      "expected": 7236
+    },
+    {
+      "inputs": [
+        9973
+      ],
+      "expected": 9973
+    },
+    {
+      "inputs": [
+        1
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        98368
+      ],
+      "expected": 98863
+    },
+    {
+      "inputs": [
+        1993
+      ],
+      "expected": 9913
+    },
+    {
+      "inputs": [
+        10
+      ],
+      "expected": 10
+    },
+    {
+      "inputs": [
+        12
+      ],
+      "expected": 21
+    },
+    {
+      "inputs": [
+        21
+      ],
+      "expected": 21
+    },
+    {
+      "inputs": [
+        111
+      ],
+      "expected": 111
+    },
+    {
+      "inputs": [
+        69373888
+      ],
+      "expected": 96373888
+    },
+    {
+      "inputs": [
+        43018323
+      ],
+      "expected": 83014323
+    },
+    {
+      "inputs": [
+        62141064
+      ],
+      "expected": 66141024
+    },
+    {
+      "inputs": [
+        59641210
+      ],
+      "expected": 95641210
+    },
+    {
+      "inputs": [
+        23597421
+      ],
+      "expected": 93527421
+    },
+    {
+      "inputs": [
+        50058098
+      ],
+      "expected": 90058058
+    },
+    {
+      "inputs": [
+        90202988
+      ],
+      "expected": 99202088
+    },
+    {
+      "inputs": [
+        96784355
+      ],
+      "expected": 98764355
+    },
+    {
+      "inputs": [
+        22997482
+      ],
+      "expected": 92927482
+    },
+    {
+      "inputs": [
+        21166977
+      ],
+      "expected": 91166277
+    },
+    {
+      "inputs": [
+        8231595
+      ],
+      "expected": 9231585
+    },
+    {
+      "inputs": [
+        72810332
+      ],
+      "expected": 82710332
+    },
+    {
+      "inputs": [
+        65152145
+      ],
+      "expected": 65552141
+    },
+    {
+      "inputs": [
+        28536235
+      ],
+      "expected": 82536235
+    },
+    {
+      "inputs": [
+        40547263
+      ],
+      "expected": 70544263
+    },
+    {
+      "inputs": [
+        95619643
+      ],
+      "expected": 99615643
+    },
+    {
+      "inputs": [
+        11899074
+      ],
+      "expected": 91891074
+    },
+    {
+      "inputs": [
+        25588123
+      ],
+      "expected": 85582123
+    },
+    {
+      "inputs": [
+        77554450
+      ],
+      "expected": 77555440
+    },
+    {
+      "inputs": [
+        18917616
+      ],
+      "expected": 98117616
+    },
+    {
+      "inputs": [
+        23977548
+      ],
+      "expected": 93277548
+    },
+    {
+      "inputs": [
+        64722309
+      ],
+      "expected": 94722306
+    },
+    {
+      "inputs": [
+        28732418
+      ],
+      "expected": 88732412
+    },
+    {
+      "inputs": [
+        65405468
+      ],
+      "expected": 85405466
+    },
+    {
+      "inputs": [
+        70231071
+      ],
+      "expected": 77231001
+    },
+    {
+      "inputs": [
+        72663368
+      ],
+      "expected": 82663367
+    },
+    {
+      "inputs": [
+        15183384
+      ],
+      "expected": 85183314
+    },
+    {
+      "inputs": [
+        64228267
+      ],
+      "expected": 84226267
+    },
+    {
+      "inputs": [
+        83767895
+      ],
+      "expected": 93767885
+    },
+    {
+      "inputs": [
+        4205358
+      ],
+      "expected": 8205354
+    },
+    {
+      "inputs": [
+        90472591
+      ],
+      "expected": 99472501
+    },
+    {
+      "inputs": [
+        68586056
+      ],
+      "expected": 88566056
+    },
+    {
+      "inputs": [
+        77727552
+      ],
+      "expected": 77772552
+    },
+    {
+      "inputs": [
+        71331132
+      ],
+      "expected": 73331112
+    },
+    {
+      "inputs": [
+        24013636
+      ],
+      "expected": 64013632
+    },
+    {
+      "inputs": [
+        14101946
+      ],
+      "expected": 94101146
+    },
+    {
+      "inputs": [
+        75039352
+      ],
+      "expected": 95037352
+    },
+    {
+      "inputs": [
+        78127668
+      ],
+      "expected": 88127667
+    },
+    {
+      "inputs": [
+        81462851
+      ],
+      "expected": 88462151
+    },
+    {
+      "inputs": [
+        68372471
+      ],
+      "expected": 86372471
+    },
+    {
+      "inputs": [
+        60235329
+      ],
+      "expected": 90235326
+    },
+    {
+      "inputs": [
+        6045800
+      ],
+      "expected": 8045600
+    },
+    {
+      "inputs": [
+        25135137
+      ],
+      "expected": 75135132
+    },
+    {
+      "inputs": [
+        63244357
+      ],
+      "expected": 73244356
+    },
+    {
+      "inputs": [
+        81189161
+      ],
+      "expected": 91188161
+    },
+    {
+      "inputs": [
+        82255939
+      ],
+      "expected": 92255938
+    },
+    {
+      "inputs": [
+        30460807
+      ],
+      "expected": 80460307
+    },
+    {
+      "inputs": [
+        67571825
+      ],
+      "expected": 87571625
+    },
+    {
+      "inputs": [
+        34370064
+      ],
+      "expected": 74330064
+    },
+    {
+      "inputs": [
+        8539795
+      ],
+      "expected": 9539785
+    },
+    {
+      "inputs": [
+        37610458
+      ],
+      "expected": 87610453
+    },
+    {
+      "inputs": [
+        72999416
+      ],
+      "expected": 92997416
+    },
+    {
+      "inputs": [
+        36512929
+      ],
+      "expected": 96512923
+    },
+    {
+      "inputs": [
+        10578143
+      ],
+      "expected": 80571143
+    },
+    {
+      "inputs": [
+        79532293
+      ],
+      "expected": 99532273
+    },
+    {
+      "inputs": [
+        72122968
+      ],
+      "expected": 92122768
+    },
+    {
+      "inputs": [
+        39513153
+      ],
+      "expected": 93513153
+    },
+    {
+      "inputs": [
+        69071702
+      ],
+      "expected": 96071702
+    },
+    {
+      "inputs": [
+        41053454
+      ],
+      "expected": 51053444
+    },
+    {
+      "inputs": [
+        84497275
+      ],
+      "expected": 94487275
+    },
+    {
+      "inputs": [
+        73802719
+      ],
+      "expected": 93802717
+    },
+    {
+      "inputs": [
+        82309884
+      ],
+      "expected": 92308884
+    },
+    {
+      "inputs": [
+        14820090
+      ],
+      "expected": 94820010
+    },
+    {
+      "inputs": [
+        89699155
+      ],
+      "expected": 99698155
+    },
+    {
+      "inputs": [
+        16948860
+      ],
+      "expected": 96148860
+    },
+    {
+      "inputs": [
+        9396443
+      ],
+      "expected": 9936443
+    },
+    {
+      "inputs": [
+        45633855
+      ],
+      "expected": 85633455
+    },
+    {
+      "inputs": [
+        30102475
+      ],
+      "expected": 70102435
+    },
+    {
+      "inputs": [
+        63889611
+      ],
+      "expected": 93886611
+    },
+    {
+      "inputs": [
+        74857219
+      ],
+      "expected": 94857217
+    },
+    {
+      "inputs": [
+        55018416
+      ],
+      "expected": 85015416
+    }
+  ]
+}

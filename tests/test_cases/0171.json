@@ -1,0 +1,488 @@
+{
+  "problem_id": "0171",
+  "title": "Excel Sheet Column Number",
+  "function_name": "titleToNumber",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        "A"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "AB"
+      ],
+      "expected": 28
+    },
+    {
+      "inputs": [
+        "ZY"
+      ],
+      "expected": 701
+    },
+    {
+      "inputs": [
+        "AAA"
+      ],
+      "expected": 703
+    },
+    {
+      "inputs": [
+        "B"
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        "Z"
+      ],
+      "expected": 26
+    },
+    {
+      "inputs": [
+        "AZ"
+      ],
+      "expected": 52
+    },
+    {
+      "inputs": [
+        "BA"
+      ],
+      "expected": 53
+    },
+    {
+      "inputs": [
+        "FXSHRXW"
+      ],
+      "expected": 2147483647
+    },
+    {
+      "inputs": [
+        "DHQ"
+      ],
+      "expected": 2929
+    },
+    {
+      "inputs": [
+        "IO"
+      ],
+      "expected": 249
+    },
+    {
+      "inputs": [
+        "JX"
+      ],
+      "expected": 284
+    },
+    {
+      "inputs": [
+        "KLFF"
+      ],
+      "expected": 201610
+    },
+    {
+      "inputs": [
+        "IG"
+      ],
+      "expected": 241
+    },
+    {
+      "inputs": [
+        "MYK"
+      ],
+      "expected": 9449
+    },
+    {
+      "inputs": [
+        "VO"
+      ],
+      "expected": 587
+    },
+    {
+      "inputs": [
+        "WLXSR"
+      ],
+      "expected": 10738096
+    },
+    {
+      "inputs": [
+        "CAJT"
+      ],
+      "expected": 53684
+    },
+    {
+      "inputs": [
+        "HOR"
+      ],
+      "expected": 5816
+    },
+    {
+      "inputs": [
+        "WJI"
+      ],
+      "expected": 15817
+    },
+    {
+      "inputs": [
+        "W"
+      ],
+      "expected": 23
+    },
+    {
+      "inputs": [
+        "EFSXD"
+      ],
+      "expected": 2403808
+    },
+    {
+      "inputs": [
+        "MY"
+      ],
+      "expected": 363
+    },
+    {
+      "inputs": [
+        "MR"
+      ],
+      "expected": 356
+    },
+    {
+      "inputs": [
+        "KRIKA"
+      ],
+      "expected": 5349475
+    },
+    {
+      "inputs": [
+        "OSS"
+      ],
+      "expected": 10653
+    },
+    {
+      "inputs": [
+        "QN"
+      ],
+      "expected": 456
+    },
+    {
+      "inputs": [
+        "CO"
+      ],
+      "expected": 93
+    },
+    {
+      "inputs": [
+        "UXTT"
+      ],
+      "expected": 385860
+    },
+    {
+      "inputs": [
+        "GWIWH"
+      ],
+      "expected": 3609770
+    },
+    {
+      "inputs": [
+        "DMHJO"
+      ],
+      "expected": 2062075
+    },
+    {
+      "inputs": [
+        "UK"
+      ],
+      "expected": 557
+    },
+    {
+      "inputs": [
+        "WDLP"
+      ],
+      "expected": 407280
+    },
+    {
+      "inputs": [
+        "RAIX"
+      ],
+      "expected": 317302
+    },
+    {
+      "inputs": [
+        "DDF"
+      ],
+      "expected": 2814
+    },
+    {
+      "inputs": [
+        "Y"
+      ],
+      "expected": 25
+    },
+    {
+      "inputs": [
+        "EG"
+      ],
+      "expected": 137
+    },
+    {
+      "inputs": [
+        "VYTU"
+      ],
+      "expected": 404113
+    },
+    {
+      "inputs": [
+        "OBCH"
+      ],
+      "expected": 265078
+    },
+    {
+      "inputs": [
+        "YS"
+      ],
+      "expected": 669
+    },
+    {
+      "inputs": [
+        "I"
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        "XM"
+      ],
+      "expected": 637
+    },
+    {
+      "inputs": [
+        "KXQV"
+      ],
+      "expected": 210024
+    },
+    {
+      "inputs": [
+        "KMK"
+      ],
+      "expected": 7785
+    },
+    {
+      "inputs": [
+        "NVSE"
+      ],
+      "expected": 261435
+    },
+    {
+      "inputs": [
+        "RGGH"
+      ],
+      "expected": 321290
+    },
+    {
+      "inputs": [
+        "OK"
+      ],
+      "expected": 401
+    },
+    {
+      "inputs": [
+        "PGD"
+      ],
+      "expected": 11002
+    },
+    {
+      "inputs": [
+        "XH"
+      ],
+      "expected": 632
+    },
+    {
+      "inputs": [
+        "JA"
+      ],
+      "expected": 261
+    },
+    {
+      "inputs": [
+        "PC"
+      ],
+      "expected": 419
+    },
+    {
+      "inputs": [
+        "TV"
+      ],
+      "expected": 542
+    },
+    {
+      "inputs": [
+        "BSTQ"
+      ],
+      "expected": 48533
+    },
+    {
+      "inputs": [
+        "CBBJD"
+      ],
+      "expected": 1407696
+    },
+    {
+      "inputs": [
+        "K"
+      ],
+      "expected": 11
+    },
+    {
+      "inputs": [
+        "TYMC"
+      ],
+      "expected": 368761
+    },
+    {
+      "inputs": [
+        "YPBRU"
+      ],
+      "expected": 11707457
+    },
+    {
+      "inputs": [
+        "KLWL"
+      ],
+      "expected": 202058
+    },
+    {
+      "inputs": [
+        "CR"
+      ],
+      "expected": 96
+    },
+    {
+      "inputs": [
+        "THU"
+      ],
+      "expected": 13749
+    },
+    {
+      "inputs": [
+        "TOLC"
+      ],
+      "expected": 361975
+    },
+    {
+      "inputs": [
+        "ZB"
+      ],
+      "expected": 678
+    },
+    {
+      "inputs": [
+        "Z"
+      ],
+      "expected": 26
+    },
+    {
+      "inputs": [
+        "WCZUP"
+      ],
+      "expected": 10581314
+    },
+    {
+      "inputs": [
+        "OOI"
+      ],
+      "expected": 10539
+    },
+    {
+      "inputs": [
+        "J"
+      ],
+      "expected": 10
+    },
+    {
+      "inputs": [
+        "HKKGV"
+      ],
+      "expected": 3856784
+    },
+    {
+      "inputs": [
+        "WHX"
+      ],
+      "expected": 15780
+    },
+    {
+      "inputs": [
+        "QUL"
+      ],
+      "expected": 12050
+    },
+    {
+      "inputs": [
+        "X"
+      ],
+      "expected": 24
+    },
+    {
+      "inputs": [
+        "VZT"
+      ],
+      "expected": 15568
+    },
+    {
+      "inputs": [
+        "WS"
+      ],
+      "expected": 617
+    },
+    {
+      "inputs": [
+        "NLL"
+      ],
+      "expected": 9788
+    },
+    {
+      "inputs": [
+        "AI"
+      ],
+      "expected": 35
+    },
+    {
+      "inputs": [
+        "BFUA"
+      ],
+      "expected": 39755
+    },
+    {
+      "inputs": [
+        "UOKF"
+      ],
+      "expected": 379528
+    },
+    {
+      "inputs": [
+        "WN"
+      ],
+      "expected": 612
+    },
+    {
+      "inputs": [
+        "B"
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        "ADY"
+      ],
+      "expected": 805
+    },
+    {
+      "inputs": [
+        "GTQB"
+      ],
+      "expected": 136996
+    }
+  ]
+}
