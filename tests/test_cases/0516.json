@@ -1,0 +1,488 @@
+{
+  "problem_id": "0516",
+  "title": "Longest Palindromic Subsequence",
+  "function_name": "longestPalindromeSubseq",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        "bbbab"
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        "cbbd"
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        "b"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "difefgfgfabacfcfhbgjgfcfejgjajejcgedhicce"
+      ],
+      "expected": 17
+    },
+    {
+      "inputs": [
+        "dddiijcgjjbdagaeahjicejiifcaf"
+      ],
+      "expected": 13
+    },
+    {
+      "inputs": [
+        "hgfaaadiabjedgagfcdahcfgadhig"
+      ],
+      "expected": 15
+    },
+    {
+      "inputs": [
+        "ggaffbahfijbfdegbbabff"
+      ],
+      "expected": 11
+    },
+    {
+      "inputs": [
+        "hdihbdddafgafiiebcjhdggjfdfjgebehacaccgchj"
+      ],
+      "expected": 17
+    },
+    {
+      "inputs": [
+        "ideiaadfbegjdjbcccbicb"
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        "ijagdhbjdcig"
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        "jjiiabjhbddfjcagbfhdahiijicaegafhg"
+      ],
+      "expected": 14
+    },
+    {
+      "inputs": [
+        "dfbhfejefghgcieccedbicahcfcafdeed"
+      ],
+      "expected": 18
+    },
+    {
+      "inputs": [
+        "ddbcgdaifghjaaacbddigchjjhhjacih"
+      ],
+      "expected": 12
+    },
+    {
+      "inputs": [
+        "jihagjjichccffeidaiejeeiab"
+      ],
+      "expected": 11
+    },
+    {
+      "inputs": [
+        "dhegdcehh"
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        "fdahjbjdgggijcdfbbfeiabfagebajccgaafbiebbfeaj"
+      ],
+      "expected": 22
+    },
+    {
+      "inputs": [
+        "bcehegjffgcaba"
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        "gcdfeeaagjdihdiiebgedggaga"
+      ],
+      "expected": 11
+    },
+    {
+      "inputs": [
+        "cgcjghcejfj"
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        "hfheb"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "feaghdhidabjdh"
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        "eagheecbigbbhbgacebhifeagfggbgef"
+      ],
+      "expected": 15
+    },
+    {
+      "inputs": [
+        "hhjd"
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        "baaaigajaighafid"
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        "bcfjbcdbeddeaigdacdfjbfjibjfjggjgdgidiedg"
+      ],
+      "expected": 19
+    },
+    {
+      "inputs": [
+        "efhfhaahbcecabecdgchjeibdhaheihchdcajj"
+      ],
+      "expected": 17
+    },
+    {
+      "inputs": [
+        "gcifbgaejajjbbfhcfeebbegdfjciejddeegebjeheaj"
+      ],
+      "expected": 19
+    },
+    {
+      "inputs": [
+        "fbhceedgabebbafhejjj"
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        "ddjaijbjbhjhhdhgdadecejd"
+      ],
+      "expected": 11
+    },
+    {
+      "inputs": [
+        "gggcegcgjiahgjdfjfbeicdjgddeihaghdbhjddjiaagfg"
+      ],
+      "expected": 20
+    },
+    {
+      "inputs": [
+        "ebbbefbfcchibjiejbgaabaacehacjghachdfjcehgdgddc"
+      ],
+      "expected": 17
+    },
+    {
+      "inputs": [
+        "gdaddbeghibgicgidggeebjj"
+      ],
+      "expected": 11
+    },
+    {
+      "inputs": [
+        "adaidegegaejjjijhcbbf"
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        "hhaeaijjeijefcbjgbjajddchgjggjgehdcfj"
+      ],
+      "expected": 16
+    },
+    {
+      "inputs": [
+        "gdhhd"
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        "hjecccbdfbjfbddhdfbdehhjbgfbaidiccgbchiiad"
+      ],
+      "expected": 21
+    },
+    {
+      "inputs": [
+        "jbjheiehdjdichihaibedjgijfdgjhdfc"
+      ],
+      "expected": 15
+    },
+    {
+      "inputs": [
+        "jhfadhiajdgfeeicibgdibhidjgbadejbfdebhcbddfbh"
+      ],
+      "expected": 23
+    },
+    {
+      "inputs": [
+        "ghghigcgdbaegfaffchhbegefaajhbiaffieffhhbhjibfbfib"
+      ],
+      "expected": 19
+    },
+    {
+      "inputs": [
+        "fgachabcj"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "ejadjfhgefg"
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        "jjgfggaabicbffchefcgbejgjbcgcgghfg"
+      ],
+      "expected": 17
+    },
+    {
+      "inputs": [
+        "gebjeagabbfagddcicadjdbjbhdiefhif"
+      ],
+      "expected": 15
+    },
+    {
+      "inputs": [
+        "aadhbighfiefcghgbfcjgdhgeeedecjfhjcgadh"
+      ],
+      "expected": 17
+    },
+    {
+      "inputs": [
+        "gacafa"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "feijefhefjigegjhhhh"
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        "jgjjjgaebjhjbdbd"
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        "eddb"
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        "cfhbccchfcdjgiaegedgddaibdbeafbbebgcdcebibei"
+      ],
+      "expected": 17
+    },
+    {
+      "inputs": [
+        "bhaihbcbeda"
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        "begcefhhdhifjidbbabfhcgdjhecehcbfchijcibhih"
+      ],
+      "expected": 19
+    },
+    {
+      "inputs": [
+        "gbigbbecbbabidfhjceaeabdjhcibagdc"
+      ],
+      "expected": 15
+    },
+    {
+      "inputs": [
+        "jbbjddaafidhdhfdgc"
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        "abggajiibeajgdehfbbehihif"
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        "iehjaejfafgbafhghdgijbh"
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        "fdgcaffajffhciccbcfcgjcbi"
+      ],
+      "expected": 10
+    },
+    {
+      "inputs": [
+        "gcif"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "g"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "gdahfhegdaiicjbjfjhhbhdgigficcfihbchdjabb"
+      ],
+      "expected": 16
+    },
+    {
+      "inputs": [
+        "behgabbdgaac"
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        "jbfhigdaihgacabgajjbhdhcefebdbaggbibcfibja"
+      ],
+      "expected": 21
+    },
+    {
+      "inputs": [
+        "ddcjgghjejcjcaddjaabedbeiggc"
+      ],
+      "expected": 13
+    },
+    {
+      "inputs": [
+        "cedcjhh"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "hbbehjibeh"
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        "ajbddegehd"
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        "jdffefcahfhicadcidebbjdihbeifjecchbgbhgeab"
+      ],
+      "expected": 17
+    },
+    {
+      "inputs": [
+        "aiiadaafibbhhgcedhgcbiahfaigifijfhebjf"
+      ],
+      "expected": 15
+    },
+    {
+      "inputs": [
+        "headijgag"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "dgibigbbagiacfafhdfgacjffhadjad"
+      ],
+      "expected": 13
+    },
+    {
+      "inputs": [
+        "jfdddbgdiffhaheiabg"
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        "iahiig"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "hjfjgfhebcgjahgcjgjfjaahdihieebcafdahejjhejjjedceg"
+      ],
+      "expected": 21
+    },
+    {
+      "inputs": [
+        "bdijdgfciggghciaicbdadeaegjeahjjhbddjehecabe"
+      ],
+      "expected": 16
+    },
+    {
+      "inputs": [
+        "cfjhaihjccahecbbcaieecibaiejcbjefhjejfifi"
+      ],
+      "expected": 20
+    },
+    {
+      "inputs": [
+        "aggdjjhhdbebi"
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        "hgchjjig"
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        "jacjefbddjjfaiaifiggeedffhbbebffdigecgjij"
+      ],
+      "expected": 17
+    },
+    {
+      "inputs": [
+        "aajbhgf"
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        "efacecedbebjjeihhadccicihecjeabdiifdjjcjb"
+      ],
+      "expected": 17
+    },
+    {
+      "inputs": [
+        "dajejdhedbchbbfdhjibdaaahbgfjfahjghbgcbihi"
+      ],
+      "expected": 17
+    }
+  ]
+}
