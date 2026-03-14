@@ -1,0 +1,488 @@
+{
+  "problem_id": "1081",
+  "title": "Smallest Subsequence of Distinct Characters",
+  "function_name": "smallestSubsequence",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        "bcabc"
+      ],
+      "expected": "abc"
+    },
+    {
+      "inputs": [
+        "cbacdcbc"
+      ],
+      "expected": "acdb"
+    },
+    {
+      "inputs": [
+        "abacb"
+      ],
+      "expected": "abc"
+    },
+    {
+      "inputs": [
+        "a"
+      ],
+      "expected": "a"
+    },
+    {
+      "inputs": [
+        "ecbacba"
+      ],
+      "expected": "eacb"
+    },
+    {
+      "inputs": [
+        "fdgcejijdijjccjf"
+      ],
+      "expected": "dgceijf"
+    },
+    {
+      "inputs": [
+        "kebdehjdkddck"
+      ],
+      "expected": "bdehjck"
+    },
+    {
+      "inputs": [
+        "hakjc"
+      ],
+      "expected": "hakjc"
+    },
+    {
+      "inputs": [
+        "dgddfcbkbdcfkfkhbkfifbdcbjcg"
+      ],
+      "expected": "bcfhkidjg"
+    },
+    {
+      "inputs": [
+        "bibcaec"
+      ],
+      "expected": "biaec"
+    },
+    {
+      "inputs": [
+        "eghbdaahkhkhbikbfhhfcdebe"
+      ],
+      "expected": "egabikfhcd"
+    },
+    {
+      "inputs": [
+        "hjbkb"
+      ],
+      "expected": "hjbk"
+    },
+    {
+      "inputs": [
+        "djbgkkijkakifcbfkjeaejfigcb"
+      ],
+      "expected": "dabfkejigc"
+    },
+    {
+      "inputs": [
+        "ahkfkfchffbgk"
+      ],
+      "expected": "achfbgk"
+    },
+    {
+      "inputs": [
+        "akgfeghfbejcbgaaaijjk"
+      ],
+      "expected": "aeghfbcijk"
+    },
+    {
+      "inputs": [
+        "icbkiacdgdaigejed"
+      ],
+      "expected": "bkacdgiej"
+    },
+    {
+      "inputs": [
+        "ckahedkigecjfhahegddchi"
+      ],
+      "expected": "adkcjfeghi"
+    },
+    {
+      "inputs": [
+        "ebhbccecckjdehfbfjgibkakdgkjaa"
+      ],
+      "expected": "bcdehfgiakj"
+    },
+    {
+      "inputs": [
+        "bekajhakgdccaiieckkikh"
+      ],
+      "expected": "bajgdceikh"
+    },
+    {
+      "inputs": [
+        "kkbckckkgbekhhbiaibkbgebcke"
+      ],
+      "expected": "bcehaigk"
+    },
+    {
+      "inputs": [
+        "bbefibahedcefekgabfahaj"
+      ],
+      "expected": "befiadckghj"
+    },
+    {
+      "inputs": [
+        "ddcag"
+      ],
+      "expected": "dcag"
+    },
+    {
+      "inputs": [
+        "ifgjefgffdbdkegjjifbjkjgkakkjb"
+      ],
+      "expected": "bdegifakj"
+    },
+    {
+      "inputs": [
+        "jejdejakefgkbhfcfckagkabajafd"
+      ],
+      "expected": "aebhcfgkjd"
+    },
+    {
+      "inputs": [
+        "debgdbgce"
+      ],
+      "expected": "bdgce"
+    },
+    {
+      "inputs": [
+        "fgaddkj"
+      ],
+      "expected": "fgadkj"
+    },
+    {
+      "inputs": [
+        "hdiieibbkahcch"
+      ],
+      "expected": "deibkach"
+    },
+    {
+      "inputs": [
+        "kfeaafaajajgbiecfkggdifjhb"
+      ],
+      "expected": "abecfkgdijh"
+    },
+    {
+      "inputs": [
+        "dcfkfidceiiedkebcabeffkdeaaiab"
+      ],
+      "expected": "bcaefkdi"
+    },
+    {
+      "inputs": [
+        "afaihejdhjdicicge"
+      ],
+      "expected": "afdhjcige"
+    },
+    {
+      "inputs": [
+        "iiabab"
+      ],
+      "expected": "iab"
+    },
+    {
+      "inputs": [
+        "ihdfifcgbahfacebafbhdaeia"
+      ],
+      "expected": "cgabfhdei"
+    },
+    {
+      "inputs": [
+        "hgkakjij"
+      ],
+      "expected": "hgakij"
+    },
+    {
+      "inputs": [
+        "ahkjfiai"
+      ],
+      "expected": "ahkjfi"
+    },
+    {
+      "inputs": [
+        "ckbkcic"
+      ],
+      "expected": "bkci"
+    },
+    {
+      "inputs": [
+        "baccjckeia"
+      ],
+      "expected": "bacjkei"
+    },
+    {
+      "inputs": [
+        "bjajfibdh"
+      ],
+      "expected": "ajfibdh"
+    },
+    {
+      "inputs": [
+        "jfbdgadfdgbdjebfajifc"
+      ],
+      "expected": "adfgbejic"
+    },
+    {
+      "inputs": [
+        "efffcchdaefbaigifkakgehceddg"
+      ],
+      "expected": "abgifkehcd"
+    },
+    {
+      "inputs": [
+        "bbgckcccffikkccgiekdfhkghdb"
+      ],
+      "expected": "bcfgiedhk"
+    },
+    {
+      "inputs": [
+        "jhaadababeefifgeka"
+      ],
+      "expected": "jhadbefigk"
+    },
+    {
+      "inputs": [
+        "kd"
+      ],
+      "expected": "kd"
+    },
+    {
+      "inputs": [
+        "behi"
+      ],
+      "expected": "behi"
+    },
+    {
+      "inputs": [
+        "b"
+      ],
+      "expected": "b"
+    },
+    {
+      "inputs": [
+        "jkaigck"
+      ],
+      "expected": "jaigck"
+    },
+    {
+      "inputs": [
+        "icaghafghiajhgfdadikikhcedgcji"
+      ],
+      "expected": "afdikhcegj"
+    },
+    {
+      "inputs": [
+        "dcbkkggdcbjakaheddgidbhbdiif"
+      ],
+      "expected": "bcjakedghif"
+    },
+    {
+      "inputs": [
+        "dgdadhabkiiefa"
+      ],
+      "expected": "dgahbkief"
+    },
+    {
+      "inputs": [
+        "khfadkkfecc"
+      ],
+      "expected": "hadkfec"
+    },
+    {
+      "inputs": [
+        "db"
+      ],
+      "expected": "db"
+    },
+    {
+      "inputs": [
+        "dhahd"
+      ],
+      "expected": "ahd"
+    },
+    {
+      "inputs": [
+        "aceahafjh"
+      ],
+      "expected": "acefjh"
+    },
+    {
+      "inputs": [
+        "bajebeigfdkfehiffhbgibfaaaf"
+      ],
+      "expected": "ajbdkefhgi"
+    },
+    {
+      "inputs": [
+        "eajbaejaihjjdidg"
+      ],
+      "expected": "abehjdig"
+    },
+    {
+      "inputs": [
+        "gjbgfkibhckhhdhcddhdi"
+      ],
+      "expected": "gjbfckdhi"
+    },
+    {
+      "inputs": [
+        "chjfcdkgdkgggcjkkfehaae"
+      ],
+      "expected": "cdgjkfeha"
+    },
+    {
+      "inputs": [
+        "jedi"
+      ],
+      "expected": "jedi"
+    },
+    {
+      "inputs": [
+        "ekcjaccefdgdj"
+      ],
+      "expected": "ekacfdgj"
+    },
+    {
+      "inputs": [
+        "idfkjhhhfgehkgihfiiah"
+      ],
+      "expected": "dfjehkgia"
+    },
+    {
+      "inputs": [
+        "hgidceacdhhjaeagefgjjdkfeb"
+      ],
+      "expected": "giacdhefjkb"
+    },
+    {
+      "inputs": [
+        "dehjkcjeiajibefabhidahakchhdik"
+      ],
+      "expected": "ajbefchdik"
+    },
+    {
+      "inputs": [
+        "gbdaibhifjkjjajidhbkg"
+      ],
+      "expected": "abfjidhkg"
+    },
+    {
+      "inputs": [
+        "bhjejck"
+      ],
+      "expected": "bhejck"
+    },
+    {
+      "inputs": [
+        "ifhdkdaahbkeagf"
+      ],
+      "expected": "idahbkegf"
+    },
+    {
+      "inputs": [
+        "eibcaafjdghfjekifibgghgefj"
+      ],
+      "expected": "bcadekfighj"
+    },
+    {
+      "inputs": [
+        "jhgkabkgi"
+      ],
+      "expected": "jhabkgi"
+    },
+    {
+      "inputs": [
+        "g"
+      ],
+      "expected": "g"
+    },
+    {
+      "inputs": [
+        "eikefbebccedib"
+      ],
+      "expected": "eikfbcd"
+    },
+    {
+      "inputs": [
+        "gcbbbbikcbajafbdfedicdkfcfjabc"
+      ],
+      "expected": "gabdeickfj"
+    },
+    {
+      "inputs": [
+        "deheaiidghijakfek"
+      ],
+      "expected": "adghijfek"
+    },
+    {
+      "inputs": [
+        "jebfieffgciccigkfcca"
+      ],
+      "expected": "jbecigkfa"
+    },
+    {
+      "inputs": [
+        "hhicabkdeachfafcagkbkad"
+      ],
+      "expected": "hiabdecfgk"
+    },
+    {
+      "inputs": [
+        "badkbjdhegkag"
+      ],
+      "expected": "abjdhegk"
+    },
+    {
+      "inputs": [
+        "iheigcikcgjhhdebk"
+      ],
+      "expected": "cigjhdebk"
+    },
+    {
+      "inputs": [
+        "fjfjgffkafahgcaigechcdkck"
+      ],
+      "expected": "fjacigehdk"
+    },
+    {
+      "inputs": [
+        "fkfajkcbjij"
+      ],
+      "expected": "fajkcbi"
+    },
+    {
+      "inputs": [
+        "eaccakhciedieejhaagkk"
+      ],
+      "expected": "acdiejhgk"
+    },
+    {
+      "inputs": [
+        "ehcfhkibebhkjciiaikfjca"
+      ],
+      "expected": "behaikfjc"
+    },
+    {
+      "inputs": [
+        "hddcgkefeea"
+      ],
+      "expected": "hdcgkefa"
+    },
+    {
+      "inputs": [
+        "ccciihfdgcdfdkbd"
+      ],
+      "expected": "cihdgfkb"
+    }
+  ]
+}

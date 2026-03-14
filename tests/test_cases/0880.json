@@ -1,0 +1,568 @@
+{
+  "problem_id": "0880",
+  "title": "Decoded String at Index",
+  "function_name": "decodeAtIndex",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        "leet2code3",
+        10
+      ],
+      "expected": "o"
+    },
+    {
+      "inputs": [
+        "ha22",
+        5
+      ],
+      "expected": "h"
+    },
+    {
+      "inputs": [
+        "a2345678999999999999999",
+        1
+      ],
+      "expected": "a"
+    },
+    {
+      "inputs": [
+        "a23",
+        6
+      ],
+      "expected": "a"
+    },
+    {
+      "inputs": [
+        "hkdn3nhk",
+        12
+      ],
+      "expected": "n"
+    },
+    {
+      "inputs": [
+        "ibprwma4aq",
+        28
+      ],
+      "expected": "a"
+    },
+    {
+      "inputs": [
+        "2mn",
+        1
+      ],
+      "expected": "m"
+    },
+    {
+      "inputs": [
+        "el",
+        2
+      ],
+      "expected": "l"
+    },
+    {
+      "inputs": [
+        "jk3yhan2",
+        8
+      ],
+      "expected": "h"
+    },
+    {
+      "inputs": [
+        "a3",
+        2
+      ],
+      "expected": "a"
+    },
+    {
+      "inputs": [
+        "ymhb",
+        3
+      ],
+      "expected": "h"
+    },
+    {
+      "inputs": [
+        "pmpnpd4h",
+        3
+      ],
+      "expected": "p"
+    },
+    {
+      "inputs": [
+        "qfsfm2",
+        2
+      ],
+      "expected": "f"
+    },
+    {
+      "inputs": [
+        "rgd4bytix",
+        9
+      ],
+      "expected": "d"
+    },
+    {
+      "inputs": [
+        "u4k",
+        1
+      ],
+      "expected": "u"
+    },
+    {
+      "inputs": [
+        "awfp3mb3sc",
+        42
+      ],
+      "expected": "b"
+    },
+    {
+      "inputs": [
+        "23yze3zmp",
+        3
+      ],
+      "expected": "e"
+    },
+    {
+      "inputs": [
+        "i2lqi2",
+        7
+      ],
+      "expected": "i"
+    },
+    {
+      "inputs": [
+        "u",
+        1
+      ],
+      "expected": "u"
+    },
+    {
+      "inputs": [
+        "yxm",
+        3
+      ],
+      "expected": "m"
+    },
+    {
+      "inputs": [
+        "ogw2u4",
+        10
+      ],
+      "expected": "w"
+    },
+    {
+      "inputs": [
+        "l",
+        1
+      ],
+      "expected": "l"
+    },
+    {
+      "inputs": [
+        "cwj3u",
+        8
+      ],
+      "expected": "w"
+    },
+    {
+      "inputs": [
+        "rt2e4",
+        10
+      ],
+      "expected": "e"
+    },
+    {
+      "inputs": [
+        "a22",
+        1
+      ],
+      "expected": "a"
+    },
+    {
+      "inputs": [
+        "v2rh23g43",
+        264
+      ],
+      "expected": "v"
+    },
+    {
+      "inputs": [
+        "44a2p4",
+        7
+      ],
+      "expected": "a"
+    },
+    {
+      "inputs": [
+        "zww4ntjm",
+        16
+      ],
+      "expected": "m"
+    },
+    {
+      "inputs": [
+        "i2443oek4",
+        78
+      ],
+      "expected": "i"
+    },
+    {
+      "inputs": [
+        "4nr4",
+        6
+      ],
+      "expected": "r"
+    },
+    {
+      "inputs": [
+        "lkj",
+        1
+      ],
+      "expected": "l"
+    },
+    {
+      "inputs": [
+        "re4",
+        5
+      ],
+      "expected": "r"
+    },
+    {
+      "inputs": [
+        "rpqf",
+        3
+      ],
+      "expected": "q"
+    },
+    {
+      "inputs": [
+        "xa",
+        1
+      ],
+      "expected": "x"
+    },
+    {
+      "inputs": [
+        "i",
+        1
+      ],
+      "expected": "i"
+    },
+    {
+      "inputs": [
+        "e43",
+        1
+      ],
+      "expected": "e"
+    },
+    {
+      "inputs": [
+        "4gkzeb32r",
+        9
+      ],
+      "expected": "e"
+    },
+    {
+      "inputs": [
+        "q3ani4d2w",
+        15
+      ],
+      "expected": "q"
+    },
+    {
+      "inputs": [
+        "t4uaomv",
+        5
+      ],
+      "expected": "u"
+    },
+    {
+      "inputs": [
+        "ys4i",
+        6
+      ],
+      "expected": "s"
+    },
+    {
+      "inputs": [
+        "fqmbf44",
+        29
+      ],
+      "expected": "b"
+    },
+    {
+      "inputs": [
+        "c2",
+        1
+      ],
+      "expected": "c"
+    },
+    {
+      "inputs": [
+        "y",
+        1
+      ],
+      "expected": "y"
+    },
+    {
+      "inputs": [
+        "2q4",
+        3
+      ],
+      "expected": "q"
+    },
+    {
+      "inputs": [
+        "b43",
+        10
+      ],
+      "expected": "b"
+    },
+    {
+      "inputs": [
+        "kthbp2",
+        9
+      ],
+      "expected": "b"
+    },
+    {
+      "inputs": [
+        "3vnkydjo3",
+        12
+      ],
+      "expected": "d"
+    },
+    {
+      "inputs": [
+        "z42brgkb2n",
+        26
+      ],
+      "expected": "b"
+    },
+    {
+      "inputs": [
+        "vv",
+        2
+      ],
+      "expected": "v"
+    },
+    {
+      "inputs": [
+        "hr",
+        2
+      ],
+      "expected": "r"
+    },
+    {
+      "inputs": [
+        "jrb33nqy",
+        11
+      ],
+      "expected": "r"
+    },
+    {
+      "inputs": [
+        "afh",
+        2
+      ],
+      "expected": "f"
+    },
+    {
+      "inputs": [
+        "yi3",
+        4
+      ],
+      "expected": "i"
+    },
+    {
+      "inputs": [
+        "a32",
+        5
+      ],
+      "expected": "a"
+    },
+    {
+      "inputs": [
+        "3go4lpdj",
+        12
+      ],
+      "expected": "j"
+    },
+    {
+      "inputs": [
+        "33d",
+        1
+      ],
+      "expected": "d"
+    },
+    {
+      "inputs": [
+        "vm2dr3v2l",
+        27
+      ],
+      "expected": "m"
+    },
+    {
+      "inputs": [
+        "32fzilli4",
+        8
+      ],
+      "expected": "z"
+    },
+    {
+      "inputs": [
+        "es4t3cpx",
+        10
+      ],
+      "expected": "e"
+    },
+    {
+      "inputs": [
+        "lp4yo3yp",
+        8
+      ],
+      "expected": "p"
+    },
+    {
+      "inputs": [
+        "3tk",
+        2
+      ],
+      "expected": "k"
+    },
+    {
+      "inputs": [
+        "34jr4y4ec",
+        7
+      ],
+      "expected": "j"
+    },
+    {
+      "inputs": [
+        "32r4wbht",
+        2
+      ],
+      "expected": "r"
+    },
+    {
+      "inputs": [
+        "3ejc4",
+        6
+      ],
+      "expected": "c"
+    },
+    {
+      "inputs": [
+        "d4jtq43oyc",
+        66
+      ],
+      "expected": "d"
+    },
+    {
+      "inputs": [
+        "j32lnd3o",
+        18
+      ],
+      "expected": "d"
+    },
+    {
+      "inputs": [
+        "uhbllm34r",
+        72
+      ],
+      "expected": "m"
+    },
+    {
+      "inputs": [
+        "uk3gbcpp3d",
+        28
+      ],
+      "expected": "k"
+    },
+    {
+      "inputs": [
+        "a2",
+        2
+      ],
+      "expected": "a"
+    },
+    {
+      "inputs": [
+        "ec",
+        2
+      ],
+      "expected": "c"
+    },
+    {
+      "inputs": [
+        "kkceule43y",
+        53
+      ],
+      "expected": "e"
+    },
+    {
+      "inputs": [
+        "a3",
+        3
+      ],
+      "expected": "a"
+    },
+    {
+      "inputs": [
+        "dkrx2p",
+        9
+      ],
+      "expected": "p"
+    },
+    {
+      "inputs": [
+        "3fccx",
+        3
+      ],
+      "expected": "c"
+    },
+    {
+      "inputs": [
+        "e42lhe",
+        9
+      ],
+      "expected": "l"
+    },
+    {
+      "inputs": [
+        "2ds4g",
+        6
+      ],
+      "expected": "s"
+    },
+    {
+      "inputs": [
+        "4h3",
+        1
+      ],
+      "expected": "h"
+    },
+    {
+      "inputs": [
+        "a22",
+        2
+      ],
+      "expected": "a"
+    },
+    {
+      "inputs": [
+        "2wu",
+        1
+      ],
+      "expected": "w"
+    },
+    {
+      "inputs": [
+        "f3mumlsv",
+        6
+      ],
+      "expected": "m"
+    }
+  ]
+}

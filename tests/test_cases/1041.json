@@ -1,0 +1,488 @@
+{
+  "problem_id": "1041",
+  "title": "Robot Bounded In Circle",
+  "function_name": "isRobotBounded",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        "GGLLGG"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "GG"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "GL"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "GLGLGGLGL"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "GLRLLGLL"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "LGGGGLGLLLRLLRGLGRRGLGLRRRGR"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "GRRGLLRGLRGGL"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "LGGGGRGLRRGRGLRGRRRGLLRG"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "LLRLLGRLLLLGLGGRGGRGRRG"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "GLLLRGGGRRGRRLRGR"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "GR"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "RLRGLRGGLRGGLRLRRGGLRRRLGGG"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "LGLGGGRRRGRRLRLGRLGGLG"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "RGGGLR"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "GLGLLGGLRRGRGLLGLGLLRGLGRGGLG"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "G"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "GGGLRGGGRGLLGG"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "R"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "LGRRRLLGRGLGLLG"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "G"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "GGGGLGGGRRLLRRRGLRGGLRGRLGLGL"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "LLGGRLLGRGGRRRGLGLLG"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "LRRGRRRRGGRGRLLLGGGLGLGLL"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "GGGLGLR"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "RGRLGRLGRLG"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "GLGRGRLRRLGLLLR"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "RRGGLLRGRLRGGR"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "LRLLLLRLL"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "GRLGRLLLGLRRRLGLGG"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "LGGGGRGLRGGL"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "LGGRRRRLGRGGR"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "RRGLLGLGLGLGLRGLLLRRLGLLLRRRLL"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "RRGLRGLRGGGLRLLLGLR"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "RLRGRLLGLRGGLRGLRGLGGGLL"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "LRLGG"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "LRLGGLLRGRGGGRLLLGLRRR"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "LRRRRRLGGLLLRRRLRLRRRGRRL"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "RGLGLGRGLLLRLL"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "GRRGLGRRRLRLRRRGGRRGGLLLGL"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "GGGRGLLLGLLGRRGLLGGGR"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "GRRLRLLRRGGLLG"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "RGGGGRRGRRLGGRGG"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "LRRGRGRGGRGGRRLGGGLLGRLRG"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "GGRLRGLGRRGLRGRGLLRRG"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "LGRRRLGRGGLRRGLGLRG"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "LGLLRGRGRRLGLRLRGLGGGG"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "GLLGGLLRGLGLRRGG"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "RRL"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "GLGGLLLGLGLRLLRRRGLLLLGGGLL"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "LL"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "RGL"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "RGGLLRGRLGRRLGGRLLLLLRLRGRLRR"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "LLR"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "RRG"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "GRRLRGRLRGGRRRGRLGG"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "LRGGRLLGLGLLRGRLGLGRL"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "GLRL"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "GGLGR"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "LRLGGLGLGLRGLLRGRGGGGRLRGLLRLG"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "LRLRRRLGGGGLGLGLRLGGGRLL"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "RLRLGGGLRGLLRGRLLGRRLGRRRLRLG"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "LGGGRGGGL"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "LLGG"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "RGGLLLRRGLRGRGLLRL"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "LLRGLRLLLRLRLLLRLGLLG"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "LGLRRRLGGLRRL"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "LGLLRRLGLGLGLGR"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "LRRGGRRRRLGGRGGRLRLLGLRRGLGLG"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "LGGGGLRGGRLGRLRGGLRLGGRGRLGL"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "RGRRRGLRRGLGRGGG"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "LGGGGRRGGRRLGLRGRRLLRRRRGLL"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "GLRLLGRGLRRLLGGRGRGGRRL"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "GLRRLLGLRRGGGLGGGGLGG"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "LGRRGGGL"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "RGLL"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "RLLGLGGRGRRGR"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "GLGLGLLGGGLLLGLGGLLRGL"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "LLRGLLGRLRRGLLLGLGLRGRGL"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "RRLRGLGGGRGGLLGGR"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "GGRGLRGLLGGGRRGRRG"
+      ],
+      "expected": true
+    }
+  ]
+}
