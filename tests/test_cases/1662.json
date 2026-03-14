@@ -1,0 +1,1221 @@
+{
+  "problem_id": "1662",
+  "title": "Check If Two String Arrays are Equivalent",
+  "function_name": "arrayStringsAreEqual",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        [
+          "cba",
+          "gd",
+          "ah",
+          "d"
+        ],
+        [
+          "ifb",
+          "acb",
+          "cb"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "h",
+          "i"
+        ],
+        [
+          "h",
+          "i"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "g",
+          "fgc",
+          "hh"
+        ],
+        [
+          "g",
+          "fgc",
+          "hh"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "af",
+          "if",
+          "d"
+        ],
+        [
+          "gii",
+          "he",
+          "a",
+          "f",
+          "a"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "f",
+          "d",
+          "b",
+          "fb"
+        ],
+        [
+          "f",
+          "d",
+          "b",
+          "fb"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "cd",
+          "ca"
+        ],
+        [
+          "cd",
+          "ca"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "de",
+          "eb",
+          "b",
+          "iag",
+          "fd"
+        ],
+        [
+          "e",
+          "dg",
+          "bhb"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "dea",
+          "hfe",
+          "fb",
+          "i",
+          "h"
+        ],
+        [
+          "bgg",
+          "i",
+          "f",
+          "bd"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "ie"
+        ],
+        [
+          "g"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "bf",
+          "ibf",
+          "hgf",
+          "g"
+        ],
+        [
+          "bf",
+          "ibf",
+          "hgf",
+          "g"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "bbh",
+          "fg",
+          "ccc"
+        ],
+        [
+          "bbh",
+          "fg",
+          "ccc"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "gec",
+          "igd",
+          "da"
+        ],
+        [
+          "gec",
+          "igd",
+          "da"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "cgc",
+          "g"
+        ],
+        [
+          "cgc",
+          "g"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "h",
+          "cg"
+        ],
+        [
+          "h",
+          "cg"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "fe"
+        ],
+        [
+          "fe"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "hc",
+          "hcd",
+          "eaf",
+          "h"
+        ],
+        [
+          "hc",
+          "hcd",
+          "eaf",
+          "h"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "hg",
+          "h"
+        ],
+        [
+          "ece"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "de",
+          "h",
+          "c"
+        ],
+        [
+          "de",
+          "h",
+          "c"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "acd",
+          "b",
+          "ggc",
+          "eb",
+          "h"
+        ],
+        [
+          "dg",
+          "f",
+          "c",
+          "feg",
+          "af"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "eh",
+          "c",
+          "b",
+          "f",
+          "cae"
+        ],
+        [
+          "eh",
+          "c",
+          "b",
+          "f",
+          "cae"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "d",
+          "cd",
+          "gcd"
+        ],
+        [
+          "ag",
+          "a"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "ice",
+          "g",
+          "ebb",
+          "bh",
+          "c"
+        ],
+        [
+          "ice",
+          "g",
+          "ebb",
+          "bh",
+          "c"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "ih"
+        ],
+        [
+          "ih"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "b",
+          "bi",
+          "ahg",
+          "da"
+        ],
+        [
+          "b",
+          "bi",
+          "ahg",
+          "da"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "bga",
+          "b",
+          "if"
+        ],
+        [
+          "h",
+          "h",
+          "ca",
+          "ehf",
+          "i",
+          "g"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "ifd",
+          "d",
+          "egd"
+        ],
+        [
+          "g",
+          "ga"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "i"
+        ],
+        [
+          "i"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "a"
+        ],
+        [
+          "eg",
+          "ggg",
+          "a"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "eh",
+          "ged",
+          "g"
+        ],
+        [
+          "eh",
+          "ged",
+          "g"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "b",
+          "hi",
+          "efa",
+          "gc",
+          "a"
+        ],
+        [
+          "g",
+          "ade",
+          "ibf",
+          "agb"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "cg"
+        ],
+        [
+          "id",
+          "ga"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "e",
+          "igf",
+          "i",
+          "g"
+        ],
+        [
+          "ha",
+          "bah",
+          "h",
+          "i"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "bfc",
+          "f"
+        ],
+        [
+          "bfc",
+          "f"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "g"
+        ],
+        [
+          "g"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "g",
+          "i"
+        ],
+        [
+          "c",
+          "gf",
+          "g"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "ci",
+          "d",
+          "gag",
+          "ff"
+        ],
+        [
+          "iei",
+          "d"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "ci",
+          "c",
+          "be",
+          "h"
+        ],
+        [
+          "ggd",
+          "e",
+          "fce",
+          "i"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "ba",
+          "a"
+        ],
+        [
+          "ba",
+          "a"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "d",
+          "hc",
+          "cbb",
+          "g"
+        ],
+        [
+          "d",
+          "hc",
+          "cbb",
+          "g"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "bfd"
+        ],
+        [
+          "bfd"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "agg",
+          "i",
+          "ig",
+          "feg",
+          "b"
+        ],
+        [
+          "agg",
+          "i",
+          "ig",
+          "feg",
+          "b"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "g",
+          "gd"
+        ],
+        [
+          "g",
+          "gd"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "hg",
+          "fdb",
+          "fha",
+          "g"
+        ],
+        [
+          "b",
+          "chi",
+          "gfd",
+          "e",
+          "g",
+          "f"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "ebf",
+          "bi",
+          "bg",
+          "gf",
+          "c"
+        ],
+        [
+          "ebf",
+          "bi",
+          "bg",
+          "gf",
+          "c"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "dig",
+          "hga",
+          "b",
+          "i"
+        ],
+        [
+          "dig",
+          "hga",
+          "b",
+          "i"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "a",
+          "d",
+          "gc",
+          "ga"
+        ],
+        [
+          "a",
+          "d",
+          "gc",
+          "ga"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "id",
+          "c",
+          "a",
+          "cag",
+          "ag"
+        ],
+        [
+          "hha",
+          "eah",
+          "c"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "if",
+          "h",
+          "c",
+          "h",
+          "b",
+          "c",
+          "ig",
+          "g"
+        ],
+        [
+          "bgf",
+          "a",
+          "fab",
+          "d"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "feb",
+          "dce"
+        ],
+        [
+          "feb",
+          "dce"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "a",
+          "gb",
+          "d"
+        ],
+        [
+          "a",
+          "db"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "gfb",
+          "d"
+        ],
+        [
+          "gfb",
+          "d"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "fg",
+          "aad"
+        ],
+        [
+          "eaa",
+          "ef",
+          "fdg"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "ci",
+          "a"
+        ],
+        [
+          "ci",
+          "a"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "d"
+        ],
+        [
+          "d"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "a",
+          "aca",
+          "a"
+        ],
+        [
+          "gb",
+          "aca",
+          "ea",
+          "a"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "ca",
+          "g"
+        ],
+        [
+          "h",
+          "i",
+          "h",
+          "cc",
+          "e"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "gg",
+          "i",
+          "g",
+          "ga"
+        ],
+        [
+          "eg"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "bg"
+        ],
+        [
+          "bg"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "ih",
+          "hfc",
+          "gc"
+        ],
+        [
+          "ih",
+          "hfc",
+          "gc"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "iaa"
+        ],
+        [
+          "if",
+          "iib",
+          "ga"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "eic",
+          "ae",
+          "cch",
+          "a"
+        ],
+        [
+          "hde",
+          "d",
+          "aif",
+          "gg"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "g",
+          "ihc",
+          "ac",
+          "dg"
+        ],
+        [
+          "d",
+          "d"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "cb",
+          "ig"
+        ],
+        [
+          "bca",
+          "f",
+          "ceg",
+          "gb"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "gg",
+          "if"
+        ],
+        [
+          "gg",
+          "if"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "cf"
+        ],
+        [
+          "fc",
+          "eg",
+          "eg"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "d",
+          "e",
+          "e",
+          "b",
+          "bd",
+          "ebg",
+          "f"
+        ],
+        [
+          "d",
+          "e",
+          "e",
+          "b",
+          "bd",
+          "ebg",
+          "f"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "hgf",
+          "eb",
+          "bc"
+        ],
+        [
+          "e"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "g",
+          "i",
+          "egd",
+          "h",
+          "ef"
+        ],
+        [
+          "g",
+          "i",
+          "egd",
+          "h",
+          "ef"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "cb",
+          "a",
+          "c",
+          "eh",
+          "f"
+        ],
+        [
+          "cgh",
+          "b"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "bed",
+          "cg",
+          "iaf",
+          "h",
+          "h"
+        ],
+        [
+          "i",
+          "i",
+          "add",
+          "h",
+          "ge"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "gh",
+          "hd",
+          "id"
+        ],
+        [
+          "ac"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "bbc",
+          "ic",
+          "cc"
+        ],
+        [
+          "bbc",
+          "ic",
+          "cc"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "b",
+          "gii",
+          "eee"
+        ],
+        [
+          "b",
+          "gii",
+          "eee"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "ae"
+        ],
+        [
+          "ae"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "bh",
+          "dbf",
+          "c"
+        ],
+        [
+          "bh",
+          "dbf",
+          "c"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "bfb"
+        ],
+        [
+          "bfb"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "h",
+          "ff",
+          "ehc",
+          "dfg",
+          "i"
+        ],
+        [
+          "h",
+          "ff",
+          "ehc",
+          "dfg",
+          "i"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "d",
+          "hdg",
+          "cg",
+          "f",
+          "ii"
+        ],
+        [
+          "d",
+          "hdg",
+          "cg",
+          "f",
+          "ii"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "c",
+          "gib",
+          "e",
+          "b",
+          "e",
+          "i"
+        ],
+        [
+          "bg",
+          "de"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "g",
+          "g",
+          "eda",
+          "gh"
+        ],
+        [
+          "g",
+          "g",
+          "eda",
+          "gh"
+        ]
+      ],
+      "expected": true
+    }
+  ]
+}

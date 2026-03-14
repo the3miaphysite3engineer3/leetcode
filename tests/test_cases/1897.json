@@ -1,0 +1,1005 @@
+{
+  "problem_id": "1897",
+  "title": "Redistribute Characters to Make All Strings Equal",
+  "function_name": "makeEqual",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        [
+          "fef"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "af"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "b",
+          "c",
+          "icbfg",
+          "gai",
+          "i",
+          "ib",
+          "ggbg",
+          "iff"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "cafci",
+          "fdig",
+          "h",
+          "ea",
+          "g",
+          "gei"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "a",
+          "c",
+          "cgd",
+          "aebhc",
+          "ahe",
+          "egcih",
+          "b",
+          "g",
+          "eehh"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "gegde",
+          "dbgi",
+          "fed",
+          "biffh",
+          "ge"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "idag",
+          "fdaa",
+          "ad",
+          "daihg",
+          "bb"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "hcdab",
+          "dbbd",
+          "db",
+          "de"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "eeieh",
+          "b",
+          "i",
+          "ff"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "ddee",
+          "h",
+          "cdh"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "dggi",
+          "iihb",
+          "gei",
+          "g",
+          "bidga",
+          "fbdb",
+          "iibee"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "gbdgh"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "hi",
+          "cffbb",
+          "ih",
+          "b",
+          "ghdcg",
+          "gd",
+          "hba",
+          "eb"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "gdc",
+          "cbhh",
+          "ff",
+          "cddi",
+          "gagcb"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "g",
+          "he"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "bigh",
+          "dfecd",
+          "di",
+          "d",
+          "b",
+          "gegfg",
+          "gefge"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "dh",
+          "d",
+          "ggeb",
+          "id",
+          "abggc",
+          "cbf",
+          "f",
+          "gccd",
+          "abbhd"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "hdcdd",
+          "dgf"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "ichhe",
+          "a",
+          "i",
+          "ifcb",
+          "acg",
+          "e"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "g",
+          "bff",
+          "hd"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "hcgd",
+          "ifh"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "bidcd",
+          "dhfe",
+          "gfedi",
+          "afbgf",
+          "ah",
+          "afih",
+          "aebef",
+          "cba",
+          "baa"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "fcca",
+          "i"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "fgd",
+          "ed"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "bcedf",
+          "ba",
+          "i",
+          "c",
+          "hceeb",
+          "ghb",
+          "ef",
+          "hgddg"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "gg"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "g",
+          "hdddd",
+          "cige",
+          "ebaih",
+          "i"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "h",
+          "cba",
+          "bcdg",
+          "ddgea",
+          "ie",
+          "dfbc",
+          "hhhhi",
+          "h"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "gaehf",
+          "dc",
+          "g",
+          "f",
+          "h",
+          "d",
+          "icece",
+          "cbaf",
+          "fgfbf",
+          "dihi"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "g"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "babi",
+          "bic",
+          "eib",
+          "c",
+          "fb"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "idc",
+          "efaeh",
+          "ihge",
+          "id",
+          "eebha",
+          "effag",
+          "hf",
+          "d",
+          "a"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "ahic"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "bb",
+          "cecc",
+          "iea",
+          "gei",
+          "h",
+          "ec",
+          "ha"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "hb",
+          "cda",
+          "gdhfb",
+          "eg",
+          "gi",
+          "g"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "ef",
+          "bgbh",
+          "bidib",
+          "ih"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "cie",
+          "cbece",
+          "fhd",
+          "cfi",
+          "h",
+          "ebeee",
+          "dgec",
+          "ig",
+          "cfh",
+          "hed"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "ebh",
+          "gcf",
+          "hcf",
+          "ha",
+          "age",
+          "ghgb",
+          "a",
+          "icd",
+          "dcd"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "ida"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "gdibf",
+          "idbe",
+          "bhgi",
+          "ai",
+          "ea",
+          "c",
+          "hh",
+          "ffea",
+          "cfbd",
+          "g"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "bg",
+          "gc",
+          "hegb"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "a",
+          "e",
+          "h",
+          "c",
+          "ceii",
+          "hhgb",
+          "diecc",
+          "c",
+          "c",
+          "b"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "fa",
+          "dah",
+          "gb",
+          "a",
+          "fhbg",
+          "efgh",
+          "dfch",
+          "aebd",
+          "egdaa",
+          "h"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "cbd",
+          "hfc"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "aei",
+          "ae",
+          "ac",
+          "d",
+          "gf"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "eeeh",
+          "hcbfd",
+          "i",
+          "adf",
+          "ggc",
+          "baigi",
+          "acee",
+          "e",
+          "fdggd"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "fe",
+          "ah",
+          "c",
+          "fgfh",
+          "bcc",
+          "bi",
+          "ae",
+          "eea",
+          "eg",
+          "fha"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "cdc",
+          "bb",
+          "eic",
+          "gied"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "fa",
+          "ecfec",
+          "af",
+          "deh",
+          "gi",
+          "ga",
+          "hih",
+          "abh"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "ifh",
+          "aa",
+          "hadc",
+          "ie",
+          "a",
+          "ah",
+          "idega"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "acc"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "edi",
+          "eade",
+          "hbeae",
+          "bh",
+          "g",
+          "bac",
+          "bg",
+          "hcg"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "cd",
+          "if",
+          "f",
+          "heha",
+          "ai"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "hi",
+          "dcbei",
+          "dfcc",
+          "hf",
+          "dag"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "aae",
+          "cgecd",
+          "ccic",
+          "cda",
+          "hgdb",
+          "hd",
+          "b",
+          "g",
+          "d",
+          "b"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "acf",
+          "b"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "gecf",
+          "hiaf",
+          "cah",
+          "cabhh",
+          "ia",
+          "hdef",
+          "ibhbf",
+          "cf",
+          "c",
+          "ggbca"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "dcheh",
+          "ba",
+          "db",
+          "fi",
+          "baf",
+          "h",
+          "gh",
+          "die",
+          "c",
+          "gdbff"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "hhbe",
+          "feebc",
+          "ch"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "fic",
+          "gddd",
+          "cab",
+          "gif",
+          "adhh"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "adcd",
+          "dhheg",
+          "hegbd",
+          "b",
+          "ebb"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "a",
+          "ah",
+          "ee"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "hedgg",
+          "f",
+          "a",
+          "id"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "g",
+          "h",
+          "dii",
+          "ibffg",
+          "cd",
+          "h",
+          "ga",
+          "hhb",
+          "gg"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "bbidh",
+          "bafc"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "hda",
+          "beb",
+          "e",
+          "abhdc"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "dgid",
+          "hg",
+          "fgda",
+          "h",
+          "di",
+          "ceiea",
+          "hd",
+          "cb"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "ccedb",
+          "cffi"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "f"
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        [
+          "bbaea",
+          "hfea",
+          "aiigi",
+          "fggg",
+          "hhdci"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "aff",
+          "bhdib",
+          "c",
+          "ehf",
+          "cfb",
+          "ifdia",
+          "gdf",
+          "dhcga"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "hcbfg",
+          "a",
+          "idef",
+          "i"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "dfdi",
+          "a",
+          "gf",
+          "eeg",
+          "b",
+          "h",
+          "b"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "ai",
+          "bafc",
+          "a",
+          "gagb",
+          "bdid",
+          "biaec"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "bhee",
+          "dfbab",
+          "deeh",
+          "ga",
+          "dfcb",
+          "hhbi",
+          "eeih",
+          "gbbf",
+          "egbd",
+          "eg"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "bbdda",
+          "eeb"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "b",
+          "bfehe",
+          "cgbid",
+          "gb",
+          "a",
+          "ifai",
+          "ag"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "cfagh",
+          "dbidh",
+          "ifad",
+          "hi",
+          "icfd",
+          "ad"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "fd",
+          "fied",
+          "afefi",
+          "egffh",
+          "fa",
+          "cabh",
+          "dcf",
+          "ib",
+          "i",
+          "dg"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        [
+          "cebg"
+        ]
+      ],
+      "expected": true
+    }
+  ]
+}

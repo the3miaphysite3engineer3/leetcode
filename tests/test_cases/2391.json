@@ -1,0 +1,1558 @@
+{
+  "problem_id": "2391",
+  "title": "Minimum Amount of Time to Collect Garbage",
+  "function_name": "garbageCollection",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        [
+          "MGPP",
+          "PPG",
+          "GM",
+          "G",
+          "MG",
+          "PP",
+          "MGMPG",
+          "MMPP"
+        ],
+        [
+          5,
+          11,
+          1,
+          5,
+          16,
+          5,
+          6
+        ]
+      ],
+      "expected": 164
+    },
+    {
+      "inputs": [
+        [
+          "PGMM",
+          "MGMP",
+          "GGGMP",
+          "MP",
+          "P",
+          "MM",
+          "PMGP",
+          "GGM",
+          "MGPM",
+          "GMGG"
+        ],
+        [
+          17,
+          7,
+          16,
+          16,
+          18,
+          13,
+          6,
+          12,
+          14
+        ]
+      ],
+      "expected": 376
+    },
+    {
+      "inputs": [
+        [
+          "M",
+          "MPMG",
+          "MMMM",
+          "PMPMG",
+          "MG",
+          "GPP",
+          "GG"
+        ],
+        [
+          4,
+          18,
+          20,
+          10,
+          3,
+          12
+        ]
+      ],
+      "expected": 195
+    },
+    {
+      "inputs": [
+        [
+          "GGPMG",
+          "PGGPM",
+          "PGGGG",
+          "MMPMM"
+        ],
+        [
+          16,
+          13,
+          13
+        ]
+      ],
+      "expected": 133
+    },
+    {
+      "inputs": [
+        [
+          "P",
+          "MGGGG",
+          "PP"
+        ],
+        [
+          7,
+          6
+        ]
+      ],
+      "expected": 35
+    },
+    {
+      "inputs": [
+        [
+          "MG",
+          "G",
+          "MMPP",
+          "GGG",
+          "GGG",
+          "MMMM",
+          "MGMP",
+          "PGMGM"
+        ],
+        [
+          10,
+          13,
+          3,
+          6,
+          19,
+          19,
+          3
+        ]
+      ],
+      "expected": 245
+    },
+    {
+      "inputs": [
+        [
+          "GMPM",
+          "PPMMM",
+          "PGPMM",
+          "GG",
+          "PPG",
+          "GPP",
+          "MP",
+          "PPPMG",
+          "GGG"
+        ],
+        [
+          11,
+          2,
+          20,
+          15,
+          13,
+          20,
+          12,
+          8
+        ]
+      ],
+      "expected": 319
+    },
+    {
+      "inputs": [
+        [
+          "MG",
+          "P",
+          "M"
+        ],
+        [
+          12,
+          18
+        ]
+      ],
+      "expected": 46
+    },
+    {
+      "inputs": [
+        [
+          "GMP",
+          "PMP",
+          "GM",
+          "G"
+        ],
+        [
+          17,
+          1,
+          11
+        ]
+      ],
+      "expected": 73
+    },
+    {
+      "inputs": [
+        [
+          "GPMMG"
+        ],
+        []
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        [
+          "PPGPG",
+          "MGGPP",
+          "M",
+          "MGM",
+          "MMGGG",
+          "M",
+          "MM",
+          "G",
+          "G"
+        ],
+        [
+          11,
+          1,
+          12,
+          6,
+          19,
+          16,
+          11,
+          20
+        ]
+      ],
+      "expected": 196
+    },
+    {
+      "inputs": [
+        [
+          "GPPG"
+        ],
+        []
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        [
+          "MPG",
+          "GGM",
+          "PMGMP",
+          "PGPM",
+          "G",
+          "GMGP",
+          "GGG",
+          "MPGP"
+        ],
+        [
+          20,
+          2,
+          4,
+          20,
+          1,
+          9,
+          7
+        ]
+      ],
+      "expected": 216
+    },
+    {
+      "inputs": [
+        [
+          "MMMM",
+          "PP",
+          "GM",
+          "MG",
+          "GMGM",
+          "P",
+          "MPP",
+          "P",
+          "GGMMP"
+        ],
+        [
+          18,
+          10,
+          15,
+          13,
+          3,
+          12,
+          6,
+          18
+        ]
+      ],
+      "expected": 309
+    },
+    {
+      "inputs": [
+        [
+          "GPG",
+          "PMMPG"
+        ],
+        [
+          13
+        ]
+      ],
+      "expected": 47
+    },
+    {
+      "inputs": [
+        [
+          "MMG"
+        ],
+        []
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        [
+          "GM",
+          "MGPPP",
+          "MG",
+          "MGGM",
+          "GM",
+          "PPPMP",
+          "GGPMM",
+          "MGPPM"
+        ],
+        [
+          5,
+          11,
+          13,
+          5,
+          14,
+          17,
+          7
+        ]
+      ],
+      "expected": 246
+    },
+    {
+      "inputs": [
+        [
+          "GP",
+          "GGM"
+        ],
+        [
+          16
+        ]
+      ],
+      "expected": 37
+    },
+    {
+      "inputs": [
+        [
+          "PGPG",
+          "M",
+          "GMP",
+          "P",
+          "PPM",
+          "GGP",
+          "GMGPM",
+          "PPGPM",
+          "PGP",
+          "MPG"
+        ],
+        [
+          14,
+          2,
+          11,
+          4,
+          4,
+          15,
+          6,
+          15,
+          7
+        ]
+      ],
+      "expected": 265
+    },
+    {
+      "inputs": [
+        [
+          "GGGG",
+          "P",
+          "GPGM",
+          "G",
+          "MGP",
+          "MPG",
+          "P",
+          "MMPM",
+          "PP"
+        ],
+        [
+          15,
+          12,
+          16,
+          13,
+          20,
+          4,
+          18,
+          2
+        ]
+      ],
+      "expected": 297
+    },
+    {
+      "inputs": [
+        [
+          "GMGG",
+          "M",
+          "M",
+          "PP",
+          "PMMG",
+          "PP"
+        ],
+        [
+          16,
+          12,
+          2,
+          2,
+          20
+        ]
+      ],
+      "expected": 130
+    },
+    {
+      "inputs": [
+        [
+          "PG",
+          "MG",
+          "GGP",
+          "G",
+          "PGMG"
+        ],
+        [
+          13,
+          14,
+          9,
+          19
+        ]
+      ],
+      "expected": 177
+    },
+    {
+      "inputs": [
+        [
+          "MGGM",
+          "G",
+          "GG"
+        ],
+        [
+          8,
+          17
+        ]
+      ],
+      "expected": 32
+    },
+    {
+      "inputs": [
+        [
+          "GMGMG",
+          "MM",
+          "MGG",
+          "MPP",
+          "GMM"
+        ],
+        [
+          2,
+          13,
+          20,
+          20
+        ]
+      ],
+      "expected": 161
+    },
+    {
+      "inputs": [
+        [
+          "MPPG",
+          "PPP",
+          "G",
+          "GMMP",
+          "MGGM",
+          "PM",
+          "PPM",
+          "G",
+          "MGM"
+        ],
+        [
+          6,
+          6,
+          7,
+          13,
+          11,
+          11,
+          15,
+          14
+        ]
+      ],
+      "expected": 245
+    },
+    {
+      "inputs": [
+        [
+          "MMMG"
+        ],
+        []
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        [
+          "PP",
+          "MPGMM",
+          "MGG",
+          "P",
+          "PMMM",
+          "G",
+          "GMM",
+          "MGP"
+        ],
+        [
+          1,
+          6,
+          9,
+          11,
+          19,
+          15,
+          4
+        ]
+      ],
+      "expected": 217
+    },
+    {
+      "inputs": [
+        [
+          "GMGPM",
+          "GP",
+          "MG",
+          "GPMGG",
+          "MPMGP",
+          "M",
+          "GM",
+          "GGGG",
+          "GPM"
+        ],
+        [
+          2,
+          18,
+          14,
+          17,
+          3,
+          8,
+          1,
+          16
+        ]
+      ],
+      "expected": 266
+    },
+    {
+      "inputs": [
+        [
+          "G",
+          "P",
+          "MGM",
+          "P",
+          "PPPMG"
+        ],
+        [
+          20,
+          19,
+          20,
+          3
+        ]
+      ],
+      "expected": 197
+    },
+    {
+      "inputs": [
+        [
+          "MM"
+        ],
+        []
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        [
+          "PP",
+          "MGMP",
+          "GPP",
+          "PPP",
+          "PP",
+          "GGM",
+          "PM",
+          "PGM",
+          "MM"
+        ],
+        [
+          15,
+          5,
+          11,
+          18,
+          19,
+          16,
+          14,
+          19
+        ]
+      ],
+      "expected": 337
+    },
+    {
+      "inputs": [
+        [
+          "MP",
+          "M",
+          "MM",
+          "PMP",
+          "MGPM",
+          "MPGM",
+          "M",
+          "MP",
+          "GP",
+          "M"
+        ],
+        [
+          16,
+          6,
+          10,
+          10,
+          8,
+          19,
+          8,
+          20,
+          8
+        ]
+      ],
+      "expected": 321
+    },
+    {
+      "inputs": [
+        [
+          "GM",
+          "MGPPG",
+          "GPPP",
+          "M",
+          "MPPPG",
+          "GGG",
+          "PG",
+          "PPP"
+        ],
+        [
+          5,
+          14,
+          19,
+          11,
+          9,
+          15,
+          14
+        ]
+      ],
+      "expected": 234
+    },
+    {
+      "inputs": [
+        [
+          "G",
+          "MPP",
+          "PMPGG",
+          "GMG"
+        ],
+        [
+          6,
+          9,
+          20
+        ]
+      ],
+      "expected": 97
+    },
+    {
+      "inputs": [
+        [
+          "MMGMP",
+          "MP",
+          "MMM",
+          "MGMPG",
+          "P",
+          "MPMG",
+          "P",
+          "MPM",
+          "P"
+        ],
+        [
+          4,
+          4,
+          3,
+          12,
+          2,
+          4,
+          15,
+          17
+        ]
+      ],
+      "expected": 155
+    },
+    {
+      "inputs": [
+        [
+          "P",
+          "GP",
+          "MPM",
+          "PPMG",
+          "MGMGP"
+        ],
+        [
+          12,
+          1,
+          11,
+          16
+        ]
+      ],
+      "expected": 135
+    },
+    {
+      "inputs": [
+        [
+          "MGMPM",
+          "PMGG",
+          "MPM",
+          "PP",
+          "GPMM",
+          "MM"
+        ],
+        [
+          19,
+          18,
+          14,
+          5,
+          11
+        ]
+      ],
+      "expected": 199
+    },
+    {
+      "inputs": [
+        [
+          "GPPP",
+          "GM",
+          "G",
+          "PP"
+        ],
+        [
+          12,
+          2,
+          4
+        ]
+      ],
+      "expected": 53
+    },
+    {
+      "inputs": [
+        [
+          "PP",
+          "M",
+          "GPMM",
+          "PPMP",
+          "GPGMM",
+          "GP",
+          "PPM",
+          "GPP",
+          "GGPMG"
+        ],
+        [
+          20,
+          19,
+          16,
+          20,
+          13,
+          17,
+          3,
+          17
+        ]
+      ],
+      "expected": 404
+    },
+    {
+      "inputs": [
+        [
+          "M",
+          "MMGGP",
+          "GPPMG",
+          "MP",
+          "MPGG",
+          "MPMMM",
+          "M"
+        ],
+        [
+          16,
+          10,
+          4,
+          15,
+          20,
+          20
+        ]
+      ],
+      "expected": 218
+    },
+    {
+      "inputs": [
+        [
+          "MGGM",
+          "MMPPM",
+          "MPPP",
+          "GPM",
+          "MPMGM",
+          "PP",
+          "G",
+          "PGPM"
+        ],
+        [
+          4,
+          5,
+          10,
+          19,
+          9,
+          6,
+          1
+        ]
+      ],
+      "expected": 190
+    },
+    {
+      "inputs": [
+        [
+          "MG",
+          "P",
+          "PGMGM",
+          "PGMM",
+          "MG",
+          "MGGGM",
+          "PMGPP",
+          "PG"
+        ],
+        [
+          17,
+          19,
+          13,
+          15,
+          12,
+          16,
+          18
+        ]
+      ],
+      "expected": 338
+    },
+    {
+      "inputs": [
+        [
+          "MP",
+          "PGMMM",
+          "PPPP",
+          "MGGGG",
+          "PP",
+          "GPMGP",
+          "GPMMG",
+          "G"
+        ],
+        [
+          16,
+          5,
+          1,
+          6,
+          11,
+          10,
+          4
+        ]
+      ],
+      "expected": 180
+    },
+    {
+      "inputs": [
+        [
+          "GGGP",
+          "MGG",
+          "M",
+          "G",
+          "GMMP",
+          "MM",
+          "PGPGG"
+        ],
+        [
+          11,
+          19,
+          20,
+          9,
+          17,
+          6
+        ]
+      ],
+      "expected": 260
+    },
+    {
+      "inputs": [
+        [
+          "MPPMP",
+          "GGG",
+          "MG"
+        ],
+        [
+          19,
+          10
+        ]
+      ],
+      "expected": 68
+    },
+    {
+      "inputs": [
+        [
+          "P",
+          "GPM"
+        ],
+        [
+          7
+        ]
+      ],
+      "expected": 25
+    },
+    {
+      "inputs": [
+        [
+          "M",
+          "G",
+          "P",
+          "GMMP",
+          "MMPM",
+          "PGGG"
+        ],
+        [
+          16,
+          19,
+          1,
+          4,
+          17
+        ]
+      ],
+      "expected": 169
+    },
+    {
+      "inputs": [
+        [
+          "PPP",
+          "MMG",
+          "MPP",
+          "G",
+          "PPMG"
+        ],
+        [
+          20,
+          2,
+          20,
+          19
+        ]
+      ],
+      "expected": 197
+    },
+    {
+      "inputs": [
+        [
+          "PP"
+        ],
+        []
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        [
+          "PMGPP",
+          "PPGGG",
+          "GG",
+          "P",
+          "G"
+        ],
+        [
+          12,
+          14,
+          5,
+          12
+        ]
+      ],
+      "expected": 88
+    },
+    {
+      "inputs": [
+        [
+          "PM",
+          "PP",
+          "GPMGM",
+          "PPGMM",
+          "G",
+          "PG",
+          "PMM"
+        ],
+        [
+          5,
+          16,
+          5,
+          5,
+          8,
+          1
+        ]
+      ],
+      "expected": 139
+    },
+    {
+      "inputs": [
+        [
+          "MMMGP",
+          "GP",
+          "M",
+          "M",
+          "PPMP"
+        ],
+        [
+          3,
+          18,
+          11,
+          13
+        ]
+      ],
+      "expected": 106
+    },
+    {
+      "inputs": [
+        [
+          "G",
+          "P",
+          "P",
+          "PPMM",
+          "MPPP",
+          "GGMM",
+          "GGPMP"
+        ],
+        [
+          15,
+          3,
+          9,
+          8,
+          11,
+          7
+        ]
+      ],
+      "expected": 179
+    },
+    {
+      "inputs": [
+        [
+          "G",
+          "MPPPM",
+          "MPMP",
+          "P",
+          "M",
+          "MM",
+          "MM"
+        ],
+        [
+          2,
+          18,
+          18,
+          19,
+          4,
+          2
+        ]
+      ],
+      "expected": 117
+    },
+    {
+      "inputs": [
+        [
+          "GMPG",
+          "MMPM",
+          "MPPG",
+          "G",
+          "PPGPG",
+          "GGMP"
+        ],
+        [
+          7,
+          7,
+          14,
+          20,
+          17
+        ]
+      ],
+      "expected": 217
+    },
+    {
+      "inputs": [
+        [
+          "MPGM",
+          "M",
+          "MPM",
+          "PPG"
+        ],
+        [
+          4,
+          15,
+          18
+        ]
+      ],
+      "expected": 104
+    },
+    {
+      "inputs": [
+        [
+          "P",
+          "PMMGM",
+          "GPGM",
+          "PMG"
+        ],
+        [
+          1,
+          1,
+          8
+        ]
+      ],
+      "expected": 43
+    },
+    {
+      "inputs": [
+        [
+          "MMMPG"
+        ],
+        []
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        [
+          "MPM",
+          "PGMPG",
+          "GM"
+        ],
+        [
+          16,
+          5
+        ]
+      ],
+      "expected": 68
+    },
+    {
+      "inputs": [
+        [
+          "P"
+        ],
+        []
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        [
+          "PGMG",
+          "MPPPP",
+          "MGG",
+          "GPM",
+          "PGPM",
+          "G",
+          "MMM"
+        ],
+        [
+          17,
+          16,
+          2,
+          10,
+          1,
+          12
+        ]
+      ],
+      "expected": 172
+    },
+    {
+      "inputs": [
+        [
+          "P",
+          "GMG",
+          "PGPGG",
+          "PPMPG",
+          "PGP"
+        ],
+        [
+          5,
+          4,
+          3,
+          17
+        ]
+      ],
+      "expected": 87
+    },
+    {
+      "inputs": [
+        [
+          "PMMGG"
+        ],
+        []
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        [
+          "PMMG",
+          "MP",
+          "P",
+          "G"
+        ],
+        [
+          4,
+          5,
+          12
+        ]
+      ],
+      "expected": 42
+    },
+    {
+      "inputs": [
+        [
+          "PGMP",
+          "PGG",
+          "MMMP",
+          "P",
+          "P",
+          "PGM",
+          "PGGMG",
+          "PGPG",
+          "GMPMG"
+        ],
+        [
+          11,
+          10,
+          8,
+          5,
+          4,
+          18,
+          9,
+          15
+        ]
+      ],
+      "expected": 270
+    },
+    {
+      "inputs": [
+        [
+          "P",
+          "M",
+          "G",
+          "GG",
+          "M",
+          "MMPMG",
+          "PPP"
+        ],
+        [
+          11,
+          13,
+          17,
+          17,
+          2,
+          5
+        ]
+      ],
+      "expected": 199
+    },
+    {
+      "inputs": [
+        [
+          "PGMP",
+          "GMMGM",
+          "PPG",
+          "GPG"
+        ],
+        [
+          15,
+          11,
+          12
+        ]
+      ],
+      "expected": 106
+    },
+    {
+      "inputs": [
+        [
+          "PPMP"
+        ],
+        []
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        [
+          "G",
+          "GGMP",
+          "GGM",
+          "PPPP",
+          "PGGGG",
+          "GMPP",
+          "MPGG"
+        ],
+        [
+          6,
+          10,
+          17,
+          18,
+          5,
+          16
+        ]
+      ],
+      "expected": 241
+    },
+    {
+      "inputs": [
+        [
+          "P",
+          "MM",
+          "MP",
+          "PG",
+          "MPG",
+          "PGM",
+          "M"
+        ],
+        [
+          20,
+          13,
+          6,
+          9,
+          5,
+          5
+        ]
+      ],
+      "expected": 178
+    },
+    {
+      "inputs": [
+        [
+          "MMMMM",
+          "PMMGP",
+          "MMGGG",
+          "M",
+          "MMMGP",
+          "GMGM",
+          "G"
+        ],
+        [
+          16,
+          2,
+          16,
+          5,
+          12,
+          2
+        ]
+      ],
+      "expected": 169
+    },
+    {
+      "inputs": [
+        [
+          "MGM",
+          "GMP",
+          "PM",
+          "M",
+          "GMGP"
+        ],
+        [
+          14,
+          1,
+          3,
+          19
+        ]
+      ],
+      "expected": 124
+    },
+    {
+      "inputs": [
+        [
+          "GGG",
+          "GG",
+          "GP",
+          "PM",
+          "G",
+          "PGM",
+          "PGGPP",
+          "G",
+          "MGP",
+          "MPGGG"
+        ],
+        [
+          11,
+          18,
+          9,
+          1,
+          14,
+          12,
+          5,
+          20,
+          6
+        ]
+      ],
+      "expected": 315
+    },
+    {
+      "inputs": [
+        [
+          "PPG",
+          "P",
+          "GPMPP",
+          "PGGP",
+          "GMMM",
+          "MGM",
+          "GPMM",
+          "GG",
+          "MPMMM",
+          "MP"
+        ],
+        [
+          7,
+          19,
+          3,
+          10,
+          6,
+          6,
+          3,
+          17,
+          2
+        ]
+      ],
+      "expected": 233
+    },
+    {
+      "inputs": [
+        [
+          "MGP",
+          "G",
+          "PM"
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "expected": 34
+    },
+    {
+      "inputs": [
+        [
+          "MP",
+          "PM",
+          "GGG",
+          "MMG"
+        ],
+        [
+          18,
+          20,
+          19
+        ]
+      ],
+      "expected": 142
+    },
+    {
+      "inputs": [
+        [
+          "P",
+          "GPPP",
+          "GGPG",
+          "PMG"
+        ],
+        [
+          2,
+          3,
+          15
+        ]
+      ],
+      "expected": 72
+    },
+    {
+      "inputs": [
+        [
+          "M",
+          "M",
+          "GM",
+          "MMMPG",
+          "MMPGP",
+          "PMGG",
+          "GMPMG",
+          "MM",
+          "MM"
+        ],
+        [
+          9,
+          6,
+          1,
+          9,
+          20,
+          1,
+          3,
+          19
+        ]
+      ],
+      "expected": 187
+    },
+    {
+      "inputs": [
+        [
+          "GGPPP",
+          "MGGPM",
+          "PPM",
+          "PG",
+          "GPG",
+          "MG",
+          "M",
+          "GGPP",
+          "MG"
+        ],
+        [
+          7,
+          5,
+          17,
+          5,
+          16,
+          7,
+          6,
+          12
+        ]
+      ],
+      "expected": 240
+    },
+    {
+      "inputs": [
+        [
+          "PPP",
+          "GP",
+          "GPP",
+          "GGGPG",
+          "GGG",
+          "PM",
+          "GPPG",
+          "PMPP",
+          "MPM",
+          "PMP"
+        ],
+        [
+          3,
+          12,
+          12,
+          9,
+          4,
+          20,
+          6,
+          15,
+          17
+        ]
+      ],
+      "expected": 288
+    }
+  ]
+}

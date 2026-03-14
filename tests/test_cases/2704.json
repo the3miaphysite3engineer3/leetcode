@@ -1,0 +1,648 @@
+{
+  "problem_id": "2704",
+  "title": "To Be Or Not To Be",
+  "function_name": "expect",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        -15,
+        -27,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -12,
+        37,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -72,
+        -83,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        18,
+        -78,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        76,
+        -98,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -22,
+        -88,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        27,
+        43,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -32,
+        30,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        31,
+        -74,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        49,
+        -79,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -13,
+        -82,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -12,
+        39,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        22,
+        -7,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -9,
+        -61,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        12,
+        91,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -67,
+        21,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -61,
+        -86,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -48,
+        0,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        56,
+        16,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -62,
+        25,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        15,
+        -59,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        46,
+        83,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        38,
+        -76,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        79,
+        -16,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        71,
+        -12,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        89,
+        -54,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        49,
+        72,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -39,
+        -100,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -8,
+        -38,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -18,
+        96,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        81,
+        -94,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        39,
+        -39,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -88,
+        52,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        41,
+        -44,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -80,
+        85,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -8,
+        38,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -72,
+        96,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        94,
+        86,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        43,
+        25,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        15,
+        -19,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        41,
+        44,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        84,
+        -12,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        49,
+        58,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -20,
+        63,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        55,
+        -8,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -20,
+        -79,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -45,
+        9,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        58,
+        25,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        83,
+        34,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -36,
+        74,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -3,
+        33,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        60,
+        54,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -5,
+        85,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        29,
+        -38,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        80,
+        -39,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -18,
+        -40,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        68,
+        -85,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -94,
+        -47,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        49,
+        62,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -82,
+        96,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        25,
+        84,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -73,
+        96,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        77,
+        59,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -78,
+        -97,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -80,
+        26,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -61,
+        97,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        22,
+        -9,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        35,
+        28,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        73,
+        19,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        50,
+        -83,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        91,
+        14,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -81,
+        71,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -1,
+        37,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        62,
+        -43,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -53,
+        23,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -71,
+        80,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -35,
+        60,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        67,
+        53,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -76,
+        68,
+        "toBe"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        -94,
+        -29,
+        "toBe"
+      ],
+      "expected": false
+    }
+  ]
+}

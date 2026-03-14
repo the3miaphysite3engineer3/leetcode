@@ -1,0 +1,568 @@
+{
+  "problem_id": "2627",
+  "title": "Debounce",
+  "function_name": "debounce",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        139,
+        4
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        163,
+        3
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        50,
+        1
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        170,
+        1
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        112,
+        1
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        171,
+        5
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        173,
+        3
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        90,
+        2
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        102,
+        4
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        61,
+        4
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        90,
+        3
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        154,
+        2
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        176,
+        5
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        65,
+        1
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        200,
+        3
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        63,
+        4
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        83,
+        4
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        102,
+        3
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        130,
+        3
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        183,
+        2
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        135,
+        5
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        74,
+        3
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        81,
+        2
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        99,
+        2
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        104,
+        5
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        182,
+        5
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        74,
+        3
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        154,
+        5
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        127,
+        1
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        85,
+        1
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        61,
+        5
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        134,
+        5
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        184,
+        1
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        72,
+        1
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        110,
+        1
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        162,
+        2
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        102,
+        3
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        199,
+        2
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        70,
+        4
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        97,
+        1
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        54,
+        4
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        67,
+        1
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        191,
+        3
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        117,
+        1
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        126,
+        2
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        99,
+        3
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        108,
+        1
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        194,
+        3
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        58,
+        4
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        173,
+        4
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        121,
+        1
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        141,
+        3
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        127,
+        2
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        87,
+        3
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        191,
+        5
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        180,
+        5
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        66,
+        5
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        170,
+        5
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        55,
+        1
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        94,
+        2
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        140,
+        5
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        141,
+        2
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        154,
+        1
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        71,
+        2
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        54,
+        3
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        140,
+        5
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        76,
+        2
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        184,
+        2
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        150,
+        3
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        76,
+        1
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        140,
+        2
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        102,
+        5
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        192,
+        5
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        186,
+        1
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        120,
+        3
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        124,
+        4
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        160,
+        3
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        194,
+        2
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        154,
+        1
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        121,
+        5
+      ],
+      "expected": 1
+    }
+  ]
+}

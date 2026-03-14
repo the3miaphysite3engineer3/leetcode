@@ -1,0 +1,488 @@
+{
+  "problem_id": "1641",
+  "title": "Count Sorted Vowel Strings",
+  "function_name": "countVowelStrings",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        1
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        2
+      ],
+      "expected": 31
+    },
+    {
+      "inputs": [
+        3
+      ],
+      "expected": 80
+    },
+    {
+      "inputs": [
+        4
+      ],
+      "expected": 160
+    },
+    {
+      "inputs": [
+        5
+      ],
+      "expected": 280
+    },
+    {
+      "inputs": [
+        6
+      ],
+      "expected": 450
+    },
+    {
+      "inputs": [
+        7
+      ],
+      "expected": 681
+    },
+    {
+      "inputs": [
+        8
+      ],
+      "expected": 985
+    },
+    {
+      "inputs": [
+        9
+      ],
+      "expected": 1375
+    },
+    {
+      "inputs": [
+        10
+      ],
+      "expected": 1865
+    },
+    {
+      "inputs": [
+        11
+      ],
+      "expected": 2470
+    },
+    {
+      "inputs": [
+        12
+      ],
+      "expected": 3206
+    },
+    {
+      "inputs": [
+        13
+      ],
+      "expected": 4090
+    },
+    {
+      "inputs": [
+        14
+      ],
+      "expected": 5140
+    },
+    {
+      "inputs": [
+        15
+      ],
+      "expected": 6375
+    },
+    {
+      "inputs": [
+        16
+      ],
+      "expected": 7815
+    },
+    {
+      "inputs": [
+        17
+      ],
+      "expected": 9481
+    },
+    {
+      "inputs": [
+        18
+      ],
+      "expected": 11395
+    },
+    {
+      "inputs": [
+        19
+      ],
+      "expected": 13580
+    },
+    {
+      "inputs": [
+        20
+      ],
+      "expected": 16060
+    },
+    {
+      "inputs": [
+        21
+      ],
+      "expected": 18860
+    },
+    {
+      "inputs": [
+        22
+      ],
+      "expected": 22006
+    },
+    {
+      "inputs": [
+        23
+      ],
+      "expected": 25525
+    },
+    {
+      "inputs": [
+        24
+      ],
+      "expected": 29445
+    },
+    {
+      "inputs": [
+        25
+      ],
+      "expected": 33795
+    },
+    {
+      "inputs": [
+        26
+      ],
+      "expected": 38605
+    },
+    {
+      "inputs": [
+        27
+      ],
+      "expected": 43906
+    },
+    {
+      "inputs": [
+        28
+      ],
+      "expected": 49730
+    },
+    {
+      "inputs": [
+        29
+      ],
+      "expected": 56110
+    },
+    {
+      "inputs": [
+        30
+      ],
+      "expected": 63080
+    },
+    {
+      "inputs": [
+        31
+      ],
+      "expected": 70675
+    },
+    {
+      "inputs": [
+        32
+      ],
+      "expected": 78931
+    },
+    {
+      "inputs": [
+        33
+      ],
+      "expected": 87885
+    },
+    {
+      "inputs": [
+        34
+      ],
+      "expected": 97575
+    },
+    {
+      "inputs": [
+        35
+      ],
+      "expected": 108040
+    },
+    {
+      "inputs": [
+        36
+      ],
+      "expected": 119320
+    },
+    {
+      "inputs": [
+        37
+      ],
+      "expected": 131456
+    },
+    {
+      "inputs": [
+        38
+      ],
+      "expected": 144490
+    },
+    {
+      "inputs": [
+        39
+      ],
+      "expected": 158465
+    },
+    {
+      "inputs": [
+        40
+      ],
+      "expected": 173425
+    },
+    {
+      "inputs": [
+        41
+      ],
+      "expected": 189415
+    },
+    {
+      "inputs": [
+        42
+      ],
+      "expected": 206481
+    },
+    {
+      "inputs": [
+        43
+      ],
+      "expected": 224670
+    },
+    {
+      "inputs": [
+        44
+      ],
+      "expected": 244030
+    },
+    {
+      "inputs": [
+        45
+      ],
+      "expected": 264610
+    },
+    {
+      "inputs": [
+        46
+      ],
+      "expected": 286460
+    },
+    {
+      "inputs": [
+        47
+      ],
+      "expected": 309631
+    },
+    {
+      "inputs": [
+        48
+      ],
+      "expected": 334175
+    },
+    {
+      "inputs": [
+        49
+      ],
+      "expected": 360145
+    },
+    {
+      "inputs": [
+        50
+      ],
+      "expected": 387595
+    },
+    {
+      "inputs": [
+        18
+      ],
+      "expected": 11395
+    },
+    {
+      "inputs": [
+        19
+      ],
+      "expected": 13580
+    },
+    {
+      "inputs": [
+        12
+      ],
+      "expected": 3206
+    },
+    {
+      "inputs": [
+        6
+      ],
+      "expected": 450
+    },
+    {
+      "inputs": [
+        36
+      ],
+      "expected": 119320
+    },
+    {
+      "inputs": [
+        22
+      ],
+      "expected": 22006
+    },
+    {
+      "inputs": [
+        16
+      ],
+      "expected": 7815
+    },
+    {
+      "inputs": [
+        39
+      ],
+      "expected": 158465
+    },
+    {
+      "inputs": [
+        42
+      ],
+      "expected": 206481
+    },
+    {
+      "inputs": [
+        48
+      ],
+      "expected": 334175
+    },
+    {
+      "inputs": [
+        13
+      ],
+      "expected": 4090
+    },
+    {
+      "inputs": [
+        13
+      ],
+      "expected": 4090
+    },
+    {
+      "inputs": [
+        13
+      ],
+      "expected": 4090
+    },
+    {
+      "inputs": [
+        50
+      ],
+      "expected": 387595
+    },
+    {
+      "inputs": [
+        12
+      ],
+      "expected": 3206
+    },
+    {
+      "inputs": [
+        24
+      ],
+      "expected": 29445
+    },
+    {
+      "inputs": [
+        27
+      ],
+      "expected": 43906
+    },
+    {
+      "inputs": [
+        12
+      ],
+      "expected": 3206
+    },
+    {
+      "inputs": [
+        6
+      ],
+      "expected": 450
+    },
+    {
+      "inputs": [
+        19
+      ],
+      "expected": 13580
+    },
+    {
+      "inputs": [
+        40
+      ],
+      "expected": 173425
+    },
+    {
+      "inputs": [
+        34
+      ],
+      "expected": 97575
+    },
+    {
+      "inputs": [
+        17
+      ],
+      "expected": 9481
+    },
+    {
+      "inputs": [
+        24
+      ],
+      "expected": 29445
+    },
+    {
+      "inputs": [
+        5
+      ],
+      "expected": 280
+    },
+    {
+      "inputs": [
+        6
+      ],
+      "expected": 450
+    },
+    {
+      "inputs": [
+        27
+      ],
+      "expected": 43906
+    },
+    {
+      "inputs": [
+        40
+      ],
+      "expected": 173425
+    },
+    {
+      "inputs": [
+        36
+      ],
+      "expected": 119320
+    },
+    {
+      "inputs": [
+        33
+      ],
+      "expected": 87885
+    }
+  ]
+}

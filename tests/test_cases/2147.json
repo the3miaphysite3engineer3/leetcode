@@ -1,0 +1,488 @@
+{
+  "problem_id": "2147",
+  "title": "Number of Ways to Divide a Long Corridor",
+  "function_name": "numberOfWays",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        "PPSSSSSPPSPPSSSPPSSSPPSPSSP"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "PPPSPSPS"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "SPSSPSPPSPSPPPP"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "PP"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "SSSS"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "PPSPSSPSSSPSPSSSPPPSSPS"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "SPSPSSPPPS"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "PPSPPSSSPPPSPSSSSSPPPSSS"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "PSPPSSSSS"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "SSSSSPSPSPSPPPPSPSSP"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "SPSPSPPPPPSP"
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        "SSPPPPPPPSSPPSPSSSSPPSSPP"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "SPPSSSPPPP"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "SSS"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "PPPSPSPPSPSPPPPP"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "PSSSPSPPPS"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "SPSSPPSSPSPP"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "PSSPSSSPPSPPPPSPSP"
+      ],
+      "expected": 10
+    },
+    {
+      "inputs": [
+        "PSPPSSSPPPPPSSSSSPSPPSSP"
+      ],
+      "expected": 18
+    },
+    {
+      "inputs": [
+        "SPPPPPPSPSSSSPPSPSS"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "SPPPPPPPSSSSSSSPPSS"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "PSSSPSSPSPPPSPPSPSSPSSP"
+      ],
+      "expected": 16
+    },
+    {
+      "inputs": [
+        "SPPPPSSPSPPSPP"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "PSSSPPSPSPSPSSPPSPSPSPPPPSPPPP"
+      ],
+      "expected": 24
+    },
+    {
+      "inputs": [
+        "SSPSPPSPSPPSSSSPSP"
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        "P"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "SSPPPPPSSPPPPPPSSPPSSPSP"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "PSPPSPSSSSS"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "PSSPPPPSSPSPSSPPPSPPSSSPSSS"
+      ],
+      "expected": 30
+    },
+    {
+      "inputs": [
+        "PPPPSPSSPPSPSPSPPPSSPPPPPPPP"
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        "SPSPSSPPPPSPSSSPSPSPSSPSSSS"
+      ],
+      "expected": 80
+    },
+    {
+      "inputs": [
+        "SSPS"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "PPPPSSSSSSSPPSSSSSSPPPPSPSSSP"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "PPSPSSSPPSSSSSSSPPPPSSSSS"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "SPSSSPSSPSPPSS"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "PSSSSSSSPSSSPPPSSPSPSSSP"
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        "SSSPSSPPSPSPSPSPSSPS"
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        "SPSSPSSSPPSPSSPSSSSSSSP"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "PPPSPSPPSPSPPSPPSSPSSPPPPPPP"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "SPSSPPPPPSSPPP"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "PPPSSPP"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "PSS"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "PSSSSSPPPPSPSP"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "SSSPSSS"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "SPSSPPPPSSPSPSSSSSPPPPPPPSPPS"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "P"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "SPPSPSPPSPPPPPSSPPPPS"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "SSSSPPPPPSSP"
+      ],
+      "expected": 6
+    },
+    {
+      "inputs": [
+        "SPSPSSSSSSS"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "PPPSPS"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "SSP"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "PSPSPSSPPP"
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        "PPSSPSPSSSP"
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        "PSPPSPPSPSP"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "PPPSSS"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "P"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "PPS"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "PPSSPPSSPSSPSPSPSSPPPPSSSSPPP"
+      ],
+      "expected": 120
+    },
+    {
+      "inputs": [
+        "PPPSSSPP"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "PSP"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "SPSSPSP"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "PPP"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "PPPPSPPPPPPPPPSPSPSSPPSP"
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        "SSSPS"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "SSPSS"
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        "P"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "SPPSSSPPSSSSPPPPPSPPSPPSPPSPP"
+      ],
+      "expected": 54
+    },
+    {
+      "inputs": [
+        "SSPPPPPSPPPSPSSPP"
+      ],
+      "expected": 12
+    },
+    {
+      "inputs": [
+        "PSPPPSPPSPSSSPPSPPSSSPSP"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "PPSPPSPPPSSPPSSPSPSSPPSPSSPSPS"
+      ],
+      "expected": 96
+    },
+    {
+      "inputs": [
+        "SPPSPSPSSSSPSSSSPPPPPPPPSSP"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "SPSPSPPPPSSSPPSPPPSPSPPSPPSS"
+      ],
+      "expected": 36
+    },
+    {
+      "inputs": [
+        "PPPPPPPSPPSS"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "SSPPPSSSPPSPSSSPSPP"
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        "SSPSPSPS"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "SSSSPSPSSSSSSPPPSSP"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "PPPSPPPPSSSPSSSSPSPPPSPPSP"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "SSPPSPPPPPSPSSSPSSSSSSPPPPP"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "PPSSPSSPS"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "PSPSPPSSPPSPPPPSPPPSSPPPPSSSPP"
+      ],
+      "expected": 0
+    }
+  ]
+}

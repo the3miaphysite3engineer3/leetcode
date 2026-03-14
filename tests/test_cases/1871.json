@@ -1,0 +1,648 @@
+{
+  "problem_id": "1871",
+  "title": "Jump Game VII",
+  "function_name": "canReach",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        "0001011000110000",
+        8,
+        15
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "000101110010100101001110",
+        9,
+        10
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "01000100010101111010101000001",
+        21,
+        24
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "0001",
+        3,
+        3
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "000011001100010111001100100",
+        8,
+        22
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "0000000010111010110100010",
+        5,
+        8
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "0111100",
+        2,
+        6
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "0011000101110",
+        9,
+        9
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "01001010100010",
+        8,
+        10
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "0110100000010000",
+        14,
+        15
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "01111101101011101101",
+        8,
+        16
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "01110100001100100",
+        16,
+        16
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "00",
+        1,
+        1
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "011111",
+        2,
+        4
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "01",
+        1,
+        1
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "000111011011000",
+        14,
+        14
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "010010101111111100111110",
+        18,
+        22
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "010010110111101110",
+        11,
+        17
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "0001000000100100111100011",
+        23,
+        23
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "0111100110110",
+        2,
+        6
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "011011100101010110011001",
+        3,
+        10
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "00010110010",
+        10,
+        10
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "0111011000010110111010110000",
+        27,
+        27
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "01100100101011",
+        7,
+        10
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "0111111010010011011011",
+        9,
+        10
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "0101011011010110101011",
+        11,
+        18
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "000",
+        2,
+        2
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "01011011110101111010010001",
+        12,
+        12
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "01101000110001101111100",
+        7,
+        12
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "0010011111100111111110010111",
+        26,
+        27
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "011111101000",
+        1,
+        5
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "00",
+        1,
+        1
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "01111000111010001011111010101",
+        8,
+        18
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "010001101",
+        5,
+        8
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "0000111111011111",
+        8,
+        12
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "01010",
+        1,
+        2
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "0010111111100011",
+        4,
+        10
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "0111000011",
+        8,
+        8
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "00100",
+        4,
+        4
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "0010100011101000",
+        9,
+        13
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "0000111000011000110001010",
+        1,
+        6
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "011001110001001111001000100",
+        21,
+        25
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "01000",
+        2,
+        3
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "011101110011010110000001",
+        8,
+        15
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "00100001000111001001110001100",
+        18,
+        23
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "01",
+        1,
+        1
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "01111000111011010000111100",
+        16,
+        25
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "010001111010010010010010110",
+        9,
+        12
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "000100010101010100",
+        1,
+        5
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "001010000",
+        1,
+        7
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "00011000011",
+        6,
+        7
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "000100011010100111111010100",
+        10,
+        17
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "0101",
+        3,
+        3
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "011000100100000011011111000110",
+        7,
+        27
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "001111001101000010001111100",
+        21,
+        23
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "000",
+        2,
+        2
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "01101111001",
+        3,
+        9
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "00100011100110101",
+        9,
+        10
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "01011100010",
+        1,
+        10
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "000101101001010011",
+        3,
+        14
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "00",
+        1,
+        1
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "00001100000001000011111001",
+        7,
+        11
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "010100010010101",
+        8,
+        14
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "01001011110",
+        1,
+        2
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "00100101011100",
+        6,
+        11
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "010100111111111101001011",
+        18,
+        19
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "00",
+        1,
+        1
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "01011110000110",
+        12,
+        12
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "00101010011111010",
+        6,
+        15
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "0010111",
+        4,
+        6
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "011010001110110111000100",
+        3,
+        21
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "000",
+        2,
+        2
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "01101",
+        2,
+        2
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "00011010010100110111100111010",
+        2,
+        11
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "0000110011011001010101001101",
+        23,
+        24
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "01010101",
+        2,
+        5
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "01010",
+        3,
+        4
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "0101100000100010100101000100",
+        1,
+        5
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "001001011",
+        4,
+        6
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "010000001100101011",
+        2,
+        11
+      ],
+      "expected": false
+    }
+  ]
+}

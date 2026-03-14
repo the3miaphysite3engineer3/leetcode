@@ -1,0 +1,488 @@
+{
+  "problem_id": "1716",
+  "title": "Calculate Money in Leetcode Bank",
+  "function_name": "totalMoney",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        1
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        2
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        3
+      ],
+      "expected": 6
+    },
+    {
+      "inputs": [
+        4
+      ],
+      "expected": 10
+    },
+    {
+      "inputs": [
+        5
+      ],
+      "expected": 15
+    },
+    {
+      "inputs": [
+        6
+      ],
+      "expected": 21
+    },
+    {
+      "inputs": [
+        7
+      ],
+      "expected": 28
+    },
+    {
+      "inputs": [
+        8
+      ],
+      "expected": 30
+    },
+    {
+      "inputs": [
+        9
+      ],
+      "expected": 33
+    },
+    {
+      "inputs": [
+        10
+      ],
+      "expected": 37
+    },
+    {
+      "inputs": [
+        11
+      ],
+      "expected": 42
+    },
+    {
+      "inputs": [
+        12
+      ],
+      "expected": 48
+    },
+    {
+      "inputs": [
+        13
+      ],
+      "expected": 55
+    },
+    {
+      "inputs": [
+        14
+      ],
+      "expected": 63
+    },
+    {
+      "inputs": [
+        15
+      ],
+      "expected": 66
+    },
+    {
+      "inputs": [
+        16
+      ],
+      "expected": 70
+    },
+    {
+      "inputs": [
+        17
+      ],
+      "expected": 75
+    },
+    {
+      "inputs": [
+        18
+      ],
+      "expected": 81
+    },
+    {
+      "inputs": [
+        19
+      ],
+      "expected": 88
+    },
+    {
+      "inputs": [
+        20
+      ],
+      "expected": 96
+    },
+    {
+      "inputs": [
+        21
+      ],
+      "expected": 105
+    },
+    {
+      "inputs": [
+        22
+      ],
+      "expected": 109
+    },
+    {
+      "inputs": [
+        23
+      ],
+      "expected": 114
+    },
+    {
+      "inputs": [
+        24
+      ],
+      "expected": 120
+    },
+    {
+      "inputs": [
+        25
+      ],
+      "expected": 127
+    },
+    {
+      "inputs": [
+        26
+      ],
+      "expected": 135
+    },
+    {
+      "inputs": [
+        27
+      ],
+      "expected": 144
+    },
+    {
+      "inputs": [
+        28
+      ],
+      "expected": 154
+    },
+    {
+      "inputs": [
+        29
+      ],
+      "expected": 159
+    },
+    {
+      "inputs": [
+        30
+      ],
+      "expected": 165
+    },
+    {
+      "inputs": [
+        31
+      ],
+      "expected": 172
+    },
+    {
+      "inputs": [
+        32
+      ],
+      "expected": 180
+    },
+    {
+      "inputs": [
+        33
+      ],
+      "expected": 189
+    },
+    {
+      "inputs": [
+        34
+      ],
+      "expected": 199
+    },
+    {
+      "inputs": [
+        35
+      ],
+      "expected": 210
+    },
+    {
+      "inputs": [
+        36
+      ],
+      "expected": 216
+    },
+    {
+      "inputs": [
+        37
+      ],
+      "expected": 223
+    },
+    {
+      "inputs": [
+        38
+      ],
+      "expected": 231
+    },
+    {
+      "inputs": [
+        39
+      ],
+      "expected": 240
+    },
+    {
+      "inputs": [
+        40
+      ],
+      "expected": 250
+    },
+    {
+      "inputs": [
+        41
+      ],
+      "expected": 261
+    },
+    {
+      "inputs": [
+        42
+      ],
+      "expected": 273
+    },
+    {
+      "inputs": [
+        43
+      ],
+      "expected": 280
+    },
+    {
+      "inputs": [
+        44
+      ],
+      "expected": 288
+    },
+    {
+      "inputs": [
+        45
+      ],
+      "expected": 297
+    },
+    {
+      "inputs": [
+        46
+      ],
+      "expected": 307
+    },
+    {
+      "inputs": [
+        47
+      ],
+      "expected": 318
+    },
+    {
+      "inputs": [
+        48
+      ],
+      "expected": 330
+    },
+    {
+      "inputs": [
+        49
+      ],
+      "expected": 343
+    },
+    {
+      "inputs": [
+        50
+      ],
+      "expected": 351
+    },
+    {
+      "inputs": [
+        51
+      ],
+      "expected": 360
+    },
+    {
+      "inputs": [
+        52
+      ],
+      "expected": 370
+    },
+    {
+      "inputs": [
+        53
+      ],
+      "expected": 381
+    },
+    {
+      "inputs": [
+        54
+      ],
+      "expected": 393
+    },
+    {
+      "inputs": [
+        55
+      ],
+      "expected": 406
+    },
+    {
+      "inputs": [
+        56
+      ],
+      "expected": 420
+    },
+    {
+      "inputs": [
+        57
+      ],
+      "expected": 429
+    },
+    {
+      "inputs": [
+        58
+      ],
+      "expected": 439
+    },
+    {
+      "inputs": [
+        59
+      ],
+      "expected": 450
+    },
+    {
+      "inputs": [
+        60
+      ],
+      "expected": 462
+    },
+    {
+      "inputs": [
+        61
+      ],
+      "expected": 475
+    },
+    {
+      "inputs": [
+        62
+      ],
+      "expected": 489
+    },
+    {
+      "inputs": [
+        63
+      ],
+      "expected": 504
+    },
+    {
+      "inputs": [
+        64
+      ],
+      "expected": 514
+    },
+    {
+      "inputs": [
+        65
+      ],
+      "expected": 525
+    },
+    {
+      "inputs": [
+        66
+      ],
+      "expected": 537
+    },
+    {
+      "inputs": [
+        67
+      ],
+      "expected": 550
+    },
+    {
+      "inputs": [
+        68
+      ],
+      "expected": 564
+    },
+    {
+      "inputs": [
+        69
+      ],
+      "expected": 579
+    },
+    {
+      "inputs": [
+        70
+      ],
+      "expected": 595
+    },
+    {
+      "inputs": [
+        71
+      ],
+      "expected": 606
+    },
+    {
+      "inputs": [
+        72
+      ],
+      "expected": 618
+    },
+    {
+      "inputs": [
+        73
+      ],
+      "expected": 631
+    },
+    {
+      "inputs": [
+        74
+      ],
+      "expected": 645
+    },
+    {
+      "inputs": [
+        75
+      ],
+      "expected": 660
+    },
+    {
+      "inputs": [
+        76
+      ],
+      "expected": 676
+    },
+    {
+      "inputs": [
+        77
+      ],
+      "expected": 693
+    },
+    {
+      "inputs": [
+        78
+      ],
+      "expected": 705
+    },
+    {
+      "inputs": [
+        79
+      ],
+      "expected": 718
+    },
+    {
+      "inputs": [
+        80
+      ],
+      "expected": 732
+    }
+  ]
+}
