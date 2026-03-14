@@ -1,0 +1,28 @@
+{
+    "problem_id": "0070",
+    "title": "Climbing Stairs",
+    "function_name": "climbStairs",
+    "comparison": "exact",
+    "test_cases": [
+        {
+            "inputs": [2],
+            "expected": 2
+        },
+        {
+            "inputs": [3],
+            "expected": 3
+        },
+        {
+            "inputs": [1],
+            "expected": 1
+        },
+        {
+            "inputs": [5],
+            "expected": 8
+        },
+        {
+            "inputs": [10],
+            "expected": 89
+        }
+    ]
+}

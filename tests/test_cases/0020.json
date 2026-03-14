@@ -1,0 +1,28 @@
+{
+    "problem_id": "0020",
+    "title": "Valid Parentheses",
+    "function_name": "isValid",
+    "comparison": "exact",
+    "test_cases": [
+        {
+            "inputs": ["()"],
+            "expected": true
+        },
+        {
+            "inputs": ["()[]{}"],
+            "expected": true
+        },
+        {
+            "inputs": ["(]"],
+            "expected": false
+        },
+        {
+            "inputs": ["([)]"],
+            "expected": false
+        },
+        {
+            "inputs": ["{[]}"],
+            "expected": true
+        }
+    ]
+}
