@@ -5,24 +5,484 @@
     "comparison": "exact",
     "test_cases": [
         {
-            "inputs": [2],
+            "inputs": [
+                2
+            ],
             "expected": 2
         },
         {
-            "inputs": [3],
+            "inputs": [
+                3
+            ],
             "expected": 3
         },
         {
-            "inputs": [1],
+            "inputs": [
+                1
+            ],
             "expected": 1
         },
         {
-            "inputs": [5],
+            "inputs": [
+                5
+            ],
             "expected": 8
         },
         {
-            "inputs": [10],
+            "inputs": [
+                10
+            ],
             "expected": 89
+        },
+        {
+            "inputs": [
+                4
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                6
+            ],
+            "expected": 13
+        },
+        {
+            "inputs": [
+                7
+            ],
+            "expected": 21
+        },
+        {
+            "inputs": [
+                8
+            ],
+            "expected": 34
+        },
+        {
+            "inputs": [
+                9
+            ],
+            "expected": 55
+        },
+        {
+            "inputs": [
+                11
+            ],
+            "expected": 144
+        },
+        {
+            "inputs": [
+                12
+            ],
+            "expected": 233
+        },
+        {
+            "inputs": [
+                13
+            ],
+            "expected": 377
+        },
+        {
+            "inputs": [
+                14
+            ],
+            "expected": 610
+        },
+        {
+            "inputs": [
+                15
+            ],
+            "expected": 987
+        },
+        {
+            "inputs": [
+                16
+            ],
+            "expected": 1597
+        },
+        {
+            "inputs": [
+                17
+            ],
+            "expected": 2584
+        },
+        {
+            "inputs": [
+                18
+            ],
+            "expected": 4181
+        },
+        {
+            "inputs": [
+                19
+            ],
+            "expected": 6765
+        },
+        {
+            "inputs": [
+                20
+            ],
+            "expected": 10946
+        },
+        {
+            "inputs": [
+                21
+            ],
+            "expected": 17711
+        },
+        {
+            "inputs": [
+                22
+            ],
+            "expected": 28657
+        },
+        {
+            "inputs": [
+                23
+            ],
+            "expected": 46368
+        },
+        {
+            "inputs": [
+                24
+            ],
+            "expected": 75025
+        },
+        {
+            "inputs": [
+                25
+            ],
+            "expected": 121393
+        },
+        {
+            "inputs": [
+                26
+            ],
+            "expected": 196418
+        },
+        {
+            "inputs": [
+                27
+            ],
+            "expected": 317811
+        },
+        {
+            "inputs": [
+                28
+            ],
+            "expected": 514229
+        },
+        {
+            "inputs": [
+                29
+            ],
+            "expected": 832040
+        },
+        {
+            "inputs": [
+                30
+            ],
+            "expected": 1346269
+        },
+        {
+            "inputs": [
+                31
+            ],
+            "expected": 2178309
+        },
+        {
+            "inputs": [
+                32
+            ],
+            "expected": 3524578
+        },
+        {
+            "inputs": [
+                33
+            ],
+            "expected": 5702887
+        },
+        {
+            "inputs": [
+                34
+            ],
+            "expected": 9227465
+        },
+        {
+            "inputs": [
+                35
+            ],
+            "expected": 14930352
+        },
+        {
+            "inputs": [
+                36
+            ],
+            "expected": 24157817
+        },
+        {
+            "inputs": [
+                37
+            ],
+            "expected": 39088169
+        },
+        {
+            "inputs": [
+                38
+            ],
+            "expected": 63245986
+        },
+        {
+            "inputs": [
+                39
+            ],
+            "expected": 102334155
+        },
+        {
+            "inputs": [
+                40
+            ],
+            "expected": 165580141
+        },
+        {
+            "inputs": [
+                41
+            ],
+            "expected": 267914296
+        },
+        {
+            "inputs": [
+                42
+            ],
+            "expected": 433494437
+        },
+        {
+            "inputs": [
+                43
+            ],
+            "expected": 701408733
+        },
+        {
+            "inputs": [
+                44
+            ],
+            "expected": 1134903170
+        },
+        {
+            "inputs": [
+                45
+            ],
+            "expected": 1836311903
+        },
+        {
+            "inputs": [
+                1
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                2
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                3
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                4
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                5
+            ],
+            "expected": 8
+        },
+        {
+            "inputs": [
+                10
+            ],
+            "expected": 89
+        },
+        {
+            "inputs": [
+                15
+            ],
+            "expected": 987
+        },
+        {
+            "inputs": [
+                20
+            ],
+            "expected": 10946
+        },
+        {
+            "inputs": [
+                25
+            ],
+            "expected": 121393
+        },
+        {
+            "inputs": [
+                30
+            ],
+            "expected": 1346269
+        },
+        {
+            "inputs": [
+                35
+            ],
+            "expected": 14930352
+        },
+        {
+            "inputs": [
+                40
+            ],
+            "expected": 165580141
+        },
+        {
+            "inputs": [
+                44
+            ],
+            "expected": 1134903170
+        },
+        {
+            "inputs": [
+                45
+            ],
+            "expected": 1836311903
+        },
+        {
+            "inputs": [
+                33
+            ],
+            "expected": 5702887
+        },
+        {
+            "inputs": [
+                11
+            ],
+            "expected": 144
+        },
+        {
+            "inputs": [
+                27
+            ],
+            "expected": 317811
+        },
+        {
+            "inputs": [
+                35
+            ],
+            "expected": 14930352
+        },
+        {
+            "inputs": [
+                35
+            ],
+            "expected": 14930352
+        },
+        {
+            "inputs": [
+                26
+            ],
+            "expected": 196418
+        },
+        {
+            "inputs": [
+                6
+            ],
+            "expected": 13
+        },
+        {
+            "inputs": [
+                23
+            ],
+            "expected": 46368
+        },
+        {
+            "inputs": [
+                15
+            ],
+            "expected": 987
+        },
+        {
+            "inputs": [
+                14
+            ],
+            "expected": 610
+        },
+        {
+            "inputs": [
+                43
+            ],
+            "expected": 701408733
+        },
+        {
+            "inputs": [
+                22
+            ],
+            "expected": 28657
+        },
+        {
+            "inputs": [
+                22
+            ],
+            "expected": 28657
+        },
+        {
+            "inputs": [
+                24
+            ],
+            "expected": 75025
+        },
+        {
+            "inputs": [
+                19
+            ],
+            "expected": 6765
+        },
+        {
+            "inputs": [
+                14
+            ],
+            "expected": 610
+        },
+        {
+            "inputs": [
+                40
+            ],
+            "expected": 165580141
+        },
+        {
+            "inputs": [
+                34
+            ],
+            "expected": 9227465
+        },
+        {
+            "inputs": [
+                31
+            ],
+            "expected": 2178309
+        },
+        {
+            "inputs": [
+                36
+            ],
+            "expected": 24157817
+        },
+        {
+            "inputs": [
+                42
+            ],
+            "expected": 433494437
         }
     ]
 }

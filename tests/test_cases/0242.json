@@ -5,15 +5,563 @@
     "comparison": "exact",
     "test_cases": [
         {
-            "inputs": ["anagram", "nagaram"],
+            "inputs": [
+                "anagram",
+                "nagaram"
+            ],
             "expected": true
         },
         {
-            "inputs": ["rat", "car"],
+            "inputs": [
+                "rat",
+                "car"
+            ],
             "expected": false
         },
         {
-            "inputs": ["a", "ab"],
+            "inputs": [
+                "a",
+                "ab"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "a",
+                "a"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "a",
+                "b"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "z",
+                "z"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "hello",
+                "hello"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "abc",
+                "abc"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "abc",
+                "cba"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "abcd",
+                "dcba"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "ab",
+                "a"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "abc",
+                "ab"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "a",
+                "aa"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "abc",
+                "abcd"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aaa",
+                "aaa"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "aaaa",
+                "aaaa"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "aaa",
+                "aaaa"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "listen",
+                "silent"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "triangle",
+                "integral"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "evil",
+                "vile"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "dusty",
+                "study"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "night",
+                "thing"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "astronomer",
+                "moonrarets"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "astronomer",
+                "moonstarer"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "aab",
+                "aba"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "aab",
+                "bba"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aaab",
+                "abaa"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "aabb",
+                "abab"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "aabb",
+                "abba"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "ab",
+                "ba"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "ab",
+                "ab"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "ab",
+                "cd"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aa",
+                "aa"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "aa",
+                "ab"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "abcabc",
+                "cbacba"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "abcabc",
+                "abcabd"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aabbcc",
+                "abcabc"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "abcdefghijklmnopqrstuvwxyz",
+                "zyxwvutsrqponmlkjihgfedcba"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "abcdefghijklmnopqrstuvwxyz",
+                "abcdefghijklmnopqrstuvwxya"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aabbccdd",
+                "abcdabcd"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "aabbccdd",
+                "aabbccde"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "zzzzz",
+                "zzzzz"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "zzzzy",
+                "zzzzz"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "abcde",
+                "abcdf"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "hello",
+                "hellp"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "world",
+                "worle"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "abab",
+                "baba"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "abcabc",
+                "bcabca"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "xyzxyz",
+                "zyxzyx"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aaabbb",
+                "ababab"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "aaabbb",
+                "ababba"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "aaabbb",
+                "aaabba"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "xyz",
+                "yxz"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "arztgcxvstekvxxxxkaeoepkd",
+                "iqxaoeuousdbgxgnwryftmglg"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "vsallajjqdwpu",
+                "llrnqykdfonlf"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "tfrnmjvwvnujwtdczdcuatndpxytrduoqszb",
+                "ghyormdgpdlzonuwzxmalzhqjivijznvhanb"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "a",
+                "a"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "qxtkkfsnhrmgtumbzsneumxf",
+                "gmbuqxethsmstrfnxkknufzm"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "u",
+                "wrcsma"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "xeouuylfhuhjgrhxyzzmyivbiceuausddotddejifccplgmd",
+                "juufzuelgihdvccciblshyyozptxdduodxmjhayimrgfduee"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "clwrujoxzpnqm",
+                "vwimdszysjfzgxp"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "ontxiktdtmngsllucofbqisnjtuq",
+                "fmtlbuqujcnqnssioittdgtlnkxo"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "jtgqgdriwtzvcsunvynkkggbz",
+                "nvrbkzgnvkyggjticzdugqswt"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "uacpdznxjikylmcrykptbm",
+                "dibpjlkknzacmmyxutyprc"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "bizbdbjcikwtzzmiwfesodekeysnuovdqqhspvpikyxph",
+                "tqfqisopicepnzkvdvmkyxwhuwykjzsohbibdpdzisebe"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "vjsudeodxdh",
+                "hdjoxeuvdsd"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "rclngemq",
+                "cqmglnre"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "mxngjgmftiqtpqndvbuhdhdbbsihcrdihtwwmmmdhx",
+                "pgfzglujwtjxadfqwtpxjwhfkvcffkoeavpnkaficf"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "yatlpsaphpdbasvjhqqfyeyddjzxkopxlrivpiloaljw",
+                "ikxlopehdlyfadpsihlajtabsxdqoyjyvvzpawqppljr"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "zoszzljdapveoveqjtrvfjpjczja",
+                "atcodjvjezvpzlsajfevzjqozrpj"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "hbplhzvumnmdijtjfsn",
+                "sevygienrgjjcjsuorf"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "zndeqowkqvwlolnonnoaraync",
+                "jzhsqletrsjbymemvaozyqobc"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "iudk",
+                "spwk"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "dxsv",
+                "wgqe"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "xpehvuejujxazptwgdcaetdqdhgdpaqombdj",
+                "uezqdjhctddmpxhjadedbgotqauxevpjpgwa"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "ajodsmasjb",
+                "tobleoxoia"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "lqqglwqmqcf",
+                "xskowzeizyv"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "mcupmptvfswqyvqiewks",
+                "tmcbaxfhdvdpvpkyhyzx"
+            ],
             "expected": false
         }
     ]

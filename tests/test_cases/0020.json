@@ -5,24 +5,484 @@
     "comparison": "exact",
     "test_cases": [
         {
-            "inputs": ["()"],
+            "inputs": [
+                "()"
+            ],
             "expected": true
         },
         {
-            "inputs": ["()[]{}"],
+            "inputs": [
+                "()[]{}"
+            ],
             "expected": true
         },
         {
-            "inputs": ["(]"],
+            "inputs": [
+                "(]"
+            ],
             "expected": false
         },
         {
-            "inputs": ["([)]"],
+            "inputs": [
+                "([)]"
+            ],
             "expected": false
         },
         {
-            "inputs": ["{[]}"],
+            "inputs": [
+                "{[]}"
+            ],
             "expected": true
+        },
+        {
+            "inputs": [
+                "("
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "["
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "{"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                ")"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "]"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "}"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "(((())))"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "[[[[]]]]"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "{{{{}}}}"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "{[({[()]})]}"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "((((()))]"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "{[({[()]})]]"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "()()()()"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "{}{}{}{}"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "[][][][]"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "((()))"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "((("
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                ")))"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "{()}"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "[{}]"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "({})"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "{()[]()}"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "{[()]}"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "{(})"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "[(])"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "{[}]"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "([{)]}"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "({[)]}"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                ")("
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "]["
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "}{"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                ")()"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "(((((((((((((((((((((((((((((((((((((((((((((((((())))))))))))))))))))))))))))))))))))))))))))))))))"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "{[]}{[]}{[]}{[]}{[]}{[]}{[]}{[]}{[]}{[]}{[]}{[]}{[]}{[]}{[]}{[]}{[]}{[]}{[]}{[]}{[]}{[]}{[]}{[]}{[]}"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "({[]})({[]})({[]})({[]})({[]})({[]})({[]})({[]})({[]})({[]})({[]})({[]})({[]})({[]})({[]})({[]})()"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "((((((((((((((((((((((((((((((((((((((((((((((((((("
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                ")))))))))))))))))))))))))))))))))))))))))))))))))))"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()("
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()())"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "()"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "[]"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "{}"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "(}"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "[)"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "{]"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "({})[]"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "[]({}){[()]}"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "{[()]()}"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "(()"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "())"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "({})("
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "{[]}}"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "["
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "()[]([](({(()([([()[]{([][])}][()[{}]][])])[]())}[]){{}[]}[]))"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "{}{[{({({((){}()({([[]]{}{})}))}{([]){{[[][]{([])}]}}})})}]}"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "[{([][()]){([()][{([]()({{{()}()}{([])}}))}])}}]"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "[][{}{}][]{}(){}[{}]{}()[[(())(({{}}))]]"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "[]()(([{()}])){}[][]{}[[]]((){[]})(){[]{[][][]{{}{}}}(())}{{}}"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "[()(){({()})}[]][[{}({()}){}]][((){[]{{()({}[[]][{}({{[]}[{[]}]})])}}})]"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "[][[]][]{[](())([])[]}()[]{()}([()]){((()))}[][]()"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "{{[]}[[[]]{(){}}]}"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "[]{{[][]({}([()][(())])){}}}"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "{}([{()}(({[[[]]]{{}}}{[[]]({})}))])"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "(){}(){}[{{}}]{}[][([]())](){({})}"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "()[[{}]]()[{[{}]}]()([])"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "([]{([]){}})()[{[[[]]][]}][[([[([[]()[]()])]])]]"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "((){}{}(({}[[]]{([[(()({}){})()]])})))"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "{{[]}{}{[{}()]}([{()[]()}()])}"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "([][])(){}[{()}]()({()})[[]]{()()({}((){[[(({[]}))]]}))}"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "[))[}(){{{}{[}"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "}"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "){{{)}][}("
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "]]()]}{("
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "([[)]{][{})](({(("
+            ],
+            "expected": false
         }
     ]
 }
