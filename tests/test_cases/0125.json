@@ -1,0 +1,20 @@
+{
+    "problem_id": "0125",
+    "title": "Valid Palindrome",
+    "function_name": "isPalindrome",
+    "comparison": "exact",
+    "test_cases": [
+        {
+            "inputs": ["A man, a plan, a canal: Panama"],
+            "expected": true
+        },
+        {
+            "inputs": ["race a car"],
+            "expected": false
+        },
+        {
+            "inputs": [" "],
+            "expected": true
+        }
+    ]
+}

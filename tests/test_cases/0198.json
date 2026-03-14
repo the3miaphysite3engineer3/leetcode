@@ -1,0 +1,20 @@
+{
+    "problem_id": "0198",
+    "title": "House Robber",
+    "function_name": "rob",
+    "comparison": "exact",
+    "test_cases": [
+        {
+            "inputs": [[1, 2, 3, 1]],
+            "expected": 4
+        },
+        {
+            "inputs": [[2, 7, 9, 3, 1]],
+            "expected": 12
+        },
+        {
+            "inputs": [[2, 1, 1, 2]],
+            "expected": 4
+        }
+    ]
+}
