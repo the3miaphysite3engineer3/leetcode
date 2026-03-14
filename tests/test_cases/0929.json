@@ -1,0 +1,899 @@
+{
+    "problem_id": "0929",
+    "title": "Unique Email Addresses",
+    "function_name": "numUniqueEmails",
+    "comparison": "exact",
+    "test_cases": [
+        {
+            "inputs": [
+                [
+                    "test.email+alex@leetcode.com",
+                    "test.e.mail+bob.cathy@leetcode.com",
+                    "testemail+david@lee.tcode.com"
+                ]
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                [
+                    "a@leetcode.com",
+                    "b@leetcode.com",
+                    "c@leetcode.com"
+                ]
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                [
+                    "test.email+alex@leetcode.com",
+                    "test.email@leetcode.com"
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    "a+b@x.com",
+                    "a@x.com"
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    "a.b@x.com",
+                    "ab@x.com"
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    "dave+extra@mail.org",
+                    "alice@test.com",
+                    "dave@yahoo.com",
+                    "alice@yahoo.com",
+                    "charlie@mail.org"
+                ]
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                [
+                    "alice+extra@yahoo.com",
+                    "dav.e@gmail.com"
+                ]
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                [
+                    "charlie@gmail.com",
+                    "charlie@test.com",
+                    "bob@mail.org",
+                    "dave+filter@yahoo.com"
+                ]
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                [
+                    "bo.b+extra@mail.org",
+                    "frank@test.com",
+                    "alice+extra@mail.org"
+                ]
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                [
+                    "frank+filter@mail.org",
+                    "bob+tag@gmail.com",
+                    "frank@test.com",
+                    "charlie@yahoo.com",
+                    "bob@test.com",
+                    "bo.b@test.com",
+                    "frank@test.com",
+                    "charlie@gmail.com"
+                ]
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                [
+                    "e.ve@yahoo.com",
+                    "d.ave@mail.org",
+                    "frank@mail.org",
+                    "bob@gmail.com",
+                    "bo.b@test.com",
+                    "fra.nk@yahoo.com",
+                    "ali.ce@mail.org"
+                ]
+            ],
+            "expected": 7
+        },
+        {
+            "inputs": [
+                [
+                    "charlie+filter@yahoo.com",
+                    "bob@mail.org",
+                    "da.ve@test.com",
+                    "a.lice@gmail.com",
+                    "eve@yahoo.com",
+                    "bob@yahoo.com",
+                    "frank+tag@yahoo.com"
+                ]
+            ],
+            "expected": 7
+        },
+        {
+            "inputs": [
+                [
+                    "dave+extra@yahoo.com",
+                    "frank@test.com",
+                    "dav.e@yahoo.com",
+                    "bo.b@gmail.com",
+                    "frank@gmail.com",
+                    "charlie@gmail.com",
+                    "frank@mail.org",
+                    "bob@yahoo.com"
+                ]
+            ],
+            "expected": 7
+        },
+        {
+            "inputs": [
+                [
+                    "frank+extra@test.com"
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    "d.ave@yahoo.com",
+                    "alice@test.com",
+                    "bob+tag@gmail.com",
+                    "charlie@gmail.com",
+                    "dave@yahoo.com",
+                    "f.rank+filter@mail.org",
+                    "dave+extra@yahoo.com"
+                ]
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                [
+                    "dave@test.com",
+                    "alice@gmail.com",
+                    "bob@mail.org",
+                    "bo.b@yahoo.com",
+                    "frank@test.com"
+                ]
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                [
+                    "alice@gmail.com"
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    "ev.e@yahoo.com",
+                    "charlie@yahoo.com"
+                ]
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                [
+                    "frank@mail.org",
+                    "ev.e@test.com"
+                ]
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                [
+                    "charlie@mail.org",
+                    "eve@test.com",
+                    "alice@yahoo.com",
+                    "e.ve@mail.org",
+                    "e.ve@test.com"
+                ]
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                [
+                    "charlie+extra@yahoo.com"
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    "charl.ie@test.com",
+                    "dave+extra@mail.org",
+                    "bob@gmail.com"
+                ]
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                [
+                    "frank@test.com",
+                    "charlie@yahoo.com",
+                    "alice@mail.org",
+                    "eve@gmail.com",
+                    "dave@mail.org"
+                ]
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                [
+                    "alice@yahoo.com"
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    "alice+tag@test.com"
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    "charlie@yahoo.com",
+                    "dave@gmail.com",
+                    "da.ve@gmail.com",
+                    "bob@yahoo.com",
+                    "eve+filter@test.com"
+                ]
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                [
+                    "al.ice@mail.org",
+                    "al.ice@mail.org",
+                    "alice@test.com",
+                    "eve+extra@test.com"
+                ]
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                [
+                    "alice+filter@test.com",
+                    "bob@mail.org",
+                    "bob@test.com",
+                    "e.ve@gmail.com"
+                ]
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                [
+                    "alic.e@mail.org"
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    "alice+filter@gmail.com",
+                    "a.lice+extra@yahoo.com"
+                ]
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                [
+                    "bo.b@yahoo.com",
+                    "eve@gmail.com",
+                    "a.lice@gmail.com",
+                    "ev.e@gmail.com"
+                ]
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                [
+                    "charli.e+extra@yahoo.com",
+                    "a.lice@yahoo.com",
+                    "eve@mail.org",
+                    "char.lie@mail.org",
+                    "dave@yahoo.com"
+                ]
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                [
+                    "frank@gmail.com",
+                    "bob@yahoo.com",
+                    "dave+extra@gmail.com",
+                    "charlie@gmail.com",
+                    "frank+filter@mail.org",
+                    "b.ob+extra@test.com",
+                    "b.ob@gmail.com",
+                    "d.ave+tag@gmail.com"
+                ]
+            ],
+            "expected": 7
+        },
+        {
+            "inputs": [
+                [
+                    "dave@gmail.com",
+                    "dave+extra@mail.org",
+                    "fra.nk@test.com",
+                    "alice+filter@yahoo.com",
+                    "ev.e@gmail.com",
+                    "frank@test.com"
+                ]
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                [
+                    "ev.e+extra@yahoo.com",
+                    "frank@mail.org",
+                    "e.ve@gmail.com",
+                    "bob+extra@gmail.com",
+                    "dave@mail.org",
+                    "frank+tag@test.com",
+                    "fra.nk@gmail.com",
+                    "bob+extra@gmail.com"
+                ]
+            ],
+            "expected": 7
+        },
+        {
+            "inputs": [
+                [
+                    "frank+filter@gmail.com",
+                    "charlie@gmail.com",
+                    "dave@yahoo.com",
+                    "bob@test.com",
+                    "e.ve@yahoo.com",
+                    "eve+tag@mail.org",
+                    "eve@mail.org",
+                    "eve@yahoo.com"
+                ]
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                [
+                    "fran.k+filter@yahoo.com",
+                    "b.ob+extra@test.com",
+                    "c.harlie@yahoo.com",
+                    "eve@gmail.com",
+                    "dave@yahoo.com",
+                    "dave@gmail.com",
+                    "frank@yahoo.com",
+                    "charlie@test.com"
+                ]
+            ],
+            "expected": 7
+        },
+        {
+            "inputs": [
+                [
+                    "eve@yahoo.com",
+                    "dav.e@mail.org",
+                    "alice@test.com",
+                    "char.lie@mail.org"
+                ]
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                [
+                    "bob@mail.org",
+                    "bob@test.com",
+                    "eve+filter@gmail.com",
+                    "fra.nk+tag@mail.org",
+                    "eve@test.com",
+                    "bob@yahoo.com",
+                    "charlie+tag@test.com"
+                ]
+            ],
+            "expected": 7
+        },
+        {
+            "inputs": [
+                [
+                    "eve@gmail.com",
+                    "charlie@test.com",
+                    "a.lice+extra@gmail.com",
+                    "alice+extra@yahoo.com",
+                    "charlie@yahoo.com",
+                    "eve@gmail.com"
+                ]
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                [
+                    "bob+tag@test.com",
+                    "frank+extra@mail.org",
+                    "alice@mail.org"
+                ]
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                [
+                    "bo.b+filter@yahoo.com",
+                    "eve+tag@yahoo.com",
+                    "dave+extra@mail.org"
+                ]
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                [
+                    "al.ice@test.com",
+                    "alic.e@gmail.com",
+                    "dave+extra@test.com",
+                    "al.ice@mail.org",
+                    "bob@yahoo.com"
+                ]
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                [
+                    "b.ob@mail.org",
+                    "frank+filter@yahoo.com",
+                    "c.harlie+tag@mail.org",
+                    "frank@yahoo.com",
+                    "eve@yahoo.com"
+                ]
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                [
+                    "al.ice@yahoo.com",
+                    "alic.e@test.com",
+                    "bob@yahoo.com",
+                    "a.lice+filter@yahoo.com"
+                ]
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                [
+                    "bob@mail.org"
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    "alic.e@yahoo.com",
+                    "dave@gmail.com",
+                    "frank@test.com",
+                    "charlie+tag@gmail.com",
+                    "fra.nk+filter@yahoo.com",
+                    "alice@test.com",
+                    "da.ve@yahoo.com"
+                ]
+            ],
+            "expected": 7
+        },
+        {
+            "inputs": [
+                [
+                    "alic.e@mail.org",
+                    "cha.rlie@gmail.com",
+                    "a.lice@test.com",
+                    "charlie@gmail.com",
+                    "d.ave@test.com",
+                    "alic.e@test.com",
+                    "c.harlie@yahoo.com"
+                ]
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                [
+                    "frank@gmail.com",
+                    "bo.b@gmail.com"
+                ]
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                [
+                    "eve+filter@gmail.com",
+                    "alice+tag@yahoo.com",
+                    "frank@test.com"
+                ]
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                [
+                    "frank@test.com",
+                    "b.ob@mail.org",
+                    "e.ve+filter@gmail.com",
+                    "alice@gmail.com",
+                    "eve@yahoo.com",
+                    "eve+filter@yahoo.com"
+                ]
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                [
+                    "dave+tag@yahoo.com",
+                    "alice@test.com",
+                    "dave@yahoo.com",
+                    "bob@yahoo.com"
+                ]
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                [
+                    "b.ob@test.com"
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    "dave@mail.org",
+                    "alice+extra@gmail.com",
+                    "alice+extra@gmail.com",
+                    "eve@mail.org",
+                    "charlie@test.com",
+                    "d.ave+tag@mail.org",
+                    "alice@mail.org",
+                    "e.ve@test.com"
+                ]
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                [
+                    "c.harlie@yahoo.com",
+                    "bob@gmail.com"
+                ]
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                [
+                    "dave@gmail.com",
+                    "bo.b@yahoo.com"
+                ]
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                [
+                    "fran.k@test.com",
+                    "eve+tag@mail.org",
+                    "alice@mail.org"
+                ]
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                [
+                    "eve@yahoo.com",
+                    "eve@yahoo.com"
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    "charlie@yahoo.com"
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    "alice+extra@mail.org",
+                    "alice+filter@mail.org",
+                    "bob+extra@gmail.com"
+                ]
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                [
+                    "frank+tag@mail.org"
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    "eve@yahoo.com",
+                    "a.lice+filter@mail.org",
+                    "ali.ce@mail.org",
+                    "charlie@gmail.com",
+                    "alice@mail.org",
+                    "b.ob+filter@test.com",
+                    "alice@gmail.com",
+                    "bo.b@mail.org"
+                ]
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                [
+                    "eve@gmail.com",
+                    "ch.arlie@test.com",
+                    "eve@mail.org",
+                    "dave+extra@mail.org"
+                ]
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                [
+                    "bob@mail.org",
+                    "bob@gmail.com",
+                    "bob@gmail.com",
+                    "eve@yahoo.com",
+                    "frank@test.com",
+                    "frank@mail.org"
+                ]
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                [
+                    "alice@mail.org",
+                    "eve+filter@yahoo.com",
+                    "eve@yahoo.com",
+                    "bob@yahoo.com",
+                    "ev.e@gmail.com",
+                    "eve@mail.org"
+                ]
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                [
+                    "charlie@test.com",
+                    "dave@test.com",
+                    "ali.ce+extra@gmail.com"
+                ]
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                [
+                    "charlie+tag@test.com",
+                    "frank@test.com",
+                    "frank@test.com"
+                ]
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                [
+                    "da.ve@gmail.com"
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    "al.ice+tag@test.com",
+                    "bob@gmail.com",
+                    "e.ve+tag@yahoo.com",
+                    "alice@test.com",
+                    "dave@mail.org"
+                ]
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                [
+                    "dave@yahoo.com",
+                    "dave@yahoo.com",
+                    "e.ve@test.com",
+                    "bo.b+tag@yahoo.com",
+                    "da.ve@yahoo.com",
+                    "charlie@yahoo.com",
+                    "alice@test.com"
+                ]
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                [
+                    "ali.ce+extra@test.com",
+                    "e.ve@yahoo.com"
+                ]
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                [
+                    "alice+extra@gmail.com",
+                    "charlie@mail.org",
+                    "alice+extra@yahoo.com",
+                    "alice@yahoo.com",
+                    "alice@gmail.com",
+                    "eve@test.com",
+                    "dave+filter@test.com",
+                    "ev.e+filter@yahoo.com"
+                ]
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                [
+                    "eve@gmail.com",
+                    "bob@mail.org",
+                    "alice+filter@mail.org",
+                    "da.ve@yahoo.com",
+                    "charlie@yahoo.com",
+                    "e.ve+extra@gmail.com"
+                ]
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                [
+                    "fr.ank+filter@test.com",
+                    "dav.e+tag@test.com",
+                    "b.ob@yahoo.com",
+                    "bo.b+filter@yahoo.com"
+                ]
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                [
+                    "e.ve@yahoo.com",
+                    "charlie+extra@yahoo.com",
+                    "ev.e@test.com",
+                    "dave@yahoo.com"
+                ]
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                [
+                    "charlie+extra@mail.org"
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    "frank+filter@gmail.com",
+                    "b.ob+tag@mail.org",
+                    "dave@mail.org",
+                    "charlie@test.com",
+                    "charlie@gmail.com",
+                    "frank@test.com",
+                    "charlie@test.com"
+                ]
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                [
+                    "bob@mail.org",
+                    "bob+filter@gmail.com",
+                    "fra.nk@gmail.com",
+                    "bob@test.com"
+                ]
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                [
+                    "frank@test.com",
+                    "frank+tag@mail.org",
+                    "bob+extra@yahoo.com",
+                    "charlie@test.com",
+                    "bob+filter@gmail.com",
+                    "alice@gmail.com",
+                    "c.harlie@mail.org",
+                    "bo.b@yahoo.com"
+                ]
+            ],
+            "expected": 7
+        },
+        {
+            "inputs": [
+                [
+                    "charlie@mail.org"
+                ]
+            ],
+            "expected": 1
+        }
+    ]
+}
