@@ -1,0 +1,568 @@
+{
+    "problem_id": "0290",
+    "title": "Word Pattern",
+    "function_name": "wordPattern",
+    "comparison": "exact",
+    "test_cases": [
+        {
+            "inputs": [
+                "abba",
+                "dog cat cat dog"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "abba",
+                "dog cat cat fish"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aaaa",
+                "dog cat cat dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "abba",
+                "dog dog dog dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "a",
+                "dog"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "abc",
+                "dog cat fish"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "ab",
+                "dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "b",
+                "dog cat dog fish fish dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aadaa",
+                "cat cat cat dog dog cat"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "abacac",
+                "bird dog cat dog dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aaaba",
+                "fish"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "a",
+                "cat"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "abdda",
+                "dog dog dog dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "acada",
+                "dog cat fish cat"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aaaaaa",
+                "cat dog cat dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aa",
+                "dog dog bird cat dog dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "abccb",
+                "cat dog dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "cabdba",
+                "dog dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "baaba",
+                "bird cat cat fish cat"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "acaab",
+                "rat cat"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aba",
+                "dog cat bird"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aacc",
+                "cat bird fish dog cat"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "cbaba",
+                "fish"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "ab",
+                "dog fish dog bird dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aaaaab",
+                "bird rat"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aadbba",
+                "fish cat dog cat cat"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "a",
+                "bird dog cat rat dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "b",
+                "dog bird dog bird cat"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "cabb",
+                "fish"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "caaab",
+                "dog cat fish fish"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "ccbd",
+                "fish bird"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "ccb",
+                "dog cat dog bird fish dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aa",
+                "bird dog dog dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "acada",
+                "fish dog rat cat cat dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aa",
+                "fish bird cat dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "acbaba",
+                "cat dog dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "bacdb",
+                "bird dog dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aab",
+                "rat dog cat"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "c",
+                "cat"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "bbab",
+                "cat dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "ba",
+                "dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "acbbb",
+                "dog dog dog fish"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "baca",
+                "cat dog cat fish cat cat"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "bbbc",
+                "fish cat cat"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aadab",
+                "cat"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "bcca",
+                "dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "ba",
+                "cat cat rat cat dog dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "abcdab",
+                "dog cat rat dog dog dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "ccc",
+                "fish fish rat bird dog dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "babaaa",
+                "dog dog cat dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aba",
+                "dog dog cat fish bird"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "bc",
+                "cat dog cat"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aaab",
+                "dog bird dog fish"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aadbb",
+                "cat dog cat fish"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "baaadc",
+                "cat dog dog dog dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aaa",
+                "dog cat"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "bbaa",
+                "cat"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "b",
+                "cat dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "bbaabc",
+                "dog rat dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aaab",
+                "dog fish dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "ab",
+                "dog cat dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "acabbb",
+                "dog fish cat dog fish bird"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "bc",
+                "fish cat dog fish"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "baa",
+                "fish cat dog cat cat"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "bcaaa",
+                "dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aaca",
+                "dog dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aaccaa",
+                "dog dog dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "babad",
+                "dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "cbbbd",
+                "fish dog fish cat bird dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aaa",
+                "dog fish"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aaabc",
+                "cat dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "babaa",
+                "bird dog cat bird dog dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "acabaa",
+                "rat dog cat cat"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "ba",
+                "dog dog bird dog cat"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "baac",
+                "dog dog fish dog cat dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "bba",
+                "cat dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "a",
+                "cat dog dog bird dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "ac",
+                "cat dog rat dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "ab",
+                "dog"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "c",
+                "dog dog cat dog cat rat"
+            ],
+            "expected": false
+        }
+    ]
+}

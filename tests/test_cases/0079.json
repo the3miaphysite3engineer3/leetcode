@@ -1,0 +1,1585 @@
+{
+    "problem_id": "0079",
+    "title": "Word Search",
+    "function_name": "exist",
+    "comparison": "exact",
+    "test_cases": [
+        {
+            "inputs": [
+                [
+                    [
+                        "A",
+                        "B",
+                        "C",
+                        "E"
+                    ],
+                    [
+                        "S",
+                        "F",
+                        "C",
+                        "S"
+                    ],
+                    [
+                        "A",
+                        "D",
+                        "E",
+                        "E"
+                    ]
+                ],
+                "ABCCED"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "A",
+                        "B",
+                        "C",
+                        "E"
+                    ],
+                    [
+                        "S",
+                        "F",
+                        "C",
+                        "S"
+                    ],
+                    [
+                        "A",
+                        "D",
+                        "E",
+                        "E"
+                    ]
+                ],
+                "SEE"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "A",
+                        "B",
+                        "C",
+                        "E"
+                    ],
+                    [
+                        "S",
+                        "F",
+                        "C",
+                        "S"
+                    ],
+                    [
+                        "A",
+                        "D",
+                        "E",
+                        "E"
+                    ]
+                ],
+                "ABCB"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "A"
+                    ]
+                ],
+                "A"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "A"
+                    ]
+                ],
+                "B"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "A",
+                        "B"
+                    ],
+                    [
+                        "C",
+                        "D"
+                    ]
+                ],
+                "ABDC"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "A",
+                        "B"
+                    ],
+                    [
+                        "C",
+                        "D"
+                    ]
+                ],
+                "ABCD"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "C"
+                    ]
+                ],
+                "C"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "A"
+                    ],
+                    [
+                        "A"
+                    ],
+                    [
+                        "B"
+                    ],
+                    [
+                        "B"
+                    ]
+                ],
+                "E"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "D",
+                        "E"
+                    ],
+                    [
+                        "C",
+                        "A"
+                    ],
+                    [
+                        "B",
+                        "D"
+                    ],
+                    [
+                        "C",
+                        "C"
+                    ]
+                ],
+                "BE"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "C",
+                        "E",
+                        "C"
+                    ]
+                ],
+                "E"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "A",
+                        "E",
+                        "C",
+                        "E"
+                    ]
+                ],
+                "AAB"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "B"
+                    ],
+                    [
+                        "A"
+                    ],
+                    [
+                        "D"
+                    ]
+                ],
+                "AA"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "A",
+                        "E",
+                        "B"
+                    ],
+                    [
+                        "E",
+                        "B",
+                        "B"
+                    ]
+                ],
+                "BEAB"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "B"
+                    ],
+                    [
+                        "E"
+                    ],
+                    [
+                        "C"
+                    ]
+                ],
+                "D"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "C",
+                        "B"
+                    ],
+                    [
+                        "B",
+                        "E"
+                    ],
+                    [
+                        "E",
+                        "C"
+                    ],
+                    [
+                        "E",
+                        "D"
+                    ]
+                ],
+                "BECBE"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "E",
+                        "D",
+                        "E",
+                        "C"
+                    ],
+                    [
+                        "E",
+                        "A",
+                        "A",
+                        "E"
+                    ],
+                    [
+                        "C",
+                        "C",
+                        "A",
+                        "C"
+                    ],
+                    [
+                        "D",
+                        "B",
+                        "D",
+                        "A"
+                    ]
+                ],
+                "BEA"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "B",
+                        "C"
+                    ],
+                    [
+                        "B",
+                        "E"
+                    ],
+                    [
+                        "E",
+                        "A"
+                    ]
+                ],
+                "BEBBC"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "B",
+                        "D"
+                    ]
+                ],
+                "B"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "D",
+                        "C",
+                        "D"
+                    ],
+                    [
+                        "E",
+                        "D",
+                        "A"
+                    ]
+                ],
+                "ED"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "A"
+                    ],
+                    [
+                        "A"
+                    ]
+                ],
+                "A"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "C",
+                        "D"
+                    ]
+                ],
+                "E"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "D",
+                        "D"
+                    ],
+                    [
+                        "B",
+                        "A"
+                    ],
+                    [
+                        "A",
+                        "D"
+                    ],
+                    [
+                        "C",
+                        "D"
+                    ]
+                ],
+                "DDAB"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "B",
+                        "D",
+                        "B",
+                        "C"
+                    ],
+                    [
+                        "D",
+                        "B",
+                        "A",
+                        "D"
+                    ]
+                ],
+                "BDDBD"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "A",
+                        "D",
+                        "C",
+                        "D"
+                    ],
+                    [
+                        "C",
+                        "D",
+                        "E",
+                        "D"
+                    ]
+                ],
+                "AC"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "E"
+                    ]
+                ],
+                "E"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "E"
+                    ],
+                    [
+                        "A"
+                    ]
+                ],
+                "E"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "E"
+                    ],
+                    [
+                        "B"
+                    ],
+                    [
+                        "E"
+                    ],
+                    [
+                        "E"
+                    ]
+                ],
+                "D"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "B",
+                        "C",
+                        "B"
+                    ],
+                    [
+                        "C",
+                        "D",
+                        "B"
+                    ],
+                    [
+                        "C",
+                        "D",
+                        "C"
+                    ]
+                ],
+                "C"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "E"
+                    ]
+                ],
+                "B"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "B"
+                    ],
+                    [
+                        "C"
+                    ],
+                    [
+                        "C"
+                    ]
+                ],
+                "C"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "A",
+                        "B",
+                        "C"
+                    ]
+                ],
+                "E"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "C",
+                        "E",
+                        "B"
+                    ],
+                    [
+                        "C",
+                        "B",
+                        "C"
+                    ]
+                ],
+                "CBCCC"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "E",
+                        "A",
+                        "A",
+                        "A"
+                    ],
+                    [
+                        "B",
+                        "E",
+                        "A",
+                        "C"
+                    ],
+                    [
+                        "E",
+                        "E",
+                        "B",
+                        "D"
+                    ],
+                    [
+                        "B",
+                        "A",
+                        "C",
+                        "C"
+                    ]
+                ],
+                "B"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "C"
+                    ],
+                    [
+                        "E"
+                    ]
+                ],
+                "BB"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "D",
+                        "A"
+                    ],
+                    [
+                        "B",
+                        "C"
+                    ]
+                ],
+                "BCBA"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "D"
+                    ],
+                    [
+                        "B"
+                    ],
+                    [
+                        "B"
+                    ],
+                    [
+                        "D"
+                    ]
+                ],
+                "BDD"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "C"
+                    ],
+                    [
+                        "C"
+                    ],
+                    [
+                        "E"
+                    ]
+                ],
+                "EC"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "C"
+                    ]
+                ],
+                "C"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "E"
+                    ]
+                ],
+                "E"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "E",
+                        "B",
+                        "C",
+                        "A"
+                    ]
+                ],
+                "CECC"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "C",
+                        "D",
+                        "C",
+                        "E"
+                    ],
+                    [
+                        "B",
+                        "B",
+                        "D",
+                        "D"
+                    ],
+                    [
+                        "B",
+                        "E",
+                        "E",
+                        "C"
+                    ]
+                ],
+                "ACCB"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "D",
+                        "D",
+                        "D"
+                    ],
+                    [
+                        "B",
+                        "E",
+                        "D"
+                    ],
+                    [
+                        "B",
+                        "A",
+                        "C"
+                    ],
+                    [
+                        "E",
+                        "E",
+                        "C"
+                    ]
+                ],
+                "B"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "B",
+                        "B"
+                    ],
+                    [
+                        "A",
+                        "A"
+                    ],
+                    [
+                        "B",
+                        "D"
+                    ]
+                ],
+                "ADDEB"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "D",
+                        "B",
+                        "B",
+                        "A"
+                    ],
+                    [
+                        "A",
+                        "D",
+                        "B",
+                        "B"
+                    ],
+                    [
+                        "E",
+                        "D",
+                        "A",
+                        "E"
+                    ],
+                    [
+                        "B",
+                        "A",
+                        "D",
+                        "B"
+                    ]
+                ],
+                "EECD"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "B",
+                        "D",
+                        "D",
+                        "C"
+                    ],
+                    [
+                        "B",
+                        "C",
+                        "E",
+                        "D"
+                    ],
+                    [
+                        "B",
+                        "C",
+                        "D",
+                        "A"
+                    ],
+                    [
+                        "C",
+                        "B",
+                        "C",
+                        "C"
+                    ]
+                ],
+                "ABB"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "B",
+                        "B",
+                        "A",
+                        "D"
+                    ],
+                    [
+                        "D",
+                        "C",
+                        "E",
+                        "D"
+                    ]
+                ],
+                "DDDE"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "E",
+                        "E",
+                        "E",
+                        "B"
+                    ],
+                    [
+                        "D",
+                        "B",
+                        "C",
+                        "D"
+                    ],
+                    [
+                        "D",
+                        "A",
+                        "D",
+                        "C"
+                    ],
+                    [
+                        "D",
+                        "B",
+                        "D",
+                        "B"
+                    ]
+                ],
+                "DEEAA"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "D",
+                        "B"
+                    ],
+                    [
+                        "A",
+                        "C"
+                    ],
+                    [
+                        "D",
+                        "C"
+                    ],
+                    [
+                        "B",
+                        "D"
+                    ]
+                ],
+                "DDB"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "C"
+                    ]
+                ],
+                "A"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "B",
+                        "A"
+                    ]
+                ],
+                "B"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "C",
+                        "C",
+                        "B",
+                        "E"
+                    ],
+                    [
+                        "E",
+                        "A",
+                        "B",
+                        "C"
+                    ]
+                ],
+                "C"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "B",
+                        "A",
+                        "E",
+                        "B"
+                    ],
+                    [
+                        "A",
+                        "C",
+                        "E",
+                        "A"
+                    ],
+                    [
+                        "E",
+                        "A",
+                        "C",
+                        "E"
+                    ],
+                    [
+                        "D",
+                        "C",
+                        "A",
+                        "E"
+                    ]
+                ],
+                "EBE"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "B",
+                        "E",
+                        "C",
+                        "E"
+                    ],
+                    [
+                        "E",
+                        "D",
+                        "D",
+                        "D"
+                    ]
+                ],
+                "BDEDE"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "D",
+                        "B"
+                    ],
+                    [
+                        "C",
+                        "C"
+                    ],
+                    [
+                        "C",
+                        "C"
+                    ]
+                ],
+                "CEAEB"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "D",
+                        "D"
+                    ]
+                ],
+                "D"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "A"
+                    ],
+                    [
+                        "C"
+                    ],
+                    [
+                        "B"
+                    ],
+                    [
+                        "D"
+                    ]
+                ],
+                "BB"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "D",
+                        "C",
+                        "C"
+                    ],
+                    [
+                        "C",
+                        "B",
+                        "A"
+                    ],
+                    [
+                        "B",
+                        "C",
+                        "A"
+                    ]
+                ],
+                "BBBDC"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "B"
+                    ],
+                    [
+                        "C"
+                    ],
+                    [
+                        "B"
+                    ]
+                ],
+                "BC"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "B",
+                        "D",
+                        "A"
+                    ]
+                ],
+                "D"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "C",
+                        "B",
+                        "A",
+                        "C"
+                    ],
+                    [
+                        "D",
+                        "A",
+                        "A",
+                        "D"
+                    ],
+                    [
+                        "D",
+                        "A",
+                        "E",
+                        "A"
+                    ],
+                    [
+                        "B",
+                        "B",
+                        "E",
+                        "C"
+                    ]
+                ],
+                "A"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "E",
+                        "D"
+                    ],
+                    [
+                        "D",
+                        "D"
+                    ],
+                    [
+                        "C",
+                        "E"
+                    ],
+                    [
+                        "D",
+                        "C"
+                    ]
+                ],
+                "EABBC"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "B",
+                        "B"
+                    ]
+                ],
+                "B"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "A",
+                        "B",
+                        "C"
+                    ],
+                    [
+                        "C",
+                        "D",
+                        "A"
+                    ],
+                    [
+                        "B",
+                        "C",
+                        "E"
+                    ],
+                    [
+                        "B",
+                        "D",
+                        "A"
+                    ]
+                ],
+                "DCAEC"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "C",
+                        "D",
+                        "C",
+                        "E"
+                    ]
+                ],
+                "ECCC"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "B"
+                    ],
+                    [
+                        "D"
+                    ],
+                    [
+                        "E"
+                    ]
+                ],
+                "DEE"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "C",
+                        "D",
+                        "C",
+                        "C"
+                    ]
+                ],
+                "C"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "C",
+                        "D",
+                        "E",
+                        "A"
+                    ],
+                    [
+                        "D",
+                        "A",
+                        "C",
+                        "C"
+                    ],
+                    [
+                        "C",
+                        "A",
+                        "D",
+                        "E"
+                    ],
+                    [
+                        "A",
+                        "E",
+                        "D",
+                        "D"
+                    ]
+                ],
+                "E"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "B"
+                    ],
+                    [
+                        "C"
+                    ],
+                    [
+                        "E"
+                    ],
+                    [
+                        "B"
+                    ]
+                ],
+                "BBC"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "A",
+                        "B",
+                        "A",
+                        "D"
+                    ]
+                ],
+                "B"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "E",
+                        "C",
+                        "D"
+                    ],
+                    [
+                        "D",
+                        "D",
+                        "B"
+                    ],
+                    [
+                        "D",
+                        "E",
+                        "B"
+                    ],
+                    [
+                        "D",
+                        "B",
+                        "E"
+                    ]
+                ],
+                "BACDC"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "C"
+                    ],
+                    [
+                        "C"
+                    ],
+                    [
+                        "E"
+                    ]
+                ],
+                "DBD"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "C",
+                        "E",
+                        "E"
+                    ],
+                    [
+                        "D",
+                        "D",
+                        "C"
+                    ],
+                    [
+                        "B",
+                        "B",
+                        "E"
+                    ],
+                    [
+                        "D",
+                        "B",
+                        "D"
+                    ]
+                ],
+                "D"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "B",
+                        "D",
+                        "A",
+                        "B"
+                    ],
+                    [
+                        "E",
+                        "E",
+                        "C",
+                        "A"
+                    ],
+                    [
+                        "D",
+                        "A",
+                        "E",
+                        "D"
+                    ],
+                    [
+                        "A",
+                        "B",
+                        "D",
+                        "B"
+                    ]
+                ],
+                "E"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "C"
+                    ],
+                    [
+                        "E"
+                    ],
+                    [
+                        "D"
+                    ],
+                    [
+                        "C"
+                    ]
+                ],
+                "AEAB"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "A",
+                        "D"
+                    ],
+                    [
+                        "A",
+                        "A"
+                    ],
+                    [
+                        "D",
+                        "B"
+                    ]
+                ],
+                "ACA"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "C",
+                        "D",
+                        "B"
+                    ],
+                    [
+                        "B",
+                        "E",
+                        "D"
+                    ],
+                    [
+                        "E",
+                        "B",
+                        "B"
+                    ]
+                ],
+                "DE"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "B",
+                        "D"
+                    ],
+                    [
+                        "C",
+                        "D"
+                    ],
+                    [
+                        "C",
+                        "A"
+                    ],
+                    [
+                        "D",
+                        "C"
+                    ]
+                ],
+                "CAACC"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "D",
+                        "E"
+                    ]
+                ],
+                "CA"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                [
+                    [
+                        "A",
+                        "E",
+                        "A"
+                    ],
+                    [
+                        "E",
+                        "D",
+                        "C"
+                    ],
+                    [
+                        "B",
+                        "E",
+                        "C"
+                    ],
+                    [
+                        "B",
+                        "B",
+                        "E"
+                    ]
+                ],
+                "BAA"
+            ],
+            "expected": false
+        }
+    ]
+}

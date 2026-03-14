@@ -1,0 +1,568 @@
+{
+    "problem_id": "0201",
+    "title": "Bitwise AND of Numbers Range",
+    "function_name": "rangeBitwiseAnd",
+    "comparison": "exact",
+    "test_cases": [
+        {
+            "inputs": [
+                5,
+                7
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                0,
+                0
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                1,
+                2147483647
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                0,
+                1
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                5,
+                5
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                1,
+                1
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                10,
+                12
+            ],
+            "expected": 8
+        },
+        {
+            "inputs": [
+                34803,
+                35793
+            ],
+            "expected": 32768
+        },
+        {
+            "inputs": [
+                85929,
+                86730
+            ],
+            "expected": 81920
+        },
+        {
+            "inputs": [
+                75821,
+                76412
+            ],
+            "expected": 75776
+        },
+        {
+            "inputs": [
+                29824,
+                30562
+            ],
+            "expected": 29696
+        },
+        {
+            "inputs": [
+                6731,
+                7328
+            ],
+            "expected": 6144
+        },
+        {
+            "inputs": [
+                62973,
+                63147
+            ],
+            "expected": 62464
+        },
+        {
+            "inputs": [
+                68712,
+                69356
+            ],
+            "expected": 68608
+        },
+        {
+            "inputs": [
+                94526,
+                95160
+            ],
+            "expected": 94208
+        },
+        {
+            "inputs": [
+                49832,
+                49983
+            ],
+            "expected": 49664
+        },
+        {
+            "inputs": [
+                89224,
+                89472
+            ],
+            "expected": 89088
+        },
+        {
+            "inputs": [
+                4138,
+                4724
+            ],
+            "expected": 4096
+        },
+        {
+            "inputs": [
+                91818,
+                91930
+            ],
+            "expected": 91648
+        },
+        {
+            "inputs": [
+                25006,
+                25025
+            ],
+            "expected": 24960
+        },
+        {
+            "inputs": [
+                57807,
+                58128
+            ],
+            "expected": 57344
+        },
+        {
+            "inputs": [
+                54890,
+                55045
+            ],
+            "expected": 54784
+        },
+        {
+            "inputs": [
+                54127,
+                54834
+            ],
+            "expected": 53248
+        },
+        {
+            "inputs": [
+                26724,
+                27144
+            ],
+            "expected": 26624
+        },
+        {
+            "inputs": [
+                65774,
+                66567
+            ],
+            "expected": 65536
+        },
+        {
+            "inputs": [
+                80147,
+                81089
+            ],
+            "expected": 79872
+        },
+        {
+            "inputs": [
+                61814,
+                62707
+            ],
+            "expected": 61440
+        },
+        {
+            "inputs": [
+                96447,
+                97191
+            ],
+            "expected": 96256
+        },
+        {
+            "inputs": [
+                8163,
+                8885
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                18098,
+                18629
+            ],
+            "expected": 16384
+        },
+        {
+            "inputs": [
+                27176,
+                27750
+            ],
+            "expected": 26624
+        },
+        {
+            "inputs": [
+                42604,
+                43282
+            ],
+            "expected": 40960
+        },
+        {
+            "inputs": [
+                62701,
+                63239
+            ],
+            "expected": 62464
+        },
+        {
+            "inputs": [
+                49391,
+                49712
+            ],
+            "expected": 49152
+        },
+        {
+            "inputs": [
+                22699,
+                23169
+            ],
+            "expected": 22528
+        },
+        {
+            "inputs": [
+                69878,
+                70228
+            ],
+            "expected": 69632
+        },
+        {
+            "inputs": [
+                71601,
+                71963
+            ],
+            "expected": 69632
+        },
+        {
+            "inputs": [
+                88587,
+                89377
+            ],
+            "expected": 88064
+        },
+        {
+            "inputs": [
+                94493,
+                95190
+            ],
+            "expected": 94208
+        },
+        {
+            "inputs": [
+                84319,
+                85141
+            ],
+            "expected": 83968
+        },
+        {
+            "inputs": [
+                90873,
+                91143
+            ],
+            "expected": 90112
+        },
+        {
+            "inputs": [
+                79963,
+                80458
+            ],
+            "expected": 79872
+        },
+        {
+            "inputs": [
+                25200,
+                26180
+            ],
+            "expected": 24576
+        },
+        {
+            "inputs": [
+                32311,
+                32596
+            ],
+            "expected": 32256
+        },
+        {
+            "inputs": [
+                73149,
+                73454
+            ],
+            "expected": 72704
+        },
+        {
+            "inputs": [
+                29473,
+                30437
+            ],
+            "expected": 28672
+        },
+        {
+            "inputs": [
+                39008,
+                39797
+            ],
+            "expected": 38912
+        },
+        {
+            "inputs": [
+                37880,
+                38601
+            ],
+            "expected": 36864
+        },
+        {
+            "inputs": [
+                27168,
+                27874
+            ],
+            "expected": 26624
+        },
+        {
+            "inputs": [
+                92404,
+                92904
+            ],
+            "expected": 92160
+        },
+        {
+            "inputs": [
+                41555,
+                42046
+            ],
+            "expected": 40960
+        },
+        {
+            "inputs": [
+                45718,
+                46291
+            ],
+            "expected": 45056
+        },
+        {
+            "inputs": [
+                94589,
+                94869
+            ],
+            "expected": 94208
+        },
+        {
+            "inputs": [
+                37721,
+                37845
+            ],
+            "expected": 37632
+        },
+        {
+            "inputs": [
+                75166,
+                75858
+            ],
+            "expected": 73728
+        },
+        {
+            "inputs": [
+                71197,
+                71585
+            ],
+            "expected": 71168
+        },
+        {
+            "inputs": [
+                51712,
+                52550
+            ],
+            "expected": 51200
+        },
+        {
+            "inputs": [
+                45237,
+                46214
+            ],
+            "expected": 45056
+        },
+        {
+            "inputs": [
+                19198,
+                19495
+            ],
+            "expected": 18432
+        },
+        {
+            "inputs": [
+                5513,
+                5807
+            ],
+            "expected": 5120
+        },
+        {
+            "inputs": [
+                93603,
+                93683
+            ],
+            "expected": 93568
+        },
+        {
+            "inputs": [
+                45398,
+                46344
+            ],
+            "expected": 45056
+        },
+        {
+            "inputs": [
+                57983,
+                58654
+            ],
+            "expected": 57344
+        },
+        {
+            "inputs": [
+                33612,
+                34377
+            ],
+            "expected": 32768
+        },
+        {
+            "inputs": [
+                62793,
+                63012
+            ],
+            "expected": 62464
+        },
+        {
+            "inputs": [
+                26485,
+                27332
+            ],
+            "expected": 24576
+        },
+        {
+            "inputs": [
+                70592,
+                70869
+            ],
+            "expected": 69632
+        },
+        {
+            "inputs": [
+                73664,
+                74376
+            ],
+            "expected": 65536
+        },
+        {
+            "inputs": [
+                35601,
+                35741
+            ],
+            "expected": 35584
+        },
+        {
+            "inputs": [
+                14316,
+                14946
+            ],
+            "expected": 12288
+        },
+        {
+            "inputs": [
+                97110,
+                97710
+            ],
+            "expected": 96256
+        },
+        {
+            "inputs": [
+                31363,
+                31611
+            ],
+            "expected": 31232
+        },
+        {
+            "inputs": [
+                6653,
+                7338
+            ],
+            "expected": 6144
+        },
+        {
+            "inputs": [
+                69604,
+                69835
+            ],
+            "expected": 65536
+        },
+        {
+            "inputs": [
+                83616,
+                83854
+            ],
+            "expected": 83456
+        },
+        {
+            "inputs": [
+                6880,
+                6982
+            ],
+            "expected": 6656
+        },
+        {
+            "inputs": [
+                54172,
+                54510
+            ],
+            "expected": 53248
+        },
+        {
+            "inputs": [
+                94025,
+                94508
+            ],
+            "expected": 90112
+        },
+        {
+            "inputs": [
+                13178,
+                13875
+            ],
+            "expected": 12288
+        },
+        {
+            "inputs": [
+                18018,
+                18023
+            ],
+            "expected": 18016
+        }
+    ]
+}
