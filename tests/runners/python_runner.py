@@ -50,6 +50,15 @@ def main():
         "Counter": collections.Counter,
         "deque": collections.deque,
         "inf": float("inf"),
+        "heapify": heapq.heapify,
+        "heappush": heapq.heappush,
+        "heappop": heapq.heappop,
+        "heappushpop": heapq.heappushpop,
+        "heapreplace": heapq.heapreplace,
+        "cmp_to_key": functools.cmp_to_key,
+        "lru_cache": functools.lru_cache,
+        "reduce": functools.reduce,
+        "random": __import__("random"),
     }
 
     # Execute solution code
