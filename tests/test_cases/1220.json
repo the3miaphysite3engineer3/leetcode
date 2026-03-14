@@ -1,0 +1,488 @@
+{
+    "problem_id": "1220",
+    "title": "Count Vowels Permutation",
+    "function_name": "countVowelPermutation",
+    "comparison": "exact",
+    "test_cases": [
+        {
+            "inputs": [
+                1
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                2
+            ],
+            "expected": 10
+        },
+        {
+            "inputs": [
+                5
+            ],
+            "expected": 68
+        },
+        {
+            "inputs": [
+                69
+            ],
+            "expected": 250595203
+        },
+        {
+            "inputs": [
+                164
+            ],
+            "expected": 640670068
+        },
+        {
+            "inputs": [
+                79
+            ],
+            "expected": 607407921
+        },
+        {
+            "inputs": [
+                27
+            ],
+            "expected": 108478403
+        },
+        {
+            "inputs": [
+                79
+            ],
+            "expected": 607407921
+        },
+        {
+            "inputs": [
+                60
+            ],
+            "expected": 217630190
+        },
+        {
+            "inputs": [
+                172
+            ],
+            "expected": 749876910
+        },
+        {
+            "inputs": [
+                67
+            ],
+            "expected": 522305151
+        },
+        {
+            "inputs": [
+                128
+            ],
+            "expected": 388863806
+        },
+        {
+            "inputs": [
+                94
+            ],
+            "expected": 87030738
+        },
+        {
+            "inputs": [
+                44
+            ],
+            "expected": 646392600
+        },
+        {
+            "inputs": [
+                149
+            ],
+            "expected": 647798372
+        },
+        {
+            "inputs": [
+                90
+            ],
+            "expected": 628426127
+        },
+        {
+            "inputs": [
+                110
+            ],
+            "expected": 83729772
+        },
+        {
+            "inputs": [
+                148
+            ],
+            "expected": 301305191
+        },
+        {
+            "inputs": [
+                112
+            ],
+            "expected": 783646235
+        },
+        {
+            "inputs": [
+                154
+            ],
+            "expected": 152101466
+        },
+        {
+            "inputs": [
+                71
+            ],
+            "expected": 800701102
+        },
+        {
+            "inputs": [
+                58
+            ],
+            "expected": 713808698
+        },
+        {
+            "inputs": [
+                145
+            ],
+            "expected": 82559598
+        },
+        {
+            "inputs": [
+                86
+            ],
+            "expected": 160079503
+        },
+        {
+            "inputs": [
+                89
+            ],
+            "expected": 411945388
+        },
+        {
+            "inputs": [
+                78
+            ],
+            "expected": 495322830
+        },
+        {
+            "inputs": [
+                149
+            ],
+            "expected": 647798372
+        },
+        {
+            "inputs": [
+                124
+            ],
+            "expected": 759106422
+        },
+        {
+            "inputs": [
+                149
+            ],
+            "expected": 647798372
+        },
+        {
+            "inputs": [
+                58
+            ],
+            "expected": 713808698
+        },
+        {
+            "inputs": [
+                174
+            ],
+            "expected": 428005800
+        },
+        {
+            "inputs": [
+                56
+            ],
+            "expected": 282083631
+        },
+        {
+            "inputs": [
+                103
+            ],
+            "expected": 333313549
+        },
+        {
+            "inputs": [
+                103
+            ],
+            "expected": 333313549
+        },
+        {
+            "inputs": [
+                55
+            ],
+            "expected": 83257022
+        },
+        {
+            "inputs": [
+                68
+            ],
+            "expected": 804774852
+        },
+        {
+            "inputs": [
+                41
+            ],
+            "expected": 314920855
+        },
+        {
+            "inputs": [
+                34
+            ],
+            "expected": 222442581
+        },
+        {
+            "inputs": [
+                26
+            ],
+            "expected": 56664154
+        },
+        {
+            "inputs": [
+                26
+            ],
+            "expected": 56664154
+        },
+        {
+            "inputs": [
+                123
+            ],
+            "expected": 648366800
+        },
+        {
+            "inputs": [
+                81
+            ],
+            "expected": 730568846
+        },
+        {
+            "inputs": [
+                1
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                29
+            ],
+            "expected": 397560628
+        },
+        {
+            "inputs": [
+                110
+            ],
+            "expected": 83729772
+        },
+        {
+            "inputs": [
+                193
+            ],
+            "expected": 739091210
+        },
+        {
+            "inputs": [
+                23
+            ],
+            "expected": 8076560
+        },
+        {
+            "inputs": [
+                3
+            ],
+            "expected": 19
+        },
+        {
+            "inputs": [
+                117
+            ],
+            "expected": 309760337
+        },
+        {
+            "inputs": [
+                193
+            ],
+            "expected": 739091210
+        },
+        {
+            "inputs": [
+                79
+            ],
+            "expected": 607407921
+        },
+        {
+            "inputs": [
+                26
+            ],
+            "expected": 56664154
+        },
+        {
+            "inputs": [
+                16
+            ],
+            "expected": 85691
+        },
+        {
+            "inputs": [
+                62
+            ],
+            "expected": 146713916
+        },
+        {
+            "inputs": [
+                42
+            ],
+            "expected": 160622173
+        },
+        {
+            "inputs": [
+                62
+            ],
+            "expected": 146713916
+        },
+        {
+            "inputs": [
+                58
+            ],
+            "expected": 713808698
+        },
+        {
+            "inputs": [
+                75
+            ],
+            "expected": 467397509
+        },
+        {
+            "inputs": [
+                52
+            ],
+            "expected": 503224659
+        },
+        {
+            "inputs": [
+                152
+            ],
+            "expected": 522042380
+        },
+        {
+            "inputs": [
+                67
+            ],
+            "expected": 522305151
+        },
+        {
+            "inputs": [
+                77
+            ],
+            "expected": 528854928
+        },
+        {
+            "inputs": [
+                7
+            ],
+            "expected": 249
+        },
+        {
+            "inputs": [
+                171
+            ],
+            "expected": 141041520
+        },
+        {
+            "inputs": [
+                20
+            ],
+            "expected": 1151090
+        },
+        {
+            "inputs": [
+                132
+            ],
+            "expected": 859384247
+        },
+        {
+            "inputs": [
+                200
+            ],
+            "expected": 670333618
+        },
+        {
+            "inputs": [
+                73
+            ],
+            "expected": 788858534
+        },
+        {
+            "inputs": [
+                190
+            ],
+            "expected": 640515279
+        },
+        {
+            "inputs": [
+                13
+            ],
+            "expected": 12221
+        },
+        {
+            "inputs": [
+                180
+            ],
+            "expected": 650694312
+        },
+        {
+            "inputs": [
+                88
+            ],
+            "expected": 222386022
+        },
+        {
+            "inputs": [
+                174
+            ],
+            "expected": 428005800
+        },
+        {
+            "inputs": [
+                73
+            ],
+            "expected": 788858534
+        },
+        {
+            "inputs": [
+                71
+            ],
+            "expected": 800701102
+        },
+        {
+            "inputs": [
+                70
+            ],
+            "expected": 581980397
+        },
+        {
+            "inputs": [
+                69
+            ],
+            "expected": 250595203
+        },
+        {
+            "inputs": [
+                187
+            ],
+            "expected": 575404771
+        },
+        {
+            "inputs": [
+                56
+            ],
+            "expected": 282083631
+        },
+        {
+            "inputs": [
+                179
+            ],
+            "expected": 311118908
+        }
+    ]
+}

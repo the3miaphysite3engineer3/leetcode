@@ -193,12 +193,13 @@ def _run_subprocess(cmd, timeout=TIMEOUT_SECONDS):
         return None, str(exc)
 
 
-def run_python(solution_file, function_name, inputs, **_kwargs):
+def run_python(solution_file, function_name, inputs, mode="default", **_kwargs):
     """Run a Python solution."""
     runner = RUNNERS_DIR / "python_runner.py"
-    return _run_subprocess(
-        [sys.executable, str(runner), str(solution_file), function_name, json.dumps(inputs)]
-    )
+    cmd = [sys.executable, str(runner), str(solution_file), function_name, json.dumps(inputs)]
+    if mode != "default":
+        cmd.append(mode)
+    return _run_subprocess(cmd)
 
 
 def run_javascript(solution_file, function_name, inputs, **_kwargs):
@@ -362,12 +363,12 @@ RUNNERS = {
 }
 
 
-def run_solution(language, solution_file, function_name, inputs, expected=None):
+def run_solution(language, solution_file, function_name, inputs, expected=None, mode="default"):
     """Dispatch to the appropriate language runner."""
     runner = RUNNERS.get(language)
     if runner is None:
         return None, f"No runner available for '{language}'. Supported: {', '.join(sorted(RUNNERS))}"
-    return runner(solution_file, function_name, inputs, expected=expected)
+    return runner(solution_file, function_name, inputs, expected=expected, mode=mode)
 
 
 # ──────────────────────────────────────────────────────────────────────
@@ -392,6 +393,7 @@ def verify_problem(problem_id, language, verbose=False):
 
     fn_name = test_data["function_name"]
     comparison = test_data.get("comparison", "exact")
+    mode = test_data.get("mode", "default")
     cases = test_data["test_cases"]
     title = test_data.get("title", "")
 
@@ -409,7 +411,7 @@ def verify_problem(problem_id, language, verbose=False):
         inputs = tc["inputs"]
         expected = tc["expected"]
 
-        result, error = run_solution(language, solution_file, fn_name, inputs, expected)
+        result, error = run_solution(language, solution_file, fn_name, inputs, expected, mode=mode)
 
         if error:
             print(f"  {Colors.RED}✗ Test {i}: ERROR{Colors.END}")

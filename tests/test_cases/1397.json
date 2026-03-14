@@ -1,0 +1,728 @@
+{
+    "problem_id": "1397",
+    "title": "Find All Good Strings",
+    "function_name": "findGoodStrings",
+    "comparison": "exact",
+    "test_cases": [
+        {
+            "inputs": [
+                2,
+                "aa",
+                "da",
+                "b"
+            ],
+            "expected": 51
+        },
+        {
+            "inputs": [
+                8,
+                "leetcode",
+                "leetgoes",
+                "leet"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                2,
+                "gx",
+                "gz",
+                "x"
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                1,
+                "d",
+                "f",
+                "g"
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                2,
+                "ah",
+                "bf",
+                "b"
+            ],
+            "expected": 19
+        },
+        {
+            "inputs": [
+                3,
+                "abd",
+                "cch",
+                "db"
+            ],
+            "expected": 1381
+        },
+        {
+            "inputs": [
+                5,
+                "accee",
+                "afggg",
+                "b"
+            ],
+            "expected": 49428
+        },
+        {
+            "inputs": [
+                2,
+                "bd",
+                "gh",
+                "ad"
+            ],
+            "expected": 135
+        },
+        {
+            "inputs": [
+                2,
+                "ac",
+                "dg",
+                "ga"
+            ],
+            "expected": 83
+        },
+        {
+            "inputs": [
+                2,
+                "bd",
+                "ff",
+                "h"
+            ],
+            "expected": 103
+        },
+        {
+            "inputs": [
+                1,
+                "a",
+                "b",
+                "g"
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                1,
+                "a",
+                "b",
+                "b"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                5,
+                "bdeee",
+                "cfffg",
+                "gbf"
+            ],
+            "expected": 492779
+        },
+        {
+            "inputs": [
+                6,
+                "acdefg",
+                "bcddde",
+                "h"
+            ],
+            "expected": 9764949
+        },
+        {
+            "inputs": [
+                3,
+                "cdg",
+                "cfh",
+                "hec"
+            ],
+            "expected": 54
+        },
+        {
+            "inputs": [
+                4,
+                "abdf",
+                "behh",
+                "bdg"
+            ],
+            "expected": 19683
+        },
+        {
+            "inputs": [
+                2,
+                "de",
+                "ef",
+                "e"
+            ],
+            "expected": 21
+        },
+        {
+            "inputs": [
+                5,
+                "aabce",
+                "abbfh",
+                "e"
+            ],
+            "expected": 15678
+        },
+        {
+            "inputs": [
+                5,
+                "bccce",
+                "cdddg",
+                "g"
+            ],
+            "expected": 406902
+        },
+        {
+            "inputs": [
+                6,
+                "accceg",
+                "acdefg",
+                "f"
+            ],
+            "expected": 16895
+        },
+        {
+            "inputs": [
+                2,
+                "af",
+                "cc",
+                "bh"
+            ],
+            "expected": 49
+        },
+        {
+            "inputs": [
+                6,
+                "bcceeg",
+                "bffghh",
+                "g"
+            ],
+            "expected": 1219894
+        },
+        {
+            "inputs": [
+                6,
+                "addehh",
+                "eeeggh",
+                "hd"
+            ],
+            "expected": 47718399
+        },
+        {
+            "inputs": [
+                3,
+                "bbe",
+                "bdg",
+                "dh"
+            ],
+            "expected": 55
+        },
+        {
+            "inputs": [
+                4,
+                "aefh",
+                "befg",
+                "c"
+            ],
+            "expected": 15625
+        },
+        {
+            "inputs": [
+                6,
+                "afffff",
+                "bcddee",
+                "fg"
+            ],
+            "expected": 10409879
+        },
+        {
+            "inputs": [
+                4,
+                "bbcg",
+                "efgh",
+                "g"
+            ],
+            "expected": 49469
+        },
+        {
+            "inputs": [
+                6,
+                "abbceh",
+                "acdegg",
+                "ada"
+            ],
+            "expected": 493478
+        },
+        {
+            "inputs": [
+                4,
+                "ddef",
+                "efgh",
+                "f"
+            ],
+            "expected": 16770
+        },
+        {
+            "inputs": [
+                4,
+                "acdd",
+                "bffg",
+                "hdd"
+            ],
+            "expected": 19659
+        },
+        {
+            "inputs": [
+                6,
+                "aaeffh",
+                "bcdghh",
+                "gc"
+            ],
+            "expected": 12704225
+        },
+        {
+            "inputs": [
+                6,
+                "bbdefh",
+                "beeggh",
+                "fe"
+            ],
+            "expected": 1383722
+        },
+        {
+            "inputs": [
+                4,
+                "aghh",
+                "cfgh",
+                "dcc"
+            ],
+            "expected": 34449
+        },
+        {
+            "inputs": [
+                6,
+                "bccfgh",
+                "bddeef",
+                "c"
+            ],
+            "expected": 33205
+        },
+        {
+            "inputs": [
+                2,
+                "ad",
+                "bd",
+                "ff"
+            ],
+            "expected": 27
+        },
+        {
+            "inputs": [
+                3,
+                "cde",
+                "cee",
+                "feb"
+            ],
+            "expected": 27
+        },
+        {
+            "inputs": [
+                3,
+                "aag",
+                "ddh",
+                "hd"
+            ],
+            "expected": 2105
+        },
+        {
+            "inputs": [
+                5,
+                "aacdf",
+                "aefgh",
+                "hg"
+            ],
+            "expected": 72202
+        },
+        {
+            "inputs": [
+                1,
+                "c",
+                "d",
+                "h"
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                1,
+                "e",
+                "g",
+                "f"
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                2,
+                "bc",
+                "eg",
+                "f"
+            ],
+            "expected": 79
+        },
+        {
+            "inputs": [
+                4,
+                "acdh",
+                "bbef",
+                "abe"
+            ],
+            "expected": 16924
+        },
+        {
+            "inputs": [
+                4,
+                "aacf",
+                "aefg",
+                "a"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                5,
+                "bcdde",
+                "cdffg",
+                "ag"
+            ],
+            "expected": 473878
+        },
+        {
+            "inputs": [
+                4,
+                "abeg",
+                "begh",
+                "hga"
+            ],
+            "expected": 19657
+        },
+        {
+            "inputs": [
+                6,
+                "abbdgh",
+                "cdffgh",
+                "g"
+            ],
+            "expected": 20376250
+        },
+        {
+            "inputs": [
+                6,
+                "abbffg",
+                "bbchhh",
+                "gh"
+            ],
+            "expected": 11830051
+        },
+        {
+            "inputs": [
+                4,
+                "acdf",
+                "dghh",
+                "ccf"
+            ],
+            "expected": 55510
+        },
+        {
+            "inputs": [
+                4,
+                "abdf",
+                "bbcd",
+                "b"
+            ],
+            "expected": 15000
+        },
+        {
+            "inputs": [
+                3,
+                "abc",
+                "aef",
+                "e"
+            ],
+            "expected": 73
+        },
+        {
+            "inputs": [
+                4,
+                "abcd",
+                "aefg",
+                "a"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                3,
+                "abe",
+                "aeh",
+                "hdf"
+            ],
+            "expected": 82
+        },
+        {
+            "inputs": [
+                3,
+                "afh",
+                "efg",
+                "a"
+            ],
+            "expected": 1981
+        },
+        {
+            "inputs": [
+                1,
+                "a",
+                "g",
+                "a"
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                3,
+                "abb",
+                "bbd",
+                "b"
+            ],
+            "expected": 600
+        },
+        {
+            "inputs": [
+                3,
+                "afh",
+                "cef",
+                "h"
+            ],
+            "expected": 1224
+        },
+        {
+            "inputs": [
+                2,
+                "ab",
+                "gg",
+                "ae"
+            ],
+            "expected": 161
+        },
+        {
+            "inputs": [
+                6,
+                "accdeh",
+                "bbcdgh",
+                "bh"
+            ],
+            "expected": 11373778
+        },
+        {
+            "inputs": [
+                4,
+                "bcff",
+                "cdee",
+                "g"
+            ],
+            "expected": 16225
+        },
+        {
+            "inputs": [
+                4,
+                "ceff",
+                "cffh",
+                "hh"
+            ],
+            "expected": 678
+        },
+        {
+            "inputs": [
+                2,
+                "ah",
+                "bc",
+                "c"
+            ],
+            "expected": 21
+        },
+        {
+            "inputs": [
+                2,
+                "af",
+                "ce",
+                "h"
+            ],
+            "expected": 50
+        },
+        {
+            "inputs": [
+                3,
+                "aeg",
+                "dgh",
+                "h"
+            ],
+            "expected": 1926
+        },
+        {
+            "inputs": [
+                1,
+                "e",
+                "h",
+                "g"
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                6,
+                "abcddd",
+                "cfgghh",
+                "h"
+            ],
+            "expected": 21158222
+        },
+        {
+            "inputs": [
+                4,
+                "bcef",
+                "cccf",
+                "abc"
+            ],
+            "expected": 17524
+        },
+        {
+            "inputs": [
+                2,
+                "bd",
+                "be",
+                "h"
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                5,
+                "aadef",
+                "abcfg",
+                "e"
+            ],
+            "expected": 15006
+        },
+        {
+            "inputs": [
+                6,
+                "bcdghh",
+                "cddfgh",
+                "h"
+            ],
+            "expected": 10155607
+        },
+        {
+            "inputs": [
+                3,
+                "bbf",
+                "cef",
+                "d"
+            ],
+            "expected": 676
+        },
+        {
+            "inputs": [
+                6,
+                "abbffh",
+                "bbccdg",
+                "dbg"
+            ],
+            "expected": 11894844
+        },
+        {
+            "inputs": [
+                1,
+                "c",
+                "h",
+                "b"
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                5,
+                "aacdh",
+                "abbhh",
+                "df"
+            ],
+            "expected": 16954
+        },
+        {
+            "inputs": [
+                2,
+                "bc",
+                "be",
+                "ea"
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                5,
+                "aacgh",
+                "abehh",
+                "db"
+            ],
+            "expected": 18875
+        },
+        {
+            "inputs": [
+                2,
+                "ah",
+                "cf",
+                "eh"
+            ],
+            "expected": 51
+        },
+        {
+            "inputs": [
+                5,
+                "aacde",
+                "bccfg",
+                "a"
+            ],
+            "expected": 16356
+        },
+        {
+            "inputs": [
+                5,
+                "cdegg",
+                "cdegh",
+                "fgg"
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                4,
+                "cdgh",
+                "dffh",
+                "bgg"
+            ],
+            "expected": 18902
+        },
+        {
+            "inputs": [
+                1,
+                "d",
+                "h",
+                "g"
+            ],
+            "expected": 4
+        }
+    ]
+}
