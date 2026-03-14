@@ -38,6 +38,85 @@ class TreeNode:
         self.right = right
 
 
+class GraphNode:
+    """Node for Clone Graph (LeetCode 133)."""
+    def __init__(self, val=0, neighbors=None):
+        self.val = val
+        self.neighbors = neighbors if neighbors is not None else []
+
+
+class RandomListNode:
+    """Node for Copy List with Random Pointer (LeetCode 138)."""
+    def __init__(self, x: int, next=None, random=None):
+        self.val = int(x)
+        self.next = next
+        self.random = random
+
+
+def adjlist_to_graph(adj):
+    """Convert adjacency list to graph of GraphNode objects.
+    adj is 1-indexed: adj[0] is neighbors of node 1, etc.
+    """
+    if not adj:
+        return None
+    nodes = {i + 1: GraphNode(i + 1) for i in range(len(adj))}
+    for i, neighbors in enumerate(adj):
+        nodes[i + 1].neighbors = [nodes[n] for n in neighbors]
+    return nodes[1]
+
+
+def graph_to_adjlist(node):
+    """Convert a graph of GraphNode objects to adjacency list (1-indexed)."""
+    if not node:
+        return []
+    visited = {}
+    queue = collections.deque([node])
+    visited[node.val] = node
+    while queue:
+        n = queue.popleft()
+        for nei in n.neighbors:
+            if nei.val not in visited:
+                visited[nei.val] = nei
+                queue.append(nei)
+    result = [[] for _ in range(len(visited))]
+    for val in sorted(visited.keys()):
+        result[val - 1] = [nei.val for nei in visited[val].neighbors]
+    return result
+
+
+def randomlist_to_linked(arr):
+    """Convert [[val, random_index], ...] to RandomListNode linked list."""
+    if not arr:
+        return None
+    nodes = [RandomListNode(v) for v, _ in arr]
+    for i in range(len(nodes) - 1):
+        nodes[i].next = nodes[i + 1]
+    for i, (_, ri) in enumerate(arr):
+        if ri is not None:
+            nodes[i].random = nodes[ri]
+    return nodes[0]
+
+
+def linked_to_randomlist(head):
+    """Convert RandomListNode linked list to [[val, random_index], ...]."""
+    if not head:
+        return []
+    nodes = []
+    cur = head
+    node_to_idx = {}
+    idx = 0
+    while cur:
+        node_to_idx[id(cur)] = idx
+        nodes.append(cur)
+        cur = cur.next
+        idx += 1
+    result = []
+    for n in nodes:
+        ri = node_to_idx[id(n.random)] if n.random else None
+        result.append([n.val, ri])
+    return result
+
+
 def list_to_linked(arr):
     """Convert a Python list to a ListNode linked list."""
     if not arr:
@@ -140,6 +219,8 @@ def _build_env(code):
         "gcd": math.gcd,
         "ListNode": ListNode,
         "TreeNode": TreeNode,
+        "GraphNode": GraphNode,
+        "RandomListNode": RandomListNode,
     }
     exec(code, env)
     return env
@@ -164,7 +245,8 @@ def main():
 
     # Modes that manage their own class instantiation
     self_managed_modes = {"design", "codec", "codec_url", "first_bad_version",
-                          "guess_number", "encode_decode", "linked_list_intersection"}
+                          "guess_number", "encode_decode", "linked_list_intersection",
+                          "clone_graph", "copy_random_list"}
 
     if mode not in self_managed_modes:
         # Find and instantiate the Solution class
@@ -370,6 +452,26 @@ def main():
             print(json.dumps(None))
         else:
             print(json.dumps(result.val))
+
+    elif mode == "clone_graph":
+        # inputs = [adjacency_list] where adj_list is 1-indexed
+        adj = inputs[0]
+        env["Node"] = GraphNode
+        sol = env["Solution"]()
+        method = getattr(sol, function_name)
+        node = adjlist_to_graph(adj)
+        result = method(node)
+        print(json.dumps(graph_to_adjlist(result)))
+
+    elif mode == "copy_random_list":
+        # inputs = [[[val, random_idx], ...]]
+        arr = inputs[0]
+        env["Node"] = RandomListNode
+        sol = env["Solution"]()
+        method = getattr(sol, function_name)
+        head = randomlist_to_linked(arr)
+        result = method(head)
+        print(json.dumps(linked_to_randomlist(result)))
 
     else:
         # Default mode
