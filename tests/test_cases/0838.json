@@ -1,0 +1,488 @@
+{
+    "problem_id": "0838",
+    "title": "Push Dominoes",
+    "function_name": "pushDominoes",
+    "comparison": "exact",
+    "test_cases": [
+        {
+            "inputs": [
+                "RR.L"
+            ],
+            "expected": "RR.L"
+        },
+        {
+            "inputs": [
+                ".L.R...LR..L.."
+            ],
+            "expected": "LL.RR.LLRRLL.."
+        },
+        {
+            "inputs": [
+                "R."
+            ],
+            "expected": "RR"
+        },
+        {
+            "inputs": [
+                ".L"
+            ],
+            "expected": "LL"
+        },
+        {
+            "inputs": [
+                "."
+            ],
+            "expected": "."
+        },
+        {
+            "inputs": [
+                "R...L"
+            ],
+            "expected": "RR.LL"
+        },
+        {
+            "inputs": [
+                "R..L"
+            ],
+            "expected": "RRLL"
+        },
+        {
+            "inputs": [
+                "..."
+            ],
+            "expected": "..."
+        },
+        {
+            "inputs": [
+                "R.L"
+            ],
+            "expected": "R.L"
+        },
+        {
+            "inputs": [
+                "L...R"
+            ],
+            "expected": "L...R"
+        },
+        {
+            "inputs": [
+                ".....LRL.RR..L"
+            ],
+            "expected": "LLLLLLRL.RRRLL"
+        },
+        {
+            "inputs": [
+                "..L."
+            ],
+            "expected": "LLL."
+        },
+        {
+            "inputs": [
+                "RR.LL.R."
+            ],
+            "expected": "RR.LL.RR"
+        },
+        {
+            "inputs": [
+                "."
+            ],
+            "expected": "."
+        },
+        {
+            "inputs": [
+                "LRR"
+            ],
+            "expected": "LRR"
+        },
+        {
+            "inputs": [
+                "..L..RL"
+            ],
+            "expected": "LLL..RL"
+        },
+        {
+            "inputs": [
+                "...R.L.."
+            ],
+            "expected": "...R.L.."
+        },
+        {
+            "inputs": [
+                ".R....R.LR"
+            ],
+            "expected": ".RRRRRR.LR"
+        },
+        {
+            "inputs": [
+                "....R.....L..."
+            ],
+            "expected": "....RRR.LLL..."
+        },
+        {
+            "inputs": [
+                "."
+            ],
+            "expected": "."
+        },
+        {
+            "inputs": [
+                "............."
+            ],
+            "expected": "............."
+        },
+        {
+            "inputs": [
+                "LL.R.R..R."
+            ],
+            "expected": "LL.RRRRRRR"
+        },
+        {
+            "inputs": [
+                "L...R..L..R.."
+            ],
+            "expected": "L...RRLL..RRR"
+        },
+        {
+            "inputs": [
+                "R.......R."
+            ],
+            "expected": "RRRRRRRRRR"
+        },
+        {
+            "inputs": [
+                "..L.LR"
+            ],
+            "expected": "LLLLLR"
+        },
+        {
+            "inputs": [
+                ".RR.....R.LLL"
+            ],
+            "expected": ".RRRRRRRR.LLL"
+        },
+        {
+            "inputs": [
+                ".LR......R.L.R."
+            ],
+            "expected": "LLRRRRRRRR.L.RR"
+        },
+        {
+            "inputs": [
+                "R"
+            ],
+            "expected": "R"
+        },
+        {
+            "inputs": [
+                "..R........"
+            ],
+            "expected": "..RRRRRRRRR"
+        },
+        {
+            "inputs": [
+                ".."
+            ],
+            "expected": ".."
+        },
+        {
+            "inputs": [
+                "..RL.."
+            ],
+            "expected": "..RL.."
+        },
+        {
+            "inputs": [
+                "R....R.R."
+            ],
+            "expected": "RRRRRRRRR"
+        },
+        {
+            "inputs": [
+                "LR....L.R."
+            ],
+            "expected": "LRRRLLL.RR"
+        },
+        {
+            "inputs": [
+                "..........LLL"
+            ],
+            "expected": "LLLLLLLLLLLLL"
+        },
+        {
+            "inputs": [
+                ".R......RR."
+            ],
+            "expected": ".RRRRRRRRRR"
+        },
+        {
+            "inputs": [
+                ".L....R....R"
+            ],
+            "expected": "LL....RRRRRR"
+        },
+        {
+            "inputs": [
+                "RRR....LL..L"
+            ],
+            "expected": "RRRRRLLLLLLL"
+        },
+        {
+            "inputs": [
+                ".L.........RR."
+            ],
+            "expected": "LL.........RRR"
+        },
+        {
+            "inputs": [
+                "."
+            ],
+            "expected": "."
+        },
+        {
+            "inputs": [
+                ".....R."
+            ],
+            "expected": ".....RR"
+        },
+        {
+            "inputs": [
+                "..L..L..RRR."
+            ],
+            "expected": "LLLLLL..RRRR"
+        },
+        {
+            "inputs": [
+                "..R..."
+            ],
+            "expected": "..RRRR"
+        },
+        {
+            "inputs": [
+                "....."
+            ],
+            "expected": "....."
+        },
+        {
+            "inputs": [
+                "RR..L.L.R..."
+            ],
+            "expected": "RRRLLLL.RRRR"
+        },
+        {
+            "inputs": [
+                "...R.LLRR"
+            ],
+            "expected": "...R.LLRR"
+        },
+        {
+            "inputs": [
+                "....."
+            ],
+            "expected": "....."
+        },
+        {
+            "inputs": [
+                "........."
+            ],
+            "expected": "........."
+        },
+        {
+            "inputs": [
+                "R.......R"
+            ],
+            "expected": "RRRRRRRRR"
+        },
+        {
+            "inputs": [
+                "........L.."
+            ],
+            "expected": "LLLLLLLLL.."
+        },
+        {
+            "inputs": [
+                "RR.R......R"
+            ],
+            "expected": "RRRRRRRRRRR"
+        },
+        {
+            "inputs": [
+                "L"
+            ],
+            "expected": "L"
+        },
+        {
+            "inputs": [
+                "...L"
+            ],
+            "expected": "LLLL"
+        },
+        {
+            "inputs": [
+                ".L."
+            ],
+            "expected": "LL."
+        },
+        {
+            "inputs": [
+                ".L..LRR."
+            ],
+            "expected": "LLLLLRRR"
+        },
+        {
+            "inputs": [
+                ".R..L.RL......."
+            ],
+            "expected": ".RRLL.RL......."
+        },
+        {
+            "inputs": [
+                "..R"
+            ],
+            "expected": "..R"
+        },
+        {
+            "inputs": [
+                "........RL"
+            ],
+            "expected": "........RL"
+        },
+        {
+            "inputs": [
+                ".R.L."
+            ],
+            "expected": ".R.L."
+        },
+        {
+            "inputs": [
+                "LR....R.....R."
+            ],
+            "expected": "LRRRRRRRRRRRRR"
+        },
+        {
+            "inputs": [
+                ".R...R."
+            ],
+            "expected": ".RRRRRR"
+        },
+        {
+            "inputs": [
+                "...."
+            ],
+            "expected": "...."
+        },
+        {
+            "inputs": [
+                "R...."
+            ],
+            "expected": "RRRRR"
+        },
+        {
+            "inputs": [
+                "LL."
+            ],
+            "expected": "LL."
+        },
+        {
+            "inputs": [
+                "R.RLL.RL"
+            ],
+            "expected": "RRRLL.RL"
+        },
+        {
+            "inputs": [
+                "L.LLL"
+            ],
+            "expected": "LLLLL"
+        },
+        {
+            "inputs": [
+                "...."
+            ],
+            "expected": "...."
+        },
+        {
+            "inputs": [
+                ".LL.LR.."
+            ],
+            "expected": "LLLLLRRR"
+        },
+        {
+            "inputs": [
+                "R.."
+            ],
+            "expected": "RRR"
+        },
+        {
+            "inputs": [
+                "L....R.R.L.R.."
+            ],
+            "expected": "L....RRR.L.RRR"
+        },
+        {
+            "inputs": [
+                "..L..R.R..RL..R"
+            ],
+            "expected": "LLL..RRRRRRL..R"
+        },
+        {
+            "inputs": [
+                "..R.."
+            ],
+            "expected": "..RRR"
+        },
+        {
+            "inputs": [
+                "...LRL....L."
+            ],
+            "expected": "LLLLRLLLLLL."
+        },
+        {
+            "inputs": [
+                ".L.......L.."
+            ],
+            "expected": "LLLLLLLLLL.."
+        },
+        {
+            "inputs": [
+                "...R."
+            ],
+            "expected": "...RR"
+        },
+        {
+            "inputs": [
+                "...."
+            ],
+            "expected": "...."
+        },
+        {
+            "inputs": [
+                "...LRRR.L..RL."
+            ],
+            "expected": "LLLLRRR.L..RL."
+        },
+        {
+            "inputs": [
+                "..L..R..RR..L"
+            ],
+            "expected": "LLL..RRRRRRLL"
+        },
+        {
+            "inputs": [
+                "L.L.R.L...."
+            ],
+            "expected": "LLL.R.L...."
+        },
+        {
+            "inputs": [
+                ".LR.L......."
+            ],
+            "expected": "LLR.L......."
+        },
+        {
+            "inputs": [
+                ".....RLL...L"
+            ],
+            "expected": ".....RLLLLLL"
+        }
+    ]
+}
