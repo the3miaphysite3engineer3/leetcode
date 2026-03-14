@@ -1,0 +1,488 @@
+{
+  "problem_id": "1249",
+  "title": "Minimum Remove to Make Valid Parentheses",
+  "function_name": "minRemoveToMakeValid",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        "lee(t(c)o)de)"
+      ],
+      "expected": "lee(t(c)o)de"
+    },
+    {
+      "inputs": [
+        "a)b(c)d"
+      ],
+      "expected": "ab(c)d"
+    },
+    {
+      "inputs": [
+        "))(("
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "(a(b(c)d)"
+      ],
+      "expected": "a(b(c)d)"
+    },
+    {
+      "inputs": [
+        "c)("
+      ],
+      "expected": "c"
+    },
+    {
+      "inputs": [
+        "((cac(()ccb)b(("
+      ],
+      "expected": "cac(()ccb)b"
+    },
+    {
+      "inputs": [
+        ")cc((ba(ac)bc(bbca))b)("
+      ],
+      "expected": "cc((ba(ac)bc(bbca))b)"
+    },
+    {
+      "inputs": [
+        ")b"
+      ],
+      "expected": "b"
+    },
+    {
+      "inputs": [
+        ")ac)"
+      ],
+      "expected": "ac"
+    },
+    {
+      "inputs": [
+        "bb(a(ac)ca(()aa((c)caacc(cc(c)"
+      ],
+      "expected": "bba(ac)ca()aa(c)caacccc(c)"
+    },
+    {
+      "inputs": [
+        "a(c))aab)cbaaa((aa"
+      ],
+      "expected": "a(c)aabcbaaaaa"
+    },
+    {
+      "inputs": [
+        "ab)ccaaccab(b)"
+      ],
+      "expected": "abccaaccab(b)"
+    },
+    {
+      "inputs": [
+        "((b(aa)aac)cc(c(ac"
+      ],
+      "expected": "(b(aa)aac)cccac"
+    },
+    {
+      "inputs": [
+        "(aca((ba)(bbcc)aca"
+      ],
+      "expected": "aca(ba)(bbcc)aca"
+    },
+    {
+      "inputs": [
+        "cbb"
+      ],
+      "expected": "cbb"
+    },
+    {
+      "inputs": [
+        "a(a()bcb(c)acca)"
+      ],
+      "expected": "a(a()bcb(c)acca)"
+    },
+    {
+      "inputs": [
+        "ac)(bca)c((b)))b(c(c(b"
+      ],
+      "expected": "ac(bca)c((b))bccb"
+    },
+    {
+      "inputs": [
+        "aba()cacbb()bbaacbccbcccb"
+      ],
+      "expected": "aba()cacbb()bbaacbccbcccb"
+    },
+    {
+      "inputs": [
+        "(cc(c)ac"
+      ],
+      "expected": "cc(c)ac"
+    },
+    {
+      "inputs": [
+        "c)a((b)cacbb))a(b))cbca"
+      ],
+      "expected": "ca((b)cacbb)a(b)cbca"
+    },
+    {
+      "inputs": [
+        "accbb)aaaa)b)("
+      ],
+      "expected": "accbbaaaab"
+    },
+    {
+      "inputs": [
+        "acb(ca(b(a)()cbc"
+      ],
+      "expected": "acbcab(a)()cbc"
+    },
+    {
+      "inputs": [
+        "()c()cac)bcbbccbbbabbaa"
+      ],
+      "expected": "()c()cacbcbbccbbbabbaa"
+    },
+    {
+      "inputs": [
+        "cc"
+      ],
+      "expected": "cc"
+    },
+    {
+      "inputs": [
+        "b(c(b)a)b)((b(aa(bc))bcc(a"
+      ],
+      "expected": "b(c(b)a)bb(aa(bc))bcca"
+    },
+    {
+      "inputs": [
+        "bac(c(ca(())abbac)(cb(("
+      ],
+      "expected": "bacc(ca(())abbac)cb"
+    },
+    {
+      "inputs": [
+        "))c)bcabbcacc(cab"
+      ],
+      "expected": "cbcabbcacccab"
+    },
+    {
+      "inputs": [
+        "(b(a)(b(c()cccc)))"
+      ],
+      "expected": "(b(a)(b(c()cccc)))"
+    },
+    {
+      "inputs": [
+        "ac((aab("
+      ],
+      "expected": "acaab"
+    },
+    {
+      "inputs": [
+        "(c(ab)bcbc(b(c(ac)cb)b(a))bac"
+      ],
+      "expected": "c(ab)bcbc(b(c(ac)cb)b(a))bac"
+    },
+    {
+      "inputs": [
+        "acab(aa(c)cbacab"
+      ],
+      "expected": "acabaa(c)cbacab"
+    },
+    {
+      "inputs": [
+        "c(bba"
+      ],
+      "expected": "cbba"
+    },
+    {
+      "inputs": [
+        "b(cbb)(acc)ac)cbb((bacc)(b)))"
+      ],
+      "expected": "b(cbb)(acc)accbb((bacc)(b))"
+    },
+    {
+      "inputs": [
+        "((()bb"
+      ],
+      "expected": "()bb"
+    },
+    {
+      "inputs": [
+        "acb))((ac)babcabb()c(c))()"
+      ],
+      "expected": "acb((ac)babcabb()c(c))()"
+    },
+    {
+      "inputs": [
+        ")acbbb()(bc()bbacbbb"
+      ],
+      "expected": "acbbb()bc()bbacbbb"
+    },
+    {
+      "inputs": [
+        "(((ca(ac)ba)abaa))b)(c"
+      ],
+      "expected": "(((ca(ac)ba)abaa))bc"
+    },
+    {
+      "inputs": [
+        "ca())ccbba)bcb)abb))c)acc("
+      ],
+      "expected": "ca()ccbbabcbabbcacc"
+    },
+    {
+      "inputs": [
+        "bbcacabbcbac)abcb(c))abb((c"
+      ],
+      "expected": "bbcacabbcbacabcb(c)abbc"
+    },
+    {
+      "inputs": [
+        "c(acc)ac(b((bcaab())b(c("
+      ],
+      "expected": "c(acc)acb(bcaab())bc"
+    },
+    {
+      "inputs": [
+        "c)(cbcbb)aabb)a()((aab)())"
+      ],
+      "expected": "c(cbcbb)aabba()((aab)())"
+    },
+    {
+      "inputs": [
+        "(c)aac)c(cc()aa"
+      ],
+      "expected": "(c)aacccc()aa"
+    },
+    {
+      "inputs": [
+        ")aa((a("
+      ],
+      "expected": "aaa"
+    },
+    {
+      "inputs": [
+        "b((a(ccbaca))("
+      ],
+      "expected": "b(a(ccbaca))"
+    },
+    {
+      "inputs": [
+        "a)b)ba))bbccab)"
+      ],
+      "expected": "abbabbccab"
+    },
+    {
+      "inputs": [
+        "(bc(cca(a((()((bb))aa(b(ccc)"
+      ],
+      "expected": "bcccaa()((bb))aab(ccc)"
+    },
+    {
+      "inputs": [
+        "bccca())))(a()ca)(baa()"
+      ],
+      "expected": "bccca()(a()ca)baa()"
+    },
+    {
+      "inputs": [
+        "("
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        ")c))ba))((b(ba)c(bbba))aba()cb"
+      ],
+      "expected": "cba(b(ba)c(bbba))aba()cb"
+    },
+    {
+      "inputs": [
+        "(b(())b(ba(bba)cc"
+      ],
+      "expected": "b(())bba(bba)cc"
+    },
+    {
+      "inputs": [
+        "a)()aaaccbb"
+      ],
+      "expected": "a()aaaccbb"
+    },
+    {
+      "inputs": [
+        "()c))c(cb)()babb))b"
+      ],
+      "expected": "()cc(cb)()babbb"
+    },
+    {
+      "inputs": [
+        "b(cba"
+      ],
+      "expected": "bcba"
+    },
+    {
+      "inputs": [
+        ")cb()((bca())((a(cb)cba"
+      ],
+      "expected": "cb()(bca())a(cb)cba"
+    },
+    {
+      "inputs": [
+        "((a)aacaccb)()a(b()bcb)b("
+      ],
+      "expected": "((a)aacaccb)()a(b()bcb)b"
+    },
+    {
+      "inputs": [
+        "(ca((aac()c()c)b)a"
+      ],
+      "expected": "ca((aac()c()c)b)a"
+    },
+    {
+      "inputs": [
+        "ac(cac)c(abc(a)"
+      ],
+      "expected": "ac(cac)cabc(a)"
+    },
+    {
+      "inputs": [
+        "(()abaa(c((caa)((bb"
+      ],
+      "expected": "()abaac(caa)bb"
+    },
+    {
+      "inputs": [
+        "cbbc)((caa((a((()a"
+      ],
+      "expected": "cbbccaaa()a"
+    },
+    {
+      "inputs": [
+        "caa"
+      ],
+      "expected": "caa"
+    },
+    {
+      "inputs": [
+        "acb))(aa(ca))"
+      ],
+      "expected": "acb(aa(ca))"
+    },
+    {
+      "inputs": [
+        "b(cbb))"
+      ],
+      "expected": "b(cbb)"
+    },
+    {
+      "inputs": [
+        "c)(bb(b())aabacccac"
+      ],
+      "expected": "cbb(b())aabacccac"
+    },
+    {
+      "inputs": [
+        "((b(c)b)((((())c(ccbb)c(b)"
+      ],
+      "expected": "(b(c)b)(())c(ccbb)c(b)"
+    },
+    {
+      "inputs": [
+        ")cc(abac"
+      ],
+      "expected": "ccabac"
+    },
+    {
+      "inputs": [
+        ")(bcc)c(cba(bbaabc))(acc(a)baa"
+      ],
+      "expected": "(bcc)c(cba(bbaabc))acc(a)baa"
+    },
+    {
+      "inputs": [
+        "c)(b(((())acc))(bcb()cab"
+      ],
+      "expected": "cb(((())acc))bcb()cab"
+    },
+    {
+      "inputs": [
+        ")(cc(a)b)cac)((b((bc)c(c("
+      ],
+      "expected": "(cc(a)b)cacb(bc)cc"
+    },
+    {
+      "inputs": [
+        "b(b(ab"
+      ],
+      "expected": "bbab"
+    },
+    {
+      "inputs": [
+        "ccb(a"
+      ],
+      "expected": "ccba"
+    },
+    {
+      "inputs": [
+        "))()"
+      ],
+      "expected": "()"
+    },
+    {
+      "inputs": [
+        "(aab(a(bc(cab((a)(c(bb)ca)a)c"
+      ],
+      "expected": "aababccab((a)(c(bb)ca)a)c"
+    },
+    {
+      "inputs": [
+        "(a()c())a(ccab)(b(b())(a()(a)"
+      ],
+      "expected": "(a()c())a(ccab)b(b())a()(a)"
+    },
+    {
+      "inputs": [
+        ")a)cbacb)bbba(cbbcba)b"
+      ],
+      "expected": "acbacbbbba(cbbcba)b"
+    },
+    {
+      "inputs": [
+        "(cbb(ccc(acc()a))ac(a((bb"
+      ],
+      "expected": "cbb(ccc(acc()a))acabb"
+    },
+    {
+      "inputs": [
+        "(b(c)aaac())ab)(b"
+      ],
+      "expected": "(b(c)aaac())abb"
+    },
+    {
+      "inputs": [
+        ")aac)ccab()b(ac))"
+      ],
+      "expected": "aacccab()b(ac)"
+    },
+    {
+      "inputs": [
+        "b(aa"
+      ],
+      "expected": "baa"
+    },
+    {
+      "inputs": [
+        "abbaaa(accca(ca"
+      ],
+      "expected": "abbaaaacccaca"
+    },
+    {
+      "inputs": [
+        "bb((ca"
+      ],
+      "expected": "bbca"
+    }
+  ]
+}
