@@ -9,7 +9,7 @@
  */
 
 const fs = require('fs');
-const path = require('path');
+const vm = require('vm');
 
 /**
  * Strip TypeScript type annotations to produce valid JavaScript.
@@ -90,11 +90,30 @@ function main() {
     const tsCode = fs.readFileSync(solutionFile, 'utf8');
     const jsCode = stripTypes(tsCode);
 
-    // Execute the converted code
-    eval(jsCode);
+    // Execute the converted code in a sandboxed context
+    const sandbox = {
+        Map,
+        Set,
+        Array,
+        Object,
+        Math,
+        Number,
+        String,
+        Boolean,
+        parseInt,
+        parseFloat,
+        isNaN,
+        isFinite,
+        Infinity,
+        NaN,
+        undefined,
+        console,
+    };
+    vm.createContext(sandbox);
+    vm.runInContext(jsCode, sandbox);
 
-    // Get the function reference
-    const fn = eval(functionName);
+    // Get the function reference from the sandbox
+    const fn = sandbox[functionName];
     if (typeof fn !== 'function') {
         console.error(`Error: '${functionName}' is not a function`);
         process.exit(1);

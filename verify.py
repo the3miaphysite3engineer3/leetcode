@@ -153,10 +153,11 @@ def compare_results(actual, expected, comparison="exact"):
         if isinstance(actual, list) and isinstance(expected, list):
             if len(actual) != len(expected):
                 return False
-            norm = lambda lst: sorted(  # noqa: E731
-                sorted(x) if isinstance(x, list) else [x] for x in lst
-            )
-            return norm(actual) == norm(expected)
+
+            def _normalize_nested(lst):
+                return sorted(sorted(x) if isinstance(x, list) else [x] for x in lst)
+
+            return _normalize_nested(actual) == _normalize_nested(expected)
         return actual == expected
     if comparison == "close":
         try:

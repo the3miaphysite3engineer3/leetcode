@@ -4,8 +4,8 @@
  *
  * Usage: node js_runner.js <solution_file> <function_name> <inputs_json>
  *
- * Loads the solution file via eval(), calls the specified function with the
- * given inputs, and prints the result as JSON.
+ * Loads the solution file inside a sandboxed VM context, calls the specified
+ * function with the given inputs, and prints the result as JSON.
  *
  * Since JS solution files often define multiple approaches using the same
  * variable name, the last definition wins (which is typically the most
@@ -13,7 +13,7 @@
  */
 
 const fs = require('fs');
-const path = require('path');
+const vm = require('vm');
 
 function main() {
     if (process.argv.length !== 5) {
@@ -30,12 +30,31 @@ function main() {
     // Read solution code
     const code = fs.readFileSync(solutionFile, 'utf8');
 
-    // Execute solution code in current scope
-    // This allows multiple var definitions to override each other
-    eval(code);
+    // Execute solution code in a sandboxed context
+    // The sandbox provides standard globals needed by LeetCode solutions
+    const sandbox = {
+        Map,
+        Set,
+        Array,
+        Object,
+        Math,
+        Number,
+        String,
+        Boolean,
+        parseInt,
+        parseFloat,
+        isNaN,
+        isFinite,
+        Infinity,
+        NaN,
+        undefined,
+        console,
+    };
+    vm.createContext(sandbox);
+    vm.runInContext(code, sandbox);
 
-    // Get the function reference
-    const fn = eval(functionName);
+    // Get the function reference from the sandbox
+    const fn = sandbox[functionName];
     if (typeof fn !== 'function') {
         console.error(`Error: '${functionName}' is not a function`);
         process.exit(1);
