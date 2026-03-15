@@ -9,7 +9,6 @@ class Solution:
                 return ""
             for j in range(minLen):
                 if w1[j] != w2[j]:
-                    print(w1[j], w2[j])
                     adj[w1[j]].add(w2[j])
                     break
 

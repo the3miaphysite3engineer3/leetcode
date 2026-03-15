@@ -1,0 +1,488 @@
+{
+    "problem_id": "1930",
+    "title": "Unique Length-3 Palindromic Subsequences",
+    "function_name": "countPalindromicSubsequence",
+    "comparison": "exact",
+    "test_cases": [
+        {
+            "inputs": [
+                "aabca"
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                "adc"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "bbcbaba"
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                "a"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "aa"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "aaa"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "abcba"
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                "abab"
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                "abcabc"
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                "aaaa"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "bdcadcabacaababd"
+            ],
+            "expected": 16
+        },
+        {
+            "inputs": [
+                "aaaaaaaaaaaaaaaaaaa"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "aaacabaabaabbca"
+            ],
+            "expected": 7
+        },
+        {
+            "inputs": [
+                "aaca"
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                "acbdccdaabbb"
+            ],
+            "expected": 12
+        },
+        {
+            "inputs": [
+                "edacacdedadadbacee"
+            ],
+            "expected": 19
+        },
+        {
+            "inputs": [
+                "abbbaa"
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                "caacbcb"
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                "aaaa"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "ccdc"
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                "ecabeeaca"
+            ],
+            "expected": 11
+        },
+        {
+            "inputs": [
+                "aaaaaaaaaaaaaaa"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "aca"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "aaaaaaaaaaaaaaaaaa"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "baaabbaabaabba"
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                "babdacdbbba"
+            ],
+            "expected": 10
+        },
+        {
+            "inputs": [
+                "aaaaaaa"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "adacddcaddcabacddcad"
+            ],
+            "expected": 12
+        },
+        {
+            "inputs": [
+                "acacacbaa"
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                "bbaaabbab"
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                "abababaabab"
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                "aaaaaa"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "acda"
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                "aaaaaa"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "eaddddeeac"
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                "baa"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "aaaaaa"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "dbbbaabcedecceebbd"
+            ],
+            "expected": 16
+        },
+        {
+            "inputs": [
+                "cccaeebabeea"
+            ],
+            "expected": 8
+        },
+        {
+            "inputs": [
+                "aacaabacbccbccbc"
+            ],
+            "expected": 9
+        },
+        {
+            "inputs": [
+                "cdcbadadbabbd"
+            ],
+            "expected": 11
+        },
+        {
+            "inputs": [
+                "bbbabaaba"
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                "acaab"
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                "baaaabaababaaaaab"
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                "aaaaaa"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "bbabaaaaaabbbbaaa"
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                "abaacbaccbacabccaacb"
+            ],
+            "expected": 9
+        },
+        {
+            "inputs": [
+                "bcbabcbccbcbbbcbccc"
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                "aaba"
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                "bbbabbaaabbbaab"
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                "cdddddcdccdabdbcaca"
+            ],
+            "expected": 13
+        },
+        {
+            "inputs": [
+                "eeacbaaacaeb"
+            ],
+            "expected": 12
+        },
+        {
+            "inputs": [
+                "bbbbaababbbbb"
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                "aba"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "babbbababb"
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                "dacbbcadc"
+            ],
+            "expected": 9
+        },
+        {
+            "inputs": [
+                "bbbbbaaaabbba"
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                "aaaaaaaaaaaaaaa"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "aaaaaaaaa"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "aaaaaaaaaaaaaaaaaaa"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "dcbabdade"
+            ],
+            "expected": 7
+        },
+        {
+            "inputs": [
+                "cedddeaacd"
+            ],
+            "expected": 8
+        },
+        {
+            "inputs": [
+                "bcabaaccbbbcac"
+            ],
+            "expected": 9
+        },
+        {
+            "inputs": [
+                "abbcca"
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                "dacaacddb"
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                "abaabbbbaba"
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                "aab"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "daabdbdcbbaabcadb"
+            ],
+            "expected": 14
+        },
+        {
+            "inputs": [
+                "aaaaa"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "aaaaaaaaa"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "bbcb"
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                "aaaaaaaaa"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "ababbaab"
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                "aaaaaaaaaaaaaaaa"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "aaaaaaaaaaaaaa"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "acaddbabaacbd"
+            ],
+            "expected": 14
+        },
+        {
+            "inputs": [
+                "aabcdcbbdb"
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                "bbab"
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                "aaaaaaaaaaaaa"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "aadababb"
+            ],
+            "expected": 5
+        }
+    ]
+}

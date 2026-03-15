@@ -1,0 +1,1381 @@
+{
+    "problem_id": "68",
+    "title": "Text Justification",
+    "function_name": "fullJustify",
+    "comparison": "exact",
+    "test_cases": [
+        {
+            "inputs": [
+                [
+                    "This",
+                    "is",
+                    "an",
+                    "example",
+                    "of",
+                    "text",
+                    "justification."
+                ],
+                16
+            ],
+            "expected": [
+                "This    is    an",
+                "example  of text",
+                "justification.  "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "What",
+                    "must",
+                    "be",
+                    "acknowledgment",
+                    "shall",
+                    "be"
+                ],
+                16
+            ],
+            "expected": [
+                "What   must   be",
+                "acknowledgment  ",
+                "shall be        "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "did",
+                    "him",
+                    "our",
+                    "up",
+                    "that",
+                    "us",
+                    "may",
+                    "he"
+                ],
+                17
+            ],
+            "expected": [
+                "did  him  our  up",
+                "that us may he   "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "as",
+                    "has",
+                    "she",
+                    "day",
+                    "but",
+                    "an",
+                    "if",
+                    "by"
+                ],
+                8
+            ],
+            "expected": [
+                "as   has",
+                "she  day",
+                "but   an",
+                "if by   "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "now",
+                    "its",
+                    "its",
+                    "let",
+                    "that",
+                    "to",
+                    "no",
+                    "has",
+                    "all"
+                ],
+                7
+            ],
+            "expected": [
+                "now its",
+                "its let",
+                "that to",
+                "no  has",
+                "all    "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "of",
+                    "a",
+                    "let",
+                    "us",
+                    "for",
+                    "not"
+                ],
+                9
+            ],
+            "expected": [
+                "of  a let",
+                "us    for",
+                "not      "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "one"
+                ],
+                16
+            ],
+            "expected": [
+                "one             "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "no",
+                    "from",
+                    "one",
+                    "have",
+                    "did",
+                    "day",
+                    "use",
+                    "if"
+                ],
+                4
+            ],
+            "expected": [
+                "no  ",
+                "from",
+                "one ",
+                "have",
+                "did ",
+                "day ",
+                "use ",
+                "if  "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "new",
+                    "I",
+                    "may",
+                    "me",
+                    "his",
+                    "I",
+                    "let",
+                    "our",
+                    "that",
+                    "the"
+                ],
+                19
+            ],
+            "expected": [
+                "new  I may me his I",
+                "let our that the   "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "how",
+                    "us",
+                    "did",
+                    "do",
+                    "a",
+                    "not",
+                    "or"
+                ],
+                16
+            ],
+            "expected": [
+                "how  us did do a",
+                "not or          "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "are",
+                    "that",
+                    "use",
+                    "him",
+                    "as",
+                    "are",
+                    "for"
+                ],
+                5
+            ],
+            "expected": [
+                "are  ",
+                "that ",
+                "use  ",
+                "him  ",
+                "as   ",
+                "are  ",
+                "for  "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "are"
+                ],
+                15
+            ],
+            "expected": [
+                "are            "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "how",
+                    "he",
+                    "a"
+                ],
+                14
+            ],
+            "expected": [
+                "how he a      "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "old",
+                    "its",
+                    "our",
+                    "as",
+                    "too",
+                    "may"
+                ],
+                10
+            ],
+            "expected": [
+                "old    its",
+                "our as too",
+                "may       "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "from",
+                    "my",
+                    "my",
+                    "our",
+                    "if",
+                    "up",
+                    "how",
+                    "all"
+                ],
+                16
+            ],
+            "expected": [
+                "from  my  my our",
+                "if up how all   "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "say",
+                    "the",
+                    "be",
+                    "way",
+                    "one"
+                ],
+                6
+            ],
+            "expected": [
+                "say   ",
+                "the be",
+                "way   ",
+                "one   "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "say",
+                    "on",
+                    "me",
+                    "own",
+                    "as",
+                    "us",
+                    "old",
+                    "on"
+                ],
+                14
+            ],
+            "expected": [
+                "say  on me own",
+                "as us old on  "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "she",
+                    "at",
+                    "day",
+                    "that",
+                    "let",
+                    "that",
+                    "and",
+                    "me"
+                ],
+                12
+            ],
+            "expected": [
+                "she  at  day",
+                "that     let",
+                "that and me "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "let",
+                    "for",
+                    "she",
+                    "his",
+                    "be",
+                    "do",
+                    "have",
+                    "may",
+                    "my",
+                    "or"
+                ],
+                14
+            ],
+            "expected": [
+                "let   for  she",
+                "his be do have",
+                "may my or     "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "in",
+                    "has",
+                    "as",
+                    "now",
+                    "are",
+                    "this"
+                ],
+                6
+            ],
+            "expected": [
+                "in has",
+                "as now",
+                "are   ",
+                "this  "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "on",
+                    "did",
+                    "old"
+                ],
+                16
+            ],
+            "expected": [
+                "on did old      "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "day",
+                    "he",
+                    "out",
+                    "say",
+                    "are",
+                    "use"
+                ],
+                18
+            ],
+            "expected": [
+                "day he out say are",
+                "use               "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "by",
+                    "or",
+                    "day",
+                    "that",
+                    "an",
+                    "as",
+                    "how",
+                    "all",
+                    "be",
+                    "too"
+                ],
+                11
+            ],
+            "expected": [
+                "by  or  day",
+                "that  an as",
+                "how  all be",
+                "too        "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "as",
+                    "out"
+                ],
+                13
+            ],
+            "expected": [
+                "as out       "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "has",
+                    "in",
+                    "with",
+                    "to",
+                    "me"
+                ],
+                19
+            ],
+            "expected": [
+                "has in with to me  "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "did",
+                    "one",
+                    "for",
+                    "with",
+                    "too",
+                    "old",
+                    "as",
+                    "too",
+                    "him",
+                    "do"
+                ],
+                16
+            ],
+            "expected": [
+                "did one for with",
+                "too  old  as too",
+                "him do          "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "in",
+                    "and"
+                ],
+                11
+            ],
+            "expected": [
+                "in and     "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "that",
+                    "his",
+                    "but",
+                    "say",
+                    "has",
+                    "in",
+                    "for",
+                    "out"
+                ],
+                9
+            ],
+            "expected": [
+                "that  his",
+                "but   say",
+                "has    in",
+                "for out  "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "how",
+                    "or",
+                    "in",
+                    "and",
+                    "by"
+                ],
+                17
+            ],
+            "expected": [
+                "how or in and by "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "this"
+                ],
+                18
+            ],
+            "expected": [
+                "this              "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "so",
+                    "I",
+                    "in",
+                    "I",
+                    "out",
+                    "by"
+                ],
+                12
+            ],
+            "expected": [
+                "so  I  in  I",
+                "out by      "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "by",
+                    "it",
+                    "are",
+                    "new",
+                    "by",
+                    "use",
+                    "its",
+                    "do"
+                ],
+                5
+            ],
+            "expected": [
+                "by it",
+                "are  ",
+                "new  ",
+                "by   ",
+                "use  ",
+                "its  ",
+                "do   "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "how"
+                ],
+                13
+            ],
+            "expected": [
+                "how          "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "and",
+                    "own",
+                    "one"
+                ],
+                9
+            ],
+            "expected": [
+                "and   own",
+                "one      "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "he",
+                    "old",
+                    "up",
+                    "its",
+                    "on"
+                ],
+                4
+            ],
+            "expected": [
+                "he  ",
+                "old ",
+                "up  ",
+                "its ",
+                "on  "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "new",
+                    "its",
+                    "the",
+                    "with"
+                ],
+                9
+            ],
+            "expected": [
+                "new   its",
+                "the with "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "now"
+                ],
+                9
+            ],
+            "expected": [
+                "now      "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "how",
+                    "to",
+                    "all",
+                    "get",
+                    "you",
+                    "that",
+                    "his",
+                    "get",
+                    "a"
+                ],
+                16
+            ],
+            "expected": [
+                "how  to  all get",
+                "you that his get",
+                "a               "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "one"
+                ],
+                13
+            ],
+            "expected": [
+                "one          "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "one",
+                    "old",
+                    "on",
+                    "so",
+                    "own",
+                    "day",
+                    "of",
+                    "all"
+                ],
+                9
+            ],
+            "expected": [
+                "one   old",
+                "on so own",
+                "day    of",
+                "all      "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "let",
+                    "has",
+                    "us",
+                    "do",
+                    "this",
+                    "and",
+                    "say",
+                    "a",
+                    "all",
+                    "a"
+                ],
+                14
+            ],
+            "expected": [
+                "let  has us do",
+                "this and say a",
+                "all a         "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "own",
+                    "she",
+                    "for",
+                    "his",
+                    "did",
+                    "use",
+                    "have",
+                    "new",
+                    "has",
+                    "from"
+                ],
+                8
+            ],
+            "expected": [
+                "own  she",
+                "for  his",
+                "did  use",
+                "have new",
+                "has from"
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "let",
+                    "with",
+                    "a",
+                    "to",
+                    "how",
+                    "let",
+                    "let"
+                ],
+                10
+            ],
+            "expected": [
+                "let with a",
+                "to how let",
+                "let       "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "use",
+                    "has",
+                    "that",
+                    "an",
+                    "let",
+                    "a",
+                    "own",
+                    "too",
+                    "him",
+                    "way"
+                ],
+                10
+            ],
+            "expected": [
+                "use    has",
+                "that    an",
+                "let  a own",
+                "too    him",
+                "way       "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "way",
+                    "its",
+                    "he"
+                ],
+                11
+            ],
+            "expected": [
+                "way its he "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "no",
+                    "have",
+                    "say",
+                    "an",
+                    "are"
+                ],
+                6
+            ],
+            "expected": [
+                "no    ",
+                "have  ",
+                "say an",
+                "are   "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "now",
+                    "old",
+                    "be",
+                    "this",
+                    "my",
+                    "our",
+                    "it"
+                ],
+                6
+            ],
+            "expected": [
+                "now   ",
+                "old be",
+                "this  ",
+                "my our",
+                "it    "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "a"
+                ],
+                10
+            ],
+            "expected": [
+                "a         "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "so",
+                    "he",
+                    "up",
+                    "how",
+                    "not",
+                    "so",
+                    "on",
+                    "the",
+                    "way",
+                    "out"
+                ],
+                8
+            ],
+            "expected": [
+                "so he up",
+                "how  not",
+                "so    on",
+                "the  way",
+                "out     "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "I",
+                    "old"
+                ],
+                5
+            ],
+            "expected": [
+                "I old"
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "too",
+                    "his",
+                    "are",
+                    "if",
+                    "our",
+                    "a",
+                    "do",
+                    "do",
+                    "that"
+                ],
+                18
+            ],
+            "expected": [
+                "too his are if our",
+                "a do do that      "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "are",
+                    "my"
+                ],
+                12
+            ],
+            "expected": [
+                "are my      "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "get",
+                    "from"
+                ],
+                4
+            ],
+            "expected": [
+                "get ",
+                "from"
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "has",
+                    "now"
+                ],
+                8
+            ],
+            "expected": [
+                "has now "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "one",
+                    "it",
+                    "out",
+                    "too"
+                ],
+                17
+            ],
+            "expected": [
+                "one it out too   "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "for",
+                    "a",
+                    "him",
+                    "in"
+                ],
+                18
+            ],
+            "expected": [
+                "for a him in      "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "an",
+                    "up",
+                    "if",
+                    "no"
+                ],
+                17
+            ],
+            "expected": [
+                "an up if no      "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "now",
+                    "the",
+                    "one",
+                    "new",
+                    "let",
+                    "my",
+                    "a",
+                    "our"
+                ],
+                4
+            ],
+            "expected": [
+                "now ",
+                "the ",
+                "one ",
+                "new ",
+                "let ",
+                "my a",
+                "our "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "she",
+                    "all"
+                ],
+                7
+            ],
+            "expected": [
+                "she all"
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "out",
+                    "how",
+                    "its",
+                    "for",
+                    "from",
+                    "out",
+                    "this",
+                    "of"
+                ],
+                8
+            ],
+            "expected": [
+                "out  how",
+                "its  for",
+                "from out",
+                "this of "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "you"
+                ],
+                18
+            ],
+            "expected": [
+                "you               "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "old",
+                    "it",
+                    "all",
+                    "with",
+                    "and",
+                    "as",
+                    "be",
+                    "get",
+                    "to"
+                ],
+                9
+            ],
+            "expected": [
+                "old    it",
+                "all  with",
+                "and as be",
+                "get to   "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "of",
+                    "by",
+                    "I",
+                    "our",
+                    "I",
+                    "and",
+                    "his"
+                ],
+                10
+            ],
+            "expected": [
+                "of   by  I",
+                "our  I and",
+                "his       "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "from",
+                    "be",
+                    "me",
+                    "how",
+                    "not",
+                    "with"
+                ],
+                15
+            ],
+            "expected": [
+                "from  be me how",
+                "not with       "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "has",
+                    "get",
+                    "my"
+                ],
+                8
+            ],
+            "expected": [
+                "has  get",
+                "my      "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "up",
+                    "to",
+                    "but",
+                    "on"
+                ],
+                13
+            ],
+            "expected": [
+                "up to but on "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "old",
+                    "our",
+                    "of",
+                    "my",
+                    "so",
+                    "was",
+                    "my"
+                ],
+                7
+            ],
+            "expected": [
+                "old our",
+                "of   my",
+                "so  was",
+                "my     "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "no",
+                    "this",
+                    "as"
+                ],
+                12
+            ],
+            "expected": [
+                "no this as  "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "or",
+                    "it",
+                    "with",
+                    "say",
+                    "too",
+                    "to",
+                    "no",
+                    "she",
+                    "has"
+                ],
+                19
+            ],
+            "expected": [
+                "or  it with say too",
+                "to no she has      "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "from",
+                    "a",
+                    "of",
+                    "me",
+                    "was",
+                    "by",
+                    "you",
+                    "me"
+                ],
+                12
+            ],
+            "expected": [
+                "from a of me",
+                "was  by  you",
+                "me          "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "get",
+                    "in",
+                    "new",
+                    "with",
+                    "have"
+                ],
+                18
+            ],
+            "expected": [
+                "get  in  new  with",
+                "have              "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "all",
+                    "as",
+                    "she",
+                    "of",
+                    "have",
+                    "be",
+                    "that",
+                    "may",
+                    "not"
+                ],
+                9
+            ],
+            "expected": [
+                "all    as",
+                "she    of",
+                "have   be",
+                "that  may",
+                "not      "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "as"
+                ],
+                13
+            ],
+            "expected": [
+                "as           "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "on",
+                    "get",
+                    "and",
+                    "or",
+                    "so"
+                ],
+                10
+            ],
+            "expected": [
+                "on get and",
+                "or so     "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "all",
+                    "did",
+                    "day",
+                    "the",
+                    "a",
+                    "now",
+                    "it"
+                ],
+                11
+            ],
+            "expected": [
+                "all did day",
+                "the  a  now",
+                "it         "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "its",
+                    "have",
+                    "by",
+                    "an",
+                    "day",
+                    "my",
+                    "in"
+                ],
+                6
+            ],
+            "expected": [
+                "its   ",
+                "have  ",
+                "by  an",
+                "day my",
+                "in    "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "may"
+                ],
+                15
+            ],
+            "expected": [
+                "may            "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "it",
+                    "be",
+                    "new",
+                    "this",
+                    "old"
+                ],
+                19
+            ],
+            "expected": [
+                "it be new this old "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "and",
+                    "on"
+                ],
+                17
+            ],
+            "expected": [
+                "and on           "
+            ]
+        },
+        {
+            "inputs": [
+                [
+                    "us",
+                    "him",
+                    "you"
+                ],
+                5
+            ],
+            "expected": [
+                "us   ",
+                "him  ",
+                "you  "
+            ]
+        }
+    ]
+}

@@ -1,0 +1,488 @@
+{
+    "problem_id": "0394",
+    "title": "Decode String",
+    "function_name": "decodeString",
+    "comparison": "exact",
+    "test_cases": [
+        {
+            "inputs": [
+                "3[a]2[bc]"
+            ],
+            "expected": "aaabcbc"
+        },
+        {
+            "inputs": [
+                "3[a2[c]]"
+            ],
+            "expected": "accaccacc"
+        },
+        {
+            "inputs": [
+                "2[abc]3[cd]ef"
+            ],
+            "expected": "abcabccdcdcdef"
+        },
+        {
+            "inputs": [
+                "abc3[cd]xyz"
+            ],
+            "expected": "abccdcdcdxyz"
+        },
+        {
+            "inputs": [
+                "10[a]"
+            ],
+            "expected": "aaaaaaaaaa"
+        },
+        {
+            "inputs": [
+                "2[a2[b]]"
+            ],
+            "expected": "abbabb"
+        },
+        {
+            "inputs": [
+                "abc"
+            ],
+            "expected": "abc"
+        },
+        {
+            "inputs": [
+                "1[a]"
+            ],
+            "expected": "a"
+        },
+        {
+            "inputs": [
+                "1[a3[b]]"
+            ],
+            "expected": "abbb"
+        },
+        {
+            "inputs": [
+                "2[c]"
+            ],
+            "expected": "cc"
+        },
+        {
+            "inputs": [
+                "5[c]"
+            ],
+            "expected": "ccccc"
+        },
+        {
+            "inputs": [
+                "a1[a]"
+            ],
+            "expected": "aa"
+        },
+        {
+            "inputs": [
+                "3[a3[a]]"
+            ],
+            "expected": "aaaaaaaaaaaa"
+        },
+        {
+            "inputs": [
+                "3[c3[b]]"
+            ],
+            "expected": "cbbbcbbbcbbb"
+        },
+        {
+            "inputs": [
+                "4[baa]"
+            ],
+            "expected": "baabaabaabaa"
+        },
+        {
+            "inputs": [
+                "2[b2[a]]"
+            ],
+            "expected": "baabaa"
+        },
+        {
+            "inputs": [
+                "3[a]"
+            ],
+            "expected": "aaa"
+        },
+        {
+            "inputs": [
+                "b2[ac]"
+            ],
+            "expected": "bacac"
+        },
+        {
+            "inputs": [
+                "aba3[cc]"
+            ],
+            "expected": "abacccccc"
+        },
+        {
+            "inputs": [
+                "aca1[b]"
+            ],
+            "expected": "acab"
+        },
+        {
+            "inputs": [
+                "2[b]"
+            ],
+            "expected": "bb"
+        },
+        {
+            "inputs": [
+                "cb1[ba]"
+            ],
+            "expected": "cbba"
+        },
+        {
+            "inputs": [
+                "2[c3[c]]"
+            ],
+            "expected": "cccccccc"
+        },
+        {
+            "inputs": [
+                "5[acc]"
+            ],
+            "expected": "accaccaccaccacc"
+        },
+        {
+            "inputs": [
+                "2[bb]"
+            ],
+            "expected": "bbbb"
+        },
+        {
+            "inputs": [
+                "3[c1[c]]"
+            ],
+            "expected": "cccccc"
+        },
+        {
+            "inputs": [
+                "a1[bb]"
+            ],
+            "expected": "abb"
+        },
+        {
+            "inputs": [
+                "2[cba]"
+            ],
+            "expected": "cbacba"
+        },
+        {
+            "inputs": [
+                "2[b3[b]]"
+            ],
+            "expected": "bbbbbbbb"
+        },
+        {
+            "inputs": [
+                "3[a]"
+            ],
+            "expected": "aaa"
+        },
+        {
+            "inputs": [
+                "3[c2[c]]"
+            ],
+            "expected": "ccccccccc"
+        },
+        {
+            "inputs": [
+                "2[c2[b]]"
+            ],
+            "expected": "cbbcbb"
+        },
+        {
+            "inputs": [
+                "2[baa]"
+            ],
+            "expected": "baabaa"
+        },
+        {
+            "inputs": [
+                "2[acb]"
+            ],
+            "expected": "acbacb"
+        },
+        {
+            "inputs": [
+                "1[b2[c]]"
+            ],
+            "expected": "bcc"
+        },
+        {
+            "inputs": [
+                "bca3[c]"
+            ],
+            "expected": "bcaccc"
+        },
+        {
+            "inputs": [
+                "2[c2[a]]"
+            ],
+            "expected": "caacaa"
+        },
+        {
+            "inputs": [
+                "ab1[ca]"
+            ],
+            "expected": "abca"
+        },
+        {
+            "inputs": [
+                "1[c2[c]]"
+            ],
+            "expected": "ccc"
+        },
+        {
+            "inputs": [
+                "3[a1[b]]"
+            ],
+            "expected": "ababab"
+        },
+        {
+            "inputs": [
+                "5[acb]"
+            ],
+            "expected": "acbacbacbacbacb"
+        },
+        {
+            "inputs": [
+                "a2[aa]"
+            ],
+            "expected": "aaaaa"
+        },
+        {
+            "inputs": [
+                "5[a]"
+            ],
+            "expected": "aaaaa"
+        },
+        {
+            "inputs": [
+                "2[a3[a]]"
+            ],
+            "expected": "aaaaaaaa"
+        },
+        {
+            "inputs": [
+                "4[abc]"
+            ],
+            "expected": "abcabcabcabc"
+        },
+        {
+            "inputs": [
+                "2[a3[c]]"
+            ],
+            "expected": "acccaccc"
+        },
+        {
+            "inputs": [
+                "1[c2[b]]"
+            ],
+            "expected": "cbb"
+        },
+        {
+            "inputs": [
+                "3[b2[c]]"
+            ],
+            "expected": "bccbccbcc"
+        },
+        {
+            "inputs": [
+                "a1[b]"
+            ],
+            "expected": "ab"
+        },
+        {
+            "inputs": [
+                "5[aca]"
+            ],
+            "expected": "acaacaacaacaaca"
+        },
+        {
+            "inputs": [
+                "1[caa]"
+            ],
+            "expected": "caa"
+        },
+        {
+            "inputs": [
+                "1[ac]"
+            ],
+            "expected": "ac"
+        },
+        {
+            "inputs": [
+                "3[bac]"
+            ],
+            "expected": "bacbacbac"
+        },
+        {
+            "inputs": [
+                "5[bab]"
+            ],
+            "expected": "babbabbabbabbab"
+        },
+        {
+            "inputs": [
+                "a1[bb]"
+            ],
+            "expected": "abb"
+        },
+        {
+            "inputs": [
+                "ca3[a]"
+            ],
+            "expected": "caaaa"
+        },
+        {
+            "inputs": [
+                "baa1[c]"
+            ],
+            "expected": "baac"
+        },
+        {
+            "inputs": [
+                "b1[ba]"
+            ],
+            "expected": "bba"
+        },
+        {
+            "inputs": [
+                "4[aac]"
+            ],
+            "expected": "aacaacaacaac"
+        },
+        {
+            "inputs": [
+                "1[a1[a]]"
+            ],
+            "expected": "aa"
+        },
+        {
+            "inputs": [
+                "ba2[a]"
+            ],
+            "expected": "baaa"
+        },
+        {
+            "inputs": [
+                "b2[bb]"
+            ],
+            "expected": "bbbbb"
+        },
+        {
+            "inputs": [
+                "3[c3[c]]"
+            ],
+            "expected": "cccccccccccc"
+        },
+        {
+            "inputs": [
+                "a2[a]"
+            ],
+            "expected": "aaa"
+        },
+        {
+            "inputs": [
+                "3[c1[c]]"
+            ],
+            "expected": "cccccc"
+        },
+        {
+            "inputs": [
+                "a3[cc]"
+            ],
+            "expected": "acccccc"
+        },
+        {
+            "inputs": [
+                "1[aaa]"
+            ],
+            "expected": "aaa"
+        },
+        {
+            "inputs": [
+                "1[c1[b]]"
+            ],
+            "expected": "cb"
+        },
+        {
+            "inputs": [
+                "5[c]"
+            ],
+            "expected": "ccccc"
+        },
+        {
+            "inputs": [
+                "1[c1[b]]"
+            ],
+            "expected": "cb"
+        },
+        {
+            "inputs": [
+                "3[c3[b]]"
+            ],
+            "expected": "cbbbcbbbcbbb"
+        },
+        {
+            "inputs": [
+                "c3[ab]"
+            ],
+            "expected": "cababab"
+        },
+        {
+            "inputs": [
+                "c3[bb]"
+            ],
+            "expected": "cbbbbbb"
+        },
+        {
+            "inputs": [
+                "1[cc]"
+            ],
+            "expected": "cc"
+        },
+        {
+            "inputs": [
+                "1[acb]"
+            ],
+            "expected": "acb"
+        },
+        {
+            "inputs": [
+                "3[a]"
+            ],
+            "expected": "aaa"
+        },
+        {
+            "inputs": [
+                "ab3[cc]"
+            ],
+            "expected": "abcccccc"
+        },
+        {
+            "inputs": [
+                "1[c3[b]]"
+            ],
+            "expected": "cbbb"
+        },
+        {
+            "inputs": [
+                "1[a2[a]]"
+            ],
+            "expected": "aaa"
+        },
+        {
+            "inputs": [
+                "5[b]"
+            ],
+            "expected": "bbbbb"
+        }
+    ]
+}

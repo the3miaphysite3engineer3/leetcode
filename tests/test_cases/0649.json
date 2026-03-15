@@ -1,0 +1,488 @@
+{
+  "problem_id": "0649",
+  "title": "Dota2 Senate",
+  "function_name": "predictPartyVictory",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        "RD"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "RDD"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "RRDDD"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "DDRRR"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "R"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "D"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "RDDRD"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "DRRDR"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "DDDRDDRRRDRRRRRRDRRRDRD"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "RDDDDRRRRRDRRDRD"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "DDD"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "RDRRRRRRDDRDDDRRR"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "DDDRDRRDRDRRRDRRDRD"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "RRDRDRDRRDDDRDRRDR"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "DRRDDRRRDRDRRRDRRRDDDRRDDD"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "DDRRRDDDRDDDDRDDRR"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "RD"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "DDRDDRRRRRRD"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "DRDRDRDRDRDRRRDDDDRDR"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "RDRDRRRRDRRRRDDDDDD"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "DDDRR"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "RR"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "RRRRRDDDRRDRDDDRDDRRRRRRR"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "DRRDDRDD"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "RDRRDDDRRDRRDRR"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "DRDRRDDR"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "D"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "RDRDDDDDRDRDRRRRRDR"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "RRDRDDDRDDRRDDRRR"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "DRRRDRDDRDRDRRDDRD"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "RDRRRDDRRRRRRRDDD"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "DDRDRRDRRDRRRRDD"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "DDDDDDRRDRDDRRRRDRDRDRDDDR"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "RDRRDRRRDRDDDRRDRRD"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "DRRDD"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "DDRDDRDDDDRDRRDDDDRRR"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "DDDDRRRDDRRRDRRRRRDDRDDDDRDD"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "RRRDDRDRDRDRRDRDDRR"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "RDRDDDDRDDDRRRDRDDRDRRDDRDDRD"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "RDRR"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "DRDDRRDRRRRDRRD"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "D"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "DDDDRDRRRRDRDRRDRRRDRRRRDD"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "RRDDDDDDDDDDRD"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "DDDDDD"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "RRDDDDDRRRRRRDDRDDRRRR"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "RRRRDRRRDDRRRRDDDDRD"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "RRDDDDRRDDRDRRDDRDRDDDRRDDRR"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "RD"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "DDRDDRRDDDDDDDDRDDDD"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "DDDRDRRDRRDDRDRDDDRDRDR"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "RRRDDRDDDRDDRD"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "RR"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "DRRRRDDRDDRDRD"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "DDDDDDDDDDR"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "DDDD"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "RRRDDRRRDRDRDDRRDD"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "DRRDRDDDRRDRDRDDDRDDDDDDDRDDD"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "RDRDDRRRDDRRD"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "DRDDDRRRRRDRDRDDDDRDRDRDD"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "DDRRDRDRDRDDRRRRDRDDDDDRRD"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "DDRRRDDRDD"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "DRDDDDDRDRRRRDDDRDDRRDRRRD"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "RDRDRDDRDDRDRDRRRRRDDD"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "RRDDRR"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "RDRRDDRDRDD"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "DDRDDDRRRRRDDDDRDDDRR"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "DRDRRRRDRRRDDDDDDDDDRRDDRDRDD"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "DD"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "RDRDDRDDRDDDRDRDRRRDRRDRRDD"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "RDDRDRRDR"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "DRRR"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "DDDRRRDDRRRDDRRDD"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "DRDRDDRDDDDRD"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "RRDRDDDDDDDRDDDD"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "DRDRDDRDRRD"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "DDRRRRDRDRRRDRRD"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "RDRRRRRRRRDRRDDRDDD"
+      ],
+      "expected": "Radiant"
+    },
+    {
+      "inputs": [
+        "DRDRRRDRRDDDRDDDDRDRRR"
+      ],
+      "expected": "Dire"
+    },
+    {
+      "inputs": [
+        "DRDDDRRDRDRRD"
+      ],
+      "expected": "Dire"
+    }
+  ]
+}

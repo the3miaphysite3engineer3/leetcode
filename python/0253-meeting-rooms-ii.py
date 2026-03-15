@@ -1,4 +1,5 @@
-def minMeetingRooms(self, intervals: List[List[int]]) -> int:
+class Solution:
+    def minMeetingRooms(self, intervals: List[List[int]]) -> int:
         time = []
         for start, end in intervals:
             time.append((start, 1))
@@ -12,3 +13,4 @@ def minMeetingRooms(self, intervals: List[List[int]]) -> int:
             count += t[1]
             max_count = max(max_count, count)
         return max_count
+

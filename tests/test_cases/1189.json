@@ -1,0 +1,488 @@
+{
+    "problem_id": "1189",
+    "title": "Maximum Number of Balloons",
+    "function_name": "maxNumberOfBalloons",
+    "comparison": "exact",
+    "test_cases": [
+        {
+            "inputs": [
+                "nlaebolko"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "loonbalxballpoon"
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                "leetcode"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "balloon"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "balloonballoon"
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                "a"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "balon"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "balloonballoonballoon"
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                "bbaalllooonn"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                ""
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "oivehanabnolaol"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "oxxba"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "ogbilvauaonpyoolblob"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "axnxodbuoninnlnzlollo"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "rolboenlooooljnmxvoydllwaoooo"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "onoeohalbfk"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "ouenabnaofadnlclqlnajldbl"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "alozxolllollbmmledbolraoa"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "obvseleono"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "mgnnllaoaaoloeolleslea"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "blclnl"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "kscljmonflaxvlhoaclylandq"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "o"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "rzobl"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "xulogvtnnnlhebfnomo"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "lobnwalbooimwonnvol"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "labfldlo"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "blbqnolnkollrlb"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "boslvnannr"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "ollafblabbbnnhznooua"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "naaolfpklnqlsncbp"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "maxoooqblinnbollsoalnlollkjn"
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                "onlamlpajab"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "lniblqbtno"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "aobmadoadlmvgnoaaoqnkqn"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "blondzbul"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "woongdelloonlynlo"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "ltolnnblyal"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "lllhlqt"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "ltlfab"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "llvoxaaa"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "d"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "ajaaolpbdjaclsnhlolz"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "bablni"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "emaomeoblazainaponj"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "rlw"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "fcsalhaansm"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "llnalatwubrlnlbjofal"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "alcoyhlygnlenylwko"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "goaorntfoolllobdl"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "boloqbel"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "npngalvkoliloovnwaqoodtlnmao"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "roblyobbllbmb"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "uollfxibalxol"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "peaxkayolapnbloolllgnfzaozclao"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "naiyonwlgobozlb"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "abonulosozlnaoboloaao"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "enhnlluxooondbjwanfolb"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "boaaolnvdlgimlbxoaqobnl"
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                "aguloohoaluilblbotoxbamb"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "lnlzxljldgv"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "loblzuyrnoaontblcbbxy"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "ogooumoplonob"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "olalbzp"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "ofruaabamobwllaobawlnlloqok"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "lbnoplaldaolaxolbn"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "rahipoloobonfolsbltlllioaflbb"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "objklolnfwlodno"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "nalnldaljpp"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "llolouonlnholfizooabbwnwoqxq"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "lk"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "qablozfaoobln"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "mljlabbundh"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "otbnxuobycb"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "ojouqiab"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "pbzloqjaobnalabo"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "loqaznaoclkobal"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "ulhbofmb"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "llaouemooltyelloytmba"
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                "onlpavo"
+            ],
+            "expected": 0
+        }
+    ]
+}

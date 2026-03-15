@@ -1,0 +1,488 @@
+{
+  "problem_id": "1750",
+  "title": "Minimum Length of String After Deleting Similar Ends",
+  "function_name": "minimumLength",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        "ca"
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        "cabaabac"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "aabccabba"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "a"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "aa"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "aaa"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "ab"
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        "aba"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "abba"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "abc"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "aacacbbbbbccacccbaabbaacccabccabccb"
+      ],
+      "expected": 35
+    },
+    {
+      "inputs": [
+        "baacbcccabaacbbcccacabcbabbc"
+      ],
+      "expected": 28
+    },
+    {
+      "inputs": [
+        "abccacbacbbabaabcabbbccbaaaacbaacbcccbcbccbcb"
+      ],
+      "expected": 45
+    },
+    {
+      "inputs": [
+        "cabbbbbabcbaccacbbbaccacbcbaacc"
+      ],
+      "expected": 19
+    },
+    {
+      "inputs": [
+        "bbbbcbaaccacbcbbabccbabc"
+      ],
+      "expected": 24
+    },
+    {
+      "inputs": [
+        "bcaabaaac"
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        "aacbcbbabcbbbcacccc"
+      ],
+      "expected": 19
+    },
+    {
+      "inputs": [
+        "cccbabbbbbaabbacbbcac"
+      ],
+      "expected": 17
+    },
+    {
+      "inputs": [
+        "bccbbba"
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        "acaacccacccbabcaaccbcabacccbccaabbcaabcab"
+      ],
+      "expected": 41
+    },
+    {
+      "inputs": [
+        "baaacbbac"
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        "baabccacbaabcaacaccbcbbabbccacccccabbca"
+      ],
+      "expected": 39
+    },
+    {
+      "inputs": [
+        "bcabbccccbbaaabcaca"
+      ],
+      "expected": 19
+    },
+    {
+      "inputs": [
+        "bcbaabababccabcbabbbcbbb"
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        "bcbcaaacbaabcbcbbcaccbbcbcbaccaacbbbcaaacbaca"
+      ],
+      "expected": 45
+    },
+    {
+      "inputs": [
+        "bccccbbcabcaccbcb"
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        "bcacbabbacababaaabccacabb"
+      ],
+      "expected": 22
+    },
+    {
+      "inputs": [
+        "ccaccacabcabcabcabccccaabccaab"
+      ],
+      "expected": 30
+    },
+    {
+      "inputs": [
+        "accaaccbaacbcbacacaacbaaaaccbbacabcaabababaaccac"
+      ],
+      "expected": 48
+    },
+    {
+      "inputs": [
+        "bcacbacbcacccbabbcbbcabcbcbcbbca"
+      ],
+      "expected": 32
+    },
+    {
+      "inputs": [
+        "bcccbcbaababcbbaaabcba"
+      ],
+      "expected": 22
+    },
+    {
+      "inputs": [
+        "bcccaaaaabcbbcbacbcaccabaabaa"
+      ],
+      "expected": 29
+    },
+    {
+      "inputs": [
+        "cabcbccbcbabbbbabbcbcbbbbcbbababbcabbaca"
+      ],
+      "expected": 40
+    },
+    {
+      "inputs": [
+        "ccbbbabbbbccca"
+      ],
+      "expected": 14
+    },
+    {
+      "inputs": [
+        "ccbbaaaabcbccb"
+      ],
+      "expected": 14
+    },
+    {
+      "inputs": [
+        "cbc"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "babccbaaacbbcbbbabacabcbaacbcacababcccbccbcaaa"
+      ],
+      "expected": 46
+    },
+    {
+      "inputs": [
+        "ccbbbcaabbabbbaccbbccaaacbbbbacacbacbacbcbbcb"
+      ],
+      "expected": 45
+    },
+    {
+      "inputs": [
+        "acacacacacacbccaacbbbbcacbaaccbbcccbabcba"
+      ],
+      "expected": 39
+    },
+    {
+      "inputs": [
+        "baaabbabaccbcbccacbccaaaabaaaccaacbabbac"
+      ],
+      "expected": 40
+    },
+    {
+      "inputs": [
+        "ababbaabaababa"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "ccababbbaabcaaaccccaaaabccbcb"
+      ],
+      "expected": 29
+    },
+    {
+      "inputs": [
+        "aaacbbbcabaabbbabbbabcbacac"
+      ],
+      "expected": 27
+    },
+    {
+      "inputs": [
+        "bbabccbaaaacaacaacbaacaccbbcbabaacaccabaaa"
+      ],
+      "expected": 42
+    },
+    {
+      "inputs": [
+        "abbcbbcbaababacabacbcccaaaabaaba"
+      ],
+      "expected": 27
+    },
+    {
+      "inputs": [
+        "bbbcbacc"
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        "b"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "bbabccbcccabbccaaacaaacacacbbca"
+      ],
+      "expected": 31
+    },
+    {
+      "inputs": [
+        "abaccbbcbcccccba"
+      ],
+      "expected": 12
+    },
+    {
+      "inputs": [
+        "bbcaccacbcaaaaacaaabb"
+      ],
+      "expected": 17
+    },
+    {
+      "inputs": [
+        "c"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "bbaccbbabcbcbacbccbbabbbcbcacbc"
+      ],
+      "expected": 31
+    },
+    {
+      "inputs": [
+        "abbcacaaabaaccbab"
+      ],
+      "expected": 17
+    },
+    {
+      "inputs": [
+        "bbcacabcaacaaaccbcca"
+      ],
+      "expected": 20
+    },
+    {
+      "inputs": [
+        "ccacbcaccabaacacccacaccbababbbcbbbbac"
+      ],
+      "expected": 32
+    },
+    {
+      "inputs": [
+        "aabcccbacccaabaabaab"
+      ],
+      "expected": 20
+    },
+    {
+      "inputs": [
+        "cbbcaabaaba"
+      ],
+      "expected": 11
+    },
+    {
+      "inputs": [
+        "accccaabacbbacacbcaccbacbb"
+      ],
+      "expected": 26
+    },
+    {
+      "inputs": [
+        "cccbaacb"
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        "abbacbbcaccbbacaac"
+      ],
+      "expected": 18
+    },
+    {
+      "inputs": [
+        "cbacbcbbacabccbbccbbcbbaaacbacbacbcbacb"
+      ],
+      "expected": 39
+    },
+    {
+      "inputs": [
+        "ccbcccbacaccacaaabccccbbccabcbbccabc"
+      ],
+      "expected": 31
+    },
+    {
+      "inputs": [
+        "bcaacaacbabbacbbbcbbabbabbccbaacccbcbbababbcccab"
+      ],
+      "expected": 46
+    },
+    {
+      "inputs": [
+        "acacbbcbcababcbbbbba"
+      ],
+      "expected": 18
+    },
+    {
+      "inputs": [
+        "baaacbccccb"
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        "ccabccaaaacccbbacbcbbabacbccababaacacbabacaaabcaa"
+      ],
+      "expected": 49
+    },
+    {
+      "inputs": [
+        "b"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "acbbbcccabaccbcc"
+      ],
+      "expected": 16
+    },
+    {
+      "inputs": [
+        "cbcbbbbbabcbacabcaccaaccb"
+      ],
+      "expected": 25
+    },
+    {
+      "inputs": [
+        "bacacbccccabbcabcbbcbaaacbccabbcaac"
+      ],
+      "expected": 35
+    },
+    {
+      "inputs": [
+        "acbcbcaccbbcabacbbcccbb"
+      ],
+      "expected": 23
+    },
+    {
+      "inputs": [
+        "ccbacccbacacbca"
+      ],
+      "expected": 15
+    },
+    {
+      "inputs": [
+        "acacbcacaacaaacbcabaabcccbbbcbabaabbacbbbaabbaabcc"
+      ],
+      "expected": 50
+    },
+    {
+      "inputs": [
+        "bbacba"
+      ],
+      "expected": 6
+    },
+    {
+      "inputs": [
+        "acacbaaacaabbbaccbaaaccbacabacacbcabcac"
+      ],
+      "expected": 39
+    },
+    {
+      "inputs": [
+        "bacacabbab"
+      ],
+      "expected": 6
+    },
+    {
+      "inputs": [
+        "accaabacacbbccbbaccababaababababcccacaccbccc"
+      ],
+      "expected": 44
+    },
+    {
+      "inputs": [
+        "ccbccabbababcbbbbabababcbcbbbbccacaaabccccacb"
+      ],
+      "expected": 45
+    },
+    {
+      "inputs": [
+        "acaabbabcacbcccacbccaaabaacbacabacccaabacabaacba"
+      ],
+      "expected": 46
+    },
+    {
+      "inputs": [
+        "abbaaacaccbbccccbaccbbcab"
+      ],
+      "expected": 25
+    }
+  ]
+}

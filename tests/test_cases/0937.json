@@ -1,0 +1,1510 @@
+{
+  "problem_id": "0937",
+  "title": "Reorder Data in Log Files",
+  "function_name": "reorderLogFiles",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        [
+          "dig1 8 1 5 1",
+          "let1 art can",
+          "dig2 3 6",
+          "let2 own kit dig",
+          "let3 art zero"
+        ]
+      ],
+      "expected": [
+        "let1 art can",
+        "let3 art zero",
+        "let2 own kit dig",
+        "dig1 8 1 5 1",
+        "dig2 3 6"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 cc da be",
+          "log1 1 4 3",
+          "log2 bb bc",
+          "log3 5 4"
+        ]
+      ],
+      "expected": [
+        "log2 bb bc",
+        "log0 cc da be",
+        "log1 1 4 3",
+        "log3 5 4"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 7",
+          "log1 fb ad cf",
+          "log2 ac af",
+          "log3 1 6",
+          "log4 fd fc ff",
+          "log5 ef",
+          "log6 ea ec ab",
+          "log7 9",
+          "log8 3 9 5"
+        ]
+      ],
+      "expected": [
+        "log2 ac af",
+        "log6 ea ec ab",
+        "log5 ef",
+        "log1 fb ad cf",
+        "log4 fd fc ff",
+        "log0 7",
+        "log3 1 6",
+        "log7 9",
+        "log8 3 9 5"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 7 6 3",
+          "log1 de",
+          "log2 6 8",
+          "log3 3 5 2",
+          "log4 7 8",
+          "log5 5 3",
+          "log6 3",
+          "log7 fb aa"
+        ]
+      ],
+      "expected": [
+        "log1 de",
+        "log7 fb aa",
+        "log0 7 6 3",
+        "log2 6 8",
+        "log3 3 5 2",
+        "log4 7 8",
+        "log5 5 3",
+        "log6 3"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 9 3",
+          "log1 7 9",
+          "log2 3",
+          "log3 bb",
+          "log4 6 8",
+          "log5 4 8",
+          "log6 2 5 1",
+          "log7 ad",
+          "log8 ac"
+        ]
+      ],
+      "expected": [
+        "log8 ac",
+        "log7 ad",
+        "log3 bb",
+        "log0 9 3",
+        "log1 7 9",
+        "log2 3",
+        "log4 6 8",
+        "log5 4 8",
+        "log6 2 5 1"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 7",
+          "log1 fd bb",
+          "log2 3",
+          "log3 fb bd ea",
+          "log4 5"
+        ]
+      ],
+      "expected": [
+        "log3 fb bd ea",
+        "log1 fd bb",
+        "log0 7",
+        "log2 3",
+        "log4 5"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 ae",
+          "log1 dc ac cd",
+          "log2 ff ba",
+          "log3 ef bd ef"
+        ]
+      ],
+      "expected": [
+        "log0 ae",
+        "log1 dc ac cd",
+        "log3 ef bd ef",
+        "log2 ff ba"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 2",
+          "log1 5 4 3",
+          "log2 8 3 2"
+        ]
+      ],
+      "expected": [
+        "log0 2",
+        "log1 5 4 3",
+        "log2 8 3 2"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 5 5 2",
+          "log1 7 1"
+        ]
+      ],
+      "expected": [
+        "log0 5 5 2",
+        "log1 7 1"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 9",
+          "log1 4",
+          "log2 5 4",
+          "log3 ea"
+        ]
+      ],
+      "expected": [
+        "log3 ea",
+        "log0 9",
+        "log1 4",
+        "log2 5 4"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 ce",
+          "log1 dd ab",
+          "log2 ca de ec",
+          "log3 bc",
+          "log4 3",
+          "log5 ab",
+          "log6 9 2 1",
+          "log7 ff ce fe"
+        ]
+      ],
+      "expected": [
+        "log5 ab",
+        "log3 bc",
+        "log2 ca de ec",
+        "log0 ce",
+        "log1 dd ab",
+        "log7 ff ce fe",
+        "log4 3",
+        "log6 9 2 1"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 de ec",
+          "log1 6 9",
+          "log2 1",
+          "log3 7 2 8",
+          "log4 5",
+          "log5 6 8",
+          "log6 1 4",
+          "log7 5 5 1",
+          "log8 4 4"
+        ]
+      ],
+      "expected": [
+        "log0 de ec",
+        "log1 6 9",
+        "log2 1",
+        "log3 7 2 8",
+        "log4 5",
+        "log5 6 8",
+        "log6 1 4",
+        "log7 5 5 1",
+        "log8 4 4"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 bf",
+          "log1 fa ce fa",
+          "log2 8 9",
+          "log3 4",
+          "log4 6",
+          "log5 dc ab af",
+          "log6 9",
+          "log7 eb dc dc",
+          "log8 4",
+          "log9 ed"
+        ]
+      ],
+      "expected": [
+        "log0 bf",
+        "log5 dc ab af",
+        "log7 eb dc dc",
+        "log9 ed",
+        "log1 fa ce fa",
+        "log2 8 9",
+        "log3 4",
+        "log4 6",
+        "log6 9",
+        "log8 4"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 ec ea fc",
+          "log1 9",
+          "log2 ac",
+          "log3 2",
+          "log4 3",
+          "log5 dd",
+          "log6 fa",
+          "log7 fd"
+        ]
+      ],
+      "expected": [
+        "log2 ac",
+        "log5 dd",
+        "log0 ec ea fc",
+        "log6 fa",
+        "log7 fd",
+        "log1 9",
+        "log3 2",
+        "log4 3"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 fa ba",
+          "log1 3 8",
+          "log2 dc cc cf",
+          "log3 cd",
+          "log4 eb fa",
+          "log5 2",
+          "log6 9",
+          "log7 8 4 8"
+        ]
+      ],
+      "expected": [
+        "log3 cd",
+        "log2 dc cc cf",
+        "log4 eb fa",
+        "log0 fa ba",
+        "log1 3 8",
+        "log5 2",
+        "log6 9",
+        "log7 8 4 8"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 4 1 3",
+          "log1 7 5 3",
+          "log2 ae be da",
+          "log3 cf dc cc",
+          "log4 1 8",
+          "log5 bc eb cf",
+          "log6 df fa",
+          "log7 7 6",
+          "log8 dd",
+          "log9 ca ae db"
+        ]
+      ],
+      "expected": [
+        "log2 ae be da",
+        "log5 bc eb cf",
+        "log9 ca ae db",
+        "log3 cf dc cc",
+        "log8 dd",
+        "log6 df fa",
+        "log0 4 1 3",
+        "log1 7 5 3",
+        "log4 1 8",
+        "log7 7 6"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 bc bb",
+          "log1 1 4 5",
+          "log2 3",
+          "log3 ec fc bf"
+        ]
+      ],
+      "expected": [
+        "log0 bc bb",
+        "log3 ec fc bf",
+        "log1 1 4 5",
+        "log2 3"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 5",
+          "log1 dd cc",
+          "log2 5 5 4",
+          "log3 7 5 7",
+          "log4 bb bf cf",
+          "log5 7",
+          "log6 5 3 5",
+          "log7 2"
+        ]
+      ],
+      "expected": [
+        "log4 bb bf cf",
+        "log1 dd cc",
+        "log0 5",
+        "log2 5 5 4",
+        "log3 7 5 7",
+        "log5 7",
+        "log6 5 3 5",
+        "log7 2"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 6 4 8",
+          "log1 2 4 5"
+        ]
+      ],
+      "expected": [
+        "log0 6 4 8",
+        "log1 2 4 5"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 9 1",
+          "log1 2 6 6",
+          "log2 de",
+          "log3 cd ca",
+          "log4 2 1",
+          "log5 ec bb"
+        ]
+      ],
+      "expected": [
+        "log3 cd ca",
+        "log2 de",
+        "log5 ec bb",
+        "log0 9 1",
+        "log1 2 6 6",
+        "log4 2 1"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 ce ad cf"
+        ]
+      ],
+      "expected": [
+        "log0 ce ad cf"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 6 5",
+          "log1 4 5",
+          "log2 af bf ec"
+        ]
+      ],
+      "expected": [
+        "log2 af bf ec",
+        "log0 6 5",
+        "log1 4 5"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 df fb fe",
+          "log1 ed ad",
+          "log2 af db",
+          "log3 4",
+          "log4 5 2",
+          "log5 fd da dc"
+        ]
+      ],
+      "expected": [
+        "log2 af db",
+        "log0 df fb fe",
+        "log1 ed ad",
+        "log5 fd da dc",
+        "log3 4",
+        "log4 5 2"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 2 3 1",
+          "log1 8 1"
+        ]
+      ],
+      "expected": [
+        "log0 2 3 1",
+        "log1 8 1"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 3 3"
+        ]
+      ],
+      "expected": [
+        "log0 3 3"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 6",
+          "log1 2 2",
+          "log2 1 4",
+          "log3 cd bb af",
+          "log4 ce fb",
+          "log5 dd af ac",
+          "log6 ec bc fb"
+        ]
+      ],
+      "expected": [
+        "log3 cd bb af",
+        "log4 ce fb",
+        "log5 dd af ac",
+        "log6 ec bc fb",
+        "log0 6",
+        "log1 2 2",
+        "log2 1 4"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 fa ab cb",
+          "log1 ac be af",
+          "log2 ce fc db",
+          "log3 ae",
+          "log4 5 4 5",
+          "log5 aa bd",
+          "log6 ee ef ec",
+          "log7 3 1",
+          "log8 ec ff"
+        ]
+      ],
+      "expected": [
+        "log5 aa bd",
+        "log1 ac be af",
+        "log3 ae",
+        "log2 ce fc db",
+        "log8 ec ff",
+        "log6 ee ef ec",
+        "log0 fa ab cb",
+        "log4 5 4 5",
+        "log7 3 1"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 da cf",
+          "log1 fd ff ba",
+          "log2 ca bc be",
+          "log3 dd db cc",
+          "log4 ce ca fc",
+          "log5 1"
+        ]
+      ],
+      "expected": [
+        "log2 ca bc be",
+        "log4 ce ca fc",
+        "log0 da cf",
+        "log3 dd db cc",
+        "log1 fd ff ba",
+        "log5 1"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 aa ba ba",
+          "log1 ed",
+          "log2 5",
+          "log3 dd ab dd"
+        ]
+      ],
+      "expected": [
+        "log0 aa ba ba",
+        "log3 dd ab dd",
+        "log1 ed",
+        "log2 5"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 9 5",
+          "log1 ab"
+        ]
+      ],
+      "expected": [
+        "log1 ab",
+        "log0 9 5"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 da da",
+          "log1 fa",
+          "log2 7",
+          "log3 fa eb ae",
+          "log4 ec",
+          "log5 eb",
+          "log6 df ae",
+          "log7 af",
+          "log8 bc db ca"
+        ]
+      ],
+      "expected": [
+        "log7 af",
+        "log8 bc db ca",
+        "log0 da da",
+        "log6 df ae",
+        "log5 eb",
+        "log4 ec",
+        "log1 fa",
+        "log3 fa eb ae",
+        "log2 7"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 bc ad df",
+          "log1 5",
+          "log2 6 4",
+          "log3 4",
+          "log4 5",
+          "log5 bf ef dc",
+          "log6 cd ca bb",
+          "log7 cd fa ac",
+          "log8 da"
+        ]
+      ],
+      "expected": [
+        "log0 bc ad df",
+        "log5 bf ef dc",
+        "log6 cd ca bb",
+        "log7 cd fa ac",
+        "log8 da",
+        "log1 5",
+        "log2 6 4",
+        "log3 4",
+        "log4 5"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 fe dc fd",
+          "log1 2 8",
+          "log2 df ca",
+          "log3 bd"
+        ]
+      ],
+      "expected": [
+        "log3 bd",
+        "log2 df ca",
+        "log0 fe dc fd",
+        "log1 2 8"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 1 3 5",
+          "log1 ee bf dd",
+          "log2 4 4 3",
+          "log3 db"
+        ]
+      ],
+      "expected": [
+        "log3 db",
+        "log1 ee bf dd",
+        "log0 1 3 5",
+        "log2 4 4 3"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 eb ed",
+          "log1 4 2 5",
+          "log2 fb",
+          "log3 ec",
+          "log4 5 4",
+          "log5 ee bb",
+          "log6 de",
+          "log7 ae"
+        ]
+      ],
+      "expected": [
+        "log7 ae",
+        "log6 de",
+        "log0 eb ed",
+        "log3 ec",
+        "log5 ee bb",
+        "log2 fb",
+        "log1 4 2 5",
+        "log4 5 4"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 8 2",
+          "log1 7",
+          "log2 fe",
+          "log3 2 5 3"
+        ]
+      ],
+      "expected": [
+        "log2 fe",
+        "log0 8 2",
+        "log1 7",
+        "log3 2 5 3"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 df ff",
+          "log1 1 4",
+          "log2 ab cf",
+          "log3 bb ce"
+        ]
+      ],
+      "expected": [
+        "log2 ab cf",
+        "log3 bb ce",
+        "log0 df ff",
+        "log1 1 4"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 ac cb",
+          "log1 9",
+          "log2 9",
+          "log3 ae ea",
+          "log4 8 6",
+          "log5 cd bb ee"
+        ]
+      ],
+      "expected": [
+        "log0 ac cb",
+        "log3 ae ea",
+        "log5 cd bb ee",
+        "log1 9",
+        "log2 9",
+        "log4 8 6"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 eb dd"
+        ]
+      ],
+      "expected": [
+        "log0 eb dd"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 fa fb bf",
+          "log1 df ae"
+        ]
+      ],
+      "expected": [
+        "log1 df ae",
+        "log0 fa fb bf"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 7 1",
+          "log1 ac",
+          "log2 6"
+        ]
+      ],
+      "expected": [
+        "log1 ac",
+        "log0 7 1",
+        "log2 6"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 3 4",
+          "log1 7 6",
+          "log2 eb af cb",
+          "log3 5 9",
+          "log4 3"
+        ]
+      ],
+      "expected": [
+        "log2 eb af cb",
+        "log0 3 4",
+        "log1 7 6",
+        "log3 5 9",
+        "log4 3"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 bd aa"
+        ]
+      ],
+      "expected": [
+        "log0 bd aa"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 de bb fc",
+          "log1 ee de",
+          "log2 4"
+        ]
+      ],
+      "expected": [
+        "log0 de bb fc",
+        "log1 ee de",
+        "log2 4"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 ab ef df",
+          "log1 bd bb"
+        ]
+      ],
+      "expected": [
+        "log0 ab ef df",
+        "log1 bd bb"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 cf fd",
+          "log1 5 1",
+          "log2 bd aa",
+          "log3 ab ef de",
+          "log4 ce ba"
+        ]
+      ],
+      "expected": [
+        "log3 ab ef de",
+        "log2 bd aa",
+        "log4 ce ba",
+        "log0 cf fd",
+        "log1 5 1"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 3",
+          "log1 bf fe ac"
+        ]
+      ],
+      "expected": [
+        "log1 bf fe ac",
+        "log0 3"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 ab",
+          "log1 6 7"
+        ]
+      ],
+      "expected": [
+        "log0 ab",
+        "log1 6 7"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 fc",
+          "log1 ec bb dc",
+          "log2 ef ff",
+          "log3 8 7 8",
+          "log4 2 2 4",
+          "log5 ee",
+          "log6 3"
+        ]
+      ],
+      "expected": [
+        "log1 ec bb dc",
+        "log5 ee",
+        "log2 ef ff",
+        "log0 fc",
+        "log3 8 7 8",
+        "log4 2 2 4",
+        "log6 3"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 ca df da",
+          "log1 de ab da",
+          "log2 1 1",
+          "log3 6 7 4",
+          "log4 5"
+        ]
+      ],
+      "expected": [
+        "log0 ca df da",
+        "log1 de ab da",
+        "log2 1 1",
+        "log3 6 7 4",
+        "log4 5"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 5 6 5"
+        ]
+      ],
+      "expected": [
+        "log0 5 6 5"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 9 6 2",
+          "log1 5 4 1"
+        ]
+      ],
+      "expected": [
+        "log0 9 6 2",
+        "log1 5 4 1"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 2 1 5",
+          "log1 5",
+          "log2 3",
+          "log3 fb aa fd",
+          "log4 2"
+        ]
+      ],
+      "expected": [
+        "log3 fb aa fd",
+        "log0 2 1 5",
+        "log1 5",
+        "log2 3",
+        "log4 2"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 ba cb",
+          "log1 9 8",
+          "log2 9 9",
+          "log3 bc",
+          "log4 2 7 4",
+          "log5 ba dc aa",
+          "log6 9 3 5",
+          "log7 ac ea",
+          "log8 be dc"
+        ]
+      ],
+      "expected": [
+        "log7 ac ea",
+        "log0 ba cb",
+        "log5 ba dc aa",
+        "log3 bc",
+        "log8 be dc",
+        "log1 9 8",
+        "log2 9 9",
+        "log4 2 7 4",
+        "log6 9 3 5"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 ee fa",
+          "log1 aa",
+          "log2 1 3"
+        ]
+      ],
+      "expected": [
+        "log1 aa",
+        "log0 ee fa",
+        "log2 1 3"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 fb",
+          "log1 8 9 7",
+          "log2 ff ca ce",
+          "log3 cc ce",
+          "log4 8 4 8",
+          "log5 ae",
+          "log6 4 6 7",
+          "log7 ab ca ae",
+          "log8 ec be be"
+        ]
+      ],
+      "expected": [
+        "log7 ab ca ae",
+        "log5 ae",
+        "log3 cc ce",
+        "log8 ec be be",
+        "log0 fb",
+        "log2 ff ca ce",
+        "log1 8 9 7",
+        "log4 8 4 8",
+        "log6 4 6 7"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 5 9 7",
+          "log1 2",
+          "log2 2 1 4",
+          "log3 8 9",
+          "log4 ca ba ac",
+          "log5 9 2 6",
+          "log6 ff",
+          "log7 eb",
+          "log8 aa"
+        ]
+      ],
+      "expected": [
+        "log8 aa",
+        "log4 ca ba ac",
+        "log7 eb",
+        "log6 ff",
+        "log0 5 9 7",
+        "log1 2",
+        "log2 2 1 4",
+        "log3 8 9",
+        "log5 9 2 6"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 9 5",
+          "log1 db",
+          "log2 cb fd eb",
+          "log3 dc",
+          "log4 7 6 4",
+          "log5 dd",
+          "log6 6",
+          "log7 6 1"
+        ]
+      ],
+      "expected": [
+        "log2 cb fd eb",
+        "log1 db",
+        "log3 dc",
+        "log5 dd",
+        "log0 9 5",
+        "log4 7 6 4",
+        "log6 6",
+        "log7 6 1"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 9",
+          "log1 8",
+          "log2 8",
+          "log3 eb",
+          "log4 cb bc cf",
+          "log5 ad bf fd"
+        ]
+      ],
+      "expected": [
+        "log5 ad bf fd",
+        "log4 cb bc cf",
+        "log3 eb",
+        "log0 9",
+        "log1 8",
+        "log2 8"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 5 7",
+          "log1 5 1 8",
+          "log2 1 1",
+          "log3 ab ca bd"
+        ]
+      ],
+      "expected": [
+        "log3 ab ca bd",
+        "log0 5 7",
+        "log1 5 1 8",
+        "log2 1 1"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 5",
+          "log1 da",
+          "log2 6 4"
+        ]
+      ],
+      "expected": [
+        "log1 da",
+        "log0 5",
+        "log2 6 4"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 7",
+          "log1 cb cd",
+          "log2 ba cf"
+        ]
+      ],
+      "expected": [
+        "log2 ba cf",
+        "log1 cb cd",
+        "log0 7"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 3 7 7",
+          "log1 5 8 3",
+          "log2 aa ea",
+          "log3 9 5 7",
+          "log4 5",
+          "log5 ea fd bf",
+          "log6 6"
+        ]
+      ],
+      "expected": [
+        "log2 aa ea",
+        "log5 ea fd bf",
+        "log0 3 7 7",
+        "log1 5 8 3",
+        "log3 9 5 7",
+        "log4 5",
+        "log6 6"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 da cb"
+        ]
+      ],
+      "expected": [
+        "log0 da cb"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 ca ed",
+          "log1 cb fc dd",
+          "log2 3",
+          "log3 3",
+          "log4 8 1"
+        ]
+      ],
+      "expected": [
+        "log0 ca ed",
+        "log1 cb fc dd",
+        "log2 3",
+        "log3 3",
+        "log4 8 1"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 5",
+          "log1 6 5",
+          "log2 ec",
+          "log3 cb fa eb",
+          "log4 6 7 4",
+          "log5 cc ab",
+          "log6 aa af"
+        ]
+      ],
+      "expected": [
+        "log6 aa af",
+        "log3 cb fa eb",
+        "log5 cc ab",
+        "log2 ec",
+        "log0 5",
+        "log1 6 5",
+        "log4 6 7 4"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 6 7 1",
+          "log1 6 1 8",
+          "log2 bf cc cd",
+          "log3 9 8",
+          "log4 2 2 4",
+          "log5 1",
+          "log6 7",
+          "log7 4",
+          "log8 ed ed"
+        ]
+      ],
+      "expected": [
+        "log2 bf cc cd",
+        "log8 ed ed",
+        "log0 6 7 1",
+        "log1 6 1 8",
+        "log3 9 8",
+        "log4 2 2 4",
+        "log5 1",
+        "log6 7",
+        "log7 4"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 af dc dd",
+          "log1 bd ea ff",
+          "log2 5 6 3",
+          "log3 8 3 8",
+          "log4 ce ee af",
+          "log5 de cf",
+          "log6 eb df cc"
+        ]
+      ],
+      "expected": [
+        "log0 af dc dd",
+        "log1 bd ea ff",
+        "log4 ce ee af",
+        "log5 de cf",
+        "log6 eb df cc",
+        "log2 5 6 3",
+        "log3 8 3 8"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 dd de",
+          "log1 dc fb cc",
+          "log2 5 6",
+          "log3 ba",
+          "log4 ea",
+          "log5 6 6",
+          "log6 1"
+        ]
+      ],
+      "expected": [
+        "log3 ba",
+        "log1 dc fb cc",
+        "log0 dd de",
+        "log4 ea",
+        "log2 5 6",
+        "log5 6 6",
+        "log6 1"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 3",
+          "log1 5 2",
+          "log2 5 7 1"
+        ]
+      ],
+      "expected": [
+        "log0 3",
+        "log1 5 2",
+        "log2 5 7 1"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 3 1 8",
+          "log1 bc dc cc"
+        ]
+      ],
+      "expected": [
+        "log1 bc dc cc",
+        "log0 3 1 8"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 3",
+          "log1 4 6 4",
+          "log2 ec fc",
+          "log3 fd",
+          "log4 2",
+          "log5 1 6 2",
+          "log6 ca ce"
+        ]
+      ],
+      "expected": [
+        "log6 ca ce",
+        "log2 ec fc",
+        "log3 fd",
+        "log0 3",
+        "log1 4 6 4",
+        "log4 2",
+        "log5 1 6 2"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 be",
+          "log1 bd ef",
+          "log2 3",
+          "log3 5",
+          "log4 ff eb fc",
+          "log5 de ad db"
+        ]
+      ],
+      "expected": [
+        "log1 bd ef",
+        "log0 be",
+        "log5 de ad db",
+        "log4 ff eb fc",
+        "log2 3",
+        "log3 5"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 6 9",
+          "log1 8",
+          "log2 1 6 8",
+          "log3 4 4",
+          "log4 ec",
+          "log5 1",
+          "log6 1",
+          "log7 cd bb dd",
+          "log8 7 6",
+          "log9 3 5"
+        ]
+      ],
+      "expected": [
+        "log7 cd bb dd",
+        "log4 ec",
+        "log0 6 9",
+        "log1 8",
+        "log2 1 6 8",
+        "log3 4 4",
+        "log5 1",
+        "log6 1",
+        "log8 7 6",
+        "log9 3 5"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 5",
+          "log1 9 1 7",
+          "log2 6 3",
+          "log3 5",
+          "log4 cc ff ae",
+          "log5 3 6",
+          "log6 4",
+          "log7 bd ee ec",
+          "log8 4",
+          "log9 de cb"
+        ]
+      ],
+      "expected": [
+        "log7 bd ee ec",
+        "log4 cc ff ae",
+        "log9 de cb",
+        "log0 5",
+        "log1 9 1 7",
+        "log2 6 3",
+        "log3 5",
+        "log5 3 6",
+        "log6 4",
+        "log8 4"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 ba ca ac",
+          "log1 cf fe",
+          "log2 fa eb bb",
+          "log3 7 9",
+          "log4 fe",
+          "log5 dd ac",
+          "log6 ad",
+          "log7 ec",
+          "log8 ef",
+          "log9 8"
+        ]
+      ],
+      "expected": [
+        "log6 ad",
+        "log0 ba ca ac",
+        "log1 cf fe",
+        "log5 dd ac",
+        "log7 ec",
+        "log8 ef",
+        "log2 fa eb bb",
+        "log4 fe",
+        "log3 7 9",
+        "log9 8"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 ee ff fa",
+          "log1 bb ee ed",
+          "log2 cc ae",
+          "log3 fa cc ba",
+          "log4 6 9"
+        ]
+      ],
+      "expected": [
+        "log1 bb ee ed",
+        "log2 cc ae",
+        "log0 ee ff fa",
+        "log3 fa cc ba",
+        "log4 6 9"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 ec aa be",
+          "log1 7 3 6",
+          "log2 cd da",
+          "log3 be"
+        ]
+      ],
+      "expected": [
+        "log3 be",
+        "log2 cd da",
+        "log0 ec aa be",
+        "log1 7 3 6"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 1 1 8",
+          "log1 1 6 8",
+          "log2 4 1",
+          "log3 ad",
+          "log4 4 2",
+          "log5 6",
+          "log6 be bf",
+          "log7 cb ae cf",
+          "log8 3 7 3",
+          "log9 aa"
+        ]
+      ],
+      "expected": [
+        "log9 aa",
+        "log3 ad",
+        "log6 be bf",
+        "log7 cb ae cf",
+        "log0 1 1 8",
+        "log1 1 6 8",
+        "log2 4 1",
+        "log4 4 2",
+        "log5 6",
+        "log8 3 7 3"
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "log0 cc fd ea",
+          "log1 3 9",
+          "log2 9 7 7",
+          "log3 3 7",
+          "log4 8",
+          "log5 2 4"
+        ]
+      ],
+      "expected": [
+        "log0 cc fd ea",
+        "log1 3 9",
+        "log2 9 7 7",
+        "log3 3 7",
+        "log4 8",
+        "log5 2 4"
+      ]
+    }
+  ]
+}

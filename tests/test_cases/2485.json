@@ -1,0 +1,488 @@
+{
+  "problem_id": "2485",
+  "title": "Find the Pivot Integer",
+  "function_name": "pivotInteger",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        1
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        2
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        3
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        4
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        5
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        6
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        7
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        8
+      ],
+      "expected": 6
+    },
+    {
+      "inputs": [
+        9
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        10
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        11
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        12
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        13
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        14
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        15
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        16
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        17
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        18
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        19
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        20
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        21
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        22
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        23
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        24
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        25
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        26
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        27
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        28
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        29
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        831
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        610
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        626
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        700
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        518
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        118
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        169
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        855
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        737
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        883
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        640
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        463
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        965
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        725
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        114
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        811
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        602
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        139
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        678
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        718
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        866
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        812
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        659
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        190
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        529
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        534
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        459
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        879
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        921
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        314
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        751
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        79
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        344
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        728
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        606
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        885
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        926
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        264
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        638
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        154
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        820
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        365
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        272
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        652
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        197
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        306
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        725
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        339
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        841
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        46
+      ],
+      "expected": -1
+    },
+    {
+      "inputs": [
+        153
+      ],
+      "expected": -1
+    }
+  ]
+}

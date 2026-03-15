@@ -1,0 +1,488 @@
+{
+  "problem_id": "1611",
+  "title": "Minimum One Bit Operations to Make Integers Zero",
+  "function_name": "minimumOneBitOperations",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        440304
+      ],
+      "expected": 318112
+    },
+    {
+      "inputs": [
+        924742
+      ],
+      "expected": 780411
+    },
+    {
+      "inputs": [
+        592930
+      ],
+      "expected": 919612
+    },
+    {
+      "inputs": [
+        183058
+      ],
+      "expected": 225820
+    },
+    {
+      "inputs": [
+        72759
+      ],
+      "expected": 124965
+    },
+    {
+      "inputs": [
+        564624
+      ],
+      "expected": 988896
+    },
+    {
+      "inputs": [
+        712495
+      ],
+      "expected": 824778
+    },
+    {
+      "inputs": [
+        627541
+      ],
+      "expected": 975462
+    },
+    {
+      "inputs": [
+        884553
+      ],
+      "expected": 633457
+    },
+    {
+      "inputs": [
+        281244
+      ],
+      "expected": 494824
+    },
+    {
+      "inputs": [
+        172375
+      ],
+      "expected": 212581
+    },
+    {
+      "inputs": [
+        305889
+      ],
+      "expected": 471873
+    },
+    {
+      "inputs": [
+        475102
+      ],
+      "expected": 382315
+    },
+    {
+      "inputs": [
+        586514
+      ],
+      "expected": 1007075
+    },
+    {
+      "inputs": [
+        415876
+      ],
+      "expected": 290567
+    },
+    {
+      "inputs": [
+        106918
+      ],
+      "expected": 81604
+    },
+    {
+      "inputs": [
+        393456
+      ],
+      "expected": 262304
+    },
+    {
+      "inputs": [
+        985710
+      ],
+      "expected": 658507
+    },
+    {
+      "inputs": [
+        627321
+      ],
+      "expected": 975790
+    },
+    {
+      "inputs": [
+        193567
+      ],
+      "expected": 219157
+    },
+    {
+      "inputs": [
+        678864
+      ],
+      "expected": 814432
+    },
+    {
+      "inputs": [
+        596414
+      ],
+      "expected": 921899
+    },
+    {
+      "inputs": [
+        697133
+      ],
+      "expected": 836150
+    },
+    {
+      "inputs": [
+        294613
+      ],
+      "expected": 502630
+    },
+    {
+      "inputs": [
+        749866
+      ],
+      "expected": 893388
+    },
+    {
+      "inputs": [
+        183332
+      ],
+      "expected": 227271
+    },
+    {
+      "inputs": [
+        181849
+      ],
+      "expected": 228241
+    },
+    {
+      "inputs": [
+        724278
+      ],
+      "expected": 914980
+    },
+    {
+      "inputs": [
+        353726
+      ],
+      "expected": 411348
+    },
+    {
+      "inputs": [
+        741202
+      ],
+      "expected": 887395
+    },
+    {
+      "inputs": [
+        609030
+      ],
+      "expected": 946692
+    },
+    {
+      "inputs": [
+        870343
+      ],
+      "expected": 623994
+    },
+    {
+      "inputs": [
+        966343
+      ],
+      "expected": 732026
+    },
+    {
+      "inputs": [
+        44214
+      ],
+      "expected": 51419
+    },
+    {
+      "inputs": [
+        861374
+      ],
+      "expected": 640811
+    },
+    {
+      "inputs": [
+        286575
+      ],
+      "expected": 497077
+    },
+    {
+      "inputs": [
+        393083
+      ],
+      "expected": 436818
+    },
+    {
+      "inputs": [
+        294594
+      ],
+      "expected": 502652
+    },
+    {
+      "inputs": [
+        158964
+      ],
+      "expected": 243544
+    },
+    {
+      "inputs": [
+        285745
+      ],
+      "expected": 497630
+    },
+    {
+      "inputs": [
+        53549
+      ],
+      "expected": 40502
+    },
+    {
+      "inputs": [
+        487487
+      ],
+      "expected": 368682
+    },
+    {
+      "inputs": [
+        994004
+      ],
+      "expected": 668519
+    },
+    {
+      "inputs": [
+        430753
+      ],
+      "expected": 320318
+    },
+    {
+      "inputs": [
+        663246
+      ],
+      "expected": 791691
+    },
+    {
+      "inputs": [
+        375184
+      ],
+      "expected": 446751
+    },
+    {
+      "inputs": [
+        260159
+      ],
+      "expected": 176085
+    },
+    {
+      "inputs": [
+        902601
+      ],
+      "expected": 620913
+    },
+    {
+      "inputs": [
+        494199
+      ],
+      "expected": 330842
+    },
+    {
+      "inputs": [
+        916597
+      ],
+      "expected": 612262
+    },
+    {
+      "inputs": [
+        973338
+      ],
+      "expected": 748563
+    },
+    {
+      "inputs": [
+        876299
+      ],
+      "expected": 628210
+    },
+    {
+      "inputs": [
+        488006
+      ],
+      "expected": 369540
+    },
+    {
+      "inputs": [
+        889192
+      ],
+      "expected": 597583
+    },
+    {
+      "inputs": [
+        811281
+      ],
+      "expected": 541153
+    },
+    {
+      "inputs": [
+        932873
+      ],
+      "expected": 776177
+    },
+    {
+      "inputs": [
+        323775
+      ],
+      "expected": 483114
+    },
+    {
+      "inputs": [
+        653033
+      ],
+      "expected": 959665
+    },
+    {
+      "inputs": [
+        975576
+      ],
+      "expected": 738159
+    },
+    {
+      "inputs": [
+        124916
+      ],
+      "expected": 83288
+    },
+    {
+      "inputs": [
+        737922
+      ],
+      "expected": 885507
+    },
+    {
+      "inputs": [
+        713775
+      ],
+      "expected": 833589
+    },
+    {
+      "inputs": [
+        188255
+      ],
+      "expected": 223850
+    },
+    {
+      "inputs": [
+        924588
+      ],
+      "expected": 781623
+    },
+    {
+      "inputs": [
+        234666
+      ],
+      "expected": 190259
+    },
+    {
+      "inputs": [
+        338843
+      ],
+      "expected": 406253
+    },
+    {
+      "inputs": [
+        895037
+      ],
+      "expected": 602153
+    },
+    {
+      "inputs": [
+        217054
+      ],
+      "expected": 161131
+    },
+    {
+      "inputs": [
+        476425
+      ],
+      "expected": 361998
+    },
+    {
+      "inputs": [
+        506565
+      ],
+      "expected": 339078
+    },
+    {
+      "inputs": [
+        763997
+      ],
+      "expected": 864361
+    },
+    {
+      "inputs": [
+        663981
+      ],
+      "expected": 802505
+    },
+    {
+      "inputs": [
+        884005
+      ],
+      "expected": 633286
+    },
+    {
+      "inputs": [
+        579799
+      ],
+      "expected": 1011557
+    },
+    {
+      "inputs": [
+        265043
+      ],
+      "expected": 520802
+    },
+    {
+      "inputs": [
+        953417
+      ],
+      "expected": 723057
+    },
+    {
+      "inputs": [
+        974395
+      ],
+      "expected": 748498
+    },
+    {
+      "inputs": [
+        556644
+      ],
+      "expected": 1027000
+    },
+    {
+      "inputs": [
+        500937
+      ],
+      "expected": 342158
+    },
+    {
+      "inputs": [
+        853422
+      ],
+      "expected": 653620
+    }
+  ]
+}

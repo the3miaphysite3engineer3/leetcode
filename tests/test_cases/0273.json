@@ -1,0 +1,488 @@
+{
+  "problem_id": "0273",
+  "title": "Integer to English Words",
+  "function_name": "convertToWords",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        0
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        1
+      ],
+      "expected": "One"
+    },
+    {
+      "inputs": [
+        10
+      ],
+      "expected": "Ten"
+    },
+    {
+      "inputs": [
+        12
+      ],
+      "expected": "Twelve"
+    },
+    {
+      "inputs": [
+        19
+      ],
+      "expected": "Nineteen"
+    },
+    {
+      "inputs": [
+        20
+      ],
+      "expected": "Twenty"
+    },
+    {
+      "inputs": [
+        21
+      ],
+      "expected": "Twenty One"
+    },
+    {
+      "inputs": [
+        100
+      ],
+      "expected": "One Hundred"
+    },
+    {
+      "inputs": [
+        123
+      ],
+      "expected": "One Hundred Twenty Three"
+    },
+    {
+      "inputs": [
+        999
+      ],
+      "expected": "Nine Hundred Ninety Nine"
+    },
+    {
+      "inputs": [
+        1000
+      ],
+      "expected": "One Thousand"
+    },
+    {
+      "inputs": [
+        1234
+      ],
+      "expected": "One Thousand Two Hundred Thirty Four"
+    },
+    {
+      "inputs": [
+        10000
+      ],
+      "expected": "Ten Thousand"
+    },
+    {
+      "inputs": [
+        12345
+      ],
+      "expected": "Twelve Thousand Three Hundred Forty Five"
+    },
+    {
+      "inputs": [
+        100000
+      ],
+      "expected": "One Hundred Thousand"
+    },
+    {
+      "inputs": [
+        1000000
+      ],
+      "expected": "One Million"
+    },
+    {
+      "inputs": [
+        1234567
+      ],
+      "expected": "One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven"
+    },
+    {
+      "inputs": [
+        10000000
+      ],
+      "expected": "Ten Million"
+    },
+    {
+      "inputs": [
+        100000000
+      ],
+      "expected": "One Hundred Million"
+    },
+    {
+      "inputs": [
+        1000000000
+      ],
+      "expected": "One Billion"
+    },
+    {
+      "inputs": [
+        2147483647
+      ],
+      "expected": "Two Billion One Hundred Forty Seven Million Four Hundred Eighty Three Thousand Six Hundred Forty Seven"
+    },
+    {
+      "inputs": [
+        999999999
+      ],
+      "expected": "Nine Hundred Ninety Nine Million Nine Hundred Ninety Nine Thousand Nine Hundred Ninety Nine"
+    },
+    {
+      "inputs": [
+        1043030161
+      ],
+      "expected": "One Billion Forty Three Million Thirty Thousand One Hundred Sixty One"
+    },
+    {
+      "inputs": [
+        437662764
+      ],
+      "expected": "Four Hundred Thirty Seven Million Six Hundred Sixty Two Thousand Seven Hundred Sixty Four"
+    },
+    {
+      "inputs": [
+        1295287749
+      ],
+      "expected": "One Billion Two Hundred Ninety Five Million Two Hundred Eighty Seven Thousand Seven Hundred Forty Nine"
+    },
+    {
+      "inputs": [
+        519927529
+      ],
+      "expected": "Five Hundred Nineteen Million Nine Hundred Twenty Seven Thousand Five Hundred Twenty Nine"
+    },
+    {
+      "inputs": [
+        176390590
+      ],
+      "expected": "One Hundred Seventy Six Million Three Hundred Ninety Thousand Five Hundred Ninety"
+    },
+    {
+      "inputs": [
+        1491228808
+      ],
+      "expected": "One Billion Four Hundred Ninety One Million Two Hundred Twenty Eight Thousand Eight Hundred Eight"
+    },
+    {
+      "inputs": [
+        1839869544
+      ],
+      "expected": "One Billion Eight Hundred Thirty Nine Million Eight Hundred Sixty Nine Thousand Five Hundred Forty Four"
+    },
+    {
+      "inputs": [
+        1591589823
+      ],
+      "expected": "One Billion Five Hundred Ninety One Million Five Hundred Eighty Nine Thousand Eight Hundred Twenty Three"
+    },
+    {
+      "inputs": [
+        296166921
+      ],
+      "expected": "Two Hundred Ninety Six Million One Hundred Sixty Six Thousand Nine Hundred Twenty One"
+    },
+    {
+      "inputs": [
+        1465576748
+      ],
+      "expected": "One Billion Four Hundred Sixty Five Million Five Hundred Seventy Six Thousand Seven Hundred Forty Eight"
+    },
+    {
+      "inputs": [
+        54340558
+      ],
+      "expected": "Fifty Four Million Three Hundred Forty Thousand Five Hundred Fifty Eight"
+    },
+    {
+      "inputs": [
+        1804138557
+      ],
+      "expected": "One Billion Eight Hundred Four Million One Hundred Thirty Eight Thousand Five Hundred Fifty Seven"
+    },
+    {
+      "inputs": [
+        2105400301
+      ],
+      "expected": "Two Billion One Hundred Five Million Four Hundred Thousand Three Hundred One"
+    },
+    {
+      "inputs": [
+        453285987
+      ],
+      "expected": "Four Hundred Fifty Three Million Two Hundred Eighty Five Thousand Nine Hundred Eighty Seven"
+    },
+    {
+      "inputs": [
+        1861968817
+      ],
+      "expected": "One Billion Eight Hundred Sixty One Million Nine Hundred Sixty Eight Thousand Eight Hundred Seventeen"
+    },
+    {
+      "inputs": [
+        1555585773
+      ],
+      "expected": "One Billion Five Hundred Fifty Five Million Five Hundred Eighty Five Thousand Seven Hundred Seventy Three"
+    },
+    {
+      "inputs": [
+        1974565461
+      ],
+      "expected": "One Billion Nine Hundred Seventy Four Million Five Hundred Sixty Five Thousand Four Hundred Sixty One"
+    },
+    {
+      "inputs": [
+        657091982
+      ],
+      "expected": "Six Hundred Fifty Seven Million Ninety One Thousand Nine Hundred Eighty Two"
+    },
+    {
+      "inputs": [
+        1870403050
+      ],
+      "expected": "One Billion Eight Hundred Seventy Million Four Hundred Three Thousand Fifty"
+    },
+    {
+      "inputs": [
+        756502473
+      ],
+      "expected": "Seven Hundred Fifty Six Million Five Hundred Two Thousand Four Hundred Seventy Three"
+    },
+    {
+      "inputs": [
+        1159995046
+      ],
+      "expected": "One Billion One Hundred Fifty Nine Million Nine Hundred Ninety Five Thousand Forty Six"
+    },
+    {
+      "inputs": [
+        2076605983
+      ],
+      "expected": "Two Billion Seventy Six Million Six Hundred Five Thousand Nine Hundred Eighty Three"
+    },
+    {
+      "inputs": [
+        1996617659
+      ],
+      "expected": "One Billion Nine Hundred Ninety Six Million Six Hundred Seventeen Thousand Six Hundred Fifty Nine"
+    },
+    {
+      "inputs": [
+        1870778191
+      ],
+      "expected": "One Billion Eight Hundred Seventy Million Seven Hundred Seventy Eight Thousand One Hundred Ninety One"
+    },
+    {
+      "inputs": [
+        1152750071
+      ],
+      "expected": "One Billion One Hundred Fifty Two Million Seven Hundred Fifty Thousand Seventy One"
+    },
+    {
+      "inputs": [
+        1384287616
+      ],
+      "expected": "One Billion Three Hundred Eighty Four Million Two Hundred Eighty Seven Thousand Six Hundred Sixteen"
+    },
+    {
+      "inputs": [
+        1054393708
+      ],
+      "expected": "One Billion Fifty Four Million Three Hundred Ninety Three Thousand Seven Hundred Eight"
+    },
+    {
+      "inputs": [
+        372214308
+      ],
+      "expected": "Three Hundred Seventy Two Million Two Hundred Fourteen Thousand Three Hundred Eight"
+    },
+    {
+      "inputs": [
+        1197987692
+      ],
+      "expected": "One Billion One Hundred Ninety Seven Million Nine Hundred Eighty Seven Thousand Six Hundred Ninety Two"
+    },
+    {
+      "inputs": [
+        1936179853
+      ],
+      "expected": "One Billion Nine Hundred Thirty Six Million One Hundred Seventy Nine Thousand Eight Hundred Fifty Three"
+    },
+    {
+      "inputs": [
+        1047385483
+      ],
+      "expected": "One Billion Forty Seven Million Three Hundred Eighty Five Thousand Four Hundred Eighty Three"
+    },
+    {
+      "inputs": [
+        1995907669
+      ],
+      "expected": "One Billion Nine Hundred Ninety Five Million Nine Hundred Seven Thousand Six Hundred Sixty Nine"
+    },
+    {
+      "inputs": [
+        1627746667
+      ],
+      "expected": "One Billion Six Hundred Twenty Seven Million Seven Hundred Forty Six Thousand Six Hundred Sixty Seven"
+    },
+    {
+      "inputs": [
+        1444812497
+      ],
+      "expected": "One Billion Four Hundred Forty Four Million Eight Hundred Twelve Thousand Four Hundred Ninety Seven"
+    },
+    {
+      "inputs": [
+        123265537
+      ],
+      "expected": "One Hundred Twenty Three Million Two Hundred Sixty Five Thousand Five Hundred Thirty Seven"
+    },
+    {
+      "inputs": [
+        2123030247
+      ],
+      "expected": "Two Billion One Hundred Twenty Three Million Thirty Thousand Two Hundred Forty Seven"
+    },
+    {
+      "inputs": [
+        1395925222
+      ],
+      "expected": "One Billion Three Hundred Ninety Five Million Nine Hundred Twenty Five Thousand Two Hundred Twenty Two"
+    },
+    {
+      "inputs": [
+        780996231
+      ],
+      "expected": "Seven Hundred Eighty Million Nine Hundred Ninety Six Thousand Two Hundred Thirty One"
+    },
+    {
+      "inputs": [
+        2094011037
+      ],
+      "expected": "Two Billion Ninety Four Million Eleven Thousand Thirty Seven"
+    },
+    {
+      "inputs": [
+        911047815
+      ],
+      "expected": "Nine Hundred Eleven Million Forty Seven Thousand Eight Hundred Fifteen"
+    },
+    {
+      "inputs": [
+        1523961606
+      ],
+      "expected": "One Billion Five Hundred Twenty Three Million Nine Hundred Sixty One Thousand Six Hundred Six"
+    },
+    {
+      "inputs": [
+        1109615163
+      ],
+      "expected": "One Billion One Hundred Nine Million Six Hundred Fifteen Thousand One Hundred Sixty Three"
+    },
+    {
+      "inputs": [
+        1461744198
+      ],
+      "expected": "One Billion Four Hundred Sixty One Million Seven Hundred Forty Four Thousand One Hundred Ninety Eight"
+    },
+    {
+      "inputs": [
+        1201124041
+      ],
+      "expected": "One Billion Two Hundred One Million One Hundred Twenty Four Thousand Forty One"
+    },
+    {
+      "inputs": [
+        1186564497
+      ],
+      "expected": "One Billion One Hundred Eighty Six Million Five Hundred Sixty Four Thousand Four Hundred Ninety Seven"
+    },
+    {
+      "inputs": [
+        43598698
+      ],
+      "expected": "Forty Three Million Five Hundred Ninety Eight Thousand Six Hundred Ninety Eight"
+    },
+    {
+      "inputs": [
+        820581106
+      ],
+      "expected": "Eight Hundred Twenty Million Five Hundred Eighty One Thousand One Hundred Six"
+    },
+    {
+      "inputs": [
+        367704871
+      ],
+      "expected": "Three Hundred Sixty Seven Million Seven Hundred Four Thousand Eight Hundred Seventy One"
+    },
+    {
+      "inputs": [
+        1036616336
+      ],
+      "expected": "One Billion Thirty Six Million Six Hundred Sixteen Thousand Three Hundred Thirty Six"
+    },
+    {
+      "inputs": [
+        1745595491
+      ],
+      "expected": "One Billion Seven Hundred Forty Five Million Five Hundred Ninety Five Thousand Four Hundred Ninety One"
+    },
+    {
+      "inputs": [
+        2098425880
+      ],
+      "expected": "Two Billion Ninety Eight Million Four Hundred Twenty Five Thousand Eight Hundred Eighty"
+    },
+    {
+      "inputs": [
+        1032183433
+      ],
+      "expected": "One Billion Thirty Two Million One Hundred Eighty Three Thousand Four Hundred Thirty Three"
+    },
+    {
+      "inputs": [
+        2044804330
+      ],
+      "expected": "Two Billion Forty Four Million Eight Hundred Four Thousand Three Hundred Thirty"
+    },
+    {
+      "inputs": [
+        2108061573
+      ],
+      "expected": "Two Billion One Hundred Eight Million Sixty One Thousand Five Hundred Seventy Three"
+    },
+    {
+      "inputs": [
+        1924895021
+      ],
+      "expected": "One Billion Nine Hundred Twenty Four Million Eight Hundred Ninety Five Thousand Twenty One"
+    },
+    {
+      "inputs": [
+        74059253
+      ],
+      "expected": "Seventy Four Million Fifty Nine Thousand Two Hundred Fifty Three"
+    },
+    {
+      "inputs": [
+        399661102
+      ],
+      "expected": "Three Hundred Ninety Nine Million Six Hundred Sixty One Thousand One Hundred Two"
+    },
+    {
+      "inputs": [
+        1263732197
+      ],
+      "expected": "One Billion Two Hundred Sixty Three Million Seven Hundred Thirty Two Thousand One Hundred Ninety Seven"
+    }
+  ]
+}

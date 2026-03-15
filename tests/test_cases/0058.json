@@ -1,0 +1,488 @@
+{
+    "problem_id": "58",
+    "title": "Length of Last Word",
+    "function_name": "lengthOfLastWord",
+    "comparison": "exact",
+    "test_cases": [
+        {
+            "inputs": [
+                "Hello World"
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                "   fly me   to   the moon  "
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                "luffy is still joyboy"
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                "a"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "  a  "
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "abc"
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                "a b c"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "  hello  "
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                "Testing  "
+            ],
+            "expected": 7
+        },
+        {
+            "inputs": [
+                "bar bar ab a bar "
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                "   code test baz baz   "
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                "   Rust world hello "
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                "   world Python Java a  "
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                " world  "
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                "  foo  "
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                " Rust Rust"
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                " bar Python "
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                "ab bar  "
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                "   a ab world  "
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                "  a test Rust code foo  "
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                " Python bar   "
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                "  Rust world foo world Python  "
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                " Python baz ab Python"
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                " hello Java"
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                "hello hello bar"
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                "Python  "
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                "ab Rust test test  "
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                " foo "
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                "   a test"
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                " foo bar ab Rust"
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                "foo  "
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                "  test Python world a"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "   code Rust ab code Python"
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                " world Rust a   "
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                " Rust world   "
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                " hello"
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                "   code a bar baz Java"
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                "Java hello foo baz  "
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                "code   "
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                "  hello ab Rust bar Python"
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                "test foo bar"
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                "   test code  "
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                " ab a   "
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "Java baz test   "
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                " ab test hello foo test"
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                "   test Java foo Java bar "
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                " test bar"
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                " Java Java Python Java   "
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                " hello foo  "
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                "  world a foo bar Python   "
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                "Python code ab ab code  "
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                "Java  "
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                "   world  "
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                "  bar code foo "
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                " test Python bar Rust "
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                "Python Java   "
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                "bar hello Python "
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                "   foo Java code baz  "
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                "ab ab Java "
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                "   code  "
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                "test "
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                "  Java baz "
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                "   a foo test ab "
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                "   bar hello foo"
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                "  Python code test foo"
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                " world a hello "
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                " code "
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                "  baz world code baz  "
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                "   test foo  "
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                " code hello bar Rust code  "
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                "ab   "
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                " ab ab Python ab hello"
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                "   hello Python bar ab a"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                " Rust hello test world"
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                "  hello world Java test  "
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                "  bar hello"
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                "  code bar Java world "
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                "hello world Java"
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                " world world code  "
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                "a a baz Python  "
+            ],
+            "expected": 6
+        }
+    ]
+}

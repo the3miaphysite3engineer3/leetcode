@@ -1,0 +1,1092 @@
+{
+    "problem_id": "1239",
+    "title": "Maximum Length of a Concatenated String with Unique Characters",
+    "function_name": "maxLength",
+    "comparison": "exact",
+    "test_cases": [
+        {
+            "inputs": [
+                [
+                    "un",
+                    "iq",
+                    "ue"
+                ]
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                [
+                    "cha",
+                    "r",
+                    "act",
+                    "ers"
+                ]
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                [
+                    "abcdefghijklmnopqrstuvwxyz"
+                ]
+            ],
+            "expected": 26
+        },
+        {
+            "inputs": [
+                [
+                    "aa",
+                    "bb"
+                ]
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                [
+                    "a",
+                    "b",
+                    "c"
+                ]
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                [
+                    "p",
+                    "jnhdlc",
+                    "iga",
+                    "gbema",
+                    "mh",
+                    "dg",
+                    "gofme",
+                    "cgfgfe",
+                    "plabl"
+                ]
+            ],
+            "expected": 12
+        },
+        {
+            "inputs": [
+                [
+                    "adpml"
+                ]
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                [
+                    "gop",
+                    "bgfkoe",
+                    "g",
+                    "eio",
+                    "e",
+                    "j",
+                    "fcbjm",
+                    "bp"
+                ]
+            ],
+            "expected": 9
+        },
+        {
+            "inputs": [
+                [
+                    "jgbnef",
+                    "eabbpi",
+                    "e",
+                    "i",
+                    "edmhgd",
+                    "eed",
+                    "nm",
+                    "dghjdc",
+                    "db",
+                    "njemmh",
+                    "bokmdl"
+                ]
+            ],
+            "expected": 8
+        },
+        {
+            "inputs": [
+                [
+                    "jdoen",
+                    "lojga",
+                    "ncnaji",
+                    "hbneg",
+                    "kdib",
+                    "hlaa",
+                    "fnhd"
+                ]
+            ],
+            "expected": 9
+        },
+        {
+            "inputs": [
+                [
+                    "nfp",
+                    "eoa",
+                    "gepp"
+                ]
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                [
+                    "g",
+                    "dlah",
+                    "mkpcm",
+                    "khjpc",
+                    "d",
+                    "bldk",
+                    "iligf",
+                    "jeh",
+                    "gjm",
+                    "mpja",
+                    "ek",
+                    "eec"
+                ]
+            ],
+            "expected": 9
+        },
+        {
+            "inputs": [
+                [
+                    "ngb",
+                    "c",
+                    "hka",
+                    "dlfnn"
+                ]
+            ],
+            "expected": 7
+        },
+        {
+            "inputs": [
+                [
+                    "diafi",
+                    "f",
+                    "knahf",
+                    "ab"
+                ]
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                [
+                    "b",
+                    "eef",
+                    "nhnmp",
+                    "aijncb",
+                    "fo",
+                    "ebjdaf",
+                    "dn",
+                    "fehnp",
+                    "ii",
+                    "opbgkn",
+                    "e"
+                ]
+            ],
+            "expected": 9
+        },
+        {
+            "inputs": [
+                [
+                    "ea",
+                    "nfdad",
+                    "id",
+                    "aai",
+                    "iblha",
+                    "g",
+                    "blnacc",
+                    "ja",
+                    "mgo",
+                    "eiaea",
+                    "j",
+                    "jhop"
+                ]
+            ],
+            "expected": 9
+        },
+        {
+            "inputs": [
+                [
+                    "jgih",
+                    "hp",
+                    "ene",
+                    "opkinj",
+                    "ndhla",
+                    "fpp"
+                ]
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                [
+                    "kapjhk",
+                    "bepea"
+                ]
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                [
+                    "fncnkf",
+                    "ejp"
+                ]
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                [
+                    "iofifi",
+                    "achpp",
+                    "dic",
+                    "lbih"
+                ]
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                [
+                    "mclm",
+                    "mbjijk",
+                    "ifcjmo",
+                    "heepnf",
+                    "opmnpl",
+                    "ikbkom"
+                ]
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                [
+                    "gokpld",
+                    "cgio",
+                    "mo",
+                    "gbd"
+                ]
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                [
+                    "jjdk",
+                    "kpjpgh",
+                    "jhjj",
+                    "pplafe",
+                    "meehe",
+                    "mjelik",
+                    "bfk",
+                    "ekb",
+                    "jo",
+                    "kgfc",
+                    "jlcaf"
+                ]
+            ],
+            "expected": 8
+        },
+        {
+            "inputs": [
+                [
+                    "pcan",
+                    "aj",
+                    "kkddk",
+                    "ikeajf",
+                    "bhf",
+                    "b",
+                    "dkonki",
+                    "co"
+                ]
+            ],
+            "expected": 9
+        },
+        {
+            "inputs": [
+                [
+                    "eb",
+                    "mkc",
+                    "gh",
+                    "ol",
+                    "bndecj"
+                ]
+            ],
+            "expected": 10
+        },
+        {
+            "inputs": [
+                [
+                    "olgboi"
+                ]
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                [
+                    "ieghdm",
+                    "ecdof",
+                    "pga",
+                    "c",
+                    "bhilh"
+                ]
+            ],
+            "expected": 8
+        },
+        {
+            "inputs": [
+                [
+                    "dfgd",
+                    "pc",
+                    "heki",
+                    "poof",
+                    "nbon",
+                    "dhppi"
+                ]
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                [
+                    "alcepl",
+                    "cpl",
+                    "ccn",
+                    "iidod",
+                    "cedj",
+                    "nkcei",
+                    "e",
+                    "indam",
+                    "ihlfb"
+                ]
+            ],
+            "expected": 9
+        },
+        {
+            "inputs": [
+                [
+                    "iidci",
+                    "o",
+                    "aljc",
+                    "ojp",
+                    "iadp",
+                    "dh",
+                    "e",
+                    "coabk",
+                    "cejkbm",
+                    "gk",
+                    "paf"
+                ]
+            ],
+            "expected": 12
+        },
+        {
+            "inputs": [
+                [
+                    "ial"
+                ]
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                [
+                    "delkfo"
+                ]
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                [
+                    "ma",
+                    "jo",
+                    "c",
+                    "b",
+                    "e",
+                    "niad",
+                    "ihf",
+                    "afk",
+                    "mf",
+                    "dkg"
+                ]
+            ],
+            "expected": 13
+        },
+        {
+            "inputs": [
+                [
+                    "lj",
+                    "piklgg",
+                    "akpck",
+                    "h",
+                    "b",
+                    "mkjof"
+                ]
+            ],
+            "expected": 7
+        },
+        {
+            "inputs": [
+                [
+                    "o",
+                    "pfjm",
+                    "k",
+                    "gpjike",
+                    "l",
+                    "peddc",
+                    "ac",
+                    "enl"
+                ]
+            ],
+            "expected": 11
+        },
+        {
+            "inputs": [
+                [
+                    "caieh",
+                    "jjg",
+                    "an",
+                    "mgnc",
+                    "nbhoh",
+                    "gkha",
+                    "aeaal",
+                    "mhhgl"
+                ]
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                [
+                    "hh"
+                ]
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                [
+                    "lo",
+                    "lo",
+                    "f"
+                ]
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                [
+                    "cna",
+                    "dkil"
+                ]
+            ],
+            "expected": 7
+        },
+        {
+            "inputs": [
+                [
+                    "jh",
+                    "hkjo",
+                    "jaef",
+                    "gibc",
+                    "h",
+                    "bccl",
+                    "agnpmm",
+                    "ikggb",
+                    "aihogi",
+                    "lhf",
+                    "bc",
+                    "lagc"
+                ]
+            ],
+            "expected": 9
+        },
+        {
+            "inputs": [
+                [
+                    "bef",
+                    "ggbh",
+                    "dkgi"
+                ]
+            ],
+            "expected": 7
+        },
+        {
+            "inputs": [
+                [
+                    "na",
+                    "gnjhbm",
+                    "dk",
+                    "pageek",
+                    "khm",
+                    "knpcfp",
+                    "dmcaki",
+                    "de",
+                    "lh"
+                ]
+            ],
+            "expected": 8
+        },
+        {
+            "inputs": [
+                [
+                    "efnaa",
+                    "gjabgh",
+                    "olkhog",
+                    "hgm",
+                    "he",
+                    "phamp",
+                    "il",
+                    "gpdcmd",
+                    "e"
+                ]
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                [
+                    "gb",
+                    "klhgek",
+                    "g",
+                    "laak"
+                ]
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                [
+                    "fnlp",
+                    "a",
+                    "ml",
+                    "liihf",
+                    "ip",
+                    "omngg",
+                    "ppppc"
+                ]
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                [
+                    "pmhb",
+                    "hafk",
+                    "mccb",
+                    "ckcpl",
+                    "e",
+                    "oip",
+                    "bcpb",
+                    "h",
+                    "edcb",
+                    "d",
+                    "ada"
+                ]
+            ],
+            "expected": 11
+        },
+        {
+            "inputs": [
+                [
+                    "lgfca",
+                    "nfg",
+                    "okco",
+                    "gmp",
+                    "kmafop",
+                    "fgocli",
+                    "apjd",
+                    "h",
+                    "m",
+                    "lbh",
+                    "fmn",
+                    "gb"
+                ]
+            ],
+            "expected": 12
+        },
+        {
+            "inputs": [
+                [
+                    "jmebdk",
+                    "ok",
+                    "bhhhhk",
+                    "o",
+                    "gmgao"
+                ]
+            ],
+            "expected": 7
+        },
+        {
+            "inputs": [
+                [
+                    "a",
+                    "cfao",
+                    "lapc",
+                    "j",
+                    "pm",
+                    "d",
+                    "h",
+                    "jicio",
+                    "cocm"
+                ]
+            ],
+            "expected": 9
+        },
+        {
+            "inputs": [
+                [
+                    "fcpk",
+                    "aci",
+                    "cgn",
+                    "bk",
+                    "ipobk",
+                    "cnhji",
+                    "pof",
+                    "pp",
+                    "hc",
+                    "ddfeb",
+                    "ne",
+                    "nkpjd"
+                ]
+            ],
+            "expected": 10
+        },
+        {
+            "inputs": [
+                [
+                    "jhpn",
+                    "p",
+                    "fl",
+                    "pnegl"
+                ]
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                [
+                    "clbb",
+                    "nicklb",
+                    "fmmp",
+                    "cfool",
+                    "gnlphi",
+                    "hnk",
+                    "amml",
+                    "boaf",
+                    "n",
+                    "conpb",
+                    "hdpaf"
+                ]
+            ],
+            "expected": 11
+        },
+        {
+            "inputs": [
+                [
+                    "gbafb",
+                    "bomie",
+                    "hp",
+                    "m",
+                    "lnca",
+                    "ffkcn",
+                    "hfdc",
+                    "m",
+                    "bfg",
+                    "oacd"
+                ]
+            ],
+            "expected": 11
+        },
+        {
+            "inputs": [
+                [
+                    "do",
+                    "mg",
+                    "beglo",
+                    "okcmbd",
+                    "lgbjfp",
+                    "hkkj"
+                ]
+            ],
+            "expected": 8
+        },
+        {
+            "inputs": [
+                [
+                    "oln",
+                    "d",
+                    "foiijh",
+                    "klo",
+                    "nn",
+                    "mo",
+                    "mdgm",
+                    "jbm",
+                    "infp"
+                ]
+            ],
+            "expected": 11
+        },
+        {
+            "inputs": [
+                [
+                    "dhgmhg",
+                    "m",
+                    "lli",
+                    "l",
+                    "gjnop",
+                    "gemc",
+                    "nf",
+                    "l",
+                    "anecfj",
+                    "cnbf",
+                    "bakbd"
+                ]
+            ],
+            "expected": 8
+        },
+        {
+            "inputs": [
+                [
+                    "f",
+                    "cmmcc",
+                    "ho",
+                    "ekp",
+                    "ibfja"
+                ]
+            ],
+            "expected": 10
+        },
+        {
+            "inputs": [
+                [
+                    "d",
+                    "nd",
+                    "mjmmof"
+                ]
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                [
+                    "geddda",
+                    "fpo",
+                    "lpnble",
+                    "p",
+                    "n",
+                    "cjkdjh",
+                    "m",
+                    "dccdh",
+                    "pe",
+                    "ifbhg",
+                    "fa"
+                ]
+            ],
+            "expected": 9
+        },
+        {
+            "inputs": [
+                [
+                    "ikcck",
+                    "h",
+                    "kncdb",
+                    "ocf"
+                ]
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                [
+                    "c",
+                    "md",
+                    "imo",
+                    "l",
+                    "liec",
+                    "ln",
+                    "oj"
+                ]
+            ],
+            "expected": 8
+        },
+        {
+            "inputs": [
+                [
+                    "mblgh",
+                    "ei",
+                    "lfd",
+                    "hdm",
+                    "kfhiae",
+                    "loeda",
+                    "d",
+                    "gcpe",
+                    "ifohio",
+                    "oalmd"
+                ]
+            ],
+            "expected": 9
+        },
+        {
+            "inputs": [
+                [
+                    "ggaed",
+                    "djgjm",
+                    "olpbgd",
+                    "lb",
+                    "c",
+                    "d"
+                ]
+            ],
+            "expected": 7
+        },
+        {
+            "inputs": [
+                [
+                    "lk",
+                    "d",
+                    "cojlha",
+                    "e",
+                    "gniln"
+                ]
+            ],
+            "expected": 8
+        },
+        {
+            "inputs": [
+                [
+                    "cggii",
+                    "djp",
+                    "gklnip",
+                    "mn",
+                    "g",
+                    "amb",
+                    "d",
+                    "c"
+                ]
+            ],
+            "expected": 11
+        },
+        {
+            "inputs": [
+                [
+                    "fnchm",
+                    "kjb"
+                ]
+            ],
+            "expected": 8
+        },
+        {
+            "inputs": [
+                [
+                    "bjohed",
+                    "n",
+                    "kg",
+                    "mbmnbp",
+                    "cklgnd",
+                    "mpfgjk",
+                    "a",
+                    "pej",
+                    "olb"
+                ]
+            ],
+            "expected": 11
+        },
+        {
+            "inputs": [
+                [
+                    "i",
+                    "mlng",
+                    "fpegne",
+                    "kfci",
+                    "idmcde",
+                    "ci",
+                    "li"
+                ]
+            ],
+            "expected": 8
+        },
+        {
+            "inputs": [
+                [
+                    "lfk",
+                    "cffom",
+                    "omihld",
+                    "mnii",
+                    "odjbd",
+                    "hpoclk",
+                    "lcgbfj",
+                    "nn",
+                    "a"
+                ]
+            ],
+            "expected": 7
+        },
+        {
+            "inputs": [
+                [
+                    "hpc",
+                    "hjdjkb",
+                    "hchfo",
+                    "a",
+                    "cfj",
+                    "oo",
+                    "cmhhh",
+                    "oile",
+                    "bgac",
+                    "lj",
+                    "ngfgh"
+                ]
+            ],
+            "expected": 8
+        },
+        {
+            "inputs": [
+                [
+                    "logl",
+                    "kjg",
+                    "pnee",
+                    "epggcp",
+                    "jnlhb",
+                    "kkdf"
+                ]
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                [
+                    "m",
+                    "eeoh",
+                    "dkbg",
+                    "h",
+                    "jfakn"
+                ]
+            ],
+            "expected": 7
+        },
+        {
+            "inputs": [
+                [
+                    "dn",
+                    "e"
+                ]
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                [
+                    "j",
+                    "nmba",
+                    "kiid"
+                ]
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                [
+                    "hfhl",
+                    "ihfia",
+                    "be",
+                    "fp",
+                    "gnpgef",
+                    "cob",
+                    "mnhieb",
+                    "lanmn",
+                    "bpn",
+                    "cagkbj",
+                    "l",
+                    "b"
+                ]
+            ],
+            "expected": 9
+        },
+        {
+            "inputs": [
+                [
+                    "mhnmdk",
+                    "alomg",
+                    "ed",
+                    "dfce",
+                    "o",
+                    "l",
+                    "fhbj",
+                    "nd",
+                    "b",
+                    "aokl",
+                    "klboc",
+                    "m"
+                ]
+            ],
+            "expected": 11
+        },
+        {
+            "inputs": [
+                [
+                    "eo",
+                    "kfnn",
+                    "m",
+                    "akighk",
+                    "fej",
+                    "lkmfbp",
+                    "jenen",
+                    "c",
+                    "fn"
+                ]
+            ],
+            "expected": 9
+        },
+        {
+            "inputs": [
+                [
+                    "kcf",
+                    "dlgdln",
+                    "dl"
+                ]
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                [
+                    "eblhkn",
+                    "mdddil",
+                    "djnaa",
+                    "j",
+                    "h",
+                    "hhgdmc",
+                    "dko",
+                    "ib",
+                    "mjab"
+                ]
+            ],
+            "expected": 8
+        },
+        {
+            "inputs": [
+                [
+                    "fioo",
+                    "elmkgc",
+                    "ljplah",
+                    "fepaf",
+                    "g",
+                    "glpjdo",
+                    "ggige"
+                ]
+            ],
+            "expected": 6
+        }
+    ]
+}

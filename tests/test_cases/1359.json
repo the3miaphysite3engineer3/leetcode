@@ -1,0 +1,488 @@
+{
+  "problem_id": "1359",
+  "title": "Count All Valid Pickup and Delivery Options",
+  "function_name": "countOrders",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        1
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        2
+      ],
+      "expected": 6
+    },
+    {
+      "inputs": [
+        3
+      ],
+      "expected": 90
+    },
+    {
+      "inputs": [
+        4
+      ],
+      "expected": 2520
+    },
+    {
+      "inputs": [
+        5
+      ],
+      "expected": 113400
+    },
+    {
+      "inputs": [
+        6
+      ],
+      "expected": 7484400
+    },
+    {
+      "inputs": [
+        7
+      ],
+      "expected": 681080400
+    },
+    {
+      "inputs": [
+        8
+      ],
+      "expected": 729647433
+    },
+    {
+      "inputs": [
+        9
+      ],
+      "expected": 636056472
+    },
+    {
+      "inputs": [
+        10
+      ],
+      "expected": 850728840
+    },
+    {
+      "inputs": [
+        11
+      ],
+      "expected": 518360668
+    },
+    {
+      "inputs": [
+        12
+      ],
+      "expected": 67543367
+    },
+    {
+      "inputs": [
+        13
+      ],
+      "expected": 951594128
+    },
+    {
+      "inputs": [
+        14
+      ],
+      "expected": 702577871
+    },
+    {
+      "inputs": [
+        15
+      ],
+      "expected": 621371750
+    },
+    {
+      "inputs": [
+        16
+      ],
+      "expected": 200385844
+    },
+    {
+      "inputs": [
+        17
+      ],
+      "expected": 416457700
+    },
+    {
+      "inputs": [
+        18
+      ],
+      "expected": 368349166
+    },
+    {
+      "inputs": [
+        19
+      ],
+      "expected": 949461892
+    },
+    {
+      "inputs": [
+        422
+      ],
+      "expected": 712440474
+    },
+    {
+      "inputs": [
+        400
+      ],
+      "expected": 467993882
+    },
+    {
+      "inputs": [
+        165
+      ],
+      "expected": 129150731
+    },
+    {
+      "inputs": [
+        314
+      ],
+      "expected": 712205860
+    },
+    {
+      "inputs": [
+        234
+      ],
+      "expected": 492090302
+    },
+    {
+      "inputs": [
+        106
+      ],
+      "expected": 135562275
+    },
+    {
+      "inputs": [
+        72
+      ],
+      "expected": 988383946
+    },
+    {
+      "inputs": [
+        173
+      ],
+      "expected": 555535437
+    },
+    {
+      "inputs": [
+        260
+      ],
+      "expected": 661566327
+    },
+    {
+      "inputs": [
+        87
+      ],
+      "expected": 225059047
+    },
+    {
+      "inputs": [
+        431
+      ],
+      "expected": 880025918
+    },
+    {
+      "inputs": [
+        272
+      ],
+      "expected": 929346513
+    },
+    {
+      "inputs": [
+        350
+      ],
+      "expected": 436707893
+    },
+    {
+      "inputs": [
+        183
+      ],
+      "expected": 976183289
+    },
+    {
+      "inputs": [
+        114
+      ],
+      "expected": 688161603
+    },
+    {
+      "inputs": [
+        87
+      ],
+      "expected": 225059047
+    },
+    {
+      "inputs": [
+        71
+      ],
+      "expected": 579155830
+    },
+    {
+      "inputs": [
+        180
+      ],
+      "expected": 109113025
+    },
+    {
+      "inputs": [
+        494
+      ],
+      "expected": 952276050
+    },
+    {
+      "inputs": [
+        493
+      ],
+      "expected": 838686231
+    },
+    {
+      "inputs": [
+        352
+      ],
+      "expected": 349838382
+    },
+    {
+      "inputs": [
+        165
+      ],
+      "expected": 129150731
+    },
+    {
+      "inputs": [
+        47
+      ],
+      "expected": 523485199
+    },
+    {
+      "inputs": [
+        53
+      ],
+      "expected": 782372186
+    },
+    {
+      "inputs": [
+        116
+      ],
+      "expected": 499556205
+    },
+    {
+      "inputs": [
+        252
+      ],
+      "expected": 716946400
+    },
+    {
+      "inputs": [
+        280
+      ],
+      "expected": 76832365
+    },
+    {
+      "inputs": [
+        359
+      ],
+      "expected": 646815704
+    },
+    {
+      "inputs": [
+        23
+      ],
+      "expected": 25419443
+    },
+    {
+      "inputs": [
+        63
+      ],
+      "expected": 678517431
+    },
+    {
+      "inputs": [
+        286
+      ],
+      "expected": 790530770
+    },
+    {
+      "inputs": [
+        40
+      ],
+      "expected": 159858698
+    },
+    {
+      "inputs": [
+        384
+      ],
+      "expected": 689075440
+    },
+    {
+      "inputs": [
+        254
+      ],
+      "expected": 302242914
+    },
+    {
+      "inputs": [
+        323
+      ],
+      "expected": 876131268
+    },
+    {
+      "inputs": [
+        340
+      ],
+      "expected": 991356970
+    },
+    {
+      "inputs": [
+        150
+      ],
+      "expected": 707081203
+    },
+    {
+      "inputs": [
+        324
+      ],
+      "expected": 644162677
+    },
+    {
+      "inputs": [
+        133
+      ],
+      "expected": 509558631
+    },
+    {
+      "inputs": [
+        374
+      ],
+      "expected": 805630694
+    },
+    {
+      "inputs": [
+        141
+      ],
+      "expected": 317274907
+    },
+    {
+      "inputs": [
+        9
+      ],
+      "expected": 636056472
+    },
+    {
+      "inputs": [
+        48
+      ],
+      "expected": 92490731
+    },
+    {
+      "inputs": [
+        155
+      ],
+      "expected": 895554947
+    },
+    {
+      "inputs": [
+        57
+      ],
+      "expected": 88715484
+    },
+    {
+      "inputs": [
+        494
+      ],
+      "expected": 952276050
+    },
+    {
+      "inputs": [
+        66
+      ],
+      "expected": 905304912
+    },
+    {
+      "inputs": [
+        481
+      ],
+      "expected": 847902700
+    },
+    {
+      "inputs": [
+        156
+      ],
+      "expected": 743504516
+    },
+    {
+      "inputs": [
+        242
+      ],
+      "expected": 475623379
+    },
+    {
+      "inputs": [
+        317
+      ],
+      "expected": 177809980
+    },
+    {
+      "inputs": [
+        471
+      ],
+      "expected": 162961279
+    },
+    {
+      "inputs": [
+        335
+      ],
+      "expected": 833663803
+    },
+    {
+      "inputs": [
+        496
+      ],
+      "expected": 794473522
+    },
+    {
+      "inputs": [
+        39
+      ],
+      "expected": 679164517
+    },
+    {
+      "inputs": [
+        58
+      ],
+      "expected": 732274143
+    },
+    {
+      "inputs": [
+        338
+      ],
+      "expected": 42838822
+    },
+    {
+      "inputs": [
+        264
+      ],
+      "expected": 191542354
+    },
+    {
+      "inputs": [
+        357
+      ],
+      "expected": 54303618
+    },
+    {
+      "inputs": [
+        145
+      ],
+      "expected": 570013758
+    },
+    {
+      "inputs": [
+        429
+      ],
+      "expected": 636955071
+    }
+  ]
+}

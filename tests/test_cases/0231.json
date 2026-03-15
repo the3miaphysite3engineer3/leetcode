@@ -1,0 +1,488 @@
+{
+    "problem_id": "0231",
+    "title": "Power of Two",
+    "function_name": "isPowerOfTwo",
+    "comparison": "exact",
+    "test_cases": [
+        {
+            "inputs": [
+                1
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                16
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                3
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                0
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                -1
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                -2147483648
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                2
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                1073741824
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                2
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                4
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                8
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                16
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                32
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                64
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                128
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                256
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                512
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                1024
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                2048
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                4096
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                8192
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                16384
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                32768
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                65536
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                131072
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                262144
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                524288
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                1048576
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                2097152
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                4194304
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                8388608
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                16777216
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                33554432
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                67108864
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                134217728
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                268435456
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                536870912
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                1073741824
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                8620
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                4505
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                9678
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                8727
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                2658
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                5202
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                4694
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                4640
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                9283
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                4280
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                8328
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                1460
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                2121
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                6643
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                871
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                4443
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                1978
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                2074
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                3990
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                2296
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                5177
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                3955
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                6334
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                7919
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                2229
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                9360
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                4302
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                6686
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                6046
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                7305
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                1137
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                1425
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                6500
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                8347
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                4458
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                5946
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                7349
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                7896
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                5262
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                9434
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                -60
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                1426
+            ],
+            "expected": false
+        }
+    ]
+}

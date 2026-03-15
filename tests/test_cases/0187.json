@@ -1,0 +1,493 @@
+{
+    "problem_id": "0187",
+    "title": "Repeated DNA Sequences",
+    "function_name": "findRepeatedDnaSequences",
+    "comparison": "unordered_lists",
+    "test_cases": [
+        {
+            "inputs": [
+                "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT"
+            ],
+            "expected": [
+                "AAAAACCCCC",
+                "CCCCCAAAAA"
+            ]
+        },
+        {
+            "inputs": [
+                "AAAAAAAAAAAAA"
+            ],
+            "expected": [
+                "AAAAAAAAAA"
+            ]
+        },
+        {
+            "inputs": [
+                "AAAAAAAAAA"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "A"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "ACGTACGTAC"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "CTCGGACCATCCTCGGTTGGGGTTATGCGGTAC"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "CAGTGCCGCTCTGGTTTCGCCTCAAAAATCCAC"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "CTGATTAATA"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "GGATCAACCC"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "GGGTAGTTCCGAAATTTTAACATTGAACC"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "TGAAGACGACCTAGCCTGTCAGAATCAGTGAGTTCGTT"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "TAGCAAGCTCTGGAA"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "GTGGACACTT"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "TAAAGAGTAGTTACCTCCGGGTCACTG"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "GTAGGCTCTACGATGTGTGTCGG"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "CTGCTGGTCGTGTGACCATCTGATTCGCG"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "CTTATTTTAGAACGCATGTAAAGCCTGTTCG"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "TAGTAACGGG"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "CTGTATTGAGAAAGACCCCGTTCT"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "CCTTACTTTACCGAACGGCTAGTGTTAGGT"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "CGACGACGACGCTTCTTCTCCTGCCGTAG"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "ATCCTTTTTTTCAACGAGCGCTTAAGGATCTACGATGGAT"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "ACCGTCCCCAGGCGGGGACTAGCCCCGCTTCGTTTAA"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "GGTTGAATGATCTCTGGGGCTG"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "AAATAACTTATCCGCGAGGAGCATGCTAAACTACCTAA"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "GATCTACTAAAGGGCTCCAACTGCCTTCAACA"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "TGTGCCGACGAGCCTGACTTACTAAGGC"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "TGCTAAAAGCAATGTTTACGAG"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "CCGTAGTCACAT"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "TAGCAACACTGGC"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "CGAAGTGAGATTGATCGCGAA"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "AAACATGTCCATCGCTG"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "AGAACCATATGGGATAGC"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "GCTGTCCCATACGAGATGA"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "CTTACGAACTGTAACT"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "ATCCGGGTGGTG"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "ACCACACTTGTAGCTGT"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "AACGACGCACGTAGGCAT"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "TCATACAAACCCTGAGAAACTCAGAATACTTTATTCG"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "CGGTCACGTTTAAGTC"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "CCATGTTGGTGCAGCAGATGCCA"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "CGACTGCCCGGAGCCTG"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "TAAACCATAGCCGCG"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "ACCAGAGTAGG"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "CCTTGCGCCTGGCCATACGC"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "ATCGACGGCAGTAGCCAGGAAATTTCTTTG"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "TATCCTAAGAGGAAGCTCAAGTATCTC"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "AGCCTGGGCAA"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "TCAGATAGTCAACCGATAGTTT"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "GATCGTGCTAGTTGCGACAAGTCATTTCTGATACATCC"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "CCATATCCGGAATTGG"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "TATATCCAAAGGTGTTTACGTCTATG"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "CATGGAGGGGTACCGTGGTACTCTTGACAGTC"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "ACCCACATAGCGGTTAACGTTCTGGCGAGATACC"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "CCCGTAATCCACGGGTTGTGCTGTAAGGGATAGGGGG"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "GCCCATGCATGGTTTACGCTGGCCGATCGC"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "GACGCGTGGGGTATAATCATGTACCCGTTCGCATGCGAAT"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "CCCTACTTTTTTAACGAG"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "CAACCGGCATGCAAGGTGTCGTGCCTACCCCACA"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "ATGAAAAAATTTAGTCCAGTA"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "GCTAAGAATCCGCGTGCATCTGCAAAATCAA"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "AGCTGGTAACAGGGTAAAACCGGTGAGGCATTT"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "TTTCACACATTTCTGACT"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "TATTAAGGACGATCTGTCAACTTCATGCGGACTTCATTT"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "TTGATAATTAAA"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "GCTGGACTGTGTAACAGGGGAACTCTAGCCATCTC"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "GATAATTCTAATTCCCATGTTCGTGGTCCTGG"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "CCCGGCCGAGTTGTAAATCAACGCGGCAGCAG"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "TACTCGATTTGAAGCTCGCCGTCACCATATGGCCGA"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "TCACGAGTGAGCCACTTAGC"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "CGGGGCTAAGTCCAGTATGGAGTTAGCGAACAACCTAC"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "TACATGAAAACGACGTTTTTGATAAAA"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "AGAGGAGTTTATCCCTGCGGACAAATAGCGCT"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "CCCCGCACATAGAGACTGGCCAGACGTTGGCGGTCAGC"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "CTGGCGTTTGGTACAGCCGAAAATCAGTCGTCGCT"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "ATGACCCTCCCTGACTCAGGCACGTT"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "TAAGAGGCTTGAGTCTGGTTACTCCAGCCCCGACTGATT"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "CCTACACCCACACGCTAGACTTTCC"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "TCCGCGTACTTCAACTCACTAAATCATTGATCTTGA"
+            ],
+            "expected": []
+        },
+        {
+            "inputs": [
+                "CGTCAGTGCAAAATCGTGACTGG"
+            ],
+            "expected": []
+        }
+    ]
+}

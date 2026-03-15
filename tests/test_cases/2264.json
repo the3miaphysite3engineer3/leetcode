@@ -1,0 +1,488 @@
+{
+  "problem_id": "2264",
+  "title": "Largest 3-Same-Digit Number in String",
+  "function_name": "largestGoodInteger",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        "57050"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "6404053"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "3281307"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "7673997328500"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "59171428"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "7861"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "3749015601"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "47559"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "271607"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "039839822"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "7705600"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "922129466801852"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "51719118"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "448311283"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "732460124"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "23365418460486"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "545936263405"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "428"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "50671857"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "425501"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "3058187"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "847199697230720"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "196774115220"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "95971079140731"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "8425827792228"
+      ],
+      "expected": "222"
+    },
+    {
+      "inputs": [
+        "5110349832"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "895208865925"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "09686260838537"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "441632859889"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "8172326126"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "9992529985"
+      ],
+      "expected": "999"
+    },
+    {
+      "inputs": [
+        "03691179439692"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "86283249"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "6201955"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "5104637277"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "59341"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "50021036765"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "48267414157574"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "094401985"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "99866283"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "419328326269"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "12719218"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "6787438"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "421"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "001076218"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "41847339270"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "5188119664836"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "187093"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "235552475609290"
+      ],
+      "expected": "555"
+    },
+    {
+      "inputs": [
+        "226028917"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "69884"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "50994241611560"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "761837192"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "253523639149"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "013131079"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "75787959167"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "88078088"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "10316620091"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "971"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "1597420775"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "557429460559683"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "998867534185"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "5414780990"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "4874328252"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "87378"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "267993737427"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "9951127688"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "34734053343"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "870"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "234156362"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "07008"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "103856379591"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "3946805892"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "85982967559"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "1103184522"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "5349"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "035216"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "4475475131399"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "6147"
+      ],
+      "expected": ""
+    },
+    {
+      "inputs": [
+        "31800105"
+      ],
+      "expected": ""
+    }
+  ]
+}

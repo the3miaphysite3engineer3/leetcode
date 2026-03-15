@@ -1,0 +1,489 @@
+{
+    "problem_id": "535",
+    "title": "Encode and Decode TinyURL",
+    "function_name": "encode",
+    "comparison": "exact",
+    "mode": "codec_url",
+    "test_cases": [
+        {
+            "inputs": [
+                "https://leetcode.com/problems/idjgb"
+            ],
+            "expected": "https://leetcode.com/problems/idjgb"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/ihbfdi"
+            ],
+            "expected": "https://leetcode.com/problems/ihbfdi"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/ihijaf"
+            ],
+            "expected": "https://leetcode.com/problems/ihijaf"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/chddcecjdb"
+            ],
+            "expected": "https://leetcode.com/problems/chddcecjdb"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/afhje"
+            ],
+            "expected": "https://leetcode.com/problems/afhje"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/hfj"
+            ],
+            "expected": "https://leetcode.com/problems/hfj"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/dfi"
+            ],
+            "expected": "https://leetcode.com/problems/dfi"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/ddfchg"
+            ],
+            "expected": "https://leetcode.com/problems/ddfchg"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/jjbag"
+            ],
+            "expected": "https://leetcode.com/problems/jjbag"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/fajicjgf"
+            ],
+            "expected": "https://leetcode.com/problems/fajicjgf"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/iccejidf"
+            ],
+            "expected": "https://leetcode.com/problems/iccejidf"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/bfaah"
+            ],
+            "expected": "https://leetcode.com/problems/bfaah"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/hee"
+            ],
+            "expected": "https://leetcode.com/problems/hee"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/jhdgefa"
+            ],
+            "expected": "https://leetcode.com/problems/jhdgefa"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/jgaf"
+            ],
+            "expected": "https://leetcode.com/problems/jgaf"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/fig"
+            ],
+            "expected": "https://leetcode.com/problems/fig"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/jjbffcicc"
+            ],
+            "expected": "https://leetcode.com/problems/jjbffcicc"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/jhdj"
+            ],
+            "expected": "https://leetcode.com/problems/jhdj"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/hfcjg"
+            ],
+            "expected": "https://leetcode.com/problems/hfcjg"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/gcf"
+            ],
+            "expected": "https://leetcode.com/problems/gcf"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/fifhij"
+            ],
+            "expected": "https://leetcode.com/problems/fifhij"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/jeajdgfib"
+            ],
+            "expected": "https://leetcode.com/problems/jeajdgfib"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/fhaebc"
+            ],
+            "expected": "https://leetcode.com/problems/fhaebc"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/cggg"
+            ],
+            "expected": "https://leetcode.com/problems/cggg"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/jebecfbj"
+            ],
+            "expected": "https://leetcode.com/problems/jebecfbj"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/ccebib"
+            ],
+            "expected": "https://leetcode.com/problems/ccebib"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/gdba"
+            ],
+            "expected": "https://leetcode.com/problems/gdba"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/ghaffhedef"
+            ],
+            "expected": "https://leetcode.com/problems/ghaffhedef"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/igdd"
+            ],
+            "expected": "https://leetcode.com/problems/igdd"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/chdhfide"
+            ],
+            "expected": "https://leetcode.com/problems/chdhfide"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/hgiiccagi"
+            ],
+            "expected": "https://leetcode.com/problems/hgiiccagi"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/dieiefhha"
+            ],
+            "expected": "https://leetcode.com/problems/dieiefhha"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/gebfjfdda"
+            ],
+            "expected": "https://leetcode.com/problems/gebfjfdda"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/ifiejee"
+            ],
+            "expected": "https://leetcode.com/problems/ifiejee"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/bfhdde"
+            ],
+            "expected": "https://leetcode.com/problems/bfhdde"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/hjjd"
+            ],
+            "expected": "https://leetcode.com/problems/hjjd"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/ihhccdhc"
+            ],
+            "expected": "https://leetcode.com/problems/ihhccdhc"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/dihb"
+            ],
+            "expected": "https://leetcode.com/problems/dihb"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/cdafgghbg"
+            ],
+            "expected": "https://leetcode.com/problems/cdafgghbg"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/haeicficca"
+            ],
+            "expected": "https://leetcode.com/problems/haeicficca"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/idfchhcf"
+            ],
+            "expected": "https://leetcode.com/problems/idfchhcf"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/iff"
+            ],
+            "expected": "https://leetcode.com/problems/iff"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/ehgjabbi"
+            ],
+            "expected": "https://leetcode.com/problems/ehgjabbi"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/ejeccg"
+            ],
+            "expected": "https://leetcode.com/problems/ejeccg"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/ifcdfhaic"
+            ],
+            "expected": "https://leetcode.com/problems/ifcdfhaic"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/jgafffj"
+            ],
+            "expected": "https://leetcode.com/problems/jgafffj"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/aadfgbf"
+            ],
+            "expected": "https://leetcode.com/problems/aadfgbf"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/fgjc"
+            ],
+            "expected": "https://leetcode.com/problems/fgjc"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/agde"
+            ],
+            "expected": "https://leetcode.com/problems/agde"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/jabddgbg"
+            ],
+            "expected": "https://leetcode.com/problems/jabddgbg"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/bhagdgb"
+            ],
+            "expected": "https://leetcode.com/problems/bhagdgb"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/bfhj"
+            ],
+            "expected": "https://leetcode.com/problems/bfhj"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/dje"
+            ],
+            "expected": "https://leetcode.com/problems/dje"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/aghe"
+            ],
+            "expected": "https://leetcode.com/problems/aghe"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/cgdjdh"
+            ],
+            "expected": "https://leetcode.com/problems/cgdjdh"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/hdfejihjf"
+            ],
+            "expected": "https://leetcode.com/problems/hdfejihjf"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/eee"
+            ],
+            "expected": "https://leetcode.com/problems/eee"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/acjeedaici"
+            ],
+            "expected": "https://leetcode.com/problems/acjeedaici"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/eiaadjcdd"
+            ],
+            "expected": "https://leetcode.com/problems/eiaadjcdd"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/ibjaejd"
+            ],
+            "expected": "https://leetcode.com/problems/ibjaejd"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/edjefcch"
+            ],
+            "expected": "https://leetcode.com/problems/edjefcch"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/fbdib"
+            ],
+            "expected": "https://leetcode.com/problems/fbdib"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/eijdidbai"
+            ],
+            "expected": "https://leetcode.com/problems/eijdidbai"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/iccjgjjfab"
+            ],
+            "expected": "https://leetcode.com/problems/iccjgjjfab"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/ebaga"
+            ],
+            "expected": "https://leetcode.com/problems/ebaga"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/dhcb"
+            ],
+            "expected": "https://leetcode.com/problems/dhcb"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/abda"
+            ],
+            "expected": "https://leetcode.com/problems/abda"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/hhehffig"
+            ],
+            "expected": "https://leetcode.com/problems/hhehffig"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/gcfjecba"
+            ],
+            "expected": "https://leetcode.com/problems/gcfjecba"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/eabhbi"
+            ],
+            "expected": "https://leetcode.com/problems/eabhbi"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/bajcjgdbcd"
+            ],
+            "expected": "https://leetcode.com/problems/bajcjgdbcd"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/jecgeh"
+            ],
+            "expected": "https://leetcode.com/problems/jecgeh"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/bhiaahfc"
+            ],
+            "expected": "https://leetcode.com/problems/bhiaahfc"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/hijiifb"
+            ],
+            "expected": "https://leetcode.com/problems/hijiifb"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/jfibcc"
+            ],
+            "expected": "https://leetcode.com/problems/jfibcc"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/hjihe"
+            ],
+            "expected": "https://leetcode.com/problems/hjihe"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/aajfab"
+            ],
+            "expected": "https://leetcode.com/problems/aajfab"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/ecgh"
+            ],
+            "expected": "https://leetcode.com/problems/ecgh"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/dbbaji"
+            ],
+            "expected": "https://leetcode.com/problems/dbbaji"
+        },
+        {
+            "inputs": [
+                "https://leetcode.com/problems/dgijidc"
+            ],
+            "expected": "https://leetcode.com/problems/dgijidc"
+        }
+    ]
+}

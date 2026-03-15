@@ -1,0 +1,568 @@
+{
+    "problem_id": "1523",
+    "title": "Count Odd Numbers in an Interval Range",
+    "function_name": "countOdds",
+    "comparison": "exact",
+    "test_cases": [
+        {
+            "inputs": [
+                3,
+                7
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                8,
+                10
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                0,
+                0
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                1,
+                1
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                0,
+                1
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                1,
+                2
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                2,
+                3
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                1,
+                10
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                0,
+                100
+            ],
+            "expected": 50
+        },
+        {
+            "inputs": [
+                5,
+                5
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                26,
+                94
+            ],
+            "expected": 34
+        },
+        {
+            "inputs": [
+                44,
+                240
+            ],
+            "expected": 98
+        },
+        {
+            "inputs": [
+                208,
+                276
+            ],
+            "expected": 34
+        },
+        {
+            "inputs": [
+                55,
+                64
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                194,
+                331
+            ],
+            "expected": 69
+        },
+        {
+            "inputs": [
+                287,
+                372
+            ],
+            "expected": 43
+        },
+        {
+            "inputs": [
+                174,
+                187
+            ],
+            "expected": 7
+        },
+        {
+            "inputs": [
+                81,
+                115
+            ],
+            "expected": 18
+        },
+        {
+            "inputs": [
+                172,
+                315
+            ],
+            "expected": 72
+        },
+        {
+            "inputs": [
+                170,
+                349
+            ],
+            "expected": 90
+        },
+        {
+            "inputs": [
+                125,
+                166
+            ],
+            "expected": 21
+        },
+        {
+            "inputs": [
+                0,
+                111
+            ],
+            "expected": 56
+        },
+        {
+            "inputs": [
+                396,
+                418
+            ],
+            "expected": 11
+        },
+        {
+            "inputs": [
+                449,
+                601
+            ],
+            "expected": 77
+        },
+        {
+            "inputs": [
+                193,
+                210
+            ],
+            "expected": 9
+        },
+        {
+            "inputs": [
+                3,
+                83
+            ],
+            "expected": 41
+        },
+        {
+            "inputs": [
+                374,
+                488
+            ],
+            "expected": 57
+        },
+        {
+            "inputs": [
+                52,
+                63
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                47,
+                217
+            ],
+            "expected": 86
+        },
+        {
+            "inputs": [
+                72,
+                104
+            ],
+            "expected": 16
+        },
+        {
+            "inputs": [
+                404,
+                409
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                149,
+                259
+            ],
+            "expected": 56
+        },
+        {
+            "inputs": [
+                293,
+                415
+            ],
+            "expected": 62
+        },
+        {
+            "inputs": [
+                135,
+                255
+            ],
+            "expected": 61
+        },
+        {
+            "inputs": [
+                428,
+                437
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                393,
+                471
+            ],
+            "expected": 40
+        },
+        {
+            "inputs": [
+                175,
+                308
+            ],
+            "expected": 67
+        },
+        {
+            "inputs": [
+                410,
+                533
+            ],
+            "expected": 62
+        },
+        {
+            "inputs": [
+                105,
+                260
+            ],
+            "expected": 78
+        },
+        {
+            "inputs": [
+                327,
+                461
+            ],
+            "expected": 68
+        },
+        {
+            "inputs": [
+                289,
+                369
+            ],
+            "expected": 41
+        },
+        {
+            "inputs": [
+                6,
+                107
+            ],
+            "expected": 51
+        },
+        {
+            "inputs": [
+                457,
+                653
+            ],
+            "expected": 99
+        },
+        {
+            "inputs": [
+                330,
+                461
+            ],
+            "expected": 66
+        },
+        {
+            "inputs": [
+                222,
+                397
+            ],
+            "expected": 88
+        },
+        {
+            "inputs": [
+                275,
+                438
+            ],
+            "expected": 82
+        },
+        {
+            "inputs": [
+                407,
+                577
+            ],
+            "expected": 86
+        },
+        {
+            "inputs": [
+                305,
+                429
+            ],
+            "expected": 63
+        },
+        {
+            "inputs": [
+                266,
+                437
+            ],
+            "expected": 86
+        },
+        {
+            "inputs": [
+                214,
+                309
+            ],
+            "expected": 48
+        },
+        {
+            "inputs": [
+                261,
+                269
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                433,
+                626
+            ],
+            "expected": 97
+        },
+        {
+            "inputs": [
+                330,
+                376
+            ],
+            "expected": 23
+        },
+        {
+            "inputs": [
+                371,
+                392
+            ],
+            "expected": 11
+        },
+        {
+            "inputs": [
+                467,
+                591
+            ],
+            "expected": 63
+        },
+        {
+            "inputs": [
+                336,
+                403
+            ],
+            "expected": 34
+        },
+        {
+            "inputs": [
+                87,
+                172
+            ],
+            "expected": 43
+        },
+        {
+            "inputs": [
+                172,
+                313
+            ],
+            "expected": 71
+        },
+        {
+            "inputs": [
+                200,
+                218
+            ],
+            "expected": 9
+        },
+        {
+            "inputs": [
+                370,
+                486
+            ],
+            "expected": 58
+        },
+        {
+            "inputs": [
+                198,
+                344
+            ],
+            "expected": 73
+        },
+        {
+            "inputs": [
+                398,
+                484
+            ],
+            "expected": 43
+        },
+        {
+            "inputs": [
+                8,
+                56
+            ],
+            "expected": 24
+        },
+        {
+            "inputs": [
+                300,
+                322
+            ],
+            "expected": 11
+        },
+        {
+            "inputs": [
+                425,
+                585
+            ],
+            "expected": 81
+        },
+        {
+            "inputs": [
+                186,
+                189
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                458,
+                548
+            ],
+            "expected": 45
+        },
+        {
+            "inputs": [
+                117,
+                220
+            ],
+            "expected": 52
+        },
+        {
+            "inputs": [
+                272,
+                400
+            ],
+            "expected": 64
+        },
+        {
+            "inputs": [
+                370,
+                385
+            ],
+            "expected": 8
+        },
+        {
+            "inputs": [
+                327,
+                400
+            ],
+            "expected": 37
+        },
+        {
+            "inputs": [
+                253,
+                448
+            ],
+            "expected": 98
+        },
+        {
+            "inputs": [
+                322,
+                506
+            ],
+            "expected": 92
+        },
+        {
+            "inputs": [
+                119,
+                258
+            ],
+            "expected": 70
+        },
+        {
+            "inputs": [
+                247,
+                292
+            ],
+            "expected": 23
+        },
+        {
+            "inputs": [
+                78,
+                215
+            ],
+            "expected": 69
+        },
+        {
+            "inputs": [
+                227,
+                323
+            ],
+            "expected": 49
+        },
+        {
+            "inputs": [
+                384,
+                502
+            ],
+            "expected": 59
+        },
+        {
+            "inputs": [
+                22,
+                24
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                68,
+                184
+            ],
+            "expected": 58
+        }
+    ]
+}

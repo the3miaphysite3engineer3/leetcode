@@ -1,0 +1,488 @@
+{
+    "problem_id": "0013",
+    "title": "Roman to Integer",
+    "function_name": "romanToInt",
+    "comparison": "exact",
+    "test_cases": [
+        {
+            "inputs": [
+                "III"
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                "LVIII"
+            ],
+            "expected": 58
+        },
+        {
+            "inputs": [
+                "MCMXCIV"
+            ],
+            "expected": 1994
+        },
+        {
+            "inputs": [
+                "I"
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                "IV"
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                "IX"
+            ],
+            "expected": 9
+        },
+        {
+            "inputs": [
+                "XL"
+            ],
+            "expected": 40
+        },
+        {
+            "inputs": [
+                "XC"
+            ],
+            "expected": 90
+        },
+        {
+            "inputs": [
+                "CD"
+            ],
+            "expected": 400
+        },
+        {
+            "inputs": [
+                "CM"
+            ],
+            "expected": 900
+        },
+        {
+            "inputs": [
+                "MMMCMXCIX"
+            ],
+            "expected": 3999
+        },
+        {
+            "inputs": [
+                "M"
+            ],
+            "expected": 1000
+        },
+        {
+            "inputs": [
+                "MMMCLXXII"
+            ],
+            "expected": 3172
+        },
+        {
+            "inputs": [
+                "DCV"
+            ],
+            "expected": 605
+        },
+        {
+            "inputs": [
+                "MMMCCXXXI"
+            ],
+            "expected": 3231
+        },
+        {
+            "inputs": [
+                "MMMDCLXXXIX"
+            ],
+            "expected": 3689
+        },
+        {
+            "inputs": [
+                "MMCDXLII"
+            ],
+            "expected": 2442
+        },
+        {
+            "inputs": [
+                "XII"
+            ],
+            "expected": 12
+        },
+        {
+            "inputs": [
+                "MCXXXVI"
+            ],
+            "expected": 1136
+        },
+        {
+            "inputs": [
+                "MMMDXVII"
+            ],
+            "expected": 3517
+        },
+        {
+            "inputs": [
+                "DXCIII"
+            ],
+            "expected": 593
+        },
+        {
+            "inputs": [
+                "DXXXIII"
+            ],
+            "expected": 533
+        },
+        {
+            "inputs": [
+                "MMCCXIII"
+            ],
+            "expected": 2213
+        },
+        {
+            "inputs": [
+                "MXXVII"
+            ],
+            "expected": 1027
+        },
+        {
+            "inputs": [
+                "MMMCCLXXI"
+            ],
+            "expected": 3271
+        },
+        {
+            "inputs": [
+                "DCCXV"
+            ],
+            "expected": 715
+        },
+        {
+            "inputs": [
+                "CDLI"
+            ],
+            "expected": 451
+        },
+        {
+            "inputs": [
+                "MMDCCVIII"
+            ],
+            "expected": 2708
+        },
+        {
+            "inputs": [
+                "MMMDXLIX"
+            ],
+            "expected": 3549
+        },
+        {
+            "inputs": [
+                "CVI"
+            ],
+            "expected": 106
+        },
+        {
+            "inputs": [
+                "DXL"
+            ],
+            "expected": 540
+        },
+        {
+            "inputs": [
+                "LXI"
+            ],
+            "expected": 61
+        },
+        {
+            "inputs": [
+                "MCDLXVIII"
+            ],
+            "expected": 1468
+        },
+        {
+            "inputs": [
+                "MMMCCXXXVI"
+            ],
+            "expected": 3236
+        },
+        {
+            "inputs": [
+                "MMMCCXXX"
+            ],
+            "expected": 3230
+        },
+        {
+            "inputs": [
+                "CMLXXV"
+            ],
+            "expected": 975
+        },
+        {
+            "inputs": [
+                "MMCDXII"
+            ],
+            "expected": 2412
+        },
+        {
+            "inputs": [
+                "MCCCXXVII"
+            ],
+            "expected": 1327
+        },
+        {
+            "inputs": [
+                "LXV"
+            ],
+            "expected": 65
+        },
+        {
+            "inputs": [
+                "DCCXIV"
+            ],
+            "expected": 714
+        },
+        {
+            "inputs": [
+                "MLXXXVII"
+            ],
+            "expected": 1087
+        },
+        {
+            "inputs": [
+                "CCXV"
+            ],
+            "expected": 215
+        },
+        {
+            "inputs": [
+                "DXX"
+            ],
+            "expected": 520
+        },
+        {
+            "inputs": [
+                "MMMXXXIX"
+            ],
+            "expected": 3039
+        },
+        {
+            "inputs": [
+                "MDCCXXV"
+            ],
+            "expected": 1725
+        },
+        {
+            "inputs": [
+                "MMCLV"
+            ],
+            "expected": 2155
+        },
+        {
+            "inputs": [
+                "CDLXVI"
+            ],
+            "expected": 466
+        },
+        {
+            "inputs": [
+                "MMMLV"
+            ],
+            "expected": 3055
+        },
+        {
+            "inputs": [
+                "CCLXI"
+            ],
+            "expected": 261
+        },
+        {
+            "inputs": [
+                "MCMLI"
+            ],
+            "expected": 1951
+        },
+        {
+            "inputs": [
+                "MDCCCXXXVII"
+            ],
+            "expected": 1837
+        },
+        {
+            "inputs": [
+                "MMMCLXXXVII"
+            ],
+            "expected": 3187
+        },
+        {
+            "inputs": [
+                "MCDLXXXIII"
+            ],
+            "expected": 1483
+        },
+        {
+            "inputs": [
+                "MMCIII"
+            ],
+            "expected": 2103
+        },
+        {
+            "inputs": [
+                "MMCDXXXII"
+            ],
+            "expected": 2432
+        },
+        {
+            "inputs": [
+                "CDXLVII"
+            ],
+            "expected": 447
+        },
+        {
+            "inputs": [
+                "MDCCCLII"
+            ],
+            "expected": 1852
+        },
+        {
+            "inputs": [
+                "MMLXIV"
+            ],
+            "expected": 2064
+        },
+        {
+            "inputs": [
+                "CMVIII"
+            ],
+            "expected": 908
+        },
+        {
+            "inputs": [
+                "MMMDCCCLXXIII"
+            ],
+            "expected": 3873
+        },
+        {
+            "inputs": [
+                "MMDXX"
+            ],
+            "expected": 2520
+        },
+        {
+            "inputs": [
+                "CLXXVIII"
+            ],
+            "expected": 178
+        },
+        {
+            "inputs": [
+                "MMCMLXXIX"
+            ],
+            "expected": 2979
+        },
+        {
+            "inputs": [
+                "MMMCCIX"
+            ],
+            "expected": 3209
+        },
+        {
+            "inputs": [
+                "MMMDCCXXIII"
+            ],
+            "expected": 3723
+        },
+        {
+            "inputs": [
+                "MMMDLII"
+            ],
+            "expected": 3552
+        },
+        {
+            "inputs": [
+                "MMDCXCIX"
+            ],
+            "expected": 2699
+        },
+        {
+            "inputs": [
+                "MMCXXXVI"
+            ],
+            "expected": 2136
+        },
+        {
+            "inputs": [
+                "MCCXXXVI"
+            ],
+            "expected": 1236
+        },
+        {
+            "inputs": [
+                "MDCCCLXXVII"
+            ],
+            "expected": 1877
+        },
+        {
+            "inputs": [
+                "MMDCXXXVI"
+            ],
+            "expected": 2636
+        },
+        {
+            "inputs": [
+                "MMMCMXLIX"
+            ],
+            "expected": 3949
+        },
+        {
+            "inputs": [
+                "CXXVIII"
+            ],
+            "expected": 128
+        },
+        {
+            "inputs": [
+                "CCL"
+            ],
+            "expected": 250
+        },
+        {
+            "inputs": [
+                "MCMLXII"
+            ],
+            "expected": 1962
+        },
+        {
+            "inputs": [
+                "MMMCDLXXI"
+            ],
+            "expected": 3471
+        },
+        {
+            "inputs": [
+                "MDCXLVI"
+            ],
+            "expected": 1646
+        },
+        {
+            "inputs": [
+                "MDCCXLVII"
+            ],
+            "expected": 1747
+        },
+        {
+            "inputs": [
+                "MMDCCCXI"
+            ],
+            "expected": 2811
+        },
+        {
+            "inputs": [
+                "CDXLIII"
+            ],
+            "expected": 443
+        }
+    ]
+}

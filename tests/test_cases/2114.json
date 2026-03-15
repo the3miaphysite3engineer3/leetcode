@@ -1,0 +1,1008 @@
+{
+  "problem_id": "2114",
+  "title": "Maximum Number of Words Found in Sentences",
+  "function_name": "mostWordsFound",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        [
+          "cgeci bda ae ha iig cedg abig cifd",
+          "i",
+          "ihdca h bigfb bc cb hbg d",
+          "ahee bbaf hea fic eii cegh d ac",
+          "faah cdc idhcc a ecdg cd"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "hd c dcf b",
+          "ebhbe eafh eefc",
+          "fifgc gf aahfe",
+          "ad ghia",
+          "i aihbd bfi cfibh chd ae aig e",
+          "i ba bcd hgf",
+          "bgc",
+          "cia iaaii ha gib",
+          "a dha f i ifid ic"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "fbf bi i hh fc beea"
+        ]
+      ],
+      "expected": 6
+    },
+    {
+      "inputs": [
+        [
+          "iagea afdic edbi aee gd i hga",
+          "icd hibhc ed ahbg ebe defe bebf",
+          "adceb idec fgdhg ee hb cd",
+          "aheaa",
+          "cd",
+          "idbf d f de",
+          "dffgf ibc ffa cefbf fbbei"
+        ]
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        [
+          "ehhb ibaei acaca ahdd ffai fb cb",
+          "e cce bgdf a",
+          "i bcf fche dbhb"
+        ]
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        [
+          "g ega e g cebd f aifcb",
+          "geg hiibg he hf ii ed di",
+          "ehh icebh b",
+          "ib fh dab ba",
+          "chh fa bii dgac adbgf eca db cdca",
+          "ehca",
+          "cf bhbbc efi eaiaa c gc",
+          "gfa bfi aihh i"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "dicce g bbea ibifc f ef",
+          "iicb ii ifidf bfi dacbb beec cg cfchi",
+          "gegi hdga idb gehah",
+          "c eh cff edgdg egbdb adcbg f fhiha"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "eaha fbhge",
+          "dade",
+          "decc d",
+          "ae ffe icf bihe c afec c beeh",
+          "bcb"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "g",
+          "fbee faeia hfd b gebdb h d ebh"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "adacd beidc fghb f",
+          "gidbg",
+          "d f ahi fegi dga",
+          "hi f aag"
+        ]
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        [
+          "ga bfehg faaig haffh eab iddi i bgbgf",
+          "diei",
+          "deeif baheb",
+          "iag icb",
+          "a eedfi daa",
+          "d abe",
+          "befi ghgdd a b e"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "ib iei adf gde ae bid ehace gbf",
+          "ifh g c e efgbe",
+          "afc",
+          "cff iaac aifc ddb ii beadh"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "hdfig decah ia deegi haec di babga",
+          "fbf hi",
+          "ab idbdd"
+        ]
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        [
+          "fdd eaiec fga f de"
+        ]
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        [
+          "c aea fh c c fiigi cbi hb",
+          "hehfe aiaa f dg ai aeec ibihd cfbc"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "d b fc habda hdia fefhc dei",
+          "cehf bae",
+          "bhaai bfcgh i",
+          "ha f dfba hhaa eiihf"
+        ]
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        [
+          "daib adaff",
+          "ei ggc ifcb e gc",
+          "bif hchhd cahce ca hcg fffde f",
+          "baae cbgea",
+          "fied hcd idi hedbi fhdbf",
+          "cfica gbf cifdc cga fegc if cgab gde",
+          "hebib",
+          "aagfd ahaca idc fgi gd c ddhe dc"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "eic",
+          "ad c fdcad gdi fefc",
+          "bec h",
+          "ca fa",
+          "ddeh",
+          "cagee d cab dci i heaa eff bibd",
+          "hhdch h d diaba ighcc",
+          "aabb baie eeceh if g",
+          "ahh idcb f iddic dfea ah",
+          "ibgg cg"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "ac",
+          "a",
+          "gbif ebh daag",
+          "bddfi chici e if cfa hh gcahe",
+          "ihigh hi gdabb g aeae hgcg degf",
+          "ebh caeh e bgahb",
+          "eeib adc ed b hdidd",
+          "adee ciehg cdbbd b cghi",
+          "gbe hc cb hcbag i hi gif",
+          "gi affg a iefb gffci cegi ai"
+        ]
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        [
+          "g d",
+          "h fbc",
+          "ai bfif dehdb d hii",
+          "a ggcf gcei cfgag",
+          "b hdcdd fcai cdich",
+          "bhc eebf hehge gfgb ei gcbgg fhd fba",
+          "bca ife fi if",
+          "i heefe dbddd ehif fhggb abbf igdbi bihdi"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "fiebc e gga ebff afag had gi gigcd",
+          "ieed ecf c hgeb ahb cihd"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "if",
+          "di hcfae i ccdd",
+          "deeg g fchh gciia",
+          "dbfb cag aif d a"
+        ]
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        [
+          "gbfbc hbf",
+          "cg dah eefe b",
+          "dd b ie i ga",
+          "fi ed",
+          "dibch",
+          "ifi",
+          "dhbb c aah",
+          "e ffgge be fahg cicdb dib"
+        ]
+      ],
+      "expected": 6
+    },
+    {
+      "inputs": [
+        [
+          "hhcc b c cih gch egdb",
+          "eh eigh ibca",
+          "hh",
+          "fgd f"
+        ]
+      ],
+      "expected": 6
+    },
+    {
+      "inputs": [
+        [
+          "dhic ibdb big bdb g cbffc",
+          "ahb",
+          "ighcc d hd iddc eef",
+          "ahh ecb",
+          "aa fdd ibbhc hbgh aeec fcfce g cd",
+          "he fi c ihf i a ahhg",
+          "a cgid egef gb cgibg eagdd",
+          "ied",
+          "bfff"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "ee",
+          "egd ifha eaah d",
+          "g ahe i dfbi d df",
+          "gceih",
+          "eg dicie i",
+          "aibcf acfgd fec",
+          "hadhe a cgbfa ghaf cfdfe fi e",
+          "ggeh bhd aa",
+          "gch aib hbach dcfi gid bcegc bhde",
+          "adc hdi"
+        ]
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        [
+          "bfdea",
+          "bgh gib g hebe dggf",
+          "dec g ag ggh hggcg ghdh",
+          "c ab a abdf",
+          "ae iif eihhh gcfi",
+          "a deccg bd hgihb h facgc",
+          "ai",
+          "bdabg haidi ifieg i bb",
+          "c",
+          "dig aaea egbd"
+        ]
+      ],
+      "expected": 6
+    },
+    {
+      "inputs": [
+        [
+          "f hhh",
+          "hgca dhd cb bfdbg",
+          "bgeic accf hcf a e hf ehfia",
+          "ab",
+          "cf cgf",
+          "egba ci hegb h",
+          "gd cb h",
+          "hcfd afibb i fb dedd hb afde",
+          "ag"
+        ]
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        [
+          "ib cha hdah ad cb aaei",
+          "hife",
+          "bbcgc gc bh hec adh hc",
+          "icabb ihci f a",
+          "e f"
+        ]
+      ],
+      "expected": 6
+    },
+    {
+      "inputs": [
+        [
+          "abf hahh hag hfbg hgdeb f",
+          "cihd",
+          "eia adf",
+          "adbhg e i deeac",
+          "dfcf fcih"
+        ]
+      ],
+      "expected": 6
+    },
+    {
+      "inputs": [
+        [
+          "feci ebhd hhd ihbii echa",
+          "g db",
+          "hei ifebb c hagi dhg eaii",
+          "hadhi cb if a",
+          "i iceh i ebdh fe bi b",
+          "ffd bba bfeg ibdg ifeb eccha agad",
+          "c hef bag adb efe efag dgbii ae",
+          "bahh caiec ei"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "fhi",
+          "egce fe ig dce abaf gdaed",
+          "ad a d dagfd hfhhh",
+          "c hghie biaec hifhg aee iaied dd eed",
+          "hhcfe f iiaic e idadi hgfaf ae bd",
+          "icg hhfhg ibg fhb dbgi cee b ad",
+          "gcbh gee bhhh befea f facd fbhe a",
+          "bi if ecg h",
+          "ahefe e e fi hh ahcf dhb gbidd"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "ccigg",
+          "gh",
+          "igde affa b",
+          "iefb d h da bcfgg chd e",
+          "igecc eaaec g f",
+          "eddbb dae e c d c b bad"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "bbd afih iha dhccc ghde geeif cc",
+          "aae eaigh bcc gg bf egaaf",
+          "fiafi a d adai",
+          "gdb ch hehb cgaai bdc fgaeg h d",
+          "cgh didd",
+          "dahf fii fadh cee cici bbb ah hcf",
+          "bdci fhb",
+          "iihf ebhh aaa chba ehcc",
+          "a h fbff g aigi",
+          "bhb ehbhf"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "ag acigg dha i hcdf adcf hgi",
+          "hdi edi",
+          "bd"
+        ]
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        [
+          "id i ibcc c ai id b f",
+          "fffba eeghe cdba aii",
+          "ef hc"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "agdg eab"
+        ]
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        [
+          "h bih dbg geahf hgeih ihi fcdef",
+          "b",
+          "ffigd cci fgd ai degff",
+          "e id ichg",
+          "hb dg ieg ibebi edf",
+          "agghc ha ghiad",
+          "gibg h eeg fc",
+          "c gh"
+        ]
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        [
+          "f deh f effba fffif bdabb",
+          "a hbb gdg dfdic",
+          "cac caga h bd ihc d",
+          "g ee",
+          "ie eeae hg ede ha iaeag",
+          "ag fc",
+          "ihd"
+        ]
+      ],
+      "expected": 6
+    },
+    {
+      "inputs": [
+        [
+          "dic hg cchb dc fai ighd ehicc hf",
+          "dha eegf aed b be dga iacbf edcbg",
+          "ii df cb cfdi bfhig gee gci fc"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "g fhfa eedda eaacf",
+          "cgb h b ac fda",
+          "ba hc giadb d f",
+          "gdgi fih",
+          "aih ic b fe c ag"
+        ]
+      ],
+      "expected": 6
+    },
+    {
+      "inputs": [
+        [
+          "ib",
+          "gihdf bbfd i dc h",
+          "ii g dbcc e fifh",
+          "bicf b b ib"
+        ]
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        [
+          "f",
+          "dae"
+        ]
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        [
+          "hbgbe eaehh hgefi ggg g a fe ed",
+          "d gbi dai",
+          "aagi"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "eaa if agh i ggfdg hc fb cc",
+          "ghccg ech g egg g agbah",
+          "gaaf dgfgc ieh fbbeh d dcge",
+          "hdfeb defg bh fh",
+          "f dfedd",
+          "iide cc g",
+          "ceai gde h",
+          "i",
+          "hbbg aie ec",
+          "e ahbhi i fggdg gdie fg gachf"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "hdef adac fdfa ge"
+        ]
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        [
+          "edd hhhah",
+          "gdi i fcb abeif gdb fedcd ddfa",
+          "fe begb dhcgh iafd"
+        ]
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        [
+          "bfe ageeb",
+          "de fie aaf dbh",
+          "d feeif abc ihdb hd cg ecaad",
+          "gcdd ch f c dgcd aiei dega",
+          "dca bbgg dfdcf efac",
+          "a iccfh ddd figc fdg bc"
+        ]
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        [
+          "iie ieh",
+          "c def age be hi gfe",
+          "g a hgaf",
+          "g",
+          "h c h hi ihdih",
+          "g iiae cbfd hig efg afdch"
+        ]
+      ],
+      "expected": 6
+    },
+    {
+      "inputs": [
+        [
+          "bbfei",
+          "idd id igd i caa f gb",
+          "bb c fhf bdhb bc ah"
+        ]
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        [
+          "hef bi cgg",
+          "ge i ebegb fe",
+          "ci hec ce aifbg hdef ebg",
+          "gf hahc",
+          "ddhdc g iff ec",
+          "g gd dg a bddgi",
+          "aedbg dhdbd a g d df fhb fgf",
+          "d",
+          "d aghd dbbc ibc",
+          "eigfh hh ehi a gia ffaa cei"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "g d iide",
+          "difi a fgdb",
+          "ba abdcb fhddb cbd aa aac",
+          "cd ge aceb",
+          "eageg d",
+          "ah hbgch hh aa hhi ife",
+          "ciega giei d h eg gdgd cda",
+          "ihidg i ai ibie a agac",
+          "b ef"
+        ]
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        [
+          "hcbic ghe a bc bhci hiic",
+          "d gcgab a gd eaaa ag gg fd",
+          "dd g efc heeff ggdac fhi",
+          "bb bgbg iab bc fedab b ddd dad"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "h ia faah h ad hah",
+          "ha bhbe cbdg g idcd febhc",
+          "gifh aaa gbdb",
+          "didec d gc cbfi hbhfi bdcd d",
+          "i igii",
+          "ha c",
+          "hfbce gacef ehhhi icc heiii higha ffheg gceb"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "adi g ic gfhe a ggdbg",
+          "hf",
+          "dgeh ie ifh cd eiei",
+          "ae iba fd g bcei ifdi bbc ba",
+          "dfai i h gdbgi fah",
+          "igcf be d ieie a igigd ibd",
+          "ehdc",
+          "fde",
+          "gbbcd cf g cga",
+          "idga egh edh ei fbgii"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "i",
+          "gcaa bea abhe fe f",
+          "eh hadaa cbbg da f icdc cciig gef",
+          "chaci ah",
+          "ic",
+          "hf ffh db gfa f bi ibh gdcbi",
+          "dbfha bi"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "ia ib",
+          "d fed ei dcefg ifabc i fhgic ae",
+          "cicd bchd a iageg ag",
+          "b bbg abi",
+          "a hhhb dbbbf di cdf ieid",
+          "cb eec e bedbd iai afiig",
+          "bdge chce"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "abb habh iddge eh a af",
+          "dddii hga bie f dc ggeh",
+          "bc ca edf g fga",
+          "h ge",
+          "cbi dbghf ie adg dgda dhd e bec",
+          "chibb db ifa bibff gbd h",
+          "bb",
+          "ecebf cc hhaic dfb ee",
+          "ccbgc fbbd ace a",
+          "i ghch haa f"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "dcgcg d fdha",
+          "b aeg ef gb afd",
+          "fec fe ifa f"
+        ]
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        [
+          "f hbf fe f",
+          "gi b"
+        ]
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        [
+          "fdc cgcf dcgda",
+          "caf fhe aei gc gifaa gdc ca gdh",
+          "ifbd d idb"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "a gfaag c ecec",
+          "hc dai bdade a fef ggeaa"
+        ]
+      ],
+      "expected": 6
+    },
+    {
+      "inputs": [
+        [
+          "hh i e hf iid id i"
+        ]
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        [
+          "dgdif ibf ffe gicdc aac",
+          "ebif gdgg ehd chai bcee g",
+          "ehagh ha chdgg fhe he f",
+          "d ae g dhh",
+          "e ebc da idbe c efeci c",
+          "cdife d ef",
+          "dbig efdeg dddf ieiga bch e igf",
+          "fd bi hdace fhdg"
+        ]
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        [
+          "fi",
+          "c",
+          "igh bci cb",
+          "cggb di cheia gddg f f",
+          "e",
+          "cdibh dfbfc hd ed efdge cdeed eb",
+          "gdeg g ib efh",
+          "aghi cbbeg",
+          "cd",
+          "ecea dgcb abe gh ihb db"
+        ]
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        [
+          "c fga befh fgi babf dc ei",
+          "ebicb heage",
+          "cc fb ga hdaf e dfgh",
+          "aigha cafd gi haihd ag decfh"
+        ]
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        [
+          "cid",
+          "cf a eih e fiddg",
+          "bfifg ffdh",
+          "feaa",
+          "bae e",
+          "gc hbge gb ebd",
+          "d ffh ifhf c effd bgge",
+          "df d bac b",
+          "ha hhc fdffe"
+        ]
+      ],
+      "expected": 6
+    },
+    {
+      "inputs": [
+        [
+          "afb hi cdg a cbace",
+          "a hh aagc ab ecffh",
+          "gihca",
+          "chgg a gicfc eh ge bi ecih gaee"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "gdfe cdege bccdf bie abdhf eeg fccbc eeei",
+          "gab cf icdfc",
+          "fgda"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "gieib hc hfee g h",
+          "ci bfg h cghi i bd ceh",
+          "dfb fggga echad b fie b bc egbhc",
+          "i ec eggdd ciaa ab",
+          "ge ceffe",
+          "bfh",
+          "gh dbdb geb h hhc dfec fhgai"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "befba feec eicdf afcbe bad icc",
+          "hdh cc hgf"
+        ]
+      ],
+      "expected": 6
+    },
+    {
+      "inputs": [
+        [
+          "hdg hd hhgd fe",
+          "hhaii c chceh gc gdg feeh ddc",
+          "agd d a fe fic hegfg hbg c"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "c",
+          "aa b",
+          "b die deha ib"
+        ]
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        [
+          "c",
+          "dece i f fahbg bdeeh i ff",
+          "bbbe efb hed hdcei hdi i",
+          "fg aaah dd ahdi ebgg cd fc",
+          "ci ccafc iia h hfif gegc",
+          "giagh gfi cegg dhea hga bbe",
+          "edbi d aba fadai",
+          "b iffh bb afb abcea",
+          "gf ei g bifgb di",
+          "cgdi ic"
+        ]
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        [
+          "e d hhge fdih fdd abab d"
+        ]
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        [
+          "dfbg cehge dci bheh aei ddhdc ecig",
+          "cgfh ceadb ggdc bacc",
+          "a afgii icd c ieid aeddh hiha g",
+          "eadde gaeeh",
+          "d fce ehad dbid dicb",
+          "hae ahf dhda dgi gih bi ec"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "efd",
+          "cebe hihhd dg bgeh dh i age",
+          "hhaeg agage hae",
+          "fdd ehe hcba giec aichi dgb heb dfa",
+          "gfaa gg cgga a",
+          "biefb fgc d e",
+          "bi"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "dhfc bfagh",
+          "aag cc",
+          "fgca fga",
+          "dah hggad bb ib ghc cg d ee",
+          "adac cacd dde bd chidh",
+          "eieg icihb bdgbi cfd gg",
+          "iiieh age c eacce gh bhgbh eb ceddb",
+          "iaabi fa cfaag i ibcd"
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        [
+          "ghd fecef edfe gi dee cadhd",
+          "fbc ehch ida fhgdc ie b hi",
+          "c deccf hiei dc fad ffi beig",
+          "hcbhc beicg edfg bda",
+          "h h",
+          "bdeeh ghf i b"
+        ]
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        [
+          "a geai adcci d eif h hef",
+          "g"
+        ]
+      ],
+      "expected": 7
+    }
+  ]
+}

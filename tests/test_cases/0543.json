@@ -1,0 +1,1336 @@
+{
+    "problem_id": "543",
+    "title": "Diameter of Binary Tree",
+    "function_name": "diameterOfBinaryTree",
+    "comparison": "exact",
+    "mode": "tree",
+    "test_cases": [
+        {
+            "inputs": [
+                [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                ]
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                [
+                    -12,
+                    18,
+                    null,
+                    -3,
+                    -16,
+                    null,
+                    null,
+                    9
+                ]
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                [
+                    0
+                ]
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                [
+                    -13,
+                    -3,
+                    18,
+                    19,
+                    16,
+                    5,
+                    null,
+                    null,
+                    -12,
+                    -10,
+                    -9,
+                    -5
+                ]
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                [
+                    -13,
+                    12,
+                    -14,
+                    -10,
+                    0,
+                    -15,
+                    10,
+                    -5,
+                    null,
+                    14,
+                    -8,
+                    -17,
+                    -12,
+                    -18,
+                    4
+                ]
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                [
+                    -8,
+                    null,
+                    -6,
+                    null,
+                    null,
+                    -16,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    -10
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    18,
+                    12,
+                    15,
+                    15,
+                    13,
+                    -2,
+                    -17,
+                    null,
+                    null,
+                    null,
+                    9,
+                    0,
+                    12,
+                    -19,
+                    1
+                ]
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                [
+                    13
+                ]
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                [
+                    18,
+                    null,
+                    6
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    -16,
+                    null,
+                    -12,
+                    null,
+                    null,
+                    null,
+                    -1,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    -6
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    16,
+                    null,
+                    11,
+                    null,
+                    null,
+                    -13,
+                    -5,
+                    null,
+                    null,
+                    null,
+                    null,
+                    -12,
+                    -9,
+                    null,
+                    10
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    7,
+                    null,
+                    -3
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    -5,
+                    null,
+                    6,
+                    null,
+                    null,
+                    -1,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    -1,
+                    0
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    5
+                ]
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                [
+                    18
+                ]
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                [
+                    12,
+                    1,
+                    9,
+                    12,
+                    null,
+                    -6,
+                    -19,
+                    -17,
+                    -4,
+                    null,
+                    null,
+                    null,
+                    -3,
+                    null,
+                    -20
+                ]
+            ],
+            "expected": 7
+        },
+        {
+            "inputs": [
+                [
+                    -20,
+                    -17,
+                    null,
+                    null,
+                    -20,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    8
+                ]
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                [
+                    -6
+                ]
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                [
+                    20,
+                    16,
+                    null,
+                    -8,
+                    null,
+                    null,
+                    null,
+                    7
+                ]
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                [
+                    -8,
+                    -10,
+                    -11,
+                    null,
+                    null,
+                    3,
+                    -8,
+                    null,
+                    null,
+                    null,
+                    null,
+                    -8,
+                    -17,
+                    2
+                ]
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                [
+                    -7,
+                    null,
+                    14,
+                    null,
+                    null,
+                    2,
+                    14,
+                    null,
+                    null,
+                    null,
+                    null,
+                    12,
+                    null,
+                    null,
+                    -4
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    7
+                ]
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                [
+                    -18
+                ]
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                [
+                    -16
+                ]
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                [
+                    -5,
+                    19,
+                    18,
+                    2,
+                    -12,
+                    -17,
+                    -15,
+                    1,
+                    null,
+                    null,
+                    -8,
+                    15,
+                    null,
+                    -8,
+                    4
+                ]
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                [
+                    9,
+                    -19,
+                    8,
+                    -17,
+                    1,
+                    null,
+                    1,
+                    1,
+                    -9,
+                    1,
+                    null,
+                    null,
+                    null,
+                    -19,
+                    12
+                ]
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                [
+                    7,
+                    null,
+                    14,
+                    null,
+                    null,
+                    null,
+                    -11,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    5
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    -13,
+                    -6,
+                    -5,
+                    -16,
+                    -6,
+                    12,
+                    -7,
+                    12,
+                    -1,
+                    null,
+                    9,
+                    -17,
+                    13,
+                    3
+                ]
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                [
+                    12,
+                    16,
+                    6,
+                    null,
+                    18,
+                    null,
+                    null,
+                    null,
+                    null,
+                    -15,
+                    -19
+                ]
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                [
+                    12,
+                    -17,
+                    0,
+                    -11,
+                    12,
+                    null,
+                    null,
+                    5,
+                    -2,
+                    null,
+                    1
+                ]
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                [
+                    -11,
+                    -8,
+                    null,
+                    2,
+                    -9
+                ]
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                [
+                    19,
+                    null,
+                    -7,
+                    null,
+                    null,
+                    -14,
+                    -20,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    -20,
+                    -6,
+                    -6
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    -5,
+                    19,
+                    null,
+                    7,
+                    -3,
+                    null,
+                    null,
+                    -3,
+                    null,
+                    5
+                ]
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                [
+                    18,
+                    16,
+                    null,
+                    -13,
+                    2,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    19
+                ]
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                [
+                    -3,
+                    -7,
+                    -9,
+                    null,
+                    -4,
+                    -19,
+                    null,
+                    null,
+                    null,
+                    null,
+                    14,
+                    1
+                ]
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                [
+                    18,
+                    -10,
+                    null,
+                    null,
+                    5,
+                    null,
+                    null,
+                    null,
+                    null,
+                    13,
+                    -4
+                ]
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                [
+                    -16,
+                    null,
+                    14,
+                    null,
+                    null,
+                    -19,
+                    14,
+                    null,
+                    null,
+                    null,
+                    null,
+                    -18,
+                    null,
+                    null,
+                    -17
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    -15,
+                    0,
+                    -12,
+                    -2,
+                    14,
+                    null,
+                    8,
+                    null,
+                    null,
+                    -20,
+                    -7,
+                    null,
+                    null,
+                    -17,
+                    20
+                ]
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                [
+                    -13,
+                    -17,
+                    null,
+                    -20,
+                    null,
+                    null,
+                    null,
+                    -9,
+                    -19
+                ]
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                [
+                    -5,
+                    18,
+                    -3,
+                    -17
+                ]
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                [
+                    15,
+                    null,
+                    -1,
+                    null,
+                    null,
+                    10,
+                    -13,
+                    null,
+                    null,
+                    null,
+                    null,
+                    8,
+                    -18
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    0
+                ]
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                [
+                    0,
+                    19,
+                    -2,
+                    13,
+                    null,
+                    null,
+                    1,
+                    null,
+                    5
+                ]
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                [
+                    6,
+                    -1,
+                    17,
+                    -15,
+                    null,
+                    null,
+                    -1,
+                    null,
+                    7,
+                    null,
+                    null,
+                    null,
+                    null,
+                    -18
+                ]
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                [
+                    18,
+                    null,
+                    15,
+                    null,
+                    null,
+                    -9,
+                    16,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    -20
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    -14,
+                    -15,
+                    null,
+                    null,
+                    -18,
+                    null,
+                    null,
+                    null,
+                    null,
+                    15,
+                    1
+                ]
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                [
+                    17
+                ]
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                [
+                    15,
+                    null,
+                    -15,
+                    null,
+                    null,
+                    7,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    -5,
+                    20
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    -13,
+                    null,
+                    -14
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    8,
+                    10,
+                    null,
+                    null,
+                    -4,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    7
+                ]
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                [
+                    19,
+                    null,
+                    -5,
+                    null,
+                    null,
+                    -20,
+                    -19,
+                    null,
+                    null,
+                    null,
+                    null,
+                    16,
+                    13,
+                    16
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    -18,
+                    2,
+                    7,
+                    19,
+                    10,
+                    -13,
+                    10,
+                    -18,
+                    null,
+                    5,
+                    -1,
+                    -3,
+                    -4,
+                    null,
+                    17
+                ]
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                [
+                    -19,
+                    2,
+                    null,
+                    13,
+                    null,
+                    null,
+                    null,
+                    -2,
+                    5
+                ]
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                [
+                    5
+                ]
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                [
+                    -12,
+                    null,
+                    -17,
+                    null,
+                    null,
+                    -14
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    -6,
+                    null,
+                    11,
+                    null,
+                    null,
+                    null,
+                    3,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    -15,
+                    -7
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    -18,
+                    null,
+                    -17,
+                    null,
+                    null,
+                    -16,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    -7
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    -11,
+                    10,
+                    19,
+                    -11,
+                    null,
+                    6,
+                    null,
+                    -18
+                ]
+            ],
+            "expected": 5
+        },
+        {
+            "inputs": [
+                [
+                    -18,
+                    16,
+                    -3,
+                    null,
+                    19,
+                    5,
+                    -14,
+                    null,
+                    null,
+                    -13,
+                    null,
+                    null,
+                    4,
+                    null,
+                    -14
+                ]
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                [
+                    -18,
+                    null,
+                    13,
+                    null,
+                    null,
+                    -8,
+                    -1,
+                    null,
+                    null,
+                    null,
+                    null,
+                    -19,
+                    11,
+                    null,
+                    9
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    0,
+                    null,
+                    0,
+                    null,
+                    null,
+                    17
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    12
+                ]
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                [
+                    -4,
+                    6,
+                    10,
+                    null,
+                    -17,
+                    null,
+                    null,
+                    null,
+                    null,
+                    5,
+                    18
+                ]
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                [
+                    3,
+                    null,
+                    0,
+                    null,
+                    null,
+                    null,
+                    18,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    -6,
+                    15
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    7
+                ]
+            ],
+            "expected": 0
+        },
+        {
+            "inputs": [
+                [
+                    -18,
+                    -20,
+                    1,
+                    null,
+                    null,
+                    -17,
+                    -17,
+                    null,
+                    null,
+                    null,
+                    null,
+                    -19,
+                    -13,
+                    6
+                ]
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                [
+                    7,
+                    null,
+                    9,
+                    null,
+                    null,
+                    -16,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    5
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    15,
+                    -17,
+                    null,
+                    11,
+                    null,
+                    null,
+                    null,
+                    null,
+                    -14
+                ]
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                [
+                    -3,
+                    5,
+                    -14,
+                    11,
+                    10,
+                    null,
+                    null,
+                    16,
+                    null,
+                    11
+                ]
+            ],
+            "expected": 4
+        },
+        {
+            "inputs": [
+                [
+                    -3,
+                    null,
+                    7,
+                    null,
+                    null,
+                    20,
+                    -17,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    8,
+                    null,
+                    17
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    -10,
+                    null,
+                    -10
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    3,
+                    null,
+                    -17,
+                    null,
+                    null,
+                    null,
+                    1,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    -18,
+                    -9
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    -6,
+                    null,
+                    18,
+                    null,
+                    null,
+                    15
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    -5,
+                    null,
+                    -14,
+                    null,
+                    null,
+                    16,
+                    19,
+                    null,
+                    null,
+                    null,
+                    null,
+                    5,
+                    8,
+                    null,
+                    -10
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    10,
+                    null,
+                    -2,
+                    null,
+                    null,
+                    -16,
+                    10,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    -9
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    -1,
+                    -2
+                ]
+            ],
+            "expected": 1
+        },
+        {
+            "inputs": [
+                [
+                    15,
+                    19,
+                    -6,
+                    19,
+                    null,
+                    -10,
+                    -2,
+                    -20,
+                    7,
+                    null,
+                    null,
+                    null,
+                    null,
+                    -12
+                ]
+            ],
+            "expected": 6
+        },
+        {
+            "inputs": [
+                [
+                    19,
+                    16,
+                    null,
+                    null,
+                    6,
+                    null,
+                    null,
+                    null,
+                    null,
+                    12
+                ]
+            ],
+            "expected": 2
+        },
+        {
+            "inputs": [
+                [
+                    -5,
+                    1,
+                    -15,
+                    null,
+                    null,
+                    5,
+                    -10,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    18,
+                    null,
+                    10
+                ]
+            ],
+            "expected": 3
+        },
+        {
+            "inputs": [
+                [
+                    -5
+                ]
+            ],
+            "expected": 0
+        }
+    ]
+}

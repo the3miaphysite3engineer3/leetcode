@@ -1,0 +1,488 @@
+{
+  "problem_id": "0451",
+  "title": "Sort Characters By Frequency",
+  "function_name": "frequencySort",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        "tree"
+      ],
+      "expected": "eetr"
+    },
+    {
+      "inputs": [
+        "cccaaa"
+      ],
+      "expected": "cccaaa"
+    },
+    {
+      "inputs": [
+        "Aabb"
+      ],
+      "expected": "bbAa"
+    },
+    {
+      "inputs": [
+        "eeeee"
+      ],
+      "expected": "eeeee"
+    },
+    {
+      "inputs": [
+        "a"
+      ],
+      "expected": "a"
+    },
+    {
+      "inputs": [
+        "b10afFDffEDC"
+      ],
+      "expected": "fffDDb10aFEC"
+    },
+    {
+      "inputs": [
+        "bfEEa"
+      ],
+      "expected": "EEbfa"
+    },
+    {
+      "inputs": [
+        "3dDeaACdC3a01eABE00fAED2e"
+      ],
+      "expected": "eeeAAA00033ddDDaaCCEE1Bf2"
+    },
+    {
+      "inputs": [
+        "BcfC2F"
+      ],
+      "expected": "BcfC2F"
+    },
+    {
+      "inputs": [
+        "A1bb11"
+      ],
+      "expected": "111bbA"
+    },
+    {
+      "inputs": [
+        "ea33f2ED1f12AE33CffE"
+      ],
+      "expected": "3333ffffEEE2211eaDAC"
+    },
+    {
+      "inputs": [
+        "fA10cbbCbEDD0ccDaa21afd1"
+      ],
+      "expected": "111cccbbbDDDaaaff00ACE2d"
+    },
+    {
+      "inputs": [
+        "ffFBCadc0eEb"
+      ],
+      "expected": "ffFBCadc0eEb"
+    },
+    {
+      "inputs": [
+        "cbB2BB0dC1Cdcabe21bCBCFF1"
+      ],
+      "expected": "BBBBCCCCbbb111cc22ddFF0ae"
+    },
+    {
+      "inputs": [
+        "B1A0c"
+      ],
+      "expected": "B1A0c"
+    },
+    {
+      "inputs": [
+        "aEdfebBFdc0bdC"
+      ],
+      "expected": "dddbbaEfeBFc0C"
+    },
+    {
+      "inputs": [
+        "3dA1ddeDFDb3DDFBf0Ef2aaddcc"
+      ],
+      "expected": "dddddDDDD33FFffaaccA1ebB0E2"
+    },
+    {
+      "inputs": [
+        "a00EEDAfAcefEAFE2d"
+      ],
+      "expected": "EEEEAAA00ffaDceF2d"
+    },
+    {
+      "inputs": [
+        "0CcafaebaE0be"
+      ],
+      "expected": "aaa00eebbCcfE"
+    },
+    {
+      "inputs": [
+        "eeDba3a3C0bCAFc23A3DbA"
+      ],
+      "expected": "3333bbbAAAeeDDaaCC0Fc2"
+    },
+    {
+      "inputs": [
+        "fdf1BAcAE2C1fabc"
+      ],
+      "expected": "fff11AAccdBE2Cab"
+    },
+    {
+      "inputs": [
+        "eF2b22C"
+      ],
+      "expected": "222eFbC"
+    },
+    {
+      "inputs": [
+        "fE1"
+      ],
+      "expected": "fE1"
+    },
+    {
+      "inputs": [
+        "faD"
+      ],
+      "expected": "faD"
+    },
+    {
+      "inputs": [
+        "fACEb0ffB1DcF"
+      ],
+      "expected": "fffACEb0B1DcF"
+    },
+    {
+      "inputs": [
+        "3AcF3DFf"
+      ],
+      "expected": "33FFAcDf"
+    },
+    {
+      "inputs": [
+        "D13cCbCb3cC2a1e21BD0"
+      ],
+      "expected": "111CCCDD33ccbb22aeB0"
+    },
+    {
+      "inputs": [
+        "AFCbFD0CadBF"
+      ],
+      "expected": "FFFCCAbD0adB"
+    },
+    {
+      "inputs": [
+        "Ef13C23cAAdfeba1C1AdbacF"
+      ],
+      "expected": "111AAAff33CCccddbbaaE2eF"
+    },
+    {
+      "inputs": [
+        "23F"
+      ],
+      "expected": "23F"
+    },
+    {
+      "inputs": [
+        "0b2Fd"
+      ],
+      "expected": "0b2Fd"
+    },
+    {
+      "inputs": [
+        "d3E2e2AFC1bCA2CFd3"
+      ],
+      "expected": "222CCCdd33AAFFEe1b"
+    },
+    {
+      "inputs": [
+        "Bfb0EefCd1"
+      ],
+      "expected": "ffBb0EeCd1"
+    },
+    {
+      "inputs": [
+        "Dfb11cbacABbdf1EB3eca"
+      ],
+      "expected": "bbb111cccffaaBBDAdE3e"
+    },
+    {
+      "inputs": [
+        "dE0D0cbab3Ba1"
+      ],
+      "expected": "00bbaadEDc3B1"
+    },
+    {
+      "inputs": [
+        "d"
+      ],
+      "expected": "d"
+    },
+    {
+      "inputs": [
+        "aA0a1A1"
+      ],
+      "expected": "aaAA110"
+    },
+    {
+      "inputs": [
+        "12b1eCBb030E"
+      ],
+      "expected": "11bb002eCB3E"
+    },
+    {
+      "inputs": [
+        "F210a1F3e0Cf22eEbACfC"
+      ],
+      "expected": "222CCCFF1100eeffa3EbA"
+    },
+    {
+      "inputs": [
+        "A1b3A3b0ffDEaEc3ADA"
+      ],
+      "expected": "AAAA333bbffDDEE10ac"
+    },
+    {
+      "inputs": [
+        "dA"
+      ],
+      "expected": "dA"
+    },
+    {
+      "inputs": [
+        "aA2cBe3cfFEF2E"
+      ],
+      "expected": "22ccFFEEaABe3f"
+    },
+    {
+      "inputs": [
+        "B21BbF"
+      ],
+      "expected": "BB21bF"
+    },
+    {
+      "inputs": [
+        "EBBbBfdbe3bBaCa"
+      ],
+      "expected": "BBBBbbbaaEfde3C"
+    },
+    {
+      "inputs": [
+        "1eD3fBBCd12a1d1"
+      ],
+      "expected": "1111BBddeD3fC2a"
+    },
+    {
+      "inputs": [
+        "1CAF0cfE3aDaF1F2fcd"
+      ],
+      "expected": "FFF11ccffaaCA0E3D2d"
+    },
+    {
+      "inputs": [
+        "00e3dDbeFb"
+      ],
+      "expected": "00eebb3dDF"
+    },
+    {
+      "inputs": [
+        "fbDFFE12EFDb33E"
+      ],
+      "expected": "FFFEEEbbDD33f12"
+    },
+    {
+      "inputs": [
+        "bDAAabeef1f23f"
+      ],
+      "expected": "fffbbAAeeDa123"
+    },
+    {
+      "inputs": [
+        "Abf22A0B2ACFe0CfcBeBabd3e"
+      ],
+      "expected": "AAA222BBBeeebbff00CCFcad3"
+    },
+    {
+      "inputs": [
+        "F3acDfBd0F0DeD"
+      ],
+      "expected": "DDDFF003acfBde"
+    },
+    {
+      "inputs": [
+        "d"
+      ],
+      "expected": "d"
+    },
+    {
+      "inputs": [
+        "dCA2AAdbE3d3fAfcDba3EF"
+      ],
+      "expected": "AAAAddd333bbEEffC2cDaF"
+    },
+    {
+      "inputs": [
+        "eA2a12bAe"
+      ],
+      "expected": "eeAA22a1b"
+    },
+    {
+      "inputs": [
+        "A2ECA00eFDCeA2d23F1E"
+      ],
+      "expected": "AAA222EECC00eeFFDd31"
+    },
+    {
+      "inputs": [
+        "eCECfe312BDCdAd1fAEBcbEeF"
+      ],
+      "expected": "eeeCCCEEEff11BBddAA32DcbF"
+    },
+    {
+      "inputs": [
+        "fDdA2cfFeBcf1Dd3ADBa1BEbb1ca"
+      ],
+      "expected": "fffDDDcccBBB111ddAAaabb2Fe3E"
+    },
+    {
+      "inputs": [
+        "BE"
+      ],
+      "expected": "BE"
+    },
+    {
+      "inputs": [
+        "cf22E30cd0Fe2"
+      ],
+      "expected": "222cc00fE3dFe"
+    },
+    {
+      "inputs": [
+        "1E0f1aFbFABcfDdAfCC3AFFdE2BB0"
+      ],
+      "expected": "FFFFfffAAABBB11EE00ddCCabcD32"
+    },
+    {
+      "inputs": [
+        "bAEfcaC12ef1Aa3Dd"
+      ],
+      "expected": "AAffaa11bEcC2e3Dd"
+    },
+    {
+      "inputs": [
+        "DBfCDdCFBef1"
+      ],
+      "expected": "DDBBffCCdFe1"
+    },
+    {
+      "inputs": [
+        "aCbBF13bF3f3daEC2Df10f3DeC3"
+      ],
+      "expected": "33333CCCfffaabbFF11DDBdE20e"
+    },
+    {
+      "inputs": [
+        "CfaeCd23baD12BE2e0202E01D1D"
+      ],
+      "expected": "22222DDD111000CCaaeeEEfd3bB"
+    },
+    {
+      "inputs": [
+        "2d0cCfAf1aAa03bced"
+      ],
+      "expected": "dd00ccffAAaa2C13be"
+    },
+    {
+      "inputs": [
+        "2eeef1ACb13Cb"
+      ],
+      "expected": "eee11CCbb2fA3"
+    },
+    {
+      "inputs": [
+        "0cc0dFEeaBC3BA1bDCfFaeccDDAEF"
+      ],
+      "expected": "ccccFFFDDD00EEeeaaBBCCAAd31bf"
+    },
+    {
+      "inputs": [
+        "BCBb23Dbede1"
+      ],
+      "expected": "BBbbeeC23Dd1"
+    },
+    {
+      "inputs": [
+        "30"
+      ],
+      "expected": "30"
+    },
+    {
+      "inputs": [
+        "EcbfDc3DDF0BfAeADeAB0fc10ca1"
+      ],
+      "expected": "ccccDDDDfff000AAABBee11Eb3Fa"
+    },
+    {
+      "inputs": [
+        "a0f3EBF1DdBBAbE"
+      ],
+      "expected": "BBBEEa0f3F1DdAb"
+    },
+    {
+      "inputs": [
+        "AcAfF00E01EF13BCD20B"
+      ],
+      "expected": "0000AAFFEE11BBcf3CD2"
+    },
+    {
+      "inputs": [
+        "f1DA0aDA01"
+      ],
+      "expected": "11DDAA00fa"
+    },
+    {
+      "inputs": [
+        "a"
+      ],
+      "expected": "a"
+    },
+    {
+      "inputs": [
+        "2A3EdbAf2CBd0b"
+      ],
+      "expected": "22AAddbb3EfCB0"
+    },
+    {
+      "inputs": [
+        "f32b0af3FeCeCADce2bb0BF023aD"
+      ],
+      "expected": "333222bbb000eeeffaaFFCCDDAcB"
+    },
+    {
+      "inputs": [
+        "EECFa1f1011ddaDAdfbeA3bFfcB320"
+      ],
+      "expected": "1111fffdddEEFFaa00AAbb33CDecB2"
+    },
+    {
+      "inputs": [
+        "cdB221aD3Eaf"
+      ],
+      "expected": "22aacdB1D3Ef"
+    },
+    {
+      "inputs": [
+        "AFfbBdBC1"
+      ],
+      "expected": "BBAFfbdC1"
+    },
+    {
+      "inputs": [
+        "adaFD3f320FAcfb03DAEAcF1"
+      ],
+      "expected": "FFF333AAAaaDDff00ccd2bE1"
+    }
+  ]
+}

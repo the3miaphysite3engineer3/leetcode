@@ -1,0 +1,488 @@
+{
+  "problem_id": "1496",
+  "title": "Path Crossing",
+  "function_name": "isPathCrossing",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        "NES"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "NESWW"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "NNSWWEWSS"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "NW"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "WNEESSS"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "NNNESSENWWEWNNS"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "WWWWESWSSWNWNWWNNNWW"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "NSNWEWNESSSESW"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "SSENNSWNNE"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "WSEEESEWSSWN"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "WWWSSEE"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "SSSNS"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "WEWESEWWSEEN"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "WESEESWWWESWWWWS"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "ESWWNSWSENENSSNESSW"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "ESEW"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "WN"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "NWSNSWESENN"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "WENSWWWEESWWS"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "ENSNEEE"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "NS"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "NE"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "WNWE"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "WSSWSSSEENSWN"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "NWSW"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "WESSNWWNNEWSWNNESWSE"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "WNWENWEWWESNSN"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "SWEEWSEEWSWNWEWSS"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "WSSENNNNENEEWSN"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "WEE"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "WSNSEEENWWNNWSESSW"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "WESNSEEENNNWNEWEE"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "WSNNSNSSEEW"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "EENSNNNWSENWENWENSES"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "W"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "WENESSE"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "NNSNWEESNWWNNESSEE"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "SESEEEWWESSE"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "N"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "EWWNSSNSW"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "EWNESNESENWSEWNE"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "WNENEEENENWWWWESWWNW"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "SWEWWESNNSNSSWNNSS"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "NWEWNWWE"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "WSSWEWEEWNESSSESEE"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "WENENWENNWWEEE"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "WESNWESWENENW"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "NSE"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "NSWWNNN"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "NSEESWSWSE"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "NNS"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "NSWEESSNNENEESN"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "WEENSEESWSEENSWSSSE"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "WSNNSWSEE"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "ESEWSN"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "SEWSESWNSWWNSSNWNES"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "S"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "NWSSSWNSWEWE"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "NNNSWNEEEEWNEWN"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "SNWNEWNN"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "EEWEW"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "ENSEESW"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "WEWESWS"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "WENSEWWNSNSSNSW"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "WNWSSSNSW"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "WNS"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "SWSNWEESSSWWES"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "WWNENNE"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "ESWWWSESEENEEESE"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "E"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "SENEEEESSSWNWNEWSNW"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "WENESWNEWWESEEEWSW"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "SENNNWSSWWSSWSNWSE"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "NNN"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "E"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "NNNENNSEEEWEENNSSNWN"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "S"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "EWWSEW"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "SWENNEW"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "NEENENWNNNWEE"
+      ],
+      "expected": true
+    }
+  ]
+}

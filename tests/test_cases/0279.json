@@ -1,0 +1,488 @@
+{
+  "problem_id": "0279",
+  "title": "Perfect Squares",
+  "function_name": "numSquares",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        12
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        13
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        1
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        2
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        3
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        4
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        7
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        9
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        16
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        100
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        691
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        942
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        53
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        664
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        407
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        317
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        14
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        381
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        737
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        921
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        975
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        907
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        838
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        770
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        77
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        94
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        109
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        480
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        300
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        945
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        561
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        513
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        212
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        288
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        784
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        694
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        727
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        279
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        521
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        821
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        253
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        660
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        644
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        656
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        693
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        216
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        929
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        364
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        979
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        579
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        268
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        55
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        725
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        758
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        523
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        177
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        149
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        915
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        576
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        475
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        469
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        497
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        859
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        464
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        707
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        414
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        266
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        526
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        120
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        313
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        5
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        57
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        378
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        52
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        93
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        337
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        929
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        179
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        728
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        396
+      ],
+      "expected": 3
+    }
+  ]
+}

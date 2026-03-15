@@ -1,0 +1,488 @@
+{
+    "problem_id": "0151",
+    "title": "Reverse Words in a String",
+    "function_name": "reverseWords",
+    "comparison": "exact",
+    "test_cases": [
+        {
+            "inputs": [
+                "the sky is blue"
+            ],
+            "expected": "blue is sky the"
+        },
+        {
+            "inputs": [
+                "  hello world  "
+            ],
+            "expected": "world hello"
+        },
+        {
+            "inputs": [
+                "a good   example"
+            ],
+            "expected": "example good a"
+        },
+        {
+            "inputs": [
+                "  Bob   Loves   Alice   "
+            ],
+            "expected": "Alice Loves Bob"
+        },
+        {
+            "inputs": [
+                "Alice does not even like bob"
+            ],
+            "expected": "bob like even not does Alice"
+        },
+        {
+            "inputs": [
+                "hello"
+            ],
+            "expected": "hello"
+        },
+        {
+            "inputs": [
+                "  a  "
+            ],
+            "expected": "a"
+        },
+        {
+            "inputs": [
+                "a b c"
+            ],
+            "expected": "c b a"
+        },
+        {
+            "inputs": [
+                "  "
+            ],
+            "expected": ""
+        },
+        {
+            "inputs": [
+                "x"
+            ],
+            "expected": "x"
+        },
+        {
+            "inputs": [
+                "    hello b example world    "
+            ],
+            "expected": "world example b hello"
+        },
+        {
+            "inputs": [
+                "    test"
+            ],
+            "expected": "test"
+        },
+        {
+            "inputs": [
+                "   world"
+            ],
+            "expected": "world"
+        },
+        {
+            "inputs": [
+                "good goodworld bathe   "
+            ],
+            "expected": "bathe goodworld good"
+        },
+        {
+            "inputs": [
+                "hello"
+            ],
+            "expected": "hello"
+        },
+        {
+            "inputs": [
+                " hellohelloblueb"
+            ],
+            "expected": "hellohelloblueb"
+        },
+        {
+            "inputs": [
+                "baris  the  testthethe"
+            ],
+            "expected": "testthethe the baris"
+        },
+        {
+            "inputs": [
+                "    bluetheis"
+            ],
+            "expected": "bluetheis"
+        },
+        {
+            "inputs": [
+                "world foo   a    sky the"
+            ],
+            "expected": "the sky a foo world"
+        },
+        {
+            "inputs": [
+                "bar foo example  "
+            ],
+            "expected": "example foo bar"
+        },
+        {
+            "inputs": [
+                "    isworldabar  example "
+            ],
+            "expected": "example isworldabar"
+        },
+        {
+            "inputs": [
+                "the  is worldthehellois  "
+            ],
+            "expected": "worldthehellois is the"
+        },
+        {
+            "inputs": [
+                "   sky is   bar is    world"
+            ],
+            "expected": "world is bar is sky"
+        },
+        {
+            "inputs": [
+                "     the blue example sky bar"
+            ],
+            "expected": "bar sky example blue the"
+        },
+        {
+            "inputs": [
+                "foothegood is  is   "
+            ],
+            "expected": "is is foothegood"
+        },
+        {
+            "inputs": [
+                "asky good   blue"
+            ],
+            "expected": "blue good asky"
+        },
+        {
+            "inputs": [
+                "world bar b good  "
+            ],
+            "expected": "good b bar world"
+        },
+        {
+            "inputs": [
+                "     abis   "
+            ],
+            "expected": "abis"
+        },
+        {
+            "inputs": [
+                " bbaris   worldfoob   "
+            ],
+            "expected": "worldfoob bbaris"
+        },
+        {
+            "inputs": [
+                "bluebar"
+            ],
+            "expected": "bluebar"
+        },
+        {
+            "inputs": [
+                "  blue the the b  "
+            ],
+            "expected": "b the the blue"
+        },
+        {
+            "inputs": [
+                " bisa"
+            ],
+            "expected": "bisa"
+        },
+        {
+            "inputs": [
+                "skyworld foobarexampleis"
+            ],
+            "expected": "foobarexampleis skyworld"
+        },
+        {
+            "inputs": [
+                "blueisfoois foo"
+            ],
+            "expected": "foo blueisfoois"
+        },
+        {
+            "inputs": [
+                "    worldb   skyissky  "
+            ],
+            "expected": "skyissky worldb"
+        },
+        {
+            "inputs": [
+                "  worldhello   skybar thefoo"
+            ],
+            "expected": "thefoo skybar worldhello"
+        },
+        {
+            "inputs": [
+                "good    bar test blue  "
+            ],
+            "expected": "blue test bar good"
+        },
+        {
+            "inputs": [
+                "sky  "
+            ],
+            "expected": "sky"
+        },
+        {
+            "inputs": [
+                "sky"
+            ],
+            "expected": "sky"
+        },
+        {
+            "inputs": [
+                "      is good   world   good foo a   "
+            ],
+            "expected": "a foo good world good is"
+        },
+        {
+            "inputs": [
+                "  example  thehellotestblue "
+            ],
+            "expected": "thehellotestblue example"
+        },
+        {
+            "inputs": [
+                "helloexampletest   a"
+            ],
+            "expected": "a helloexampletest"
+        },
+        {
+            "inputs": [
+                "hello hello   "
+            ],
+            "expected": "hello hello"
+        },
+        {
+            "inputs": [
+                "skybarbara  aa"
+            ],
+            "expected": "aa skybarbara"
+        },
+        {
+            "inputs": [
+                "skyfoo   "
+            ],
+            "expected": "skyfoo"
+        },
+        {
+            "inputs": [
+                "    is    is is bar   good     good    "
+            ],
+            "expected": "good good bar is is is"
+        },
+        {
+            "inputs": [
+                "sky     good hello the b bar"
+            ],
+            "expected": "bar b the hello good sky"
+        },
+        {
+            "inputs": [
+                "skybbar   worldhello"
+            ],
+            "expected": "worldhello skybbar"
+        },
+        {
+            "inputs": [
+                "  is"
+            ],
+            "expected": "is"
+        },
+        {
+            "inputs": [
+                "worldthehellothe"
+            ],
+            "expected": "worldthehellothe"
+        },
+        {
+            "inputs": [
+                "test   is foo world   "
+            ],
+            "expected": "world foo is test"
+        },
+        {
+            "inputs": [
+                "   foo a the is    "
+            ],
+            "expected": "is the a foo"
+        },
+        {
+            "inputs": [
+                "the   the    the foo    example"
+            ],
+            "expected": "example foo the the the"
+        },
+        {
+            "inputs": [
+                "  b"
+            ],
+            "expected": "b"
+        },
+        {
+            "inputs": [
+                "ishellofoo good   bar"
+            ],
+            "expected": "bar good ishellofoo"
+        },
+        {
+            "inputs": [
+                "   goodbartest test blue  foo"
+            ],
+            "expected": "foo blue test goodbartest"
+        },
+        {
+            "inputs": [
+                "example  hellobsky   "
+            ],
+            "expected": "hellobsky example"
+        },
+        {
+            "inputs": [
+                "b   skyworldtesthello   "
+            ],
+            "expected": "skyworldtesthello b"
+        },
+        {
+            "inputs": [
+                " thebar"
+            ],
+            "expected": "thebar"
+        },
+        {
+            "inputs": [
+                "testhello  "
+            ],
+            "expected": "testhello"
+        },
+        {
+            "inputs": [
+                "b world blue test test"
+            ],
+            "expected": "test test blue world b"
+        },
+        {
+            "inputs": [
+                "  is  isfoobartesttest  "
+            ],
+            "expected": "isfoobartesttest is"
+        },
+        {
+            "inputs": [
+                "b example   b"
+            ],
+            "expected": "b example b"
+        },
+        {
+            "inputs": [
+                "test hello"
+            ],
+            "expected": "hello test"
+        },
+        {
+            "inputs": [
+                " bexample   "
+            ],
+            "expected": "bexample"
+        },
+        {
+            "inputs": [
+                "  worldtheblueisisbar"
+            ],
+            "expected": "worldtheblueisisbar"
+        },
+        {
+            "inputs": [
+                "examplethefoothe"
+            ],
+            "expected": "examplethefoothe"
+        },
+        {
+            "inputs": [
+                "  test"
+            ],
+            "expected": "test"
+        },
+        {
+            "inputs": [
+                "  b"
+            ],
+            "expected": "b"
+        },
+        {
+            "inputs": [
+                "aworldtest"
+            ],
+            "expected": "aworldtest"
+        },
+        {
+            "inputs": [
+                " isbarblue "
+            ],
+            "expected": "isbarblue"
+        },
+        {
+            "inputs": [
+                "      testgood"
+            ],
+            "expected": "testgood"
+        },
+        {
+            "inputs": [
+                "   test thegoodskyexample"
+            ],
+            "expected": "thegoodskyexample test"
+        },
+        {
+            "inputs": [
+                "skyhellofoo "
+            ],
+            "expected": "skyhellofoo"
+        },
+        {
+            "inputs": [
+                "  example   bar     blue"
+            ],
+            "expected": "blue bar example"
+        },
+        {
+            "inputs": [
+                "blueexamplethe skytest"
+            ],
+            "expected": "skytest blueexamplethe"
+        },
+        {
+            "inputs": [
+                "sky"
+            ],
+            "expected": "sky"
+        },
+        {
+            "inputs": [
+                " skytheworld"
+            ],
+            "expected": "skytheworld"
+        },
+        {
+            "inputs": [
+                "the  "
+            ],
+            "expected": "the"
+        },
+        {
+            "inputs": [
+                "b   skyworld  "
+            ],
+            "expected": "skyworld b"
+        }
+    ]
+}

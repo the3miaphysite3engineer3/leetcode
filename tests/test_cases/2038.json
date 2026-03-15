@@ -1,0 +1,488 @@
+{
+  "problem_id": "2038",
+  "title": "Remove Colored Pieces if Both Neighbors are the Same Color",
+  "function_name": "winnerOfGame",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        "AAABABB"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "AA"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "ABBBBBBBAAA"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "A"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "B"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "AB"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "AAAA"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "BBBB"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "BBBAABBABBABBABBAAAABAABAAABAAAABAABBBABBBAAAABBBBAAABAABAABABAABAAABBBBABAAAB"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "BABABBBAAAAABAABBABAAAABBAAABAABBABBBBBBBABABBBABBBABBAABBBABAAABABA"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "ABAAABAAABABBABBBA"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "AAAABAAABBABBBABAAABAAABBAAA"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "BBABBABBBBAABABAAAABAABBABABABBBAAAABAAAAAABAABBBBBBBBBABABBAABBBAAABBBBBABBBABABBBABABABBBB"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "BBBBAAAABBAABBBAAAAAABABBBBBABAABBBABABABBAAABAAABAAAAAABABAAABAABBABABBBAABABBBBAABABBBBBB"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "BABABABABABBABBABABBAAABBABABBABABBAAABBBBBAABABBAABBABBABBBAABABBBAABBAAAAAAA"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "ABBBAAABBAAAAAAABAABAAAAAABAAAAABAABAAAABAAAABBAAAA"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "BAAABBBBAAAAABBBAABBABABABABBBBBAABABAABAAABAAAAABAAAAABAABAABAAABABBABAAAAAAABB"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "BBAAABBAAABBAABBBAAABABABBABBAAAAABABBAABABAABAABABBBABBABBBBAABBBBBAAAAB"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "BBABABBAABABABBAAAAAAAABAAAAABABABAAABAABABBAABBBAA"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "ABBBBBBAAABABABBAAAAAABBBBBBBBABABBAABAAABBBBABBAAAAABBABBA"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "BABAAABABBABBABAAABBAABAABBABBBBBABAABBBAAABBBAABABAABABA"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "ABBAABAA"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "AABBABBABABABAAABBABBBBBABABBAAAAB"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "BBBBBBAABABBAABAAAABBBABBBABABBABABBABAAABBA"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "BAABBAAABBABBAAAAABBBABBABAAABBABB"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "BAABBABBAAABABBABABBABAAAABAAAABAABAABABAAAAABABBABABBBBBAAAABABBABBABABAABABBABBBBBBABAAABBBBB"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "ABBBABBAABABABABAAABBAABBBBABABBBBABBAAAAABABAABBBAAABBBABABBBABABABBBABBBBBABBBABAAA"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "BBBAABBAABABBBAABBBAAAABBABAABABAABABBBBABA"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "ABBABABBABABAABABAABAABBAABBABAABBAAABAABABAAAAABBBABABBAAAAAABAAAAABBBBBBBABBBBBBBBBAABABB"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "BAAAABABBAAAAAAAAABABBBABA"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "BBABABABBBABABBBBAA"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "BABABBAAABABBBABAAAABABBAABABABBABBABBBBBBBBAAAABABABA"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "BBBBBBAABBBAABBBAABBABAAAABABBABABBAAABAABABAABBBBBABBBAAABBBABABBABBBABBBBABBBAABABBBABBBABAAA"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "BBAAABBAABBBAAAABBBBBBBBAAB"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "ABABABABAABABBAAAAABBBAABBAAA"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "BABABBABABAAAABABBBABBBBBBABAABAAAABAAAABABBBABAABBAAAAAABBBAABAAAAAABBAAB"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "BBABBBAAAABBBBAAABAABAABBABAAAABBABBBBABAAABBBABAABBABB"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "ABAAAAABABBBBBBAABABBBBBAAABABBAABBBABBBBBBAABBBAAABBBBAAABABAABAABABB"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "BABABABAAAAAAA"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "AABBBBABA"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "ABA"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "BABBBBABAABBBBBABBBABBBBAAABBABBBBAABB"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "AAABAAAABBABBBAABABAABBABBAAAAAABABBBBABBBABAABAAABBBAAAAAABBABABAAAA"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "BBABABAABBAAAABBBBBABABAAB"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "ABA"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "BBBAAAABAAABAABBAAABABBABAAAAABBABBBBBBAAAAAAABBBBABAAAABABBBBAABBABB"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "BAABBBBBBABBABBABBBBABABAABAAABBBAABABBBBBBA"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "BABAAAAABBBAABBBAABBBAAAAABBABBBABABBBABAAAABABABABABBBBBAABAABBBBABAAAAABAAAAABABAB"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "ABBBBBAABAABAAABBAAAAABBABBABBBBBABBAAAABABABBBBABBBAAAAABBABBBABAABAAABBAABABAAAABBABBBAABABA"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "AAAAABBABBAABBBBABABBBAABAAABBAABBAAABABBAABBBAABABBAABBBBBBAAABBAABAAABBBABAAABABAAAABA"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "BBABBAAAABABBBBBAAABAAAAABAABAABBAAABBABABABAABAABAAAAB"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "ABBBAA"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "ABBAABBBBABABAAAABBABBAAABABABBABABAAABBAAAABBBBBAAABABBAAABBBBBBBABBBBB"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "ABAABBABBBAAAAAABAABABABAABABAABBBBBABBBAAABABBAB"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "ABAABABBBAAAAABABABABAABABAAABBBBBBBABBAB"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "ABBABBBBBBABAAABABBABAAABABBBBAABAABBABABBBAABABAAABBBBBAABBBAAAAABBABABABABBBABAABABBAABBBBABABBB"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "ABBAAABABBBAAAAABBABBABAABBABABBBABABABBBBBBBABAABAABABBBABABAABBAABAAB"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "AABAAABBBBBABABAABBABBABABBABAABAABBBBAABAABBAABA"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "ABBBBBABBABBBAAABABABBAABAABABAAAAABBBBBBBABAABAABBABAABABABAAABBAAAABBBBB"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "BABABAABABBBABABABBBBAAABBABBABABBAABABBABA"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "BBAABBBAAABABBBAABBAAABBABBBABABBAAAABBAAAABAABABABABBAABABAAA"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "ABABAABAAABABAAABBABBAAAAAABBBBAAAABBBBBAAABABAABBBBAABAAAAAABBBBBB"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "ABBBBAAABBABABBABBBABABAAAAABABBBBAABAABBBBBBAABAABAABBBABBAAABBBBAABBABBAAABAAABBABAABBBAAA"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "AABBAABABBAABBBBABABABAAAAAAABBBABBBBBBAAAAABAABABABAABBBBAABAABAA"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "AABABBBBABBBBBBAAABAAABBBAABAABBBAABBBABBBBABAABAAAABBBABBBBBBABABAABBBAAABBAAB"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "AABBABBBABABBBBBABAAAAAAAABABBABABABBBBABABBAAAABBBABAABBBBBABAABABABABAAABAABABB"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "BBBBABABBBBAAAABBABABBAAABAABBBBBBBBAABAABABBBAA"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "ABABBABBBBBABABAABAABBBBBAAB"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "BABAABABBBBB"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "ABABBBAAABABAAABABBABBABAAABA"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "BABBABABBBBBABBBABAABABBABAAAAAAAABABBBAAAABBABBBAAABABABBABBBBAAABBABBABAAAAAAABABBABABB"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "BABBBBBBBBABAAAAABAABBBBBABAABAAABBBBBB"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "AABBBABBBBAAABBBBBAABAABAAABAAABBABABBABAABABABBABABBAAB"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "BBABBABAABBBABBBABBBBBBBAAABBBBABABABBBBBBBABA"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "AABBBBBAABB"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "BAAAAAABABBBABABBBBABAABBABBABAAAAAABBAABABBBABA"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "AABABBBBABABBAABBAABBBABBBBAABBBABABAAAABAAABBABABBBAABBABBBAABBB"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "BABBABABABBBAABABBBABABABAB"
+      ],
+      "expected": false
+    },
+    {
+      "inputs": [
+        "AABBBAAAABB"
+      ],
+      "expected": true
+    },
+    {
+      "inputs": [
+        "ABAABBABAABABAABABAABAABAABBABABBAABBBBABBBBBBBABBAABBBABABAABAABBBAABB"
+      ],
+      "expected": false
+    }
+  ]
+}

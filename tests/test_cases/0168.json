@@ -1,0 +1,488 @@
+{
+    "problem_id": "0168",
+    "title": "Excel Sheet Column Title",
+    "function_name": "convertToTitle",
+    "comparison": "exact",
+    "test_cases": [
+        {
+            "inputs": [
+                1
+            ],
+            "expected": "A"
+        },
+        {
+            "inputs": [
+                2
+            ],
+            "expected": "B"
+        },
+        {
+            "inputs": [
+                3
+            ],
+            "expected": "C"
+        },
+        {
+            "inputs": [
+                26
+            ],
+            "expected": "Z"
+        },
+        {
+            "inputs": [
+                27
+            ],
+            "expected": "AA"
+        },
+        {
+            "inputs": [
+                28
+            ],
+            "expected": "AB"
+        },
+        {
+            "inputs": [
+                52
+            ],
+            "expected": "AZ"
+        },
+        {
+            "inputs": [
+                701
+            ],
+            "expected": "ZY"
+        },
+        {
+            "inputs": [
+                702
+            ],
+            "expected": "ZZ"
+        },
+        {
+            "inputs": [
+                703
+            ],
+            "expected": "AAA"
+        },
+        {
+            "inputs": [
+                16384
+            ],
+            "expected": "XFD"
+        },
+        {
+            "inputs": [
+                50557
+            ],
+            "expected": "BVTM"
+        },
+        {
+            "inputs": [
+                90427
+            ],
+            "expected": "ECSY"
+        },
+        {
+            "inputs": [
+                62685
+            ],
+            "expected": "CNRY"
+        },
+        {
+            "inputs": [
+                55279
+            ],
+            "expected": "CCTC"
+        },
+        {
+            "inputs": [
+                85046
+            ],
+            "expected": "DUTZ"
+        },
+        {
+            "inputs": [
+                21861
+            ],
+            "expected": "AFHU"
+        },
+        {
+            "inputs": [
+                14819
+            ],
+            "expected": "UWY"
+        },
+        {
+            "inputs": [
+                17369
+            ],
+            "expected": "YRA"
+        },
+        {
+            "inputs": [
+                91249
+            ],
+            "expected": "EDYO"
+        },
+        {
+            "inputs": [
+                95213
+            ],
+            "expected": "EJVA"
+        },
+        {
+            "inputs": [
+                7687
+            ],
+            "expected": "KIQ"
+        },
+        {
+            "inputs": [
+                20893
+            ],
+            "expected": "ADWO"
+        },
+        {
+            "inputs": [
+                13594
+            ],
+            "expected": "TBV"
+        },
+        {
+            "inputs": [
+                54530
+            ],
+            "expected": "CBQH"
+        },
+        {
+            "inputs": [
+                77431
+            ],
+            "expected": "DJNC"
+        },
+        {
+            "inputs": [
+                63266
+            ],
+            "expected": "COOH"
+        },
+        {
+            "inputs": [
+                74573
+            ],
+            "expected": "DFHE"
+        },
+        {
+            "inputs": [
+                88919
+            ],
+            "expected": "EAMY"
+        },
+        {
+            "inputs": [
+                57431
+            ],
+            "expected": "CFXW"
+        },
+        {
+            "inputs": [
+                23759
+            ],
+            "expected": "AICU"
+        },
+        {
+            "inputs": [
+                80128
+            ],
+            "expected": "DNMV"
+        },
+        {
+            "inputs": [
+                49775
+            ],
+            "expected": "BUPK"
+        },
+        {
+            "inputs": [
+                47003
+            ],
+            "expected": "BQMU"
+        },
+        {
+            "inputs": [
+                80132
+            ],
+            "expected": "DNMZ"
+        },
+        {
+            "inputs": [
+                3778
+            ],
+            "expected": "EOH"
+        },
+        {
+            "inputs": [
+                89715
+            ],
+            "expected": "EBRO"
+        },
+        {
+            "inputs": [
+                95326
+            ],
+            "expected": "EJZJ"
+        },
+        {
+            "inputs": [
+                17126
+            ],
+            "expected": "YHR"
+        },
+        {
+            "inputs": [
+                63319
+            ],
+            "expected": "COQI"
+        },
+        {
+            "inputs": [
+                63980
+            ],
+            "expected": "CPPT"
+        },
+        {
+            "inputs": [
+                14803
+            ],
+            "expected": "UWI"
+        },
+        {
+            "inputs": [
+                53908
+            ],
+            "expected": "CASJ"
+        },
+        {
+            "inputs": [
+                57762
+            ],
+            "expected": "CGKP"
+        },
+        {
+            "inputs": [
+                6026
+            ],
+            "expected": "HWT"
+        },
+        {
+            "inputs": [
+                8302
+            ],
+            "expected": "LGH"
+        },
+        {
+            "inputs": [
+                34291
+            ],
+            "expected": "AXRW"
+        },
+        {
+            "inputs": [
+                85849
+            ],
+            "expected": "DVYW"
+        },
+        {
+            "inputs": [
+                41188
+            ],
+            "expected": "BHXD"
+        },
+        {
+            "inputs": [
+                1621
+            ],
+            "expected": "BJI"
+        },
+        {
+            "inputs": [
+                92350
+            ],
+            "expected": "EFOX"
+        },
+        {
+            "inputs": [
+                88858
+            ],
+            "expected": "EAKP"
+        },
+        {
+            "inputs": [
+                68789
+            ],
+            "expected": "CWSS"
+        },
+        {
+            "inputs": [
+                97469
+            ],
+            "expected": "ENDU"
+        },
+        {
+            "inputs": [
+                75583
+            ],
+            "expected": "DGUA"
+        },
+        {
+            "inputs": [
+                94867
+            ],
+            "expected": "EJHS"
+        },
+        {
+            "inputs": [
+                74058
+            ],
+            "expected": "DENJ"
+        },
+        {
+            "inputs": [
+                29359
+            ],
+            "expected": "AQKE"
+        },
+        {
+            "inputs": [
+                87798
+            ],
+            "expected": "DYVV"
+        },
+        {
+            "inputs": [
+                44342
+            ],
+            "expected": "BMOL"
+        },
+        {
+            "inputs": [
+                68040
+            ],
+            "expected": "CVPX"
+        },
+        {
+            "inputs": [
+                68565
+            ],
+            "expected": "CWKC"
+        },
+        {
+            "inputs": [
+                90210
+            ],
+            "expected": "ECKP"
+        },
+        {
+            "inputs": [
+                91827
+            ],
+            "expected": "EEUU"
+        },
+        {
+            "inputs": [
+                81034
+            ],
+            "expected": "DOVR"
+        },
+        {
+            "inputs": [
+                12484
+            ],
+            "expected": "RLD"
+        },
+        {
+            "inputs": [
+                56735
+            ],
+            "expected": "CEXC"
+        },
+        {
+            "inputs": [
+                86733
+            ],
+            "expected": "DXGW"
+        },
+        {
+            "inputs": [
+                95244
+            ],
+            "expected": "EJWF"
+        },
+        {
+            "inputs": [
+                32582
+            ],
+            "expected": "AVED"
+        },
+        {
+            "inputs": [
+                63168
+            ],
+            "expected": "COKN"
+        },
+        {
+            "inputs": [
+                45319
+            ],
+            "expected": "BOAA"
+        },
+        {
+            "inputs": [
+                86994
+            ],
+            "expected": "DXQX"
+        },
+        {
+            "inputs": [
+                88644
+            ],
+            "expected": "EACJ"
+        },
+        {
+            "inputs": [
+                84071
+            ],
+            "expected": "DTIM"
+        },
+        {
+            "inputs": [
+                50447
+            ],
+            "expected": "BVPG"
+        },
+        {
+            "inputs": [
+                19485
+            ],
+            "expected": "ABUK"
+        },
+        {
+            "inputs": [
+                73184
+            ],
+            "expected": "DDFT"
+        },
+        {
+            "inputs": [
+                80336
+            ],
+            "expected": "DNUV"
+        },
+        {
+            "inputs": [
+                7153
+            ],
+            "expected": "JOC"
+        }
+    ]
+}

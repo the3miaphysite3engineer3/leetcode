@@ -5,15 +5,483 @@
     "comparison": "exact",
     "test_cases": [
         {
-            "inputs": ["A man, a plan, a canal: Panama"],
+            "inputs": [
+                "A man, a plan, a canal: Panama"
+            ],
             "expected": true
         },
         {
-            "inputs": ["race a car"],
+            "inputs": [
+                "race a car"
+            ],
             "expected": false
         },
         {
-            "inputs": [" "],
+            "inputs": [
+                " "
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "a"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "Z"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "5"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "aa"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "ab"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "Aa"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "aA"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                ".,"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "!@#$%^&*()"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                " , . ; "
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "121"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "12321"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "123"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "a1b2b1a"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "1a2b2a1"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "a1b2c"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "Aba"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "AbBa"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "AbCbA"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "AbCdE"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "Was it a car or a cat I saw?"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "No 'x' in Nixon"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "Do geese see God?"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "Was it a car or a cat I saw"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "Not a palindrome!"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "  "
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "   "
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "a.b,,,,,,,,,,b.a"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "...a..."
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "..ab.."
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "abababababababababababababababababababababababababababababababababababababababababababababababababab"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "abcbaabcbaabcbaabcbaabcbaabcbaabcbaabcbaabcbaabcbaabcbaabcbaabcbaabcbaabcbaabcbaabcbaabcbaabcbaabcba"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "aaaa"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "AAAA"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "aAaA"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "abca"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "abcda"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "abcba"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "racecar"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "level"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "madam"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "deified"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "civic"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "radar"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "refer"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "rotor"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "kayak"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "reviver"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "noon"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "hello"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "world"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "python"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "leetcode"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "algorithm"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "0P"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "00"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "Never odd or even"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "Mr. Owl ate my metal worm"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "Eva, can I see bees in a cave?"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "This is not a palindrome"
+            ],
+            "expected": false
+        },
+        {
+            "inputs": [
+                "Almost a palindrome emordnilap a tsomlA"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "aCAndq?d?v?ol.H?x!J,i?GbAT.c?Bt.v!gvtbcTabgij xhL OVdq?d,NAca"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "a B,k BK.zXb.Md,gzuv,qq,v!uz.gd?M.bXzK!bkB?a"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                ",Uzjjz.U"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "!Vpp.f.f,bf!F,PpV"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "!SP?b!N,eg t ofMl!e oxGuugXOeLMFOtgENbPs"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "k!QBJN?yiwtrSzgzvctk?XBQ.vld lvQ.b xktcvZG?z.S,r Twi,Ynj.bQk"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                " jda?m P yE,o!K?eaxr!qkUwj?jw?ukQrxaEK?oE?Ypma.Dj"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "PduV Jn,FpW.uH,adyi p,ctx,lsslxtC.piyda.HU,WpF?n.Jvu!dp"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                " gsGFvla.Ce,xisl.Lfqy?XT?hChtXyqFL?Ls ixeca?L?VFgS g"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "jTt!dYyDtT!j"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "?pnejwmm.Wjenp"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "!Lbv?hhhUjscwcjD d.jc wCsju?Hhhv?Bl"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "!iurZ,Ty,Nsxu!B!q.gLOolg,Qb uXS!nyTZ!r Ui"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "krNpipNrk"
+            ],
+            "expected": true
+        },
+        {
+            "inputs": [
+                "drhomamiJ,cYhJ gf ouk zYUnInuy,Zk!UOfgJ!HYcJiM!AMo?Hrd"
+            ],
             "expected": true
         }
     ]

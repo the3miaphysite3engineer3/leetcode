@@ -1,0 +1,568 @@
+{
+  "problem_id": "1545",
+  "title": "Find Kth Bit in Nth Binary String",
+  "function_name": "findKthBit",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        3,
+        1
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        4,
+        11
+      ],
+      "expected": "1"
+    },
+    {
+      "inputs": [
+        1,
+        1
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        2,
+        3
+      ],
+      "expected": "1"
+    },
+    {
+      "inputs": [
+        3,
+        7
+      ],
+      "expected": "1"
+    },
+    {
+      "inputs": [
+        13,
+        1289
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        3,
+        1
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        10,
+        464
+      ],
+      "expected": "1"
+    },
+    {
+      "inputs": [
+        15,
+        807
+      ],
+      "expected": "1"
+    },
+    {
+      "inputs": [
+        8,
+        86
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        8,
+        21
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        3,
+        5
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        11,
+        870
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        14,
+        499
+      ],
+      "expected": "1"
+    },
+    {
+      "inputs": [
+        7,
+        8
+      ],
+      "expected": "1"
+    },
+    {
+      "inputs": [
+        11,
+        250
+      ],
+      "expected": "1"
+    },
+    {
+      "inputs": [
+        8,
+        83
+      ],
+      "expected": "1"
+    },
+    {
+      "inputs": [
+        14,
+        12535
+      ],
+      "expected": "1"
+    },
+    {
+      "inputs": [
+        8,
+        208
+      ],
+      "expected": "1"
+    },
+    {
+      "inputs": [
+        2,
+        1
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        13,
+        238
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        14,
+        4920
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        7,
+        88
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        3,
+        4
+      ],
+      "expected": "1"
+    },
+    {
+      "inputs": [
+        1,
+        1
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        9,
+        413
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        5,
+        18
+      ],
+      "expected": "1"
+    },
+    {
+      "inputs": [
+        10,
+        36
+      ],
+      "expected": "1"
+    },
+    {
+      "inputs": [
+        12,
+        3246
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        13,
+        7164
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        2,
+        1
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        14,
+        1433
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        2,
+        3
+      ],
+      "expected": "1"
+    },
+    {
+      "inputs": [
+        10,
+        955
+      ],
+      "expected": "1"
+    },
+    {
+      "inputs": [
+        13,
+        7434
+      ],
+      "expected": "1"
+    },
+    {
+      "inputs": [
+        12,
+        2281
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        8,
+        67
+      ],
+      "expected": "1"
+    },
+    {
+      "inputs": [
+        1,
+        1
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        1,
+        1
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        10,
+        313
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        8,
+        58
+      ],
+      "expected": "1"
+    },
+    {
+      "inputs": [
+        11,
+        229
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        9,
+        366
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        4,
+        1
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        1,
+        1
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        9,
+        405
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        3,
+        6
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        7,
+        102
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        11,
+        194
+      ],
+      "expected": "1"
+    },
+    {
+      "inputs": [
+        9,
+        69
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        10,
+        12
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        15,
+        7485
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        12,
+        281
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        7,
+        107
+      ],
+      "expected": "1"
+    },
+    {
+      "inputs": [
+        3,
+        3
+      ],
+      "expected": "1"
+    },
+    {
+      "inputs": [
+        13,
+        3279
+      ],
+      "expected": "1"
+    },
+    {
+      "inputs": [
+        5,
+        20
+      ],
+      "expected": "1"
+    },
+    {
+      "inputs": [
+        4,
+        9
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        10,
+        554
+      ],
+      "expected": "1"
+    },
+    {
+      "inputs": [
+        14,
+        5052
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        8,
+        225
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        3,
+        1
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        9,
+        219
+      ],
+      "expected": "1"
+    },
+    {
+      "inputs": [
+        7,
+        107
+      ],
+      "expected": "1"
+    },
+    {
+      "inputs": [
+        13,
+        204
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        4,
+        5
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        3,
+        1
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        12,
+        3852
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        3,
+        5
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        13,
+        95
+      ],
+      "expected": "1"
+    },
+    {
+      "inputs": [
+        10,
+        720
+      ],
+      "expected": "1"
+    },
+    {
+      "inputs": [
+        14,
+        7302
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        4,
+        4
+      ],
+      "expected": "1"
+    },
+    {
+      "inputs": [
+        7,
+        101
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        7,
+        10
+      ],
+      "expected": "1"
+    },
+    {
+      "inputs": [
+        9,
+        263
+      ],
+      "expected": "1"
+    },
+    {
+      "inputs": [
+        1,
+        1
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        10,
+        277
+      ],
+      "expected": "0"
+    },
+    {
+      "inputs": [
+        5,
+        10
+      ],
+      "expected": "1"
+    },
+    {
+      "inputs": [
+        4,
+        10
+      ],
+      "expected": "1"
+    }
+  ]
+}

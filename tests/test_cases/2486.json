@@ -1,0 +1,568 @@
+{
+  "problem_id": "2486",
+  "title": "Append Characters to String to Make Subsequence",
+  "function_name": "appendCharacters",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        "fdhbhcahi",
+        "bcgggcb"
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        "d",
+        "d"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "hifcbab",
+        "fchdb"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "ghbdcghdh",
+        "aechd"
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        "accahdfifg",
+        "gcbcgha"
+      ],
+      "expected": 6
+    },
+    {
+      "inputs": [
+        "hbhffegcg",
+        "g"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "dcccheifi",
+        "gbfhfdaa"
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        "d",
+        "eidgifhbc"
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        "abbag",
+        "bfgdbdgf"
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        "ggefghgcdddh",
+        "gciheccah"
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        "ihdbiae",
+        "bifedb"
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        "hfbchfihfdafbf",
+        "fg"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "ebffba",
+        "hi"
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        "cdceeegdcf",
+        "gchaig"
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        "edgighdieaf",
+        "ag"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "idadidbdbabfee",
+        "e"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "bddecgcdf",
+        "dfeca"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "egffcagbaah",
+        "gececicd"
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        "haafafbfae",
+        "aedahggafh"
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        "a",
+        "aciiid"
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        "dbhdefbfdf",
+        "dbhehbifa"
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        "gdifeifihbgfcd",
+        "bhgd"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "deaffidcabbcb",
+        "heh"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "dchdhbhhhhefdfb",
+        "dhfbhi"
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        "bggehbbcid",
+        "eeddiibhh"
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        "hahaaeehaeai",
+        "eheddgce"
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        "cedfbaeieiadbi",
+        "dc"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "hbi",
+        "igcaiefg"
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        "e",
+        "gfghha"
+      ],
+      "expected": 6
+    },
+    {
+      "inputs": [
+        "cfdedcgbihdc",
+        "efccc"
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        "geffiffd",
+        "bcg"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "fhhi",
+        "ceaibgfhef"
+      ],
+      "expected": 10
+    },
+    {
+      "inputs": [
+        "ehadeddd",
+        "ddcec"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "cg",
+        "bbiceficf"
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        "idad",
+        "f"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "fhageiddc",
+        "hiha"
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        "iebhdcfeigchi",
+        "gfcccdb"
+      ],
+      "expected": 6
+    },
+    {
+      "inputs": [
+        "geheiafbf",
+        "i"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "egeggefbaia",
+        "abcddbhiif"
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        "dcbhfgbefddcde",
+        "dfgffgahe"
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        "gbcbai",
+        "dgi"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "eddddbbbhe",
+        "gfhcch"
+      ],
+      "expected": 6
+    },
+    {
+      "inputs": [
+        "faahhe",
+        "afcaig"
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        "fcb",
+        "fbfiaac"
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        "aecigcai",
+        "he"
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        "g",
+        "ggefhbdb"
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        "c",
+        "hd"
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        "ighigfagdggdicc",
+        "h"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "f",
+        "bgabfii"
+      ],
+      "expected": 7
+    },
+    {
+      "inputs": [
+        "i",
+        "ciecdhaci"
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        "a",
+        "ggcdbg"
+      ],
+      "expected": 6
+    },
+    {
+      "inputs": [
+        "gchhif",
+        "fb"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "edeafedeagcci",
+        "e"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "ggicbhd",
+        "c"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "hfffdbbgbc",
+        "cdcgfaaid"
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        "hgdg",
+        "eggiehbed"
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        "dbgidid",
+        "iagfii"
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        "fheegb",
+        "ehdfc"
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        "fdgfhbafgaai",
+        "i"
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        "iehhfieibfeee",
+        "hgabic"
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        "fehiabcbag",
+        "bf"
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        "fgic",
+        "aeahfcgac"
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        "gdifehdeabddg",
+        "fbea"
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        "ghhfaebfeggf",
+        "baagdfeffd"
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        "hhfeaaaia",
+        "fiaadebed"
+      ],
+      "expected": 6
+    },
+    {
+      "inputs": [
+        "gieficaceheheai",
+        "gdbdiif"
+      ],
+      "expected": 6
+    },
+    {
+      "inputs": [
+        "fhd",
+        "gaaidchdg"
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        "dgcibcaefe",
+        "iadfcc"
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        "iabdfiga",
+        "hbf"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "agic",
+        "bddg"
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        "ieicfadfbihdg",
+        "iaacd"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "edeebehgd",
+        "cggh"
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        "ebifdbbhh",
+        "cdcfg"
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        "cfdgdaebgcehbc",
+        "hibcidi"
+      ],
+      "expected": 6
+    },
+    {
+      "inputs": [
+        "cgcg",
+        "bebfidiacb"
+      ],
+      "expected": 10
+    },
+    {
+      "inputs": [
+        "bdi",
+        "eddfeefd"
+      ],
+      "expected": 8
+    },
+    {
+      "inputs": [
+        "bcgddaihagf",
+        "iagefcd"
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        "dbbhegb",
+        "ibdg"
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        "fdfhgifefg",
+        "cbc"
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        "dbeahiibbhggic",
+        "eegccc"
+      ],
+      "expected": 5
+    }
+  ]
+}

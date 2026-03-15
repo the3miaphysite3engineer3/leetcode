@@ -1,0 +1,488 @@
+{
+  "problem_id": "1342",
+  "title": "Number of Steps to Reduce a Number to Zero",
+  "function_name": "numberOfSteps",
+  "comparison": "exact",
+  "test_cases": [
+    {
+      "inputs": [
+        14
+      ],
+      "expected": 6
+    },
+    {
+      "inputs": [
+        8
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        123
+      ],
+      "expected": 12
+    },
+    {
+      "inputs": [
+        0
+      ],
+      "expected": 0
+    },
+    {
+      "inputs": [
+        1
+      ],
+      "expected": 1
+    },
+    {
+      "inputs": [
+        2
+      ],
+      "expected": 2
+    },
+    {
+      "inputs": [
+        3
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        4
+      ],
+      "expected": 3
+    },
+    {
+      "inputs": [
+        5
+      ],
+      "expected": 4
+    },
+    {
+      "inputs": [
+        10
+      ],
+      "expected": 5
+    },
+    {
+      "inputs": [
+        100
+      ],
+      "expected": 9
+    },
+    {
+      "inputs": [
+        1000
+      ],
+      "expected": 15
+    },
+    {
+      "inputs": [
+        10000
+      ],
+      "expected": 18
+    },
+    {
+      "inputs": [
+        677992
+      ],
+      "expected": 27
+    },
+    {
+      "inputs": [
+        870455
+      ],
+      "expected": 29
+    },
+    {
+      "inputs": [
+        626978
+      ],
+      "expected": 26
+    },
+    {
+      "inputs": [
+        861627
+      ],
+      "expected": 31
+    },
+    {
+      "inputs": [
+        521043
+      ],
+      "expected": 31
+    },
+    {
+      "inputs": [
+        974400
+      ],
+      "expected": 29
+    },
+    {
+      "inputs": [
+        956905
+      ],
+      "expected": 31
+    },
+    {
+      "inputs": [
+        414187
+      ],
+      "expected": 29
+    },
+    {
+      "inputs": [
+        821376
+      ],
+      "expected": 24
+    },
+    {
+      "inputs": [
+        635551
+      ],
+      "expected": 31
+    },
+    {
+      "inputs": [
+        554893
+      ],
+      "expected": 30
+    },
+    {
+      "inputs": [
+        516763
+      ],
+      "expected": 30
+    },
+    {
+      "inputs": [
+        669915
+      ],
+      "expected": 30
+    },
+    {
+      "inputs": [
+        234546
+      ],
+      "expected": 25
+    },
+    {
+      "inputs": [
+        679505
+      ],
+      "expected": 29
+    },
+    {
+      "inputs": [
+        68281
+      ],
+      "expected": 24
+    },
+    {
+      "inputs": [
+        208314
+      ],
+      "expected": 28
+    },
+    {
+      "inputs": [
+        485750
+      ],
+      "expected": 30
+    },
+    {
+      "inputs": [
+        618992
+      ],
+      "expected": 29
+    },
+    {
+      "inputs": [
+        460343
+      ],
+      "expected": 28
+    },
+    {
+      "inputs": [
+        718437
+      ],
+      "expected": 31
+    },
+    {
+      "inputs": [
+        126120
+      ],
+      "expected": 25
+    },
+    {
+      "inputs": [
+        853189
+      ],
+      "expected": 27
+    },
+    {
+      "inputs": [
+        434714
+      ],
+      "expected": 26
+    },
+    {
+      "inputs": [
+        400788
+      ],
+      "expected": 27
+    },
+    {
+      "inputs": [
+        632277
+      ],
+      "expected": 30
+    },
+    {
+      "inputs": [
+        583576
+      ],
+      "expected": 29
+    },
+    {
+      "inputs": [
+        786334
+      ],
+      "expected": 35
+    },
+    {
+      "inputs": [
+        306830
+      ],
+      "expected": 28
+    },
+    {
+      "inputs": [
+        107012
+      ],
+      "expected": 21
+    },
+    {
+      "inputs": [
+        430846
+      ],
+      "expected": 30
+    },
+    {
+      "inputs": [
+        952186
+      ],
+      "expected": 31
+    },
+    {
+      "inputs": [
+        400560
+      ],
+      "expected": 26
+    },
+    {
+      "inputs": [
+        104413
+      ],
+      "expected": 28
+    },
+    {
+      "inputs": [
+        155650
+      ],
+      "expected": 21
+    },
+    {
+      "inputs": [
+        226789
+      ],
+      "expected": 29
+    },
+    {
+      "inputs": [
+        508512
+      ],
+      "expected": 26
+    },
+    {
+      "inputs": [
+        300579
+      ],
+      "expected": 26
+    },
+    {
+      "inputs": [
+        998817
+      ],
+      "expected": 31
+    },
+    {
+      "inputs": [
+        51489
+      ],
+      "expected": 21
+    },
+    {
+      "inputs": [
+        508581
+      ],
+      "expected": 28
+    },
+    {
+      "inputs": [
+        503203
+      ],
+      "expected": 30
+    },
+    {
+      "inputs": [
+        598755
+      ],
+      "expected": 28
+    },
+    {
+      "inputs": [
+        279103
+      ],
+      "expected": 27
+    },
+    {
+      "inputs": [
+        260300
+      ],
+      "expected": 28
+    },
+    {
+      "inputs": [
+        244631
+      ],
+      "expected": 30
+    },
+    {
+      "inputs": [
+        871279
+      ],
+      "expected": 32
+    },
+    {
+      "inputs": [
+        182657
+      ],
+      "expected": 24
+    },
+    {
+      "inputs": [
+        799219
+      ],
+      "expected": 30
+    },
+    {
+      "inputs": [
+        337976
+      ],
+      "expected": 25
+    },
+    {
+      "inputs": [
+        458116
+      ],
+      "expected": 29
+    },
+    {
+      "inputs": [
+        191905
+      ],
+      "expected": 27
+    },
+    {
+      "inputs": [
+        221181
+      ],
+      "expected": 32
+    },
+    {
+      "inputs": [
+        772766
+      ],
+      "expected": 31
+    },
+    {
+      "inputs": [
+        722347
+      ],
+      "expected": 29
+    },
+    {
+      "inputs": [
+        540423
+      ],
+      "expected": 29
+    },
+    {
+      "inputs": [
+        702264
+      ],
+      "expected": 30
+    },
+    {
+      "inputs": [
+        619682
+      ],
+      "expected": 28
+    },
+    {
+      "inputs": [
+        624029
+      ],
+      "expected": 29
+    },
+    {
+      "inputs": [
+        303149
+      ],
+      "expected": 25
+    },
+    {
+      "inputs": [
+        611177
+      ],
+      "expected": 29
+    },
+    {
+      "inputs": [
+        596076
+      ],
+      "expected": 27
+    },
+    {
+      "inputs": [
+        956269
+      ],
+      "expected": 32
+    },
+    {
+      "inputs": [
+        119473
+      ],
+      "expected": 25
+    },
+    {
+      "inputs": [
+        640204
+      ],
+      "expected": 28
+    },
+    {
+      "inputs": [
+        467736
+      ],
+      "expected": 26
+    },
+    {
+      "inputs": [
+        846214
+      ],
+      "expected": 29
+    }
+  ]
+}

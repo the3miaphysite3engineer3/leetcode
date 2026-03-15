@@ -1,0 +1,488 @@
+{
+    "problem_id": "0071",
+    "title": "Simplify Path",
+    "function_name": "simplifyPath",
+    "comparison": "exact",
+    "test_cases": [
+        {
+            "inputs": [
+                "/home/"
+            ],
+            "expected": "/home"
+        },
+        {
+            "inputs": [
+                "/../"
+            ],
+            "expected": "/"
+        },
+        {
+            "inputs": [
+                "/home//foo/"
+            ],
+            "expected": "/home/foo"
+        },
+        {
+            "inputs": [
+                "/a/./b/../../c/"
+            ],
+            "expected": "/c"
+        },
+        {
+            "inputs": [
+                "/a/b/../c/d/"
+            ],
+            "expected": "/a/c/d"
+        },
+        {
+            "inputs": [
+                "/"
+            ],
+            "expected": "/"
+        },
+        {
+            "inputs": [
+                "/."
+            ],
+            "expected": "/"
+        },
+        {
+            "inputs": [
+                "/.."
+            ],
+            "expected": "/"
+        },
+        {
+            "inputs": [
+                "/a/b/c"
+            ],
+            "expected": "/a/b/c"
+        },
+        {
+            "inputs": [
+                "/a//b///c"
+            ],
+            "expected": "/a/b/c"
+        },
+        {
+            "inputs": [
+                "/a/b/./c/../d"
+            ],
+            "expected": "/a/b/d"
+        },
+        {
+            "inputs": [
+                "/home/user/../admin/./docs"
+            ],
+            "expected": "/home/admin/docs"
+        },
+        {
+            "inputs": [
+                "/a/b/c/../../d/e/f/../g"
+            ],
+            "expected": "/a/d/e/g"
+        },
+        {
+            "inputs": [
+                "/..hidden"
+            ],
+            "expected": "/..hidden"
+        },
+        {
+            "inputs": [
+                "/a/b/c/d/e/f/g/h"
+            ],
+            "expected": "/a/b/c/d/e/f/g/h"
+        },
+        {
+            "inputs": [
+                "/..//"
+            ],
+            "expected": "/"
+        },
+        {
+            "inputs": [
+                "/f/.."
+            ],
+            "expected": "/"
+        },
+        {
+            "inputs": [
+                "/../"
+            ],
+            "expected": "/"
+        },
+        {
+            "inputs": [
+                "/.././f/e/lib/lib/bin/b/./c/"
+            ],
+            "expected": "/f/e/lib/lib/bin/b/c"
+        },
+        {
+            "inputs": [
+                "/../tmp//../user/d/../"
+            ],
+            "expected": "/user"
+        },
+        {
+            "inputs": [
+                "/c/bin/../lib//.././..//c/"
+            ],
+            "expected": "/c"
+        },
+        {
+            "inputs": [
+                "/.//var/../f/docs"
+            ],
+            "expected": "/f/docs"
+        },
+        {
+            "inputs": [
+                "/var/a/lib/a/lib"
+            ],
+            "expected": "/var/a/lib/a/lib"
+        },
+        {
+            "inputs": [
+                "/../tmp/c/./var"
+            ],
+            "expected": "/tmp/c/var"
+        },
+        {
+            "inputs": [
+                "/../f//tmp/a"
+            ],
+            "expected": "/f/tmp/a"
+        },
+        {
+            "inputs": [
+                "/user/user/./"
+            ],
+            "expected": "/user/user"
+        },
+        {
+            "inputs": [
+                "/d/e/f/home/user/f/lib"
+            ],
+            "expected": "/d/e/f/home/user/f/lib"
+        },
+        {
+            "inputs": [
+                "//./"
+            ],
+            "expected": "/"
+        },
+        {
+            "inputs": [
+                "/lib/./var//tmp/"
+            ],
+            "expected": "/lib/var/tmp"
+        },
+        {
+            "inputs": [
+                "/f/f/tmp//../lib"
+            ],
+            "expected": "/f/f/lib"
+        },
+        {
+            "inputs": [
+                "/."
+            ],
+            "expected": "/"
+        },
+        {
+            "inputs": [
+                "/../user"
+            ],
+            "expected": "/user"
+        },
+        {
+            "inputs": [
+                "/docs/f/./tmp/a/lib/a/d/var"
+            ],
+            "expected": "/docs/f/tmp/a/lib/a/d/var"
+        },
+        {
+            "inputs": [
+                "/a/.//a/home/../a/../.."
+            ],
+            "expected": "/a"
+        },
+        {
+            "inputs": [
+                "/./a/bin/tmp/a/lib/user/../d"
+            ],
+            "expected": "/a/bin/tmp/a/lib/d"
+        },
+        {
+            "inputs": [
+                "/var/"
+            ],
+            "expected": "/var"
+        },
+        {
+            "inputs": [
+                "/lib/a/./docs/b/user/f/"
+            ],
+            "expected": "/lib/a/docs/b/user/f"
+        },
+        {
+            "inputs": [
+                "/user/a/./a/home/./../lib/b"
+            ],
+            "expected": "/user/a/a/lib/b"
+        },
+        {
+            "inputs": [
+                "/e/.//tmp/home/home/../f/."
+            ],
+            "expected": "/e/tmp/home/f"
+        },
+        {
+            "inputs": [
+                "/user/var"
+            ],
+            "expected": "/user/var"
+        },
+        {
+            "inputs": [
+                "/../a/home/d/tmp/b/."
+            ],
+            "expected": "/a/home/d/tmp/b"
+        },
+        {
+            "inputs": [
+                "//../e/"
+            ],
+            "expected": "/e"
+        },
+        {
+            "inputs": [
+                "/../tmp"
+            ],
+            "expected": "/tmp"
+        },
+        {
+            "inputs": [
+                "/f/"
+            ],
+            "expected": "/f"
+        },
+        {
+            "inputs": [
+                "/c/"
+            ],
+            "expected": "/c"
+        },
+        {
+            "inputs": [
+                "/tmp/lib/home/f//docs//bin/b/"
+            ],
+            "expected": "/tmp/lib/home/f/docs/bin/b"
+        },
+        {
+            "inputs": [
+                "/a/b/b/home/"
+            ],
+            "expected": "/a/b/b/home"
+        },
+        {
+            "inputs": [
+                "/home/../var/docs/f/f/../"
+            ],
+            "expected": "/var/docs/f"
+        },
+        {
+            "inputs": [
+                "/c/docs/home"
+            ],
+            "expected": "/c/docs/home"
+        },
+        {
+            "inputs": [
+                "/a"
+            ],
+            "expected": "/a"
+        },
+        {
+            "inputs": [
+                "/f/d"
+            ],
+            "expected": "/f/d"
+        },
+        {
+            "inputs": [
+                "/a/lib/d/"
+            ],
+            "expected": "/a/lib/d"
+        },
+        {
+            "inputs": [
+                "/d/bin/b/./d/e/"
+            ],
+            "expected": "/d/bin/b/d/e"
+        },
+        {
+            "inputs": [
+                "//a/./d//lib//d"
+            ],
+            "expected": "/a/d/lib/d"
+        },
+        {
+            "inputs": [
+                "//../b/./b/../c/c/f/"
+            ],
+            "expected": "/b/c/c/f"
+        },
+        {
+            "inputs": [
+                "/./../f/f/bin/a/user/c/var/bin"
+            ],
+            "expected": "/f/f/bin/a/user/c/var/bin"
+        },
+        {
+            "inputs": [
+                "//d/f/../d/docs/b/home//"
+            ],
+            "expected": "/d/d/docs/b/home"
+        },
+        {
+            "inputs": [
+                "/c/e/f/lib/var/../var/user/lib/."
+            ],
+            "expected": "/c/e/f/lib/var/user/lib"
+        },
+        {
+            "inputs": [
+                "/../../tmp/user"
+            ],
+            "expected": "/tmp/user"
+        },
+        {
+            "inputs": [
+                "/./e/docs/home/lib/lib/docs/bin/home/user"
+            ],
+            "expected": "/e/docs/home/lib/lib/docs/bin/home/user"
+        },
+        {
+            "inputs": [
+                "/f/lib/tmp/f/f/docs/e/lib/"
+            ],
+            "expected": "/f/lib/tmp/f/f/docs/e/lib"
+        },
+        {
+            "inputs": [
+                "/f/a//..//"
+            ],
+            "expected": "/f"
+        },
+        {
+            "inputs": [
+                "/user/.././bin/./c"
+            ],
+            "expected": "/bin/c"
+        },
+        {
+            "inputs": [
+                "/../d/tmp/home/lib/e/.."
+            ],
+            "expected": "/d/tmp/home/lib"
+        },
+        {
+            "inputs": [
+                "/d/bin/tmp/e/./home/var"
+            ],
+            "expected": "/d/bin/tmp/e/home/var"
+        },
+        {
+            "inputs": [
+                "/e/tmp/d/var/../docs/docs/"
+            ],
+            "expected": "/e/tmp/d/docs/docs"
+        },
+        {
+            "inputs": [
+                "//c/d//d//../"
+            ],
+            "expected": "/c/d"
+        },
+        {
+            "inputs": [
+                "/../a/lib/home/a/./.././.."
+            ],
+            "expected": "/a/lib"
+        },
+        {
+            "inputs": [
+                "/e/lib/tmp/bin/lib/b/../..//d"
+            ],
+            "expected": "/e/lib/tmp/bin/d"
+        },
+        {
+            "inputs": [
+                "/../var/./b"
+            ],
+            "expected": "/var/b"
+        },
+        {
+            "inputs": [
+                "/lib/lib/../var/f/home/e/../var/e"
+            ],
+            "expected": "/lib/var/f/home/var/e"
+        },
+        {
+            "inputs": [
+                "/./var//f/e/bin/c"
+            ],
+            "expected": "/var/f/e/bin/c"
+        },
+        {
+            "inputs": [
+                "//lib"
+            ],
+            "expected": "/lib"
+        },
+        {
+            "inputs": [
+                "/c/../docs/c/c//b/f/user/."
+            ],
+            "expected": "/docs/c/c/b/f/user"
+        },
+        {
+            "inputs": [
+                "/bin/bin/lib/..//a//e/c"
+            ],
+            "expected": "/bin/bin/a/e/c"
+        },
+        {
+            "inputs": [
+                "//b//./c/../lib/a/."
+            ],
+            "expected": "/b/lib/a"
+        },
+        {
+            "inputs": [
+                "/f/user/b/././../b/../../"
+            ],
+            "expected": "/f"
+        },
+        {
+            "inputs": [
+                "/../..//c/./../e/../"
+            ],
+            "expected": "/"
+        },
+        {
+            "inputs": [
+                "/../home/./b/.././d/lib"
+            ],
+            "expected": "/home/d/lib"
+        },
+        {
+            "inputs": [
+                "/e//d//tmp/user/a/b/docs/"
+            ],
+            "expected": "/e/d/tmp/user/a/b/docs"
+        }
+    ]
+}
